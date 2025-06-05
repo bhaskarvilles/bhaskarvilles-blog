@@ -1,0 +1,178 @@
+## Base URL for the site
+baseURL = 'https://secretcoder.org'
+## Site title
+title = "Bhaskar's Website"
+## Use hugo-brewm theme
+theme = 'hugo-brewm'
+## Enable Git information for pages
+enableGitInfo = true
+## Convert all URLs to absolute URLs
+canonifyURLs = true
+## Default language for content
+defaultContentLanguage = 'en'
+## Put default language in subdirectory
+defaultContentLanguageInSubdir = true
+## Generate a robots.txt
+enableRobotsTXT = true
+## Files to ignore when building site
+ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
+
+## markup configuration
+[markup]
+    [markup.highlight]
+        codeFences = true
+        noClasses = false
+        lineNos = true
+        lineNumbersInTable = true
+    [markup.goldmark]
+        [markup.goldmark.extensions]
+            definitionList = true
+            footnote = true
+            linkify = true
+            strikethrough = true
+            table = true
+            taskList = true
+            typographer = true
+        [markup.goldmark.renderer]
+            unsafe = true
+    [markup.tableOfContents]
+        startLevel = 2
+        endLevel = 6
+
+## Sitemap configuration
+[sitemap]
+    changefreq = "daily"
+    filename = "sitemap.xml"
+    priority = 0.8
+
+## Taxonomy register
+[taxonomies]
+    category = 'categories'
+    tag = 'tags'
+    author = 'author'
+    series = 'series'
+
+## Site parameters
+[params]
+    ## Site title
+    title = "Bhaskar's Website"
+    ## Site description
+    description = "Explore cutting-edge tech, geopolitics, ethical hacking, activism, and humanity's future."
+    ## Copyright notice
+    copyright = "Copyright © Bhaskar"
+    ## Hide "powered by hugo" on colophon
+    HideHugoCredit = true
+    ## Enable extended metadata (social cards)
+    extMeta = true
+    ## Enable coffee metric
+    coffeeStat = true
+    ## Default social card image
+    images = ["/logo.png", "/featured-image.jpg", "/author-avatar.png"]
+    ## Do not block AI user agent for robot.txt
+    AllowAIRobots = false
+    ## ZenMode - Minimize clutter for small site
+    ZenMode = false
+
+    ## Author information
+    [params.author]
+        name = "Bhaskar"
+        bio = "Tech Analyst & Geopolitical Observer"
+        email = "bhaskarvilles@duck.com"
+        avatar = "/images/avatar.png"
+
+    ## Comments configuration
+    [params.comments]
+        disabled = false
+
+    ## Home page display settings
+    [params.home]
+        disableSlide = false
+        disableListing = false
+        featuredListing = ['categories', 'tags', 'series']
+        [params.home.profile]
+            enable = true
+            avatarURL = "/images/avatar.png"
+            title = "Bhaskar Ram | Tech Analyst & Geopolitical Observer"
+            subtitle = "Decoding the intersection of technology, geopolitics, and human progress"
+            typeit = false
+            social = true
+        [params.home.posts]
+            enable = true
+            paginate = 6
+
+    ## Post display settings
+    [params.posts]
+        justifying = false
+        noIndent = false
+        sfdefault = false
+        colophon = true
+        disableHistory = false
+        related = true
+        share = true
+
+    ## Search configuration
+    [params.search]
+        enable = true
+        pagefind = true
+
+    ## Social configuration
+    [params.social]
+        GitHub = "bhaskarvilles"
+        Linkedin = "bhaskarvilles"
+        Twitter = "bhaskarvilles"
+        Instagram = "bhaskarvilles"
+        Facebook = "bhaskarvilles"
+        Telegram = "bhaskarvilles"
+        Medium = "bhaskarvilles"
+        Gitlab = "bhaskarvilles"
+        Stackoverflow = "bhaskarvilles"
+        Snapchat = "bhaskar.royal"
+        Paypal = "bhasskarvilles1"
+        Steam = "bhaskarvilles"
+        Whatsapp = "+919490470485"
+        Wordpress = "bhaskarvilles"
+        Discord = "bhaskarvilles.eth#7016"
+        Phone = "+919490470485"
+        Email = "bhaskarvilles@duck.com"
+        RSS = true
+
+    ## Typography settings
+    [params.typeface]
+        webSafe = false
+        roman = 'crimson'
+        sans = 'inter'
+
+    ## Extended Metadata and Social card configuration
+    [params.socialCard]
+        enable = true
+        images = ["/logo.png", "/featured-image.jpg", "/author-avatar.png"]
+        twitter = true
+        twitterCreator = "@bhaskarvilles"
+        twitterSite = "@bhaskarvilles"
+        opengraph = true
+
+## Output formats
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+    page = ["HTML"]
+    section = ["HTML", "RSS"]
+    taxonomy = ["HTML", "RSS"]
+    term = ["HTML", "RSS"]
+
+## Privacy config
+[privacy]
+    [privacy.twitter]
+        enableDNT = true
+    [privacy.youtube]
+        privacyEnhanced = true
+
+## Image processing
+[imaging]
+    quality = 75
+    resampleFilter = "Box"
+    anchor = "Smart"
+    [imaging.exif]
+        disableDate = true
+        disableLatLong = true
+        excludeFields = ''
+        includeFields = ''
