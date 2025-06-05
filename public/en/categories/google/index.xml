@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google on Bhaskar&#39;s Website</title>
+    <link>http://localhost:1313/en/categories/google/</link>
+    <description>Recent Posts in Google on Bhaskar&#39;s Website</description>
+    <generator>Hugo 0.147.3</generator>
+    <language>en</language>
+    <managingEditor>Bhaskar</managingEditor>
+    
+      <webMaster>Bhaskar</webMaster>
+    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/google/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Bard: A Large Language Model Chatbot</title>
+      <link>http://localhost:1313/en/post/2023-05-16-google-bard/</link>
+      <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/2023-05-16-google-bard/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Google wants to become a key infrastructure provider for Web3</title>
+      <link>http://localhost:1313/en/post/2022-10-30-google-launched-blockchain-nodes/</link>
+      <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/2022-10-30-google-launched-blockchain-nodes/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Google&#39;s new password less authentication technology</title>
+      <link>http://localhost:1313/en/post/2022-10-12-google-rolling-new-passwordless-authentication/</link>
+      <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/2022-10-12-google-rolling-new-passwordless-authentication/</guid>
+      <description></description>
+      
+    </item>
+  </channel>
+</rss>

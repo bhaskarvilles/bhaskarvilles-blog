@@ -45,6 +45,11 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
     filename = "sitemap.xml"
     priority = 0.8
 
+## RSS configuration
+[services.rss]
+    ## Limit RSS item
+    limit = -1
+
 ## Taxonomy register
 [taxonomies]
     category = 'categories'
@@ -84,6 +89,15 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
     [params.comments]
         disabled = false
 
+    ## Logo configuration
+        [params.logo]
+            ## Light mode logo mark
+            # logoMark = 'https://example.com/logoMark.svg'
+            ## Dark mode logo mark
+            # logoMarkDark = 'https://example.com/logoMarkDark.svg'
+            ## Enable logo type
+            logoType = true
+            
     ## Home page display settings
     [params.home]
         disableSlide = false

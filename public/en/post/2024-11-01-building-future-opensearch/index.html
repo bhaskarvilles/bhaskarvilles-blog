@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Building the Future of OpenSearch: Community-Driven Innovation | Bhaskar&#39;s Website</title>
+<meta name="author" content="Bhaskar">
+<meta name="description" content="An in-depth exploration of OpenSearch&#39;s community-driven development, technical innovations, and future roadmap in the search and analytics space." >
+<meta name="keywords" content="OpenSearch,elasticsearch alternative,open source search,search engine,analytics platform,community development,search technology,data analytics">
+<link rel="canonical" href="http://localhost:1313/en/post/2024-11-01-building-future-opensearch/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Building the Future of OpenSearch: Community-Driven Innovation | Bhaskar&#39;s Website" />
+    <meta name="twitter:description" content="An in-depth exploration of OpenSearch&#39;s community-driven development, technical innovations, and future roadmap in the search and analytics space." />
+        <meta name="twitter:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+        <meta name="twitter:site" content="@@bhaskarvilles" />
+        <meta name="twitter:creator" content="@@bhaskarvilles" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="Building the Future of OpenSearch: Community-Driven Innovation | Bhaskar&#39;s Website" />
+    <meta property="og:description" content="An in-depth exploration of OpenSearch&#39;s community-driven development, technical innovations, and future roadmap in the search and analytics space." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/2024-11-01-building-future-opensearch/" />
+        <meta property="og:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+    <meta property="og:site_name" content="Bhaskar&#39;s Website" /><!-- js.html -->
+
+
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+
+
+
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+        
+    <!-- css/verbatim.html -->
+        <link href="http://localhost:1313/css/typesetting/verbatim.min.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/en/" aria-label="Bhaskar&#39;s Website" aria-description="Homepage">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="476pt" aria-label="Bhaskar&#39;s Website">
+            <text id="logotype__text" y="19.5pt" x="0">Bhaskar&#39;s Website</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2 srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="http://localhost:1313/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+                <!-- menu.html -->
+    <menu class="srm">
+        <a id="print-button" class="hide" href="javascript:window.print()" role="button" aria-label="Print">
+            <span class="t srt" role="tooltip">Print</span>
+        </a>
+        <a id="navigatorShare" href="#share" role="button" aria-label="Share">
+            <span class="t srt" role="tooltip">Share</span>
+        </a>
+        <a id="copyPermalink"  href="javascript:navigator.clipboard.writeText(window.location.href)" role="button" aria-label="Copy URL">
+            <span id="copy" class="t srt" role="tooltip">Copy URL</span>
+            <span id="isCopying" style="display: none;">Copying...</span>
+            <span id="copyText" style="display: none;">Copy URL</span>
+        </a>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t srt" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">Building the Future of OpenSearch: Community-Driven Innovation
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth sf"
+        role="document" aria-labelledby="title"
+            data-pagefind-ignore="all">
+        <header aria-labelledby="title">
+            
+            <!-- title.html -->
+        <hgroup data-bionRead-safe>
+            <h1 id="title"
+                >Building the Future of OpenSearch: Community-Driven Innovation</h1>
+            <p  class="subtitle"
+                role="doc-subtitle">An in-depth exploration of OpenSearch&#39;s community-driven development, technical innovations, and future roadmap in the search and analytics space.</p>
+        </hgroup>
+        </header>
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-TableOfContents" open>
+    <summary id="TableOfContents" tabindex="-1">
+        <span>Table of Contents</span>
+    </summary><nav data-pagefind-body role="doc-toc">
+  <ul>
+    <li><a href="#key-community-initiatives">Key Community Initiatives</a></li>
+    <li><a href="#recent-developments">Recent Developments</a></li>
+    <li><a href="#looking-ahead">Looking Ahead</a></li>
+    <li><a href="#getting-involved">Getting Involved</a>
+      <ul>
+        <li><a href="#1-code-contributions">1. Code Contributions</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#2-community-participation">2. Community Participation</a></li>
+        <li><a href="#3-testing-and-feedback">3. Testing and Feedback</a></li>
+      </ul>
+    </li>
+    <li><a href="#technical-deep-dive">Technical Deep Dive</a>
+      <ul>
+        <li><a href="#search-capabilities">Search Capabilities</a></li>
+        <li><a href="#analytics-features">Analytics Features</a></li>
+        <li><a href="#security-framework">Security Framework</a></li>
+      </ul>
+    </li>
+    <li><a href="#project-governance">Project Governance</a></li>
+    <li><a href="#success-stories">Success Stories</a>
+      <ul>
+        <li><a href="#e-commerce">E-commerce</a></li>
+        <li><a href="#enterprise">Enterprise</a></li>
+        <li><a href="#research-institutions">Research Institutions</a></li>
+      </ul>
+    </li>
+    <li><a href="#future-roadmap">Future Roadmap</a></li>
+    <li><a href="#conclusion">Conclusion</a>
+      <ul>
+        <li><a href="#get-started-today">Get Started Today</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</details>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <p>OpenSearch, the open-source search and analytics suite forked from Elasticsearch, has been making significant strides in building a vibrant community-driven ecosystem. Let&rsquo;s explore how OpenSearch is shaping the future of search technology through collaboration and innovation.</p>
+<h2 id="key-community-initiatives">Key Community Initiatives</h2>
+<p>OpenSearch has embraced several important initiatives to foster community growth:</p>
+<ol>
+<li>
+<p><strong>Transparent Development Process</strong></p>
+<ul>
+<li>Public roadmap discussions</li>
+<li>Open design proposals</li>
+<li>Community-driven feature prioritization</li>
+</ul>
+</li>
+<li>
+<p><strong>Technical Innovation Focus</strong></p>
+<ul>
+<li>Enhanced search capabilities</li>
+<li>Advanced analytics features</li>
+<li>Improved security frameworks</li>
+</ul>
+</li>
+</ol>
+<h2 id="recent-developments">Recent Developments</h2>
+<p>The project has seen exciting progress in multiple areas:</p>
+<ul>
+<li><strong>Performance Optimization</strong>: Significant improvements in query processing and indexing speeds</li>
+<li><strong>Security Enhancements</strong>: Advanced authentication and authorization features</li>
+<li><strong>Scalability Updates</strong>: Better handling of large-scale deployments</li>
+<li><strong>User Experience</strong>: Improved dashboard and visualization tools</li>
+</ul>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>The future roadmap for OpenSearch includes:</p>
+<ul>
+<li>Expanded machine learning capabilities</li>
+<li>Enhanced observability features</li>
+<li>Improved cloud-native integration</li>
+<li>Advanced data analytics tools</li>
+</ul>
+<h2 id="getting-involved">Getting Involved</h2>
+<p>There are several ways to contribute to OpenSearch:</p>
+<h3 id="1-code-contributions">1. Code Contributions</h3>
+<p>Getting started with OpenSearch development is straightforward:</p>
+<h1 id="build-from-source">Build from source</h1>
+<p>cd OpenSearch
+./gradlew build</p>
+<h1 id="run-tests">Run tests</h1>
+<p>./gradlew test</p>
+<p>The project welcomes various types of contributions:</p>
+<ul>
+<li>Core engine improvements</li>
+<li>Plugin development</li>
+<li>Dashboard enhancements</li>
+<li>Performance optimizations</li>
+</ul>
+<h3 id="2-community-participation">2. Community Participation</h3>
+<p>The OpenSearch community is active across multiple channels:</p>
+<ul>
+<li>
+<p><strong>Forums and Discussions</strong></p>
+<ul>
+<li><a href="https://forum.opensearch.org/">OpenSearch Forum</a> for technical discussions</li>
+<li><a href="https://github.com/opensearch-project/OpenSearch/discussions">GitHub Discussions</a> for feature proposals</li>
+<li>Regular community meetings via Zoom</li>
+<li><a href="https://opensearch.org/slack.html">Slack workspace</a> for real-time collaboration</li>
+</ul>
+</li>
+<li>
+<p><strong>Documentation and Knowledge Sharing</strong></p>
+<ul>
+<li>Technical documentation improvements</li>
+<li>Blog post contributions</li>
+<li>Use case studies</li>
+<li>Tutorial creation</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-testing-and-feedback">3. Testing and Feedback</h3>
+<p>Quality assurance is crucial for OpenSearch&rsquo;s success:</p>
+<ul>
+<li>
+<p><strong>Testing Areas</strong></p>
+<ul>
+<li>Feature testing</li>
+<li>Performance benchmarking</li>
+<li>Security testing</li>
+<li>Cross-platform compatibility</li>
+<li>Plugin integration testing</li>
+</ul>
+</li>
+<li>
+<p><strong>Feedback Channels</strong></p>
+<ul>
+<li>GitHub issues for bug reports</li>
+<li>Feature request discussions</li>
+<li>Documentation feedback</li>
+<li>User experience insights</li>
+</ul>
+</li>
+</ul>
+<h2 id="technical-deep-dive">Technical Deep Dive</h2>
+<p>OpenSearch offers several key technical advantages:</p>
+<h3 id="search-capabilities">Search Capabilities</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// Example query using OpenSearch Java client</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">SearchRequest</span><span class="w"> </span><span class="n">searchRequest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SearchRequest</span><span class="p">(</span><span class="s">&#34;my-index&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">SearchSourceBuilder</span><span class="w"> </span><span class="n">searchSourceBuilder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SearchSourceBuilder</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">searchSourceBuilder</span><span class="p">.</span><span class="na">query</span><span class="p">(</span><span class="n">QueryBuilders</span><span class="p">.</span><span class="na">matchQuery</span><span class="p">(</span><span class="s">&#34;title&#34;</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;opensearch&#34;</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">searchRequest</span><span class="p">.</span><span class="na">source</span><span class="p">(</span><span class="n">searchSourceBuilder</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="analytics-features">Analytics Features</h3>
+<ul>
+<li>Real-time data analysis</li>
+<li>Custom visualization creation</li>
+<li>Advanced aggregation pipelines</li>
+<li>Machine learning integration</li>
+</ul>
+<h3 id="security-framework">Security Framework</h3>
+<ul>
+<li>Fine-grained access control</li>
+<li>Field-level security</li>
+<li>Audit logging</li>
+<li>Encryption at rest and in transit</li>
+</ul>
+<h2 id="project-governance">Project Governance</h2>
+<p>OpenSearch maintains a transparent governance structure:</p>
+<ol>
+<li>
+<p><strong>Technical Steering Committee</strong></p>
+<ul>
+<li>Oversees technical direction</li>
+<li>Reviews major architectural decisions</li>
+<li>Ensures project quality standards</li>
+</ul>
+</li>
+<li>
+<p><strong>Working Groups</strong></p>
+<ul>
+<li>Security</li>
+<li>Machine Learning</li>
+<li>Observability</li>
+<li>Performance</li>
+<li>Documentation</li>
+</ul>
+</li>
+<li>
+<p><strong>Community Guidelines</strong></p>
+<ul>
+<li>Code of Conduct</li>
+<li>Contribution Guidelines</li>
+<li>Review Process</li>
+<li>Release Planning</li>
+</ul>
+</li>
+</ol>
+<h2 id="success-stories">Success Stories</h2>
+<p>Organizations worldwide have adopted OpenSearch:</p>
+<h3 id="e-commerce">E-commerce</h3>
+<ul>
+<li>Product catalog search</li>
+<li>Personalized recommendations</li>
+<li>Analytics for user behavior</li>
+<li>Real-time inventory updates</li>
+</ul>
+<h3 id="enterprise">Enterprise</h3>
+<ul>
+<li>Log analytics and monitoring</li>
+<li>Business intelligence</li>
+<li>Document search</li>
+<li>Operational analytics</li>
+</ul>
+<h3 id="research-institutions">Research Institutions</h3>
+<ul>
+<li>Scientific data indexing</li>
+<li>Research paper search</li>
+<li>Dataset analytics</li>
+<li>Collaboration tools</li>
+</ul>
+<h2 id="future-roadmap">Future Roadmap</h2>
+<p>OpenSearch&rsquo;s ambitious roadmap includes:</p>
+<ol>
+<li>
+<p><strong>Machine Learning Advancements</strong></p>
+<ul>
+<li>Neural search capabilities</li>
+<li>Anomaly detection improvements</li>
+<li>Natural language processing</li>
+<li>Automated model training</li>
+</ul>
+</li>
+<li>
+<p><strong>Cloud-Native Features</strong></p>
+<ul>
+<li>Kubernetes operators</li>
+<li>Auto-scaling capabilities</li>
+<li>Cross-cluster replication</li>
+<li>Cloud-native security</li>
+</ul>
+</li>
+<li>
+<p><strong>Performance Optimizations</strong></p>
+<ul>
+<li>Improved indexing speed</li>
+<li>Better query performance</li>
+<li>Resource utilization</li>
+<li>Cache management</li>
+</ul>
+</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>OpenSearch&rsquo;s community-driven development approach has created a powerful and flexible search solution. The project&rsquo;s commitment to transparency, innovation, and community involvement ensures its continued growth and success.</p>
+<h3 id="get-started-today">Get Started Today</h3>
+<p>To begin your OpenSearch journey:</p>
+<ul>
+<li>Visit the <a href="https://opensearch.org/">OpenSearch website</a></li>
+<li>Join the <a href="https://github.com/opensearch-project">GitHub community</a></li>
+<li>Follow <a href="https://twitter.com/OpenSearchProj">@OpenSearchProj</a> on Twitter</li>
+<li>Subscribe to the <a href="https://opensearch.org/newsletter.html">OpenSearch Newsletter</a></li>
+</ul>
+<p>Remember, whether you&rsquo;re a developer, user, or enthusiast, there&rsquo;s a place for you in the OpenSearch community. Your contributions, no matter how small, help build the future of open-source search and analytics.</p>
+
+        </section>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="Building the Future of OpenSearch: Community-Driven Innovation">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/2024-11-01-building-future-opensearch/">
+        <input id="mastodonText" type="hidden" name="text" value="Building the Future of OpenSearch: Community-Driven Innovation http://localhost:1313/en/post/2024-11-01-building-future-opensearch/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=Building%20the%20Future%20of%20OpenSearch%3a%20Community-Driven%20Innovation&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2024-11-01-building-future-opensearch%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=Building%20the%20Future%20of%20OpenSearch%3a%20Community-Driven%20Innovation%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2024-11-01-building-future-opensearch%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=Building%20the%20Future%20of%20OpenSearch:%20Community-Driven%20Innovation&amp;url=http://localhost:1313/en/post/2024-11-01-building-future-opensearch/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=Building%20the%20Future%20of%20OpenSearch:%20Community-Driven%20Innovation&amp;url=http://localhost:1313/en/post/2024-11-01-building-future-opensearch/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/2024-11-01-building-future-opensearch/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/2024-11-01-building-future-opensearch/&amp;t=Building%20the%20Future%20of%20OpenSearch:%20Community-Driven%20Innovation" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/2024-11-01-building-future-opensearch/&amp;title=Building%20the%20Future%20of%20OpenSearch:%20Community-Driven%20Innovation&amp;summary=Building%20the%20Future%20of%20OpenSearch:%20Community-Driven%20Innovation&amp;source=http://localhost:1313/en/post/2024-11-01-building-future-opensearch/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/2024-11-01-building-future-opensearch/&amp;media=http://localhost:1313/en/post/2024-11-01-building-future-opensearch/&amp;description=Building%20the%20Future%20of%20OpenSearch:%20Community-Driven%20Innovation" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/2024-11-01-building-future-opensearch/&amp;resubmit=true&amp;title=Building%20the%20Future%20of%20OpenSearch:%20Community-Driven%20Innovation" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Building%20the%20Future%20of%20OpenSearch:%20Community-Driven%20Innovation&amp;caption=Building%20the%20Future%20of%20OpenSearch:%20Community-Driven%20Innovation&amp;content=http://localhost:1313/en/post/2024-11-01-building-future-opensearch/&amp;canonicalUrl=http://localhost:1313/en/post/2024-11-01-building-future-opensearch/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=Building%20the%20Future%20of%20OpenSearch:%20Community-Driven%20Innovation&amp;url=http://localhost:1313/en/post/2024-11-01-building-future-opensearch/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=Building%20the%20Future%20of%20OpenSearch:%20Community-Driven%20Innovation&amp;url=http://localhost:1313/en/post/2024-11-01-building-future-opensearch/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/2024-11-01-building-future-opensearch/;title=Building%20the%20Future%20of%20OpenSearch:%20Community-Driven%20Innovation" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Founder &amp; Tech Lead, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impressum</strong>
+<p>Innovating India&rsquo;s digital infrastructure: AI, IoT, and Full Stack Solutions.<br>
+Some rights reserved. For inquiries, contact: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 15rem">
+                        <div
+                            aria-labelledby="footer-2">
+                            <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Pendiri &amp; Pemimpin Teknologi, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impresium</strong>
+<p>Berinovasi dalam infrastruktur digital India: AI, IoT, dan Solusi Full Stack.<br>
+Beberapa hak dilindungi undang-undang. Untuk pertanyaan, hubungi: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                        </div>
+                        <div id="coffee-counter">
+                            <strong class="section-title">Coffee Stat</strong>
+                            <p>Making this website has taken at least 13 cups of coffee, if not more.</p>
+                        </div>                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key" aria-hidden="true">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" aria-label="Accessibility"
+        data-i18n-optimizeSR="Screen Reader Optimization"
+        data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+        data-i18n-colorSettings="Color Settings"
+        data-i18n-darkMode="Dark Mode"
+        data-i18n-light="Light"
+        data-i18n-dark="Dark"
+        data-i18n-contrast="Contrast"
+        data-i18n-lessContrast="Low"
+        data-i18n-moreContrast="High"
+        data-i18n-defaultContrast="Default"
+        data-i18n-colorPalette="Color Palette"
+        data-i18n-defaultColor="Default"
+        data-i18n-deuteranopia="Deuteranopia"
+        data-i18n-protanopia="Protanopia"
+        data-i18n-tritanopia="Tritanopia"
+        data-i18n-monochrome="Monochrome"
+        data-i18n-fontSize="Font Size"
+        data-i18n-baselineStretch="Baseline Stretch"        
+        data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+        data-i18n-menuControls="Accessibility Menu Controls"
+        data-i18n-save="Save"
+        data-i18n-reset="Reset"
+        data-i18n-close="Close"
+        data-i18n-bionRead="BionRead Mode"
+        data-i18n-focusMode="Focus Mode"
+        data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+        </a>
+    </nav>
+</footer>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</html>

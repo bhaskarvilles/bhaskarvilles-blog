@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JSMON: Revolutionizing JavaScript Security Monitoring | Bhaskar&#39;s Website</title>
+<meta name="author" content="Bhaskar">
+<meta name="description" content="An in-depth look at JSMON, a comprehensive JavaScript security monitoring platform for security enthusiasts and enterprises." >
+<meta name="keywords" content="JSMON,JavaScript Security,Penetration Testing,Bug Bounty,Automation,Cybersecurity">
+<link rel="canonical" href="http://localhost:1313/en/post/2024-09-20-jsmon-sh/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="JSMON: Revolutionizing JavaScript Security Monitoring | Bhaskar&#39;s Website" />
+    <meta name="twitter:description" content="An in-depth look at JSMON, a comprehensive JavaScript security monitoring platform for security enthusiasts and enterprises." />
+        <meta name="twitter:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+        <meta name="twitter:site" content="@@bhaskarvilles" />
+        <meta name="twitter:creator" content="@@bhaskarvilles" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="JSMON: Revolutionizing JavaScript Security Monitoring | Bhaskar&#39;s Website" />
+    <meta property="og:description" content="An in-depth look at JSMON, a comprehensive JavaScript security monitoring platform for security enthusiasts and enterprises." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/2024-09-20-jsmon-sh/" />
+        <meta property="og:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+    <meta property="og:site_name" content="Bhaskar&#39;s Website" /><!-- js.html -->
+
+
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+
+
+
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+    
+</head>
+<body >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/en/" aria-label="Bhaskar&#39;s Website" aria-description="Homepage">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="476pt" aria-label="Bhaskar&#39;s Website">
+            <text id="logotype__text" y="19.5pt" x="0">Bhaskar&#39;s Website</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2 srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="http://localhost:1313/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+                <!-- menu.html -->
+    <menu class="srm">
+        <a id="print-button" class="hide" href="javascript:window.print()" role="button" aria-label="Print">
+            <span class="t srt" role="tooltip">Print</span>
+        </a>
+        <a id="navigatorShare" href="#share" role="button" aria-label="Share">
+            <span class="t srt" role="tooltip">Share</span>
+        </a>
+        <a id="copyPermalink"  href="javascript:navigator.clipboard.writeText(window.location.href)" role="button" aria-label="Copy URL">
+            <span id="copy" class="t srt" role="tooltip">Copy URL</span>
+            <span id="isCopying" style="display: none;">Copying...</span>
+            <span id="copyText" style="display: none;">Copy URL</span>
+        </a>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t srt" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">JSMON: Revolutionizing JavaScript Security Monitoring
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth sf"
+        role="document" aria-labelledby="title"
+            data-pagefind-ignore="all">
+        <header aria-labelledby="title">
+            
+            <!-- title.html -->
+        <hgroup data-bionRead-safe>
+            <h1 id="title"
+                >JSMON: Revolutionizing JavaScript Security Monitoring</h1>
+            <p  class="subtitle"
+                role="doc-subtitle">An in-depth look at JSMON, a comprehensive JavaScript security monitoring platform for security enthusiasts and enterprises.</p>
+        </hgroup>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <h3 id="jsmon-revolutionizing-javascript-security-monitoring">JSMON: Revolutionizing JavaScript Security Monitoring</h3>
+<p>In today’s digital landscape, ensuring the security of JavaScript code across applications has become more important than ever. With increasing complexity in front-end development and APIs, JavaScript files often serve as a vector for attacks, exposing sensitive data and security flaws. <strong>JSMON</strong> (jsmon.sh) has emerged as a leading security monitoring platform that addresses these challenges by providing a robust toolkit for analyzing JavaScript files. Whether you&rsquo;re a bug bounty hunter, penetration tester, or part of a security-focused enterprise, JSMON offers a comprehensive solution to track and manage JS vulnerabilities.</p>
+<p><img src="https://raw.githubusercontent.com/bhaskarvilles/loveit-hugo/fe0b6f7932700548d5477b3181e54af32eb73538/images/jsmon.svg" alt="JSMON"></p>
+<h3 id="what-is-jsmon">What is JSMON?</h3>
+<p>JSMON is a specialized JavaScript monitoring and scanning platform that allows users to extract and analyze JavaScript files from websites or domains. The platform caters to security enthusiasts and professionals by offering detailed insights into JavaScript files that may expose sensitive information like API keys, tokens, GUIDs, emails, and even AWS S3 domains.</p>
+<p>The platform is built to streamline security operations by automating the scanning process. From domain-wide scans to extracting specific JS URLs for analysis, JSMON enables users to continuously monitor and assess JavaScript files for any changes that may introduce new vulnerabilities.</p>
+<h3 id="key-features-of-jsmon">Key Features of JSMON</h3>
+<h4 id="1-javascript-url-extraction">1. <strong>JavaScript URL Extraction</strong></h4>
+<p>JSMON simplifies the process of extracting JavaScript URLs from a domain. By inputting a URL, the platform retrieves a list of JavaScript files associated with that domain, which users can then scan or monitor. The extracted URLs are saved as JSMON units, which can be re-scanned as needed.</p>
+<h4 id="2-comprehensive-scanning-and-monitoring">2. <strong>Comprehensive Scanning and Monitoring</strong></h4>
+<p>JSMON&rsquo;s core feature is its <strong>JS Scanner</strong>, which scans JavaScript files for vulnerabilities, secret exposure, API paths, emails, IP addresses, and a wide range of sensitive data. This scanning service leverages embedded IP rotation to bypass restrictions, ensuring that all available JavaScript resources are assessed.</p>
+<h4 id="3-automation-and-cron-jobs">3. <strong>Automation and Cron Jobs</strong></h4>
+<p>One of the standout features of JSMON is its ability to automate scans using cron jobs. This feature allows users to schedule periodic scans for domains or specific JavaScript files, with notifications sent when vulnerabilities or changes are detected. Automation saves time and ensures continuous security coverage.</p>
+<h4 id="4-jsmon-cli-tool">4. <strong>JSMON CLI Tool</strong></h4>
+<p>For users who prefer working in the terminal, JSMON offers a powerful command-line interface (CLI), <code>jsmon-cli</code>, which mirrors much of the functionality of the web platform. The CLI allows for domain scanning, file uploads, JS URL extraction, and more. With authentication via API key, the CLI becomes an efficient tool for integrating JSMON into larger automated workflows.</p>
+<h4 id="5-reporting-and-alerts">5. <strong>Reporting and Alerts</strong></h4>
+<p>Security teams often need detailed reporting on potential vulnerabilities, and JSMON delivers by generating comprehensive reports. Additionally, JSMON&rsquo;s <strong>notification system</strong> ensures that alerts are sent in real-time when significant vulnerabilities are detected, making it easier for teams to prioritize and address issues immediately.</p>
+<h3 id="the-importance-of-javascript-monitoring">The Importance of JavaScript Monitoring</h3>
+<p>JavaScript is often overlooked in traditional security audits because it operates on the client side, but it can contain hidden risks. API keys, tokens, and even internal logic can be exposed in JavaScript files, leaving applications vulnerable to attacks. JSMON takes these risks seriously and offers a solution to mitigate the possibility of data leakage and unauthorized access by continuously scanning and monitoring JavaScript code for any potential security flaws.</p>
+<h3 id="who-should-use-jsmon">Who Should Use JSMON?</h3>
+<p>JSMON is designed for a range of users, including:</p>
+<ul>
+<li><strong>Bug Bounty Hunters</strong>: Security professionals participating in bug bounty programs can use JSMON to identify JavaScript vulnerabilities quickly and efficiently, improving their chances of finding critical bugs.</li>
+<li><strong>Penetration Testers</strong>: JSMON’s automated and manual tools make it easier for penetration testers to perform thorough security assessments of JavaScript code within their testing scope.</li>
+<li><strong>Enterprises</strong>: Companies that rely on JavaScript-heavy applications can use JSMON to continuously monitor their code for changes and vulnerabilities, ensuring their web presence remains secure.</li>
+</ul>
+<h3 id="how-to-get-started-with-jsmon">How to Get Started with JSMON</h3>
+<p>To begin using JSMON, users can either interact with the web interface or install the <strong>jsmon-cli</strong> tool for more flexible, command-line-based interaction. Installation of the CLI is straightforward, with the tool being available through GitHub, where users can clone and build it from source.</p>
+<p>Once set up, users authenticate via API keys that are generated on the JSMON website, allowing for secure access to the platform’s features from both the web and CLI. From here, users can upload files, scan domains, and schedule automated security scans.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>JSMON has solidified itself as a critical tool in the security professional’s toolkit, offering streamlined, automated solutions to the complex challenge of monitoring JavaScript vulnerabilities. By providing a flexible platform that scales from small websites to enterprise-level applications, JSMON empowers its users to proactively safeguard sensitive data and reduce exposure to attacks. Whether you’re a solo security researcher or part of a larger team, JSMON offers a scalable, efficient way to manage JavaScript security.</p>
+<p>For more information, visit the official JSMON website at <a href="https://jsmon.sh/">jsmon.sh</a>.</p>
+
+        </section>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="JSMON: Revolutionizing JavaScript Security Monitoring">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/2024-09-20-jsmon-sh/">
+        <input id="mastodonText" type="hidden" name="text" value="JSMON: Revolutionizing JavaScript Security Monitoring http://localhost:1313/en/post/2024-09-20-jsmon-sh/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=JSMON%3a%20Revolutionizing%20JavaScript%20Security%20Monitoring&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2024-09-20-jsmon-sh%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=JSMON%3a%20Revolutionizing%20JavaScript%20Security%20Monitoring%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2024-09-20-jsmon-sh%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=JSMON:%20Revolutionizing%20JavaScript%20Security%20Monitoring&amp;url=http://localhost:1313/en/post/2024-09-20-jsmon-sh/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=JSMON:%20Revolutionizing%20JavaScript%20Security%20Monitoring&amp;url=http://localhost:1313/en/post/2024-09-20-jsmon-sh/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/2024-09-20-jsmon-sh/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/2024-09-20-jsmon-sh/&amp;t=JSMON:%20Revolutionizing%20JavaScript%20Security%20Monitoring" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/2024-09-20-jsmon-sh/&amp;title=JSMON:%20Revolutionizing%20JavaScript%20Security%20Monitoring&amp;summary=JSMON:%20Revolutionizing%20JavaScript%20Security%20Monitoring&amp;source=http://localhost:1313/en/post/2024-09-20-jsmon-sh/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/2024-09-20-jsmon-sh/&amp;media=http://localhost:1313/en/post/2024-09-20-jsmon-sh/&amp;description=JSMON:%20Revolutionizing%20JavaScript%20Security%20Monitoring" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/2024-09-20-jsmon-sh/&amp;resubmit=true&amp;title=JSMON:%20Revolutionizing%20JavaScript%20Security%20Monitoring" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=JSMON:%20Revolutionizing%20JavaScript%20Security%20Monitoring&amp;caption=JSMON:%20Revolutionizing%20JavaScript%20Security%20Monitoring&amp;content=http://localhost:1313/en/post/2024-09-20-jsmon-sh/&amp;canonicalUrl=http://localhost:1313/en/post/2024-09-20-jsmon-sh/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=JSMON:%20Revolutionizing%20JavaScript%20Security%20Monitoring&amp;url=http://localhost:1313/en/post/2024-09-20-jsmon-sh/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=JSMON:%20Revolutionizing%20JavaScript%20Security%20Monitoring&amp;url=http://localhost:1313/en/post/2024-09-20-jsmon-sh/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/2024-09-20-jsmon-sh/;title=JSMON:%20Revolutionizing%20JavaScript%20Security%20Monitoring" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Founder &amp; Tech Lead, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impressum</strong>
+<p>Innovating India&rsquo;s digital infrastructure: AI, IoT, and Full Stack Solutions.<br>
+Some rights reserved. For inquiries, contact: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 15rem">
+                        <div
+                            aria-labelledby="footer-2">
+                            <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Pendiri &amp; Pemimpin Teknologi, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impresium</strong>
+<p>Berinovasi dalam infrastruktur digital India: AI, IoT, dan Solusi Full Stack.<br>
+Beberapa hak dilindungi undang-undang. Untuk pertanyaan, hubungi: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                        </div>
+                        <div id="coffee-counter">
+                            <strong class="section-title">Coffee Stat</strong>
+                            <p>Making this website has taken at least 13 cups of coffee, if not more.</p>
+                        </div>                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key" aria-hidden="true">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" aria-label="Accessibility"
+        data-i18n-optimizeSR="Screen Reader Optimization"
+        data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+        data-i18n-colorSettings="Color Settings"
+        data-i18n-darkMode="Dark Mode"
+        data-i18n-light="Light"
+        data-i18n-dark="Dark"
+        data-i18n-contrast="Contrast"
+        data-i18n-lessContrast="Low"
+        data-i18n-moreContrast="High"
+        data-i18n-defaultContrast="Default"
+        data-i18n-colorPalette="Color Palette"
+        data-i18n-defaultColor="Default"
+        data-i18n-deuteranopia="Deuteranopia"
+        data-i18n-protanopia="Protanopia"
+        data-i18n-tritanopia="Tritanopia"
+        data-i18n-monochrome="Monochrome"
+        data-i18n-fontSize="Font Size"
+        data-i18n-baselineStretch="Baseline Stretch"        
+        data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+        data-i18n-menuControls="Accessibility Menu Controls"
+        data-i18n-save="Save"
+        data-i18n-reset="Reset"
+        data-i18n-close="Close"
+        data-i18n-bionRead="BionRead Mode"
+        data-i18n-focusMode="Focus Mode"
+        data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+        </a>
+    </nav>
+</footer>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</html>

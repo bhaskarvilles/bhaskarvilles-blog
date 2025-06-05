@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intercepting Mobile Calls: A Deep Dive into Threats to National Security | Bhaskar&#39;s Website</title>
+<meta name="author" content="Bhaskar">
+<meta name="description" content="An in-depth analysis of how mobile call interception through cell phone towers, home networks, and radio communications poses significant threats to …" >
+<meta name="keywords" content="Cybersecurity,National Security,Mobile Technology,Encryption">
+<link rel="canonical" href="http://localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Intercepting Mobile Calls: A Deep Dive into Threats to National Security | Bhaskar&#39;s Website" />
+    <meta name="twitter:description" content="An in-depth analysis of how mobile call interception through cell phone towers, home networks, and radio communications poses significant threats to …" />
+        <meta name="twitter:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+        <meta name="twitter:site" content="@@bhaskarvilles" />
+        <meta name="twitter:creator" content="@@bhaskarvilles" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="Intercepting Mobile Calls: A Deep Dive into Threats to National Security | Bhaskar&#39;s Website" />
+    <meta property="og:description" content="An in-depth analysis of how mobile call interception through cell phone towers, home networks, and radio communications poses significant threats to …" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/" />
+        <meta property="og:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+    <meta property="og:site_name" content="Bhaskar&#39;s Website" /><!-- js.html -->
+
+
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+
+
+
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+    
+</head>
+<body >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/en/" aria-label="Bhaskar&#39;s Website" aria-description="Homepage">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="476pt" aria-label="Bhaskar&#39;s Website">
+            <text id="logotype__text" y="19.5pt" x="0">Bhaskar&#39;s Website</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2 srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="http://localhost:1313/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+                <!-- menu.html -->
+    <menu class="srm">
+        <a id="print-button" class="hide" href="javascript:window.print()" role="button" aria-label="Print">
+            <span class="t srt" role="tooltip">Print</span>
+        </a>
+        <a id="navigatorShare" href="#share" role="button" aria-label="Share">
+            <span class="t srt" role="tooltip">Share</span>
+        </a>
+        <a id="copyPermalink"  href="javascript:navigator.clipboard.writeText(window.location.href)" role="button" aria-label="Copy URL">
+            <span id="copy" class="t srt" role="tooltip">Copy URL</span>
+            <span id="isCopying" style="display: none;">Copying...</span>
+            <span id="copyText" style="display: none;">Copy URL</span>
+        </a>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t srt" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">Intercepting Mobile Calls: A Deep Dive into Threats to National Security
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth sf"
+        role="document" aria-labelledby="title"
+            data-pagefind-ignore="all">
+        <header aria-labelledby="title">
+            
+            <!-- title.html -->
+        <hgroup data-bionRead-safe>
+            <h1 id="title"
+                >Intercepting Mobile Calls: A Deep Dive into Threats to National Security</h1>
+            <p  class="subtitle"
+                role="doc-subtitle">An in-depth analysis of how mobile call interception through cell phone towers, home networks, and radio communications poses significant threats to national security.</p>
+        </hgroup>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <h2 id="intercepting-mobile-calls-a-deep-dive-into-threats-to-national-security"><strong>Intercepting Mobile Calls: A Deep Dive into Threats to National Security</strong></h2>
+<h3 id="introduction"><strong>Introduction</strong></h3>
+<p>In today’s interconnected world, mobile communication has become the backbone of personal and professional interactions. As mobile networks evolve from 2G to 5G, the need for secure communication channels has never been more critical. However, with advancements in technology, the risk of mobile call interception has also increased, posing significant threats to national security. This blog post explores the technical aspects of mobile call interception, the methods used by malicious actors, and the profound implications these have on national security.</p>
+<hr>
+<blockquote>
+<h2 id="no-system-on-the-internet-is-entirely-secure---bhaskarvilles">&ldquo;No system on the internet is entirely secure.&rdquo; - Bhaskarvilles</h2></blockquote>
+<h3 id="1-the-evolution-of-mobile-communication-networks"><strong>1. The Evolution of Mobile Communication Networks</strong></h3>
+<p>Mobile communication has evolved significantly over the past few decades, from simple voice calls to sophisticated data transfer, video calls, and internet browsing. Understanding the evolution of mobile communication networks is essential to grasp the vulnerabilities that exist in each generation of technology.</p>
+<p><img src="https://img.us.news.samsung.com/us/wp-content/uploads/2022/06/29100121/How-Samsungs-vRAN-Enhances-2G-Tech-for-Next-Generation-Networks-4.png" alt="GSM 2G Networks"></p>
+<h4 id="11-gsm-2g-networks"><strong>1.1 GSM (2G) Networks</strong></h4>
+<p>The Global System for Mobile Communications (GSM), introduced in the early 1990s, was the first digital mobile communication system that gained widespread adoption. While GSM brought numerous advantages over analog systems, it also introduced security vulnerabilities that allowed for call interception.</p>
+<ul>
+<li>
+<p><strong>Architecture</strong>: GSM uses a combination of Time Division Multiple Access (TDMA) and Frequency Division Multiple Access (FDMA) to separate voice channels. The communication between the mobile device and the base station is encrypted using the A5/1 and A5/2 algorithms. However, these encryption methods have been proven to be weak and susceptible to brute-force attacks.</p>
+</li>
+<li>
+<p><strong>Vulnerabilities</strong>: The primary vulnerabilities in GSM networks stem from the weak encryption algorithms and the use of Signaling System No. 7 (SS7) for network interoperability. SS7, despite its critical role in mobile networks, lacks robust security measures, making it a prime target for interception.</p>
+</li>
+</ul>
+<p><img src="https://www.shoghicom.com/resource/images/products/shoghi-lawful-interception-solution-for-cellular-network65.jpg" alt="UMTS 3G NETWORKS"></p>
+<h4 id="12-umts-3g-networks"><strong>1.2 UMTS (3G) Networks</strong></h4>
+<p>The Universal Mobile Telecommunications System (UMTS) was introduced to address the security flaws in GSM networks. UMTS uses stronger encryption algorithms and a more secure authentication process, but it still has its share of vulnerabilities.</p>
+<ul>
+<li>
+<p><strong>Improved Security</strong>: UMTS introduced the KASUMI encryption algorithm, which was designed to be more secure than A5/1 and A5/2. The authentication process in UMTS is also more robust, involving mutual authentication between the mobile device and the network.</p>
+</li>
+<li>
+<p><strong>Vulnerabilities</strong>: Despite these improvements, UMTS is not immune to interception. The backward compatibility with GSM networks means that attackers can force a mobile device to downgrade to GSM, where the encryption is weaker, making interception easier.</p>
+</li>
+</ul>
+<p><img src="https://www.yaanatech.com/wp-content/uploads/2020/05/Simplified-LTE-IMS-Network.jpg" alt="LTE 4G Interception"></p>
+<h4 id="13-lte-4g-networks"><strong>1.3 LTE (4G) Networks</strong></h4>
+<p>Long-Term Evolution (LTE) networks brought significant improvements in speed and security. LTE uses the Diameter protocol instead of SS7 and employs strong encryption algorithms like AES (Advanced Encryption Standard).</p>
+<ul>
+<li>
+<p><strong>Enhanced Security</strong>: LTE&rsquo;s security framework is based on the Evolved Packet System (EPS) and includes features like Non-Access Stratum (NAS) encryption and integrity protection. These features make LTE more secure than its predecessors.</p>
+</li>
+<li>
+<p><strong>Vulnerabilities</strong>: While LTE is more secure, it is still vulnerable to certain types of attacks, such as IMSI catching and man-in-the-middle (MITM) attacks. The Diameter protocol, although more secure than SS7, has its own set of vulnerabilities that can be exploited for interception.</p>
+</li>
+</ul>
+<p><img src="https://blogassets.airtel.in/wp-content/uploads/2022/02/everything-5g-2.jpg" alt="5G Network"></p>
+<h4 id="14-5g-networks"><strong>1.4 5G Networks</strong></h4>
+<p>The fifth generation of mobile networks, 5G, promises even greater security features along with faster speeds and lower latency. 5G introduces new encryption algorithms and a more complex network architecture.</p>
+<ul>
+<li>
+<p><strong>Advanced Security</strong>: 5G networks use the 256-bit AES encryption algorithm and have improved mutual authentication processes. The introduction of network slicing and software-defined networking (SDN) adds layers of security to the network.</p>
+</li>
+<li>
+<p><strong>Potential Vulnerabilities</strong>: Despite these advancements, 5G is not foolproof. The complexity of 5G networks introduces new attack vectors, such as vulnerabilities in network slicing and SDN components. Additionally, the backward compatibility with 4G and 3G networks means that older vulnerabilities could still be exploited.</p>
+</li>
+</ul>
+<hr>
+<h3 id="2-technical-background-key-communication-protocols"><strong>2. Technical Background: Key Communication Protocols</strong></h3>
+<p>To understand how mobile call interception occurs, it&rsquo;s essential to delve into the communication protocols that govern mobile networks. These protocols are the backbone of mobile communication, and their vulnerabilities can be exploited by malicious actors.</p>
+<h4 id="21-ss7-protocol"><strong>2.1 SS7 Protocol</strong></h4>
+<p>Signaling System No. 7 (SS7) is a set of telephony signaling protocols used to set up and tear down telephone calls in most of the world&rsquo;s public switched telephone networks (PSTN). Despite being a crucial component of mobile networks, SS7 is inherently insecure.</p>
+<ul>
+<li>
+<p><strong>SS7 Vulnerabilities</strong>: SS7 was designed in the 1970s when security was not a primary concern. As a result, it lacks robust authentication mechanisms, making it susceptible to various attacks, including eavesdropping, SMS interception, and call forwarding.</p>
+</li>
+<li>
+<p><strong>Exploitation for Interception</strong>: Attackers can exploit SS7 vulnerabilities by gaining unauthorized access to the SS7 network. This allows them to intercept calls and SMS messages, track the location of mobile users, and even redirect calls to other numbers.</p>
+</li>
+</ul>
+<h4 id="22-diameter-protocol"><strong>2.2 Diameter Protocol</strong></h4>
+<p>The Diameter protocol was introduced as a replacement for SS7 in 4G networks. It is used for authentication, authorization, and accounting (AAA) in LTE and 5G networks.</p>
+<ul>
+<li>
+<p><strong>Security Features</strong>: Diameter includes several security features, such as support for IPsec and TLS for securing communication between nodes. However, it also has its vulnerabilities.</p>
+</li>
+<li>
+<p><strong>Vulnerabilities</strong>: Diameter&rsquo;s complexity and the need for backward compatibility with SS7 mean that it can still be exploited for interception. Attackers can manipulate the protocol to perform MITM attacks, reroute traffic, or cause denial-of-service (DoS) attacks.</p>
+</li>
+</ul>
+<h4 id="23-sip-and-voip-protocols"><strong>2.3 SIP and VoIP Protocols</strong></h4>
+<p>The Session Initiation Protocol (SIP) is widely used for initiating, maintaining, and terminating real-time sessions, such as voice and video calls over IP networks. VoIP (Voice over IP) uses SIP for call setup and teardown.</p>
+<ul>
+<li>
+<p><strong>SIP Vulnerabilities</strong>: SIP is susceptible to several types of attacks, including SIP hijacking, where an attacker takes control of a session, and MITM attacks, where an attacker intercepts the communication.</p>
+</li>
+<li>
+<p><strong>Interception Techniques</strong>: Attackers can exploit SIP vulnerabilities to intercept VoIP calls, manipulate call data, or impersonate participants in the call. These attacks can be particularly dangerous in environments where VoIP is used for sensitive communications.</p>
+</li>
+</ul>
+<hr>
+<h3 id="3-methods-of-mobile-call-interception"><strong>3. Methods of Mobile Call Interception</strong></h3>
+<p>Mobile call interception can be achieved through various methods, each exploiting different vulnerabilities in the communication network. In this section, we will explore some of the most common and advanced interception techniques.</p>
+<h4 id="31-imsi-catchers-stingrays"><strong>3.1 IMSI Catchers (Stingrays)</strong></h4>
+<p>IMSI catchers, commonly known as Stingrays, are devices that mimic legitimate cell towers to intercept mobile communications. They are widely used by law enforcement agencies, but they can also be used by malicious actors.</p>
+<ul>
+<li>
+<p><strong>How IMSI Catchers Work</strong>: IMSI catchers work by broadcasting a stronger signal than nearby legitimate cell towers, tricking mobile devices into connecting to them. Once connected, the IMSI catcher can intercept calls, SMS messages, and other data.</p>
+</li>
+<li>
+<p><strong>Detection and Countermeasures</strong>: Detecting IMSI catchers is challenging because they operate in a way that is similar to legitimate cell towers. However, advanced detection tools and methods are being developed to identify and neutralize IMSI catchers.</p>
+</li>
+</ul>
+<h4 id="32-baseband-attacks"><strong>3.2 Baseband Attacks</strong></h4>
+<p>Baseband processors in mobile devices handle communication with the cellular network. These processors run their own firmware, which can be vulnerable to exploitation.</p>
+<ul>
+<li>
+<p><strong>Exploiting Baseband Processors</strong>: Attackers can exploit vulnerabilities in baseband processors to gain control of the mobile device&rsquo;s communication functions. This allows them to intercept calls, SMS messages, and data transmissions.</p>
+</li>
+<li>
+<p><strong>Advanced Techniques</strong>: Baseband attacks are highly sophisticated and often require in-depth knowledge of the target device&rsquo;s hardware and software. These attacks are typically carried out by state-sponsored actors or highly skilled hackers.</p>
+</li>
+</ul>
+<h4 id="33-femtocells-and-home-network-interception"><strong>3.3 Femtocells and Home Network Interception</strong></h4>
+<p>Femtocells are small cellular base stations used to improve coverage in homes and small businesses. While they offer convenience, they also present security risks.</p>
+<ul>
+<li>
+<p><strong>Femtocell Vulnerabilities</strong>: Femtocells can be compromised by attackers to intercept calls and data passing through them. Once compromised, a femtocell can be used to conduct MITM attacks or to eavesdrop on communications.</p>
+</li>
+<li>
+<p><strong>Interception via Home Networks</strong>: Attackers can also exploit vulnerabilities in home Wi-Fi networks to intercept VoIP calls. Techniques such as ARP spoofing and rogue access points are commonly used to intercept and manipulate traffic on home networks.</p>
+</li>
+</ul>
+<h4 id="34-radio-frequency-rf-interception"><strong>3.4 Radio Frequency (RF) Interception</strong></h4>
+<p>Radio Frequency (RF) interception involves capturing and decoding the radio signals used in mobile communications. This method is often used in military and intelligence operations but can also be employed by malicious actors.</p>
+<ul>
+<li><strong>RF Signal Jamming and Eavesdropping</strong>: Attackers can use RF jammers to disrupt legitimate communication channels, forcing mobile devices to communicate on less secure frequencies. They can then use RF eavesdropping equipment to intercept and decode these signals.</li>
+</ul>
+<p><img src="https://spectrum.ieee.org/media-library/software-defined-radio-kit.jpg?id=25572832&amp;width=1200&amp;height=600&amp;coordinates=0%2C155%2C0%2C155" alt="Software Defined Radio"></p>
+<ul>
+<li><strong>Software-Defined Radio (SDR) Attacks</strong>: Software-Defined Radio (SDR) technology allows attackers to capture and analyze a wide range of RF signals.</li>
+</ul>
+
+        </section>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="Intercepting Mobile Calls: A Deep Dive into Threats to National Security">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/">
+        <input id="mastodonText" type="hidden" name="text" value="Intercepting Mobile Calls: A Deep Dive into Threats to National Security http://localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=Intercepting%20Mobile%20Calls%3a%20A%20Deep%20Dive%20into%20Threats%20to%20National%20Security&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2024-08-14-intercepting-phone-technologies%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=Intercepting%20Mobile%20Calls%3a%20A%20Deep%20Dive%20into%20Threats%20to%20National%20Security%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2024-08-14-intercepting-phone-technologies%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=Intercepting%20Mobile%20Calls:%20A%20Deep%20Dive%20into%20Threats%20to%20National%20Security&amp;url=http://localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=Intercepting%20Mobile%20Calls:%20A%20Deep%20Dive%20into%20Threats%20to%20National%20Security&amp;url=http://localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/&amp;t=Intercepting%20Mobile%20Calls:%20A%20Deep%20Dive%20into%20Threats%20to%20National%20Security" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/&amp;title=Intercepting%20Mobile%20Calls:%20A%20Deep%20Dive%20into%20Threats%20to%20National%20Security&amp;summary=Intercepting%20Mobile%20Calls:%20A%20Deep%20Dive%20into%20Threats%20to%20National%20Security&amp;source=http://localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/&amp;media=http://localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/&amp;description=Intercepting%20Mobile%20Calls:%20A%20Deep%20Dive%20into%20Threats%20to%20National%20Security" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/&amp;resubmit=true&amp;title=Intercepting%20Mobile%20Calls:%20A%20Deep%20Dive%20into%20Threats%20to%20National%20Security" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Intercepting%20Mobile%20Calls:%20A%20Deep%20Dive%20into%20Threats%20to%20National%20Security&amp;caption=Intercepting%20Mobile%20Calls:%20A%20Deep%20Dive%20into%20Threats%20to%20National%20Security&amp;content=http://localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/&amp;canonicalUrl=http://localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=Intercepting%20Mobile%20Calls:%20A%20Deep%20Dive%20into%20Threats%20to%20National%20Security&amp;url=http://localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=Intercepting%20Mobile%20Calls:%20A%20Deep%20Dive%20into%20Threats%20to%20National%20Security&amp;url=http://localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/;title=Intercepting%20Mobile%20Calls:%20A%20Deep%20Dive%20into%20Threats%20to%20National%20Security" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Founder &amp; Tech Lead, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impressum</strong>
+<p>Innovating India&rsquo;s digital infrastructure: AI, IoT, and Full Stack Solutions.<br>
+Some rights reserved. For inquiries, contact: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 15rem">
+                        <div
+                            aria-labelledby="footer-2">
+                            <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Pendiri &amp; Pemimpin Teknologi, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impresium</strong>
+<p>Berinovasi dalam infrastruktur digital India: AI, IoT, dan Solusi Full Stack.<br>
+Beberapa hak dilindungi undang-undang. Untuk pertanyaan, hubungi: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                        </div>
+                        <div id="coffee-counter">
+                            <strong class="section-title">Coffee Stat</strong>
+                            <p>Making this website has taken at least 13 cups of coffee, if not more.</p>
+                        </div>                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key" aria-hidden="true">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" aria-label="Accessibility"
+        data-i18n-optimizeSR="Screen Reader Optimization"
+        data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+        data-i18n-colorSettings="Color Settings"
+        data-i18n-darkMode="Dark Mode"
+        data-i18n-light="Light"
+        data-i18n-dark="Dark"
+        data-i18n-contrast="Contrast"
+        data-i18n-lessContrast="Low"
+        data-i18n-moreContrast="High"
+        data-i18n-defaultContrast="Default"
+        data-i18n-colorPalette="Color Palette"
+        data-i18n-defaultColor="Default"
+        data-i18n-deuteranopia="Deuteranopia"
+        data-i18n-protanopia="Protanopia"
+        data-i18n-tritanopia="Tritanopia"
+        data-i18n-monochrome="Monochrome"
+        data-i18n-fontSize="Font Size"
+        data-i18n-baselineStretch="Baseline Stretch"        
+        data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+        data-i18n-menuControls="Accessibility Menu Controls"
+        data-i18n-save="Save"
+        data-i18n-reset="Reset"
+        data-i18n-close="Close"
+        data-i18n-bionRead="BionRead Mode"
+        data-i18n-focusMode="Focus Mode"
+        data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+        </a>
+    </nav>
+</footer>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</html>

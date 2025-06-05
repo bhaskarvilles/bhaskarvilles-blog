@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creating a Wi-Fi Scanner with Python and Scapy | Bhaskar&#39;s Website</title>
+<meta name="author" content="Bhaskar">
+<meta name="description" content="Wi-Fi Hacking: Creating a Wi-Fi Scanner with Python and Scapy Although there are numerous tools to hack Wi-Fi (802.11), to create your own tools you …" >
+<link rel="canonical" href="http://localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Creating a Wi-Fi Scanner with Python and Scapy | Bhaskar&#39;s Website" />
+    <meta name="twitter:description" content="Wi-Fi Hacking: Creating a Wi-Fi Scanner with Python and Scapy Although there are numerous tools to hack Wi-Fi (802.11), to create your own tools you …" />
+        <meta name="twitter:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+        <meta name="twitter:site" content="@@bhaskarvilles" />
+        <meta name="twitter:creator" content="@@bhaskarvilles" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="Creating a Wi-Fi Scanner with Python and Scapy | Bhaskar&#39;s Website" />
+    <meta property="og:description" content="Wi-Fi Hacking: Creating a Wi-Fi Scanner with Python and Scapy Although there are numerous tools to hack Wi-Fi (802.11), to create your own tools you …" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/" />
+        <meta property="og:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+    <meta property="og:site_name" content="Bhaskar&#39;s Website" /><!-- js.html -->
+
+
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+
+
+
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+    
+</head>
+<body >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/en/" aria-label="Bhaskar&#39;s Website" aria-description="Homepage">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="476pt" aria-label="Bhaskar&#39;s Website">
+            <text id="logotype__text" y="19.5pt" x="0">Bhaskar&#39;s Website</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2 srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="http://localhost:1313/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+                <!-- menu.html -->
+    <menu class="srm">
+        <a id="print-button" class="hide" href="javascript:window.print()" role="button" aria-label="Print">
+            <span class="t srt" role="tooltip">Print</span>
+        </a>
+        <a id="navigatorShare" href="#share" role="button" aria-label="Share">
+            <span class="t srt" role="tooltip">Share</span>
+        </a>
+        <a id="copyPermalink"  href="javascript:navigator.clipboard.writeText(window.location.href)" role="button" aria-label="Copy URL">
+            <span id="copy" class="t srt" role="tooltip">Copy URL</span>
+            <span id="isCopying" style="display: none;">Copying...</span>
+            <span id="copyText" style="display: none;">Copy URL</span>
+        </a>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t srt" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">Creating a Wi-Fi Scanner with Python and Scapy
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth sf"
+        role="document" aria-labelledby="title"
+            data-pagefind-ignore="all">
+        <header aria-labelledby="title">
+            
+            <!-- title.html -->
+        <h1 id="title"
+            data-bionRead-safe
+            >Creating a Wi-Fi Scanner with Python and Scapy</h1>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <h3 id="wi-fi-hacking-creating-a-wi-fi-scanner-with-python-and-scapy">Wi-Fi Hacking: Creating a Wi-Fi Scanner with Python and Scapy</h3>
+<p>Although there are numerous tools to hack Wi-Fi (802.11), to create your own tools you will need to understand the Wi-Fi protocol. In a previous tutorial, I explained the various types of frames in Wi-Fi. Now we will use that information to crate our own Wi-Fi scanner very similar to the aircrack-ng suite&rsquo;s airmon-ng or Kismet.</p>
+<p><img src="https://rashahacks.com/content/images/2022/11/6a4a49_7a739a0a2f1d4d2aaadc442e2142fd44-mv2.webp" alt="alt"></p>
+<p>To begin, we will need to understand a bit about scapy. Scapy was written in Python and can  forge or decode packets, send them on the wire, capture them, and match requests and replies. It can also handle tasks like scanning, tracerouting, probing, unit tests, attacks, and network discovery. Scapy provides an interface to libpcap, the same library that Wireshark uses for packet capture and visualization. Scapy enables us then to grab packets and analyze for them for particular fields. So, for instance, if we were looking for beacon frames from an AP, we could filter for those with type 0 and subtype 8
+This frame includes a variety of information including;</p>
+<ul>
+<li>Channel</li>
+<li>BSSID</li>
+<li>Type of Encryption</li>
+<li>SSID</li>
+</ul>
+<p>If we can grab these frames and parse out this information, we will create a scanner that acts similar to kismet or airodump-ng as seen below.
+<img src="https://rashahacks.com/content/images/2022/11/6a4a49_713c08d40a31490cbc320ab26281cd88-mv2.webp" alt="alt">
+To keep things simple in this first script, we will create a scanner that captures and displays just the channel, BSSID, encryption and SSID.
+Step #1: Select a Text Editor or IDE
+To write your scripts you will need a text editor. Any text editor is fine such as leafpad, vim, gedit, vi, kate, etc. Scripting with an IDE such as PyCharm can be very helpful once you learn to use it.
+In this tutorial, I&rsquo;ll be using Kate which is simple text editor with some IDE capabilities useful for python such as indent checking and color coding syntax. If your system doesn&rsquo;t have it installed, you can get it from the Kali repository by entering;
+Kali &gt; apt install kate
+Step #2: Let&rsquo;s Start Coding
+Let&rsquo;s get started. Start a new project in Kate (or other IDE or text editor). Name the project &ldquo;wifi-scanner.py&rdquo;. If you are unfamiliar with Python check out the following basic tutorials with Python to acquire the necessary background.
+The first thing we need to do with any Python script is to tell the system what interpreter we want to use and then import all the necessary modules. In this case we will need the scapy, sys, signal and os modules. To import scapy, you need to enter;
+from scapy.all import *
+If you haven&rsquo;t installed scapy, you will need to do so. You can enter;
+kali &gt; git clone <a href="https://github.com/secdev/scapy.git">https://github.com/secdev/scapy.git</a>
+kali &gt; cd scapy
+kali &gt; sudo python setup.py install
+<img src="https://rashahacks.com/content/images/2022/11/6a4a49_94eb2dd28b3340b79503d15527876b8d-mv2.webp" alt="alt">
+Step #3: Create a Function to Terminate the Script at Ctrl+C
+The next step is to create function that will exit the script if the user chooses to terminate it with a Crtl+C and provide the user with an appropriate message.
+<img src="https://rashahacks.com/content/images/2022/11/6a4a49_a944ce1fb7ff4d369216d3a24b0ea9b0-mv2.webp" alt="alt">
+Step #4: Create a Function to Exit
+<img src="https://rashahacks.com/content/images/2022/11/6a4a49_2ea9bfc8b8a84664ad501479a9417702-mv2.webp" alt="alt">
+Step #5 Create a Function that reminds the user of the Basic Syntax, if they enter it incorrectly
+The basic syntax for this script is;
+python ./WiFiScanner -i <interface>`
+This function checks the user&rsquo;s syntax and if incorrect, provides a simple message informing the user of the proper syntax.
+<img src="https://rashahacks.com/content/images/2022/11/6a4a49_cd003868a33f4788b2048bdd30a5102e-mv2.webp" alt="alt">
+Step #6 Create a Function to Sniff packets
+In this function, we will use scapy to sniff the wireless packets.</p>
+<p><img src="https://rashahacks.com/content/images/2022/11/6a4a49_8e5d1918d65f4f09aab42df675691d73-mv2.webp" alt="alt">
+Step #7: Check Whether Packets Contain the Beacon Frame
+In the previous step, we started sniffing packets. In this step, we check to see whether the sniffed frames are beacon frames. As we learned in the Anatomy of Wi-Fi, beacon frames are denoted by type = 0 and subtype =8.</p>
+<p>Step #8: Create a Function to Track Discovered SSID&rsquo;s
+Next, we create a function to track the discovered SSID&rsquo;s. In this way, we make certain that we are not duplicating discovered SSID&rsquo;s in our display.
+<img src="https://rashahacks.com/content/images/2022/11/6a4a49_8940600ee63b41a99b6abce9ad9528ab-mv2.webp" alt="alt">
+Step #9: Create a Function to place the Wireless Interface in monitor mode
+This next function simply take the wireless interface and places it in monitor mode. In Wi-Fi, monitor mode is similar to promiscuous mode in wired NIC&rsquo;s. This allows the interface to &ldquo;see&rdquo; all the Wi-Fi traffic.
+<img src="https://rashahacks.com/content/images/2022/11/6a4a49_8e5d1918d65f4f09aab42df675691d73-mv2.webp" alt="alt">
+Step #10: Create a function to Check if User is root
+For scapy requires that the user have root privileges to function properly. Our next function checks to see whether the userid=0 (root). In Linux, the root user us assigned UserID = 0. If not, it displays a message that the user must be root to run this script successfully.
+<img src="https://rashahacks.com/content/images/2022/11/6a4a49_d33850fe6c83425bbb40d240c0715275-mv2.webp" alt="alt">
+Step #11 Main Code Body
+Now we enter the main code body where we will be executing each of the defined functions from above.
+<img src="https://rashahacks.com/content/images/2022/11/6a4a49_440995ba09ad4e5d80c2127d48190c25-mv2.webp" alt="alt">
+Step #12: Execute the Script
+Make certain to save your script as &ldquo;HackersAriseWiFiScanner&rdquo; and give yourself execute permissions (chmod 755).
+To execute your Wi-Fi scanner, enter;
+kali &gt; python ./WiFiScanner -i wlan0
+<img src="https://rashahacks.com/content/images/2022/11/6a4a49_2ebc01ce0fb546c5a3578dc72cbfe4fb-mv2.webp" alt="alt">
+As you can see, the script is able to find all the Wi-Fi AP&rsquo;s in range and display key information you will need to hack them!</p>
+<h2 id="summary">Summary</h2>
+<p>This simple script  uses the functionality of scapy to sniff Wi-Fi beacon frames to display all the Wi-Fi AP&rsquo;s in range with their channel, BSSID, type of encryption and SSID. You can now use this information to hack the Wi-Fi AP using one of the methods found here.
+This is a first step toward developing your very own Wi-Fi hacking tool !</p>
+
+        </section>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="Creating a Wi-Fi Scanner with Python and Scapy">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/">
+        <input id="mastodonText" type="hidden" name="text" value="Creating a Wi-Fi Scanner with Python and Scapy http://localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=Creating%20a%20Wi-Fi%20Scanner%20with%20Python%20and%20Scapy&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2022-11-09-creating-your-own-wifi-scanner%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=Creating%20a%20Wi-Fi%20Scanner%20with%20Python%20and%20Scapy%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2022-11-09-creating-your-own-wifi-scanner%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=Creating%20a%20Wi-Fi%20Scanner%20with%20Python%20and%20Scapy&amp;url=http://localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=Creating%20a%20Wi-Fi%20Scanner%20with%20Python%20and%20Scapy&amp;url=http://localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/&amp;t=Creating%20a%20Wi-Fi%20Scanner%20with%20Python%20and%20Scapy" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/&amp;title=Creating%20a%20Wi-Fi%20Scanner%20with%20Python%20and%20Scapy&amp;summary=Creating%20a%20Wi-Fi%20Scanner%20with%20Python%20and%20Scapy&amp;source=http://localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/&amp;media=http://localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/&amp;description=Creating%20a%20Wi-Fi%20Scanner%20with%20Python%20and%20Scapy" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/&amp;resubmit=true&amp;title=Creating%20a%20Wi-Fi%20Scanner%20with%20Python%20and%20Scapy" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Creating%20a%20Wi-Fi%20Scanner%20with%20Python%20and%20Scapy&amp;caption=Creating%20a%20Wi-Fi%20Scanner%20with%20Python%20and%20Scapy&amp;content=http://localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/&amp;canonicalUrl=http://localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=Creating%20a%20Wi-Fi%20Scanner%20with%20Python%20and%20Scapy&amp;url=http://localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=Creating%20a%20Wi-Fi%20Scanner%20with%20Python%20and%20Scapy&amp;url=http://localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/;title=Creating%20a%20Wi-Fi%20Scanner%20with%20Python%20and%20Scapy" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Founder &amp; Tech Lead, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impressum</strong>
+<p>Innovating India&rsquo;s digital infrastructure: AI, IoT, and Full Stack Solutions.<br>
+Some rights reserved. For inquiries, contact: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 15rem">
+                        <div
+                            aria-labelledby="footer-2">
+                            <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Pendiri &amp; Pemimpin Teknologi, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impresium</strong>
+<p>Berinovasi dalam infrastruktur digital India: AI, IoT, dan Solusi Full Stack.<br>
+Beberapa hak dilindungi undang-undang. Untuk pertanyaan, hubungi: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                        </div>
+                        <div id="coffee-counter">
+                            <strong class="section-title">Coffee Stat</strong>
+                            <p>Making this website has taken at least 13 cups of coffee, if not more.</p>
+                        </div>                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key" aria-hidden="true">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" aria-label="Accessibility"
+        data-i18n-optimizeSR="Screen Reader Optimization"
+        data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+        data-i18n-colorSettings="Color Settings"
+        data-i18n-darkMode="Dark Mode"
+        data-i18n-light="Light"
+        data-i18n-dark="Dark"
+        data-i18n-contrast="Contrast"
+        data-i18n-lessContrast="Low"
+        data-i18n-moreContrast="High"
+        data-i18n-defaultContrast="Default"
+        data-i18n-colorPalette="Color Palette"
+        data-i18n-defaultColor="Default"
+        data-i18n-deuteranopia="Deuteranopia"
+        data-i18n-protanopia="Protanopia"
+        data-i18n-tritanopia="Tritanopia"
+        data-i18n-monochrome="Monochrome"
+        data-i18n-fontSize="Font Size"
+        data-i18n-baselineStretch="Baseline Stretch"        
+        data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+        data-i18n-menuControls="Accessibility Menu Controls"
+        data-i18n-save="Save"
+        data-i18n-reset="Reset"
+        data-i18n-close="Close"
+        data-i18n-bionRead="BionRead Mode"
+        data-i18n-focusMode="Focus Mode"
+        data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+        </a>
+    </nav>
+</footer>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</html>

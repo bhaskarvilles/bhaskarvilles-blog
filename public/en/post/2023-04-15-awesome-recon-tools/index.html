@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tools for reconnaissance and footprinting | Bhaskar&#39;s Website</title>
+<meta name="author" content="Bhaskar">
+<meta name="description" content="Recon Tools A compiled list of tools for reconnaissance and footprinting.
+Contents Domain and Network Recon - Tools for grabbing network related …" >
+<link rel="canonical" href="http://localhost:1313/en/post/2023-04-15-awesome-recon-tools/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tools for reconnaissance and footprinting | Bhaskar&#39;s Website" />
+    <meta name="twitter:description" content="Recon Tools A compiled list of tools for reconnaissance and footprinting.
+Contents Domain and Network Recon - Tools for grabbing network related …" />
+        <meta name="twitter:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+        <meta name="twitter:site" content="@@bhaskarvilles" />
+        <meta name="twitter:creator" content="@@bhaskarvilles" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="Tools for reconnaissance and footprinting | Bhaskar&#39;s Website" />
+    <meta property="og:description" content="Recon Tools A compiled list of tools for reconnaissance and footprinting.
+Contents Domain and Network Recon - Tools for grabbing network related …" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/2023-04-15-awesome-recon-tools/" />
+        <meta property="og:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+    <meta property="og:site_name" content="Bhaskar&#39;s Website" /><!-- js.html -->
+
+
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+
+
+
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+    
+</head>
+<body >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/en/" aria-label="Bhaskar&#39;s Website" aria-description="Homepage">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="476pt" aria-label="Bhaskar&#39;s Website">
+            <text id="logotype__text" y="19.5pt" x="0">Bhaskar&#39;s Website</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2 srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="http://localhost:1313/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+                <!-- menu.html -->
+    <menu class="srm">
+        <a id="print-button" class="hide" href="javascript:window.print()" role="button" aria-label="Print">
+            <span class="t srt" role="tooltip">Print</span>
+        </a>
+        <a id="navigatorShare" href="#share" role="button" aria-label="Share">
+            <span class="t srt" role="tooltip">Share</span>
+        </a>
+        <a id="copyPermalink"  href="javascript:navigator.clipboard.writeText(window.location.href)" role="button" aria-label="Copy URL">
+            <span id="copy" class="t srt" role="tooltip">Copy URL</span>
+            <span id="isCopying" style="display: none;">Copying...</span>
+            <span id="copyText" style="display: none;">Copy URL</span>
+        </a>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t srt" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">Tools for reconnaissance and footprinting
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth sf"
+        role="document" aria-labelledby="title"
+            data-pagefind-ignore="all">
+        <header aria-labelledby="title">
+            
+            <!-- title.html -->
+        <h1 id="title"
+            data-bionRead-safe
+            >Tools for reconnaissance and footprinting</h1>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <h1 id="recon-tools">Recon Tools</h1>
+<p>A compiled list of tools for reconnaissance and footprinting.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li>
+<p><a href="#Domain-and-Network-Recon">Domain and Network Recon</a> - Tools for grabbing network related information.</p>
+</li>
+<li>
+<p><a href="#Personal-Information-and-Email-Footprinting">Personal Information and Email Footprinting</a> - Tools for finding personal information such as social networks and emails as well as footprinting tools for mail.</p>
+</li>
+<li>
+<p><a href="#Hacking-with-Google">Hacking with Google</a> - Use Google commands to your advantage</p>
+</li>
+</ul>
+<h2 id="domain-and-network-recon">Domain and Network Recon</h2>
+<blockquote>
+<p>Robust tools for gathering domain and network information.</p></blockquote>
+<h3 id="programs-and-web-applications">Programs and Web Applications</h3>
+<ul>
+<li>
+<p><a href="https://arin.net/about/welcom/region">ARIN Whois/RDAP</a> - A public resource that allows a user to retrieve information about IP number resources, organizations, and Points of Contact registered with ARIN.</p>
+</li>
+<li>
+<p><a href="https://github.com/michenriksen/aquatone">Aquatone</a> - A tool for visual inspection of websites across a large amount of hosts. Very convenient for quickly gaining an overview of HTTP-based attack surfaces.</p>
+</li>
+<li>
+<p><a href="http://sabsoft.com">Batch IP Converter</a> - An award-winning network tool to work with IP addresses. Domain-to-IP Converter, Batch Ping, Tracert, Whois, and more.</p>
+</li>
+<li>
+<p><a href="https://builtwith.com">BuiltWith</a> - Scans for over 46,953 different web technologies. Discover what tools a site uses such as shopping carts, hosting, analytics, and more.</p>
+</li>
+<li>
+<p><a href="https://censys.io">Censys</a> - Mines a global internet dataset to enumerate assets that may compromise an attack surface.</p>
+</li>
+<li>
+<p><a href="https://github.com/DataSploit/datasploit">DataSploit</a> - Performs automated OSINT on a domain/email/username/phone and finds relevant information from different sources.</p>
+</li>
+<li>
+<p><a href="https://dnsdumpster.com">DNSDumpster</a> - Can discover hosts related to a domain. Map an organizations attack surface with a virtual &ldquo;dumpster dive.&rdquo;</p>
+</li>
+<li>
+<p><a href="https://whois.domaintools.com">Domaintools</a> - Find Whois information quickly and easily including registrar, name servers, and etc.</p>
+</li>
+<li>
+<p><a href="https://findsubdomains.com">FindSubDomains</a> - From Spyse. Awesome tool to find subdomains.</p>
+</li>
+<li>
+<p><a href="https://firecompass.com">FireCompass</a> - Discovers and organization&rsquo;s digital attack surface.</p>
+</li>
+<li>
+<p><a href="https://website.informer.com/">Informer</a> - Retrieves a quick aggregated view of everything the Web can promptly tell you about a site.</p>
+</li>
+<li>
+<p><a href="https://maltego.com">Maltego</a> - Open Source Intelligence (OSINT) and graphical link analysis tool for gathering and connecting information for investigative tasks.</p>
+</li>
+<li>
+<p><a href="https://netcraft.com">Netcraft</a> - Multiple tools from site report to DNS search.</p>
+</li>
+<li>
+<p><a href="https://network-tools.com">Professional Toolset</a> - Ping, Tracert, HTTP Headers, and more!</p>
+</li>
+<li>
+<p><a href="https://shodan.io">Shodan</a> - Shodan has servers around the world that crawl the internet 24/7 to provide the latest internet intelligence.</p>
+</li>
+<li>
+<p><a href="https://www.spiderfoot.net/">SpiderFoot</a> - Automated OSINT collection!</p>
+</li>
+<li>
+<p><a href="https://solarwinds.com/free-tools/traceroute-ng">Traceroute NG</a> - Continuous probing, detects path changes, supports IPv4 &amp; IPv6, Creates a txt logfile.</p>
+</li>
+<li>
+<p><a href="https://pentest-tools.com/website-vulnerability-scanning/discover-hidden-directories-and-files#">URL Fuzzer</a> - Free light scan for hidden files and directories.</p>
+</li>
+<li>
+<p><a href="http://www.visualroute.com">VisualRoute</a> - Continuous trace routing, reverse tracing, port probing, route analysis, and much more!</p>
+</li>
+<li>
+<p><a href="https://yougetsignal.com">You Get Signal</a> - Port forwarding, network location, visual trace route, reverse IP domain check, and more!</p>
+</li>
+<li>
+<p><a href="https://www.wappalyzer.com">Wappalyzer</a> - Identify technologies on websites. Find out the technology stack of any website.</p>
+</li>
+<li>
+<p><a href="https://github.com/wereallfeds/webshag">WebShag</a> - Multi-threaded, multi-platform web server audit tool. Gathers useful functionalities for web server auditing like website crawling, URL scanning, or file fuzzing.</p>
+</li>
+<li>
+<p><a href="https://wireshark.org">Wireshark</a> - The world&rsquo;s foremost and widely-used network protocol analyzer.</p>
+</li>
+<li>
+<p><a href="https://whois.net">Whois.net</a> - Quick and easy Whois lookup. Domain name search, registration and availability, and more.</p>
+</li>
+</ul>
+<h3 id="windows-cli">Windows CLI</h3>
+<ul>
+<li>
+<p><a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup">nslookup</a> - Command-line tool for querying the Domain Name System to obtain name or IP address mapping and other DNS records.</p>
+</li>
+<li>
+<p><a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/tracert">tracert</a> - Commmand-line tool for displaying a route and measuring transit delays of packets across an Internal Protocol network.</p>
+</li>
+</ul>
+<h3 id="linux-cli--kali">Linux CLI // Kali</h3>
+<ul>
+<li>
+<p><a href="https://linuxhandbook.com/dig-command/">dig</a> - Domain Information Groper - Queries the DNS of a given server.</p>
+</li>
+<li>
+<p><a href="https://tools.kali.org/information-gathering/dnsrecon">dnsrecon</a> - Check NS Records for Zone Transfers, enumerate general DNS records, check cached DNS records, and more.</p>
+</li>
+<li>
+<p><a href="https://tools.kali.org/information-gathering/dnstracer">dnstracer</a> - Determines where a given Domain Name Server gets its information from for a given hostname.</p>
+</li>
+<li>
+<p><a href="https://github.com/mschwager/fierce">Fierce</a> - DNS reconnaissance tool for locating non-contiguous IP space.</p>
+</li>
+<li>
+<p><a href="https://github.com/BullsEye0/ghost_eye">Ghost Eye</a> - Information gathering tool for Whois, DNS, EtherApe, Nmap, and more.</p>
+</li>
+<li>
+<p><a href="https://github.com/lanmaster53/recon-ng">recon-ng</a> - Provides a powerful environment to conduct open source web-based reconnaissance quickly and thoroughly.</p>
+</li>
+<li>
+<p><a href="https://www.commandlinux.com/man-page/man1/traceroute.db.1.html">traceroute</a> - Print the route packets trace to network host.</p>
+</li>
+<li>
+<p><a href="https://tools.kali.org/information-gathering/unicornscan">unicornscan</a> - Provides a superior interface for introducing a stimulus into and measuring a response from a TCP/IP enabled device or network.</p>
+</li>
+<li>
+<p><a href="https://www.commandlinux.com/man-page/man1/whois.1.html">whois</a> - Quick and easy client for the whois directory service.</p>
+</li>
+</ul>
+<h2 id="personal-information-and-email-footprinting">Personal Information and Email Footprinting</h2>
+<blockquote>
+<p>Tools for gathering personal information, social networks, and email footprinting.</p></blockquote>
+<h3 id="programs-and-web-applications-1">Programs and Web Applications</h3>
+<ul>
+<li>
+<p><a href="https://beenverified.com">BeenVerified</a> - Background checks with loads of information.</p>
+</li>
+<li>
+<p><a href="https://emailtrackerpro.com">eMailTrackerPro</a> - Pull detailed information from an email header. Also includes spam filtering.</p>
+</li>
+<li>
+<p><a href="https://followerwonk.com">Followerwonk</a> - Information scraped from Twitter.</p>
+</li>
+<li>
+<p><a href="https://github.com/m4ll0k/infoga">Infoga</a> - Gather email OSINT. Domains, sources, breaches, and more.</p>
+</li>
+<li>
+<p><a href="https://www.jigsawsecurityenterprise.com/">Jigsaw</a> - OSINT-X Intelligence Collection Tool from Jigsaw allows for the collection of data from RSS feeds, the dark web, Twitter, Facebook, and other sources.</p>
+</li>
+<li>
+<p><a href="https://peekyou.com">PeekYou</a> - Locate personal information from family members to social media accounts.</p>
+</li>
+</ul>
+<h3 id="linux-cli--kali-1">Linux CLI // Kali</h3>
+<ul>
+<li>
+<p><a href="https://github.com/sherlock-project/sherlock">sherlock</a> - Crawls the web for social profiles.</p>
+</li>
+<li>
+<p><a href="https://tools.kali.org/information-gathering/theharvester">theHarvester</a> - Pulls a list of email addresses of a specific domain from multiple search engines.</p>
+</li>
+</ul>
+<h2 id="hacking-with-google">Hacking with Google</h2>
+<blockquote>
+<p>Commands (or &ldquo;dorks&rdquo;) for the world&rsquo;s most popular search engine</p></blockquote>
+<ul>
+<li>
+<p><strong>cache</strong> - this command will show you the cached version of any website.
+<code>cache: securitytrails.com</code></p>
+</li>
+<li>
+<p><strong>allintext</strong> - searches for specific text contained on any web page.
+<code>allintext: hacking tools</code></p>
+</li>
+<li>
+<p><strong>allintitle</strong> - exactly the same as allintext, but will show pages that contain titles with X characters.
+<code>allintitle:&quot;Security Companies&quot;</code></p>
+</li>
+<li>
+<p><strong>allinurl</strong> - it can be used to fetch results whose URL contains all the specified characters.
+<code>allinurl client area</code></p>
+</li>
+<li>
+<p><strong>filetype</strong> - used to search for any kind of file extensions, for example, if you want to search for jpg files you can use:
+<code>filetype: jpg</code></p>
+</li>
+<li>
+<p><strong>inurl</strong> - this is exactly the same as allinurl, but it is only useful for one single keyword.
+<code>inurl: admin</code></p>
+</li>
+<li>
+<p><strong>intitle</strong> - used to search for various keywords inside the title, for example,
+<code>intitle:security tools</code> will search for titles beginning with “security” but “tools” can be somewhere else in the page.</p>
+</li>
+<li>
+<p><strong>inanchor</strong> - this is useful when you need to search for an exact anchor text used on any links.
+<code>inanchor:&quot;cyber security&quot;</code></p>
+</li>
+<li>
+<p><strong>intext</strong> - useful to locate pages that contain certain characters or strings inside their text.
+<code>intext:&quot;safe internet&quot;</code></p>
+</li>
+<li>
+<p><strong>link</strong> - will show the list of web pages that have links to the specified URL.
+<code>link: microsoft.com</code></p>
+</li>
+<li>
+<p><strong>site</strong> - will show you the full list of all indexed URLs for the specified domain and subdomain.
+<code>site:securitytrails.com</code></p>
+</li>
+<li>
+<p><strong>*</strong> - wildcard used to search pages that contain “anything” before your word.
+For example, <code>how to * a website</code>, will return “how to…” design/create/hack, etc… “a website”.</p>
+</li>
+<li>
+<p><strong>|</strong> - this is a logical operator, for example, <code>&quot;security&quot; &quot;tips&quot;</code> will show all the sites which contain “security” or “tips,” or both words.</p>
+</li>
+<li>
+<p><strong>+</strong> - used to concatenate words, useful to detect pages that use more than one specific key.
+<code>security + trails</code></p>
+</li>
+<li>
+<p><strong>–</strong> - minus operator is used to avoiding showing results that contain certain words, for example, <code>security -trails</code> will show pages that use “security” in their text, but not those that have the word “trails.”</p>
+</li>
+</ul>
+
+        </section>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="Tools for reconnaissance and footprinting">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/2023-04-15-awesome-recon-tools/">
+        <input id="mastodonText" type="hidden" name="text" value="Tools for reconnaissance and footprinting http://localhost:1313/en/post/2023-04-15-awesome-recon-tools/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=Tools%20for%20reconnaissance%20and%20footprinting&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2023-04-15-awesome-recon-tools%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=Tools%20for%20reconnaissance%20and%20footprinting%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2023-04-15-awesome-recon-tools%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=Tools%20for%20reconnaissance%20and%20footprinting&amp;url=http://localhost:1313/en/post/2023-04-15-awesome-recon-tools/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=Tools%20for%20reconnaissance%20and%20footprinting&amp;url=http://localhost:1313/en/post/2023-04-15-awesome-recon-tools/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/2023-04-15-awesome-recon-tools/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/2023-04-15-awesome-recon-tools/&amp;t=Tools%20for%20reconnaissance%20and%20footprinting" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/2023-04-15-awesome-recon-tools/&amp;title=Tools%20for%20reconnaissance%20and%20footprinting&amp;summary=Tools%20for%20reconnaissance%20and%20footprinting&amp;source=http://localhost:1313/en/post/2023-04-15-awesome-recon-tools/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/2023-04-15-awesome-recon-tools/&amp;media=http://localhost:1313/en/post/2023-04-15-awesome-recon-tools/&amp;description=Tools%20for%20reconnaissance%20and%20footprinting" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/2023-04-15-awesome-recon-tools/&amp;resubmit=true&amp;title=Tools%20for%20reconnaissance%20and%20footprinting" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Tools%20for%20reconnaissance%20and%20footprinting&amp;caption=Tools%20for%20reconnaissance%20and%20footprinting&amp;content=http://localhost:1313/en/post/2023-04-15-awesome-recon-tools/&amp;canonicalUrl=http://localhost:1313/en/post/2023-04-15-awesome-recon-tools/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=Tools%20for%20reconnaissance%20and%20footprinting&amp;url=http://localhost:1313/en/post/2023-04-15-awesome-recon-tools/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=Tools%20for%20reconnaissance%20and%20footprinting&amp;url=http://localhost:1313/en/post/2023-04-15-awesome-recon-tools/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/2023-04-15-awesome-recon-tools/;title=Tools%20for%20reconnaissance%20and%20footprinting" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Founder &amp; Tech Lead, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impressum</strong>
+<p>Innovating India&rsquo;s digital infrastructure: AI, IoT, and Full Stack Solutions.<br>
+Some rights reserved. For inquiries, contact: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 15rem">
+                        <div
+                            aria-labelledby="footer-2">
+                            <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Pendiri &amp; Pemimpin Teknologi, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impresium</strong>
+<p>Berinovasi dalam infrastruktur digital India: AI, IoT, dan Solusi Full Stack.<br>
+Beberapa hak dilindungi undang-undang. Untuk pertanyaan, hubungi: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                        </div>
+                        <div id="coffee-counter">
+                            <strong class="section-title">Coffee Stat</strong>
+                            <p>Making this website has taken at least 13 cups of coffee, if not more.</p>
+                        </div>                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key" aria-hidden="true">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" aria-label="Accessibility"
+        data-i18n-optimizeSR="Screen Reader Optimization"
+        data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+        data-i18n-colorSettings="Color Settings"
+        data-i18n-darkMode="Dark Mode"
+        data-i18n-light="Light"
+        data-i18n-dark="Dark"
+        data-i18n-contrast="Contrast"
+        data-i18n-lessContrast="Low"
+        data-i18n-moreContrast="High"
+        data-i18n-defaultContrast="Default"
+        data-i18n-colorPalette="Color Palette"
+        data-i18n-defaultColor="Default"
+        data-i18n-deuteranopia="Deuteranopia"
+        data-i18n-protanopia="Protanopia"
+        data-i18n-tritanopia="Tritanopia"
+        data-i18n-monochrome="Monochrome"
+        data-i18n-fontSize="Font Size"
+        data-i18n-baselineStretch="Baseline Stretch"        
+        data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+        data-i18n-menuControls="Accessibility Menu Controls"
+        data-i18n-save="Save"
+        data-i18n-reset="Reset"
+        data-i18n-close="Close"
+        data-i18n-bionRead="BionRead Mode"
+        data-i18n-focusMode="Focus Mode"
+        data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+        </a>
+    </nav>
+</footer>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</html>

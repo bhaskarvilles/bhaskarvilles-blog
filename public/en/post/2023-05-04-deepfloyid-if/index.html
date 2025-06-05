@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeepFloyd-IF: A Pixel-Based Triple-Cascaded Diffusion Model for Photorealistic Text-to-Image Generation | Bhaskar&#39;s Website</title>
+<meta name="author" content="Bhaskar">
+<meta name="description" content="DeepFloyd-IF: A Pixel-Based Triple-Cascaded Diffusion Model for Photorealistic Text-to-Image Generation" >
+<meta name="keywords" content="if,text-to-image">
+<link rel="canonical" href="http://localhost:1313/en/post/2023-05-04-deepfloyid-if/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DeepFloyd-IF: A Pixel-Based Triple-Cascaded Diffusion Model for Photorealistic Text-to-Image Generation | Bhaskar&#39;s Website" />
+    <meta name="twitter:description" content="DeepFloyd-IF: A Pixel-Based Triple-Cascaded Diffusion Model for Photorealistic Text-to-Image Generation" />
+        <meta name="twitter:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+        <meta name="twitter:site" content="@@bhaskarvilles" />
+        <meta name="twitter:creator" content="@@bhaskarvilles" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="DeepFloyd-IF: A Pixel-Based Triple-Cascaded Diffusion Model for Photorealistic Text-to-Image Generation | Bhaskar&#39;s Website" />
+    <meta property="og:description" content="DeepFloyd-IF: A Pixel-Based Triple-Cascaded Diffusion Model for Photorealistic Text-to-Image Generation" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/2023-05-04-deepfloyid-if/" />
+        <meta property="og:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+    <meta property="og:site_name" content="Bhaskar&#39;s Website" /><!-- js.html -->
+
+
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+
+
+
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+        
+    <!-- css/verbatim.html -->
+        <link href="http://localhost:1313/css/typesetting/verbatim.min.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/en/" aria-label="Bhaskar&#39;s Website" aria-description="Homepage">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="476pt" aria-label="Bhaskar&#39;s Website">
+            <text id="logotype__text" y="19.5pt" x="0">Bhaskar&#39;s Website</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2 srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="http://localhost:1313/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+                <!-- menu.html -->
+    <menu class="srm">
+        <a id="print-button" class="hide" href="javascript:window.print()" role="button" aria-label="Print">
+            <span class="t srt" role="tooltip">Print</span>
+        </a>
+        <a id="navigatorShare" href="#share" role="button" aria-label="Share">
+            <span class="t srt" role="tooltip">Share</span>
+        </a>
+        <a id="copyPermalink"  href="javascript:navigator.clipboard.writeText(window.location.href)" role="button" aria-label="Copy URL">
+            <span id="copy" class="t srt" role="tooltip">Copy URL</span>
+            <span id="isCopying" style="display: none;">Copying...</span>
+            <span id="copyText" style="display: none;">Copy URL</span>
+        </a>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t srt" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">DeepFloyd-IF: A Pixel-Based Triple-Cascaded Diffusion Model for Photorealistic Text-to-Image Generation
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth sf"
+        role="document" aria-labelledby="title"
+            data-pagefind-ignore="all">
+        <header aria-labelledby="title">
+            
+            <!-- title.html -->
+        <hgroup data-bionRead-safe>
+            <h1 id="title"
+                >DeepFloyd-IF: A Pixel-Based Triple-Cascaded Diffusion Model for Photorealistic Text-to-Image Generation</h1>
+            <p  class="subtitle"
+                role="doc-subtitle">DeepFloyd-IF: A Pixel-Based Triple-Cascaded Diffusion Model for Photorealistic Text-to-Image Generation</p>
+        </hgroup>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <h1 id="if-i-xl-v10">IF-I-XL-v1.0</h1>
+<p>DeepFloyd-IF is a pixel-based text-to-image triple-cascaded diffusion model, that can generate pictures with new state-of-the-art for photorealism and language understanding. The result is a highly efficient model that outperforms current state-of-the-art models, achieving a zero-shot FID-30K score of <code>6.66</code> on the COCO dataset.</p>
+<p><em>Inspired by</em> <a href="https://arxiv.org/pdf/2205.11487.pdf"><em>Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding</em></a></p>
+<!-- ![](https://huggingface.co/DeepFloyd/IF-I-XL-v1.0/resolve/main/pics/deepfloyd_if_scheme.jpg) -->
+<h2 id="model-details">Model Details</h2>
+<ul>
+<li><strong>Developed by:</strong> DeepFloyd, StabilityAI</li>
+<li><strong>Model type:</strong> pixel-based text-to-image cascaded diffusion model</li>
+<li><strong>Cascade Stage:</strong> I</li>
+<li><strong>Num Parameters:</strong> 4.3B</li>
+<li><strong>Language(s):</strong> primarily English and, to a lesser extent, other Romance languages</li>
+<li><strong>License:</strong> <span style="color:blue"><a href="https://huggingface.co/spaces/DeepFloyd/deepfloyd-if-license">DeepFloyd IF License Agreement</a></span></li>
+<li><strong>Model Description:</strong> DeepFloyd-IF is modular composed of frozen text mode and three pixel cascaded diffusion modules, each designed to generate images of increasing resolution: 64x64, 256x256, and 1024x1024. All stages of the model utilize a frozen text encoder based on the T5 transformer to extract text embeddings, which are then fed into a UNet architecture enhanced with cross-attention and attention-pooling</li>
+<li><strong>Resources for more information:</strong> <a href="https://github.com/deep-floyd/IF">GitHub</a>, <a href="https://deepfloyd.ai">deepfloyd.ai</a>, <a href="https://linktr.ee/deepfloyd">All Links</a></li>
+<li><strong>Cite as (Soon):</strong> -</li>
+</ul>
+<h2 id="using-with-diffusers">Using with <code>diffusers</code></h2>
+<p>IF is integrated with the 🤗 Hugging Face <a href="https://github.com/huggingface/diffusers/">🧨 diffusers library</a>, which is optimized to run on GPUs with as little as 14 GB of VRAM.</p>
+<p>Before you can use IF, you need to accept its usage conditions. To do so:</p>
+<ol>
+<li>Make sure to have a <a href="https://huggingface.co/join">Hugging Face account</a> and be loggin in</li>
+<li>Accept the license on the model card of <a href="https://huggingface.co/DeepFloyd/IF-I-XL-v1.0">DeepFloyd/IF-I-XL-v1.0</a></li>
+<li>Make sure to login locally. Install <code>huggingface_hub</code></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">pip install huggingface_hub --upgrade
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>run the login function in a Python shell</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">huggingface_hub</span> <span class="kn">import</span> <span class="n">login</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">login</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>and enter your <a href="https://huggingface.co/docs/hub/security-tokens#what-are-user-access-tokens">Hugging Face Hub access token</a>.</p>
+<p>Next we install <code>diffusers</code> and dependencies:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">pip install diffusers accelerate transformers safetensors sentencepiece
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>And we can now run the model locally.</p>
+<p>By default <code>diffusers</code> makes use of <a href="https://huggingface.co/docs/diffusers/optimization/fp16#model-offloading-for-fast-inference-and-memory-savings">model cpu offloading</a> to run the whole IF pipeline with as little as 14 GB of VRAM.</p>
+<p>If you are using <code>torch&gt;=2.0.0</code>, make sure to <strong>remove all</strong> <code>enable_xformers_memory_efficient_attention()</code> functions.</p>
+<ul>
+<li><strong>Load all stages and offload to CPU</strong></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">diffusers</span> <span class="kn">import</span> <span class="n">DiffusionPipeline</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">diffusers.utils</span> <span class="kn">import</span> <span class="n">pt_to_pil</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># stage 1</span>
+</span></span><span class="line"><span class="cl"><span class="n">stage_1</span> <span class="o">=</span> <span class="n">DiffusionPipeline</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&#34;DeepFloyd/IF-I-XL-v1.0&#34;</span><span class="p">,</span> <span class="n">variant</span><span class="o">=</span><span class="s2">&#34;fp16&#34;</span><span class="p">,</span> <span class="n">torch_dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float16</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">stage_1</span><span class="o">.</span><span class="n">enable_xformers_memory_efficient_attention</span><span class="p">()</span>  <span class="c1"># remove line if torch.__version__ &gt;= 2.0.0</span>
+</span></span><span class="line"><span class="cl"><span class="n">stage_1</span><span class="o">.</span><span class="n">enable_model_cpu_offload</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># stage 2</span>
+</span></span><span class="line"><span class="cl"><span class="n">stage_2</span> <span class="o">=</span> <span class="n">DiffusionPipeline</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;DeepFloyd/IF-II-L-v1.0&#34;</span><span class="p">,</span> <span class="n">text_encoder</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">variant</span><span class="o">=</span><span class="s2">&#34;fp16&#34;</span><span class="p">,</span> <span class="n">torch_dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float16</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">stage_2</span><span class="o">.</span><span class="n">enable_xformers_memory_efficient_attention</span><span class="p">()</span>  <span class="c1"># remove line if torch.__version__ &gt;= 2.0.0</span>
+</span></span><span class="line"><span class="cl"><span class="n">stage_2</span><span class="o">.</span><span class="n">enable_model_cpu_offload</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># stage 3</span>
+</span></span><span class="line"><span class="cl"><span class="n">safety_modules</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&#34;feature_extractor&#34;</span><span class="p">:</span> <span class="n">stage_1</span><span class="o">.</span><span class="n">feature_extractor</span><span class="p">,</span> <span class="s2">&#34;safety_checker&#34;</span><span class="p">:</span> <span class="n">stage_1</span><span class="o">.</span><span class="n">safety_checker</span><span class="p">,</span> <span class="s2">&#34;watermarker&#34;</span><span class="p">:</span> <span class="n">stage_1</span><span class="o">.</span><span class="n">watermarker</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">stage_3</span> <span class="o">=</span> <span class="n">DiffusionPipeline</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&#34;stabilityai/stable-diffusion-x4-upscaler&#34;</span><span class="p">,</span> <span class="o">**</span><span class="n">safety_modules</span><span class="p">,</span> <span class="n">torch_dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float16</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">stage_3</span><span class="o">.</span><span class="n">enable_xformers_memory_efficient_attention</span><span class="p">()</span>  <span class="c1"># remove line if torch.__version__ &gt;= 2.0.0</span>
+</span></span><span class="line"><span class="cl"><span class="n">stage_3</span><span class="o">.</span><span class="n">enable_model_cpu_offload</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><strong>Retrieve Text Embeddings</strong></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">prompt</span> <span class="o">=</span> <span class="s1">&#39;a photo of a kangaroo wearing an orange hoodie and blue sunglasses standing in front of the eiffel tower holding a sign that says &#34;very deep learning&#34;&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># text embeds</span>
+</span></span><span class="line"><span class="cl"><span class="n">prompt_embeds</span><span class="p">,</span> <span class="n">negative_embeds</span> <span class="o">=</span> <span class="n">stage_1</span><span class="o">.</span><span class="n">encode_prompt</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><strong>Run stage 1</strong></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">generator</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">manual_seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">image</span> <span class="o">=</span> <span class="n">stage_1</span><span class="p">(</span><span class="n">prompt_embeds</span><span class="o">=</span><span class="n">prompt_embeds</span><span class="p">,</span> <span class="n">negative_prompt_embeds</span><span class="o">=</span><span class="n">negative_embeds</span><span class="p">,</span> <span class="n">generator</span><span class="o">=</span><span class="n">generator</span><span class="p">,</span> <span class="n">output_type</span><span class="o">=</span><span class="s2">&#34;pt&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">images</span>
+</span></span><span class="line"><span class="cl"><span class="n">pt_to_pil</span><span class="p">(</span><span class="n">image</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&#34;./if_stage_I.png&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><strong>Run stage 2</strong></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">image</span> <span class="o">=</span> <span class="n">stage_2</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">image</span><span class="o">=</span><span class="n">image</span><span class="p">,</span> <span class="n">prompt_embeds</span><span class="o">=</span><span class="n">prompt_embeds</span><span class="p">,</span> <span class="n">negative_prompt_embeds</span><span class="o">=</span><span class="n">negative_embeds</span><span class="p">,</span> <span class="n">generator</span><span class="o">=</span><span class="n">generator</span><span class="p">,</span> <span class="n">output_type</span><span class="o">=</span><span class="s2">&#34;pt&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span><span class="o">.</span><span class="n">images</span>
+</span></span><span class="line"><span class="cl"><span class="n">pt_to_pil</span><span class="p">(</span><span class="n">image</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&#34;./if_stage_II.png&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><strong>Run stage 3</strong></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">image</span> <span class="o">=</span> <span class="n">stage_3</span><span class="p">(</span><span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span><span class="p">,</span> <span class="n">image</span><span class="o">=</span><span class="n">image</span><span class="p">,</span> <span class="n">generator</span><span class="o">=</span><span class="n">generator</span><span class="p">,</span> <span class="n">noise_level</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">images</span>
+</span></span><span class="line"><span class="cl"><span class="n">image</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&#34;./if_stage_III.png&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>There are multiple ways to speed up the inference time and lower the memory consumption even more with <code>diffusers</code>. To do so, please have a look at the Diffusers docs:</p>
+<ul>
+<li>🚀 <a href="https://huggingface.co/docs/diffusers/api/pipelines/if#optimizing-for-speed">Optimizing for inference time</a></li>
+<li>⚙️ <a href="https://huggingface.co/docs/diffusers/api/pipelines/if#optimizing-for-memory">Optimizing for low memory during inference</a></li>
+</ul>
+<p>For more in-detail information about how to use IF, please have a look at <a href="https://huggingface.co/blog/if">the IF blog post</a> and the <a href="https://huggingface.co/docs/diffusers/main/en/api/pipelines/if">documentation</a> 📖.</p>
+<h2 id="training">Training</h2>
+<p><strong>Training Data:</strong></p>
+<p>1.2B text-image pairs (based on LAION-A and few additional internal datasets)</p>
+<p>Test/Valid parts of datasets are not used at any cascade and stage of training. Valid part of COCO helps to demonstrate &ldquo;online&rdquo; loss behaviour during training (to catch incident and other problems), but dataset is never used for train.</p>
+<p><strong>Training Procedure:</strong> IF-I-XL-v1.0 is a pixel-based diffusion cascade which uses T5-Encoder embeddings (hidden states) to generate 64px image. During training,</p>
+<ul>
+<li>
+<p>Images are cropped to square via shifted-center-crop augmentation (randomly shift from center up to 0.1 of size) and resized to 64px using <code>Pillow==9.2.0</code> BICUBIC resampling with reducing_gap=None (it helps to avoid aliasing) and processed to tensor BxCxHxW</p>
+</li>
+<li>
+<p>Text prompts are encoded through open-sourced frozen T5-v1_1-xxl text-encoder (that completely was trained by Google team), random 10% of texts are dropped to empty string to add ability for classifier free guidance (CFG)</p>
+</li>
+<li>
+<p>The non-pooled output of the text encoder is fed into the projection (linear layer without activation) and is used in UNet backbone of the diffusion model via controlled hybrid self- and cross- attention</p>
+</li>
+<li>
+<p>Also, the output of the text encode is pooled via attention-pooling (64 heads) and is used in time embed as additional features</p>
+</li>
+<li>
+<p>Diffusion process is limited by 1000 discrete steps, with cosine beta schedule of noising image</p>
+</li>
+<li>
+<p>The loss is a reconstruction objective between the noise that was added to the image and the prediction made by the UNet</p>
+</li>
+<li>
+<p>The training process for checkpoint IF-I-XL-v1.0 has 2_420_000 steps at resolution 64x64 on all datasets, OneCycleLR policy, few-bit backward GELU activations, optimizer AdamW8bit + DeepSpeed-Zero1, fully frozen T5-Encoder</p>
+</li>
+</ul>
+<!-- ![](./images/loss.jpg) -->
+<p><strong>Hardware:</strong> 64 x 8 x A100 GPUs</p>
+<p><strong>Optimizer:</strong> <a href="https://arxiv.org/abs/2110.02861">AdamW8bit</a> + <a href="https://www.deepspeed.ai/tutorials/zero/">DeepSpeed ZeRO-1</a></p>
+<p><strong>Batch:</strong> 3072</p>
+<p><strong>Learning rate</strong>: <a href="https://pytorch.org/docs/stable/generated/torch.optim.lr_scheduler.OneCycleLR.html">one-cycle</a> cosine strategy, warmup 10000 steps, start_lr=2e-6, max_lr=5e-5, final_lr=5e-9</p>
+<!-- ![](./images/lr.jpg) -->
+<h2 id="evaluation-results">Evaluation Results</h2>
+<p><code>FID-30K: 6.66</code></p>
+<!-- ![](./images/fid30k_if.jpg) -->
+<h1 id="uses">Uses</h1>
+<h2 id="direct-use">Direct Use</h2>
+<p>The model is released for research purposes. Any attempt to deploy the model in production requires not only that the LICENSE is followed but full liability over the person deploying the model.</p>
+<p>Possible research areas and tasks include:</p>
+<ul>
+<li>Generation of artistic imagery and use in design and other artistic processes.</li>
+<li>Safe deployment of models which have the potential to generate harmful content.</li>
+<li>Probing and understanding the limitations and biases of generative models.</li>
+<li>Applications in educational or creative tools.</li>
+<li>Research on generative models.</li>
+</ul>
+<p>Excluded uses are described below.</p>
+<h3 id="misuse-malicious-use-and-out-of-scope-use">Misuse, Malicious Use, and Out-of-Scope Use</h3>
+<p><em>Note: This section is originally taken from the <a href="https://huggingface.co/dalle-mini/dalle-mini">DALLE-MINI model card</a>, was used for Stable Diffusion but applies in the same way for IF</em>.</p>
+<p>The model should not be used to intentionally create or disseminate images that create hostile or alienating environments for people. This includes generating images that people would foreseeably find disturbing, distressing, or offensive; or content that propagates historical or current stereotypes.</p>
+<h4 id="out-of-scope-use">Out-of-Scope Use</h4>
+<p>The model was not trained to be factual or true representations of people or events, and therefore using the model to generate such content is out-of-scope for the abilities of this model.</p>
+<h4 id="misuse-and-malicious-use">Misuse and Malicious Use</h4>
+<p>Using the model to generate content that is cruel to individuals is a misuse of this model. This includes, but is not limited to:</p>
+<ul>
+<li>Generating demeaning, dehumanizing, or otherwise harmful representations of people or their environments, cultures, religions, etc.</li>
+<li>Intentionally promoting or propagating discriminatory content or harmful stereotypes.</li>
+<li>Impersonating individuals without their consent.</li>
+<li>Sexual content without consent of the people who might see it.</li>
+<li>Mis- and disinformation</li>
+<li>Representations of egregious violence and gore</li>
+<li>Sharing of copyrighted or licensed material in violation of its terms of use.</li>
+<li>Sharing content that is an alteration of copyrighted or licensed material in violation of its terms of use.</li>
+</ul>
+<h2 id="limitations-and-bias">Limitations and Bias</h2>
+<h3 id="limitations">Limitations</h3>
+<ul>
+<li>The model does not achieve perfect photorealism</li>
+<li>The model was trained mainly with English captions and will not work as well in other languages.</li>
+<li>The model was trained on a subset of the large-scale dataset
+<a href="https://laion.ai/blog/laion-5b/">LAION-5B</a>, which contains adult, violent and sexual content. To partially mitigate this, we have&hellip; (see Training section).</li>
+</ul>
+<h3 id="bias">Bias</h3>
+<p>While the capabilities of image generation models are impressive, they can also reinforce or exacerbate social biases.
+IF was primarily trained on subsets of <a href="https://laion.ai/blog/laion-5b/">LAION-2B(en)</a>,
+which consists of images that are limited to English descriptions.
+Texts and images from communities and cultures that use other languages are likely to be insufficiently accounted for.
+This affects the overall output of the model, as white and western cultures are often set as the default. Further, the
+ability of the model to generate content with non-English prompts is significantly worse than with English-language prompts.
+IF mirrors and exacerbates biases to such a degree that viewer discretion must be advised irrespective of the input or its intent.</p>
+<h2 id="credits">Credits</h2>
+<p><em>This model card was written by: DeepFloyd-Team and is based on the <a href="https://huggingface.co/CompVis/stable-diffusion-v1-4">StableDiffusion model card</a>.</em></p>
+
+        </section>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="DeepFloyd-IF: A Pixel-Based Triple-Cascaded Diffusion Model for Photorealistic Text-to-Image Generation">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/2023-05-04-deepfloyid-if/">
+        <input id="mastodonText" type="hidden" name="text" value="DeepFloyd-IF: A Pixel-Based Triple-Cascaded Diffusion Model for Photorealistic Text-to-Image Generation http://localhost:1313/en/post/2023-05-04-deepfloyid-if/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=DeepFloyd-IF%3a%20A%20Pixel-Based%20Triple-Cascaded%20Diffusion%20Model%20for%20Photorealistic%20Text-to-Image%20Generation&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2023-05-04-deepfloyid-if%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=DeepFloyd-IF%3a%20A%20Pixel-Based%20Triple-Cascaded%20Diffusion%20Model%20for%20Photorealistic%20Text-to-Image%20Generation%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2023-05-04-deepfloyid-if%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=DeepFloyd-IF:%20A%20Pixel-Based%20Triple-Cascaded%20Diffusion%20Model%20for%20Photorealistic%20Text-to-Image%20Generation&amp;url=http://localhost:1313/en/post/2023-05-04-deepfloyid-if/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=DeepFloyd-IF:%20A%20Pixel-Based%20Triple-Cascaded%20Diffusion%20Model%20for%20Photorealistic%20Text-to-Image%20Generation&amp;url=http://localhost:1313/en/post/2023-05-04-deepfloyid-if/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/2023-05-04-deepfloyid-if/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/2023-05-04-deepfloyid-if/&amp;t=DeepFloyd-IF:%20A%20Pixel-Based%20Triple-Cascaded%20Diffusion%20Model%20for%20Photorealistic%20Text-to-Image%20Generation" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/2023-05-04-deepfloyid-if/&amp;title=DeepFloyd-IF:%20A%20Pixel-Based%20Triple-Cascaded%20Diffusion%20Model%20for%20Photorealistic%20Text-to-Image%20Generation&amp;summary=DeepFloyd-IF:%20A%20Pixel-Based%20Triple-Cascaded%20Diffusion%20Model%20for%20Photorealistic%20Text-to-Image%20Generation&amp;source=http://localhost:1313/en/post/2023-05-04-deepfloyid-if/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/2023-05-04-deepfloyid-if/&amp;media=http://localhost:1313/en/post/2023-05-04-deepfloyid-if/&amp;description=DeepFloyd-IF:%20A%20Pixel-Based%20Triple-Cascaded%20Diffusion%20Model%20for%20Photorealistic%20Text-to-Image%20Generation" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/2023-05-04-deepfloyid-if/&amp;resubmit=true&amp;title=DeepFloyd-IF:%20A%20Pixel-Based%20Triple-Cascaded%20Diffusion%20Model%20for%20Photorealistic%20Text-to-Image%20Generation" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=DeepFloyd-IF:%20A%20Pixel-Based%20Triple-Cascaded%20Diffusion%20Model%20for%20Photorealistic%20Text-to-Image%20Generation&amp;caption=DeepFloyd-IF:%20A%20Pixel-Based%20Triple-Cascaded%20Diffusion%20Model%20for%20Photorealistic%20Text-to-Image%20Generation&amp;content=http://localhost:1313/en/post/2023-05-04-deepfloyid-if/&amp;canonicalUrl=http://localhost:1313/en/post/2023-05-04-deepfloyid-if/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=DeepFloyd-IF:%20A%20Pixel-Based%20Triple-Cascaded%20Diffusion%20Model%20for%20Photorealistic%20Text-to-Image%20Generation&amp;url=http://localhost:1313/en/post/2023-05-04-deepfloyid-if/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=DeepFloyd-IF:%20A%20Pixel-Based%20Triple-Cascaded%20Diffusion%20Model%20for%20Photorealistic%20Text-to-Image%20Generation&amp;url=http://localhost:1313/en/post/2023-05-04-deepfloyid-if/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/2023-05-04-deepfloyid-if/;title=DeepFloyd-IF:%20A%20Pixel-Based%20Triple-Cascaded%20Diffusion%20Model%20for%20Photorealistic%20Text-to-Image%20Generation" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Founder &amp; Tech Lead, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impressum</strong>
+<p>Innovating India&rsquo;s digital infrastructure: AI, IoT, and Full Stack Solutions.<br>
+Some rights reserved. For inquiries, contact: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 15rem">
+                        <div
+                            aria-labelledby="footer-2">
+                            <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Pendiri &amp; Pemimpin Teknologi, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impresium</strong>
+<p>Berinovasi dalam infrastruktur digital India: AI, IoT, dan Solusi Full Stack.<br>
+Beberapa hak dilindungi undang-undang. Untuk pertanyaan, hubungi: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                        </div>
+                        <div id="coffee-counter">
+                            <strong class="section-title">Coffee Stat</strong>
+                            <p>Making this website has taken at least 13 cups of coffee, if not more.</p>
+                        </div>                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key" aria-hidden="true">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" aria-label="Accessibility"
+        data-i18n-optimizeSR="Screen Reader Optimization"
+        data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+        data-i18n-colorSettings="Color Settings"
+        data-i18n-darkMode="Dark Mode"
+        data-i18n-light="Light"
+        data-i18n-dark="Dark"
+        data-i18n-contrast="Contrast"
+        data-i18n-lessContrast="Low"
+        data-i18n-moreContrast="High"
+        data-i18n-defaultContrast="Default"
+        data-i18n-colorPalette="Color Palette"
+        data-i18n-defaultColor="Default"
+        data-i18n-deuteranopia="Deuteranopia"
+        data-i18n-protanopia="Protanopia"
+        data-i18n-tritanopia="Tritanopia"
+        data-i18n-monochrome="Monochrome"
+        data-i18n-fontSize="Font Size"
+        data-i18n-baselineStretch="Baseline Stretch"        
+        data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+        data-i18n-menuControls="Accessibility Menu Controls"
+        data-i18n-save="Save"
+        data-i18n-reset="Reset"
+        data-i18n-close="Close"
+        data-i18n-bionRead="BionRead Mode"
+        data-i18n-focusMode="Focus Mode"
+        data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+        </a>
+    </nav>
+</footer>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</html>

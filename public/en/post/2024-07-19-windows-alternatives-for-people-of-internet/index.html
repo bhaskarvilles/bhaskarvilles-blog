@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resilience in Custom Linux Distributions: A Solution to Microsoft Windows Outages | Bhaskar&#39;s Website</title>
+<meta name="author" content="Bhaskar">
+<meta name="description" content="Exploring the benefits of custom Linux distributions as a robust alternative to Microsoft Windows outages." >
+<meta name="keywords" content="Open Source,Linux,Customization,Resilience">
+<link rel="canonical" href="http://localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Resilience in Custom Linux Distributions: A Solution to Microsoft Windows Outages | Bhaskar&#39;s Website" />
+    <meta name="twitter:description" content="Exploring the benefits of custom Linux distributions as a robust alternative to Microsoft Windows outages." />
+        <meta name="twitter:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+        <meta name="twitter:site" content="@@bhaskarvilles" />
+        <meta name="twitter:creator" content="@@bhaskarvilles" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="Resilience in Custom Linux Distributions: A Solution to Microsoft Windows Outages | Bhaskar&#39;s Website" />
+    <meta property="og:description" content="Exploring the benefits of custom Linux distributions as a robust alternative to Microsoft Windows outages." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/" />
+        <meta property="og:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+    <meta property="og:site_name" content="Bhaskar&#39;s Website" /><!-- js.html -->
+
+
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+
+
+
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+    
+</head>
+<body >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/en/" aria-label="Bhaskar&#39;s Website" aria-description="Homepage">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="476pt" aria-label="Bhaskar&#39;s Website">
+            <text id="logotype__text" y="19.5pt" x="0">Bhaskar&#39;s Website</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2 srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="http://localhost:1313/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+                <!-- menu.html -->
+    <menu class="srm">
+        <a id="print-button" class="hide" href="javascript:window.print()" role="button" aria-label="Print">
+            <span class="t srt" role="tooltip">Print</span>
+        </a>
+        <a id="navigatorShare" href="#share" role="button" aria-label="Share">
+            <span class="t srt" role="tooltip">Share</span>
+        </a>
+        <a id="copyPermalink"  href="javascript:navigator.clipboard.writeText(window.location.href)" role="button" aria-label="Copy URL">
+            <span id="copy" class="t srt" role="tooltip">Copy URL</span>
+            <span id="isCopying" style="display: none;">Copying...</span>
+            <span id="copyText" style="display: none;">Copy URL</span>
+        </a>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t srt" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">Resilience in Custom Linux Distributions: A Solution to Microsoft Windows Outages
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth sf"
+        role="document" aria-labelledby="title"
+            data-pagefind-ignore="all">
+        <header aria-labelledby="title">
+            
+            <!-- title.html -->
+        <hgroup data-bionRead-safe>
+            <h1 id="title"
+                >Resilience in Custom Linux Distributions: A Solution to Microsoft Windows Outages</h1>
+            <p  class="subtitle"
+                role="doc-subtitle">Exploring the benefits of custom Linux distributions as a robust alternative to Microsoft Windows outages.</p>
+        </hgroup>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <p>Microsoft Windows outages can be disruptive and costly, underscoring the need for more resilient alternatives. Custom Linux distributions offer robust solutions, tailored to specific needs, reducing the risk of widespread system failures.</p>
+<p><img src="https://images.moneycontrol.com/static-mcnews/2024/07/20240719092012_windows.jpg" alt="Blue Screen Of Death"></p>
+<h3 id="the-impact-of-microsoft-windows-outages">The Impact of Microsoft Windows Outages</h3>
+<p>Microsoft Windows is widely used across various sectors, from personal computing to enterprise environments. However, its popularity also makes it a prime target for cyberattacks and system failures. Recent outages have shown that even minor disruptions can lead to significant productivity losses, highlighting the need for more robust and adaptable operating systems.</p>
+<h3 id="building-your-own-linux-distribution">Building Your Own Linux Distribution</h3>
+<p>Creating a custom Linux distribution may seem daunting, but several resources make it accessible for both beginners and advanced users.</p>
+<ol>
+<li>
+<p><strong>Starting Simple</strong>:</p>
+<ul>
+<li><strong>SUSE Studio Express</strong>: A web-based tool that allows users to build customized openSUSE distributions. It offers an intuitive interface to select packages and configure the system, making it ideal for creating tailored solutions without deep technical knowledge.</li>
+<li><strong>Linux From Scratch (LFS)</strong>: Provides a comprehensive guide to building a Linux system from scratch. This approach is more hands-on and educational, offering complete control over the software included in the distribution​:citation[oaicite:2]{index=2}​​:citation[oaicite:1]{index=1}​.</li>
+</ul>
+</li>
+<li>
+<p><strong>Advanced Customization with Yocto</strong>:</p>
+<ul>
+<li><strong>The Yocto Project</strong>: A powerful set of tools for creating custom Linux distributions for embedded systems. Yocto is not a Linux distribution but a framework for creating custom, optimized systems. It supports a wide range of architectures and offers extensive customization, making it suitable for complex and specific use cases​:citation[oaicite:0]{index=0}​.</li>
+</ul>
+</li>
+</ol>
+<h3 id="benefits-of-custom-linux-distributions">Benefits of Custom Linux Distributions</h3>
+<ol>
+<li>
+<p><strong>Stability and Control</strong>:</p>
+<ul>
+<li><strong>Tailored Solutions</strong>: Custom Linux distributions are designed to meet specific requirements, ensuring that only necessary components are included. This reduces the potential for vulnerabilities and increases system stability.</li>
+<li><strong>Reduced Attack Surface</strong>: By minimizing the number of installed packages, custom distributions limit the attack surface, making it harder for malicious actors to exploit the system.</li>
+</ul>
+</li>
+<li>
+<p><strong>Open Source Transparency</strong>:</p>
+<ul>
+<li><strong>Inspect and Modify</strong>: Open source code allows users to inspect, modify, and enhance the software, ensuring no hidden vulnerabilities or backdoors exist.</li>
+<li><strong>Community-Driven</strong>: The Linux community is known for its collaborative approach, providing a wealth of resources and support for troubleshooting and improving systems.</li>
+</ul>
+</li>
+<li>
+<p><strong>Flexibility and Adaptability</strong>:</p>
+<ul>
+<li><strong>Diverse Use Cases</strong>: From lightweight distributions for older hardware to highly specialized systems for scientific computing, custom Linux distributions can be tailored to any use case.</li>
+<li><strong>Rapid Development</strong>: Open source projects benefit from rapid development cycles, allowing for quick implementation of new features and security patches.</li>
+</ul>
+</li>
+</ol>
+<h3 id="case-studies-successful-custom-linux-distributions">Case Studies: Successful Custom Linux Distributions</h3>
+<ol>
+<li><strong>Ubuntu</strong>: A user-friendly distribution that has gained widespread adoption in both personal and enterprise environments. Its customizable nature allows organizations to create tailored solutions for their specific needs.</li>
+<li><strong>Raspberry Pi OS</strong>: Designed for the Raspberry Pi hardware, this distribution is optimized for performance on low-power devices. Its lightweight nature and ease of customization make it a popular choice for educational and hobbyist projects.</li>
+</ol>
+<p><img src="https://polishlinux.org/wp-content/uploads/2017/11/article-1.jpg" alt="Linux Os Supremacy"></p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Microsoft Windows outages underscore the importance of having reliable and adaptable operating systems. Custom Linux distributions offer a powerful alternative, providing stability, control, and flexibility. Whether starting with simple tools like SUSE Studio Express or diving into advanced customization with the Yocto Project, creating a custom Linux distribution can lead to a more resilient and efficient computing environment.</p>
+<p>For more detailed guides on building your own Linux distribution, refer to <a href="https://www.baeldung.com/linux/make-your-distribution">Baeldung</a>, <a href="https://unix.stackexchange.com/questions/87011/how-to-easily-build-your-own-linux-distro">Unix Stack Exchange</a>, and the <a href="https://www.yoctoproject.org/">Yocto Project</a>.</p>
+
+        </section>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="Resilience in Custom Linux Distributions: A Solution to Microsoft Windows Outages">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/">
+        <input id="mastodonText" type="hidden" name="text" value="Resilience in Custom Linux Distributions: A Solution to Microsoft Windows Outages http://localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=Resilience%20in%20Custom%20Linux%20Distributions%3a%20A%20Solution%20to%20Microsoft%20Windows%20Outages&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2024-07-19-windows-alternatives-for-people-of-internet%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=Resilience%20in%20Custom%20Linux%20Distributions%3a%20A%20Solution%20to%20Microsoft%20Windows%20Outages%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2024-07-19-windows-alternatives-for-people-of-internet%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=Resilience%20in%20Custom%20Linux%20Distributions:%20A%20Solution%20to%20Microsoft%20Windows%20Outages&amp;url=http://localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=Resilience%20in%20Custom%20Linux%20Distributions:%20A%20Solution%20to%20Microsoft%20Windows%20Outages&amp;url=http://localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/&amp;t=Resilience%20in%20Custom%20Linux%20Distributions:%20A%20Solution%20to%20Microsoft%20Windows%20Outages" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/&amp;title=Resilience%20in%20Custom%20Linux%20Distributions:%20A%20Solution%20to%20Microsoft%20Windows%20Outages&amp;summary=Resilience%20in%20Custom%20Linux%20Distributions:%20A%20Solution%20to%20Microsoft%20Windows%20Outages&amp;source=http://localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/&amp;media=http://localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/&amp;description=Resilience%20in%20Custom%20Linux%20Distributions:%20A%20Solution%20to%20Microsoft%20Windows%20Outages" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/&amp;resubmit=true&amp;title=Resilience%20in%20Custom%20Linux%20Distributions:%20A%20Solution%20to%20Microsoft%20Windows%20Outages" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Resilience%20in%20Custom%20Linux%20Distributions:%20A%20Solution%20to%20Microsoft%20Windows%20Outages&amp;caption=Resilience%20in%20Custom%20Linux%20Distributions:%20A%20Solution%20to%20Microsoft%20Windows%20Outages&amp;content=http://localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/&amp;canonicalUrl=http://localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=Resilience%20in%20Custom%20Linux%20Distributions:%20A%20Solution%20to%20Microsoft%20Windows%20Outages&amp;url=http://localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=Resilience%20in%20Custom%20Linux%20Distributions:%20A%20Solution%20to%20Microsoft%20Windows%20Outages&amp;url=http://localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/;title=Resilience%20in%20Custom%20Linux%20Distributions:%20A%20Solution%20to%20Microsoft%20Windows%20Outages" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Founder &amp; Tech Lead, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impressum</strong>
+<p>Innovating India&rsquo;s digital infrastructure: AI, IoT, and Full Stack Solutions.<br>
+Some rights reserved. For inquiries, contact: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 15rem">
+                        <div
+                            aria-labelledby="footer-2">
+                            <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Pendiri &amp; Pemimpin Teknologi, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impresium</strong>
+<p>Berinovasi dalam infrastruktur digital India: AI, IoT, dan Solusi Full Stack.<br>
+Beberapa hak dilindungi undang-undang. Untuk pertanyaan, hubungi: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                        </div>
+                        <div id="coffee-counter">
+                            <strong class="section-title">Coffee Stat</strong>
+                            <p>Making this website has taken at least 13 cups of coffee, if not more.</p>
+                        </div>                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key" aria-hidden="true">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" aria-label="Accessibility"
+        data-i18n-optimizeSR="Screen Reader Optimization"
+        data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+        data-i18n-colorSettings="Color Settings"
+        data-i18n-darkMode="Dark Mode"
+        data-i18n-light="Light"
+        data-i18n-dark="Dark"
+        data-i18n-contrast="Contrast"
+        data-i18n-lessContrast="Low"
+        data-i18n-moreContrast="High"
+        data-i18n-defaultContrast="Default"
+        data-i18n-colorPalette="Color Palette"
+        data-i18n-defaultColor="Default"
+        data-i18n-deuteranopia="Deuteranopia"
+        data-i18n-protanopia="Protanopia"
+        data-i18n-tritanopia="Tritanopia"
+        data-i18n-monochrome="Monochrome"
+        data-i18n-fontSize="Font Size"
+        data-i18n-baselineStretch="Baseline Stretch"        
+        data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+        data-i18n-menuControls="Accessibility Menu Controls"
+        data-i18n-save="Save"
+        data-i18n-reset="Reset"
+        data-i18n-close="Close"
+        data-i18n-bionRead="BionRead Mode"
+        data-i18n-focusMode="Focus Mode"
+        data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+        </a>
+    </nav>
+</footer>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</html>

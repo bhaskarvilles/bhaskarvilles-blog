@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Rise of ZK-EVMs: How Ethereum&#39;s Multi-Client Philosophy Enables Continued Decentralization | Bhaskar&#39;s Website</title>
+<meta name="author" content="Bhaskar">
+<meta name="description" content="My thoughts on EVMs Multi Client repository One important aspect of Ethereum’s security and decentralization is its multi-client philosophy. Instead …" >
+<link rel="canonical" href="http://localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Rise of ZK-EVMs: How Ethereum&#39;s Multi-Client Philosophy Enables Continued Decentralization | Bhaskar&#39;s Website" />
+    <meta name="twitter:description" content="My thoughts on EVMs Multi Client repository One important aspect of Ethereum’s security and decentralization is its multi-client philosophy. Instead …" />
+        <meta name="twitter:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+        <meta name="twitter:site" content="@@bhaskarvilles" />
+        <meta name="twitter:creator" content="@@bhaskarvilles" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="The Rise of ZK-EVMs: How Ethereum&#39;s Multi-Client Philosophy Enables Continued Decentralization | Bhaskar&#39;s Website" />
+    <meta property="og:description" content="My thoughts on EVMs Multi Client repository One important aspect of Ethereum’s security and decentralization is its multi-client philosophy. Instead …" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/" />
+        <meta property="og:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+    <meta property="og:site_name" content="Bhaskar&#39;s Website" /><!-- js.html -->
+
+
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+
+
+
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+    
+</head>
+<body >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/en/" aria-label="Bhaskar&#39;s Website" aria-description="Homepage">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="476pt" aria-label="Bhaskar&#39;s Website">
+            <text id="logotype__text" y="19.5pt" x="0">Bhaskar&#39;s Website</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2 srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="http://localhost:1313/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+                <!-- menu.html -->
+    <menu class="srm">
+        <a id="print-button" class="hide" href="javascript:window.print()" role="button" aria-label="Print">
+            <span class="t srt" role="tooltip">Print</span>
+        </a>
+        <a id="navigatorShare" href="#share" role="button" aria-label="Share">
+            <span class="t srt" role="tooltip">Share</span>
+        </a>
+        <a id="copyPermalink"  href="javascript:navigator.clipboard.writeText(window.location.href)" role="button" aria-label="Copy URL">
+            <span id="copy" class="t srt" role="tooltip">Copy URL</span>
+            <span id="isCopying" style="display: none;">Copying...</span>
+            <span id="copyText" style="display: none;">Copy URL</span>
+        </a>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t srt" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">The Rise of ZK-EVMs: How Ethereum&#39;s Multi-Client Philosophy Enables Continued Decentralization
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth sf"
+        role="document" aria-labelledby="title"
+            data-pagefind-ignore="all">
+        <header aria-labelledby="title">
+            
+            <!-- title.html -->
+        <h1 id="title"
+            data-bionRead-safe
+            >The Rise of ZK-EVMs: How Ethereum&#39;s Multi-Client Philosophy Enables Continued Decentralization</h1>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <h2 id="my-thoughts-on-evms-multi-client-repository">My thoughts on EVMs Multi Client repository</h2>
+<p>One important aspect of Ethereum&rsquo;s security and decentralization is its multi-client philosophy. Instead of relying on a single reference client, Ethereum has a specification written in Python and multiple independent implementations of the spec called clients. Each node runs a consensus client to validate blocks and an execution client to check state transitions. Currently, no single client makes up more than two-thirds of either category. This ensures that bugs in any one client will not cripple the network.</p>
+<p>An upcoming transition in Ethereum is the rise of Zero-Knowledge Ethereum Virtual Machines or ZK-EVMs. ZK-EVMs use zero-knowledge proofs to verify EVM execution. They are currently used by layer 2 protocols called ZK rollups to scale Ethereum. In the future, ZK-EVMs could also be used to verify layer 1 Ethereum blocks. This raises the question of how ZK-EVMs will fit into Ethereum&rsquo;s multi-client philosophy. While there are multiple ZK-EVM implementations, making them work together as &ldquo;multi-clients&rdquo; will be challenging. However, the benefits may outweigh the costs.</p>
+<p><strong>Why did Ethereum adopt a multi-client philosophy?</strong></p>
+<p>Ethereum&rsquo;s multi-client philosophy improves both technical and political decentralization.</p>
+<p>Technically, it reduces the risk of bugs in a single client disrupting the network. For example, if there was only one client, a catastrophic bug could cripple the entire network. With multiple clients, the network is more resilient. While multi-clients introduce the risk of consensus failures where clients disagree, in practice there are always multiple versions of a single client. So multi-clients likely reduce risk overall.</p>
+<p>Politically, multi-clients prevent too much control from concentrating with any one team. If there was only one client, its developers would have significant power over the protocol. They could propose controversial changes or threaten to quit if they don&rsquo;t get their way. Multi-clients make it harder for any one group to control the protocol.</p>
+<p><strong>How will ZK-EVMs be used on layer 1?</strong></p>
+<p>There are two options for using ZK-EVMs on layer 1:</p>
+<ol>
+<li>
+<p>Constrict layer 1 and force activity to layer 2. This would limit layer 1 to verifying SNARKs and facilitating transfers between layer 2s. While this could work, it may not reduce costs enough for most users to verify the chain and it risks breaking compatibility with existing applications.</p>
+</li>
+<li>
+<p>Use ZK-EVMs to SNARK-verify layer 1. ZK-EVMs could generate proofs that verify the EVM execution and consensus of layer 1 blocks. This is challenging to implement but technically feasible and allows layer 1 to remain useful. The main question is which ZK-EVMs to use:</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>Single ZK-EVM: Pick one ZK-EVM to verify all blocks. This sacrifices the benefits of multiple clients.</p>
+</li>
+<li>
+<p>Closed multi ZK-EVM: Choose a fixed set of ZK-EVMs and require proofs from a majority to verify blocks. This limits innovation in new ZK-EVMs.</p>
+</li>
+<li>
+<p>Open multi ZK-EVM: Different clients use different ZK-EVMs and wait for compatible proofs to verify blocks. This is ideal but introduces latency and data inefficiency challenges. With careful protocol design and aggregation methods, these challenges can be addressed.</p>
+</li>
+</ul>
+<p>Using ZK-EVMs to SNARK-verify layer 1 also allows greatly increasing layer 1 capacity since clients no longer need to re-execute every transaction.</p>
+<p><strong>So purely, i will say that</strong></p>
+<p>An open multi-client ZK-EVM ecosystem will require substantial work but many of the necessary technologies already exist or are in development. Multiple ZK-EVM implementations, light clients becoming full SNARK-verifiers, gradual transitions to SNARKs, and aggregation methods will all help in building this ecosystem.</p>
+<p>While ZK-EVMs still need to become fully Ethereum-equivalent and faster to enable real-time proof generation, they are making progress. Ethereum improvements like increasing gas costs for hash functions will also help. A long-term future of formally verifying ZK-EVM equivalence is promising but an open multi-ZK-EVM world seems a natural next step.</p>
+<p>The transition to ZK-EVMs on layer 1 may start sooner than expected once Verkle trees and stateless clients are live, as clients start relying more on ZK-SNARKs. Though still a long journey, ZK-EVMs are poised to play an important role in Ethereum&rsquo;s continued decentralization and scale.</p>
+<h2 id="vitaliks-view">Vitalik&rsquo;s View</h2>
+<p>One underdiscussed, but nevertheless very important, way in which Ethereum maintains its security and decentralization is its <strong>multi-client philosophy</strong>. Ethereum intentionally has no &ldquo;reference client&rdquo; that everyone runs by default: instead, there is a collaboratively-managed <strong>specification</strong> (these days <a href="https://github.com/ethereum/consensus-specs">written</a> in the very human-readable but very slow <a href="https://github.com/ethereum/execution-specs">Python</a>) and there are multiple teams making <strong>implementations</strong> of the spec (also called &ldquo;<strong>clients</strong>&rdquo;), which is what users actually run.</p>
+<center><br><a href="https://clientdiversity.org/">
+<p><img src="https://vitalik.ca/images/zkmulticlient/clientdistribution.png" alt=""></p>
+<p></a><small><i>Each Ethereum node runs a consensus client and an execution client. As of today, no consensus or execution client makes up more than 2/3 of the network. If a client with less than 1/3 share in its category has a bug, the network would simply continue as normal. If a client with between 1/3 and 2/3 share in its category (so, Prysm, Lighthouse or Geth) has a bug, the chain would continue adding blocks, but it would stop finalizing blocks, giving time for developers to intervene.</i></small></p>
+</center><br>
+<p>One underdiscussed, but nevertheless very important, major upcoming transition in the way the Ethereum chain gets validated is the rise of <strong>ZK-EVMs</strong>. <a href="https://vitalik.ca/general/2022/08/04/zkevm.html">SNARKs proving EVM execution</a> have been under development for years already, and the technology is actively being used by layer 2 protocols called <a href="https://vitalik.ca/general/2021/01/05/rollup.html">ZK rollups</a>. Some of these ZK rollups are <a href="https://blog.matter-labs.io/gm-zkevm-171b12a26b36">active</a> on <a href="https://polygon.technology/polygon-zkevm">mainnet</a> today, with <a href="https://scroll.io/">more</a> <a href="https://taiko.xyz/">coming</a> <a href="https://www.kakarot.org/">soon</a>. But in the longer term, ZK-EVMs are not just going to be for rollups; we want to use them to verify execution on layer 1 as well (see also: <a href="https://twitter.com/VitalikButerin/status/1588669782471368704">the Verge</a>).</p>
+<p>Once that happens, ZK-EVMs de-facto become a third type of Ethereum client, just as important to the network&rsquo;s security as execution clients and consensus clients are today. And this naturally raises a question: how will ZK-EVMs interact with the multi-client philosophy? One of the hard parts is already done: we already have multiple ZK-EVM implementations that are being actively developed. But other hard parts remain: how would we actually make a &ldquo;multi-client&rdquo; ecosystem for ZK-proving correctness of Ethereum blocks? This question opens up some interesting technical challenges - and of course the looming question of whether or not the tradeoffs are worth it.</p>
+<h2 id="what-was-the-original-motivation-for-ethereums-multi-client-philosophy">What was the original motivation for Ethereum&rsquo;s multi-client philosophy?</h2>
+<p>Ethereum&rsquo;s multi-client philosophy is a type of decentralization, and like <a href="https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274">decentralization in general</a>, one can focus on either the technical benefits of architectural decentralization or the social benefits of political decentralization. Ultimately, the multi-client philosophy was motivated by both and serves both.</p>
+<h3 id="arguments-for-technical-decentralization">Arguments for technical decentralization</h3>
+<p>The main benefit of technical decentralization is simple: it reduces the risk that one bug in one piece of software leads to a catastrophic breakdown of the entire network. A historical situation that exemplifies this risk is the <a href="https://news.bitcoin.com/bitcoin-history-part-10-the-184-billion-btc-bug/">2010 Bitcoin overflow bug</a>. At the time, the Bitcoin client code did not check that the sum of the outputs of a transaction does not overflow (wrap around to zero by summing to above the maximum integer of $2^{64} - 1$), and so someone made a transaction that did exactly that, giving themselves billions of bitcoins. The bug was discovered within hours, and a fix was rushed through and quickly deployed across the network, but had there been a mature ecosystem at the time, those coins would have been accepted by exchanges, bridges and other structures, and the attackers could have gotten away with a lot of money. If there had been five different Bitcoin clients, it would have been very unlikely that all of them had the same bug, and so there would have been an immediate split, and the side of the split that was buggy would have probably lost.</p>
+<p>There is a tradeoff in using the multi-client approach to minimize the risk of catastrophic bugs: instead, you get <strong>consensus failure</strong> bugs. That is, if you have two clients, there is a risk that the clients have subtly different interpretations of some protocol rule, and while both interpretations are reasonable and do not allow stealing money, the disagreement would cause the chain to split in half. A serious split of that type happened <a href="https://blog.ethereum.org/2016/11/25/security-alert-11242016-consensus-bug-geth-v1-4-19-v1-5-2">once in Ethereum&rsquo;s history</a> (there have been other much smaller splits where very small portions of the network running old versions of the code forked off). Defenders of the single-client approach point to consensus failures as a reason to not have multiple implementations: if there is only one client, that one client will not disagree with itself. Their model of how number of clients translates into risk might look something like this:</p>
+<center><br>
+<p><img src="https://vitalik.ca/images/zkmulticlient/riskchart.png" alt=""></p>
+</center><br>
+<p>I, of course, disagree with this analysis. The crux of my disagreement is that (i) 2010-style catastrophic bugs matter too, and (ii) <strong>you never <em>actually</em> have only one client</strong>. The latter point is made most obvious by the <a href="https://bitcoinmagazine.com/technical/bitcoin-network-shaken-by-blockchain-fork-1363144448">Bitcoin fork of 2013</a>: a chain split occurred because of a disagreement between <em>two different versions</em> of the Bitcoin client, one of which turned out to have an accidental and undocumented limit on the number of objects that could be modified in a single block. Hence, one client in theory is often two clients in practice, and five clients in theory might be six or seven clients in practice - so we should just take the plunge and go on the right side of the risk curve, and have at least a few different clients.</p>
+<h3 id="arguments-for-political-decentralization">Arguments for political decentralization</h3>
+<p>Monopoly client developers are in a position with a lot of political power. If a client developer proposes a change, and users disagree, <em>theoretically</em> they could refuse to download the updated version, or create a fork without it, but <em>in practice</em> it&rsquo;s often difficult for users to do that. What if a disagreeable protocol change is bundled with a necessary security update? What if the main team threatens to quit if they don&rsquo;t get their way? Or, more tamely, what if the monopoly client team ends up being the only group with the greatest protocol expertise, leaving the rest of the ecosystem in a poor position to judge technical arguments that the client team puts forward, leaving the client team with a lot of room to push their own particular goals and values, which might not match with the broader community?</p>
+<p>Concern about protocol politics, particularly in the context of the <a href="https://blog.bitmex.com/dapps-or-only-bitcoin-transactions-the-2014-debate/">2013-14 Bitcoin OP_RETURN wars</a> where some participants were openly in favor of discriminating against particular usages of the chain, was a significant contributing factor in Ethereum&rsquo;s early adoption of a multi-client philosophy, which was aimed to make it harder for a small group to make those kinds of decisions. Concerns specific to the Ethereum ecosystem - namely, avoiding concentration of power within the Ethereum Foundation itself - provided further support for this direction. In 2018, a decision was made to intentionally have the Foundation <em>not</em> make an implementation of the Ethereum PoS protocol (ie. what is now called a &ldquo;consensus client&rdquo;), leaving that task entirely to outside teams.</p>
+<h2 id="how-will-zk-evms-come-in-on-layer-1-in-the-future">How will ZK-EVMs come in on layer 1 in the future?</h2>
+<p>Today, ZK-EVMs are used in rollups. This increases scaling by allowing expensive EVM execution to happen only a few times off-chain, with everyone else simply verifying <a href="https://vitalik.ca/general/2021/01/26/snarks.html">SNARKs</a> posted on-chain that prove that the EVM execution was computed correctly. It also allows some data (particularly signatures) to not be included on-chain, saving on gas costs. This gives us a lot of scalability benefits, and the combination of scalable computation with ZK-EVMs and scalable data with <a href="https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling">data availability sampling</a> could let us scale very far.</p>
+<p>However, the Ethereum network today also has a different problem, one that no amount of layer 2 scaling can solve by itself: the layer 1 is difficult to verify, to the point where not many users run their own node. Instead, most users simply trust third-party providers. Light clients such as <a href="https://a16zcrypto.com/content/article/building-helios-ethereum-light-client/">Helios</a> and <a href="https://www.succinct.xyz/">Succinct</a> are taking steps toward solving the problem, but a light client is far from a fully verifying node: a light client merely verifies the signatures of a random subset of validators called the <a href="https://github.com/ethereum/annotated-spec/blob/master/altair/sync-protocol.md">sync committee</a>, and does not verify that the chain actually follows the protocol rules. To bring us to a world where users can actually verify that the chain follows the rules, we would have to do something different.</p>
+<h3 id="option-1-constrict-layer-1-force-almost-all-activity-to-move-to-layer-2">Option 1: constrict layer 1, force almost all activity to move to layer 2</h3>
+<p>We could over time reduce the layer 1 gas-per-block target down from 15 million to 1 million, enough for a block to contain a single SNARK and a few deposit and withdraw operations but not much else, and thereby force almost all user activity to move to layer 2 protocols. Such a design could still support many rollups committing in each block: we could use <a href="https://vitalik.ca/general/2022/09/17/layer_3.html#rollups-and-validiums-have-a-confirmation-time-vs-fixed-cost-tradeoff.-layer-3s-can-help-fix-this.-but-what-else-can">off-chain aggregation protocols</a> run by customized builders to gather together SNARKs from multiple layer 2 protocols and combine them into a single SNARK. <strong>In such a world, the <em>only</em> function of layer 1 would be to be a clearinghouse for layer 2 protocols, verifying their proofs and occasionally facilitating large funds transfers between them</strong>.</p>
+<center><br>
+<p><img src="https://vitalik.ca/images/zkmulticlient/proofaggregation.png" alt=""></p>
+</center><br>
+<p>This approach could work, but it has several important weaknesses:</p>
+<ul>
+<li><strong>It&rsquo;s de-facto backwards-incompatible</strong>, in the sense that many existing L1-based applications become economically nonviable. User funds up to hundreds or thousands of dollars could get stuck as fees become so high that they exceed the cost of emptying those accounts. This could be addressed by letting users sign messages to opt in to an in-protocol mass migration to an L2 of their choice (see some <a href="https://ethereum-magicians.org/t/some-medium-term-dust-cleanup-ideas/6287">early implementation ideas here</a>), but this adds complexity to the transition, and making it truly cheap enough would require <em>some</em> kind of SNARK at layer 1 anyway. I&rsquo;m generally a fan of breaking backwards compatibility when it comes to <a href="https://hackmd.io/@vbuterin/selfdestruct">things like the SELFDESTRUCT opcode</a>, but in this case the tradeoff seems much less favorable.</li>
+<li><strong>It might still not make verification cheap enough</strong>. Ideally, the Ethereum protocol should be easy to verify not just on laptops but also inside phones, browser extensions, and even inside other chains. Syncing the chain for the first time, or after a long time offline, should also be easy. A laptop node could verify 1 million gas in ~20 ms, but even that implies 54 seconds to sync after one day offline (assuming <a href="https://notes.ethereum.org/@vbuterin/single_slot_finality">single slot finality</a> increases slot times to 32s), and for phones or browser extensions it would take a few hundred milliseconds per block and might still be a non-negligible battery drain. These numbers are manageable, but they are not ideal.</li>
+<li><strong>Even in an L2-first ecosystem, there are benefits to L1 being at least somewhat affordable</strong>. <a href="https://ethereum.org/en/developers/docs/scaling/validium/">Validiums</a> can benefit from a stronger security model if users can withdraw their funds if they notice that new state data is no longer being made available. Arbitrage becomes more efficient, especially for smaller tokens, if the minimum size of an economically viable cross-L2 direct transfer is smaller.</li>
+</ul>
+<p>Hence, it seems more reasonable to try to find a way to use ZK-SNARKs to verify the layer 1 itself.</p>
+<h3 id="option-2-snark-verify-the-layer-1">Option 2: SNARK-verify the layer 1</h3>
+<p>A <a href="https://vitalik.ca/general/2022/08/04/zkevm.html#type-1-fully-ethereum-equivalent">type 1 (fully Ethereum-equivalent) ZK-EVM</a> can be used to verify the EVM execution of a (layer 1) Ethereum block. We could write more SNARK code to also verify the consensus side of a block. This would be a challenging engineering problem: today, ZK-EVMs take minutes to hours to verify Ethereum blocks, and generating proofs in real time would require one or more of (i) improvements to Ethereum itself to remove SNARK-unfriendly components, (ii) either large efficiency gains with specialized hardware, and (iii) architectural improvements with much more parallelization. However, there is no fundamental technological reason why it cannot be done - and so I expect that, even if it takes many years, it will be done.</p>
+<p><strong>Here is where we see the intersection with the multi-client paradigm: if we use ZK-EVMs to verify layer 1, which ZK-EVM do we use?</strong></p>
+<p>I see three options:</p>
+<ol>
+<li><strong>Single ZK-EVM</strong>: abandon the multi-client paradigm, and choose a single ZK-EVM that we use to verify blocks.</li>
+<li><strong>Closed multi ZK-EVM</strong>: agree on and enshrine in consensus a specific set of multiple ZK-EVMs, and have a consensus-layer protocol rule that a block needs proofs from more than half of the ZK-EVMs in that set to be considered valid.</li>
+<li><strong>Open multi ZK-EVM</strong>: different clients have different ZK-EVM implementations, and each client waits for a proof that is compatible with its own implementation before accepting a block as valid.</li>
+</ol>
+<p>To me, (3) seems ideal, at least until and unless our technology improves to the point where we can <a href="https://en.wikipedia.org/wiki/Formal_verification">formally prove</a> that all of the ZK-EVM implementations are equivalent to each other, at which point we can just pick whichever one is most efficient. (1) would sacrifice the benefits of the multi-client paradigm, and (2) would close off the possibility of developing new clients and lead to a more centralized ecosystem. (3) has challenges, but those challenges seem smaller than the challenges of the other two options, at least for now.</p>
+<p>Implementing (3) would not be too hard: one might have a p2p sub-network for each type of proof, and a client that uses one type of proof would listen on the corresponding sub-network and wait until they receive a proof that their verifier recognizes as valid.</p>
+<p>The two main challenges of (3) are likely the following:</p>
+<ul>
+<li><strong>The latency challenge</strong>: a malicious attacker could publish a block late, along with a proof valid for one client. It would realistically take a long time (even if eg. 15 seconds) to generate proofs valid for other clients. This time would be long enough to potentially create a temporary fork and disrupt the chain for a few slots.</li>
+<li><strong>Data inefficiency</strong>: one benefit of ZK-SNARKs is that data that is only relevant to <em>verification</em> (sometimes called &ldquo;witness data&rdquo;) could be removed from a block. For example, once you&rsquo;ve verified a signature, you don&rsquo;t need to keep the signature in a block, you could just store a single bit saying that the signature is valid, along with a single proof in the block confirming that all of the valid signatures exist. However, if we want it to be possible to generate proofs of multiple types for a block, the original signatures would need to actually be published.</li>
+</ul>
+<p>The latency challenge could be addressed by being careful when designing the single-slot finality protocol. Single-slot finality protocols will likely require more than two rounds of consensus per slot, and so one could require the first round to include the block, and only require nodes to verify proofs before signing in the third (or final) round. This ensures that a significant time window is always available between the deadline for publishing a block and the time when it&rsquo;s expected for proofs to be available.</p>
+<p>The data efficiency issue would have to be addressed by having a separate protocol for aggregating verification-related data. For signatures, we could use <a href="https://ethresear.ch/t/adding-cross-transaction-bls-signature-aggregation-to-ethereum/7844">BLS aggregation</a>, which <a href="https://github.com/eth-infinitism/account-abstraction/pull/92">ERC-4337 already supports</a>. Another major category of verification-related data is ZK-SNARKs <a href="https://vitalik.ca/general/2022/06/15/using_snarks.html">used for privacy</a>. Fortunately, these often tend to <a href="https://vitalik.ca/general/2021/11/05/halo.html">have their own aggregation protocols</a>.</p>
+<p>It is also worth mentioning that SNARK-verifying the layer 1 has an important <em>benefit</em>: the fact that on-chain EVM execution no longer needs to be verified by every node makes it possible to greatly increase the amount of EVM execution taking place. This could happen either by greatly increasing the layer 1 gas limit, or by introducing <a href="https://www.reddit.com/r/ethereum/comments/vrx9xe/comment/if7auu7/">enshrined rollups</a>, or both.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>Making an open multi-client ZK-EVM ecosystem work well will take a lot of work. But the really good news is that much of this work is happening or will happen anyway:</p>
+<ul>
+<li><a href="https://github.com/matter-labs/zksync">We</a> have <a href="https://github.com/privacy-scaling-explorations/zkevm-specs">multiple</a> strong <a href="https://github.com/0xpolygonhermez">ZK-EVM</a> implementations <a href="https://github.com/sayajin-labs/kakarot">already</a>. These implementations are not yet <a href="https://vitalik.ca/general/2022/08/04/zkevm.html">type 1</a> (fully Ethereum-equivalent), but many of them are actively moving in that direction.</li>
+<li>The work on light clients such as <a href="https://a16zcrypto.com/content/article/building-helios-ethereum-light-client/">Helios</a> and <a href="https://www.succinct.xyz/">Succinct</a> may eventually turn into a more full SNARK-verification of the PoS consensus side of the Ethereum chain.</li>
+<li>Clients will likely start experimenting with ZK-EVMs to prove Ethereum block execution on their own, especially once we have <a href="https://dankradfeist.de/ethereum/2021/02/14/why-stateless.html">stateless clients</a> and there&rsquo;s no technical need to directly re-execute every block to maintain the state. We will probably get a slow and gradual transition from clients verifying Ethereum blocks by re-executing them to most clients verifying Ethereum blocks by checking SNARK proofs.</li>
+<li>The ERC-4337 and PBS ecosystems are likely to start working with aggregation technologies like BLS and proof aggregation pretty soon, in order to save on gas costs. On BLS aggregation, <a href="https://medium.com/privacy-scaling-explorations/bls-wallet-bundling-up-data-fb5424d3bdd3">work has already started</a>.</li>
+</ul>
+<p>With these technologies in place, the future looks very good. Ethereum blocks would be smaller than today, anyone could run a fully verifying node on their laptop or even their phone or inside a browser extension, and this would all happen while preserving the benefits of Ethereum&rsquo;s multi-client philosophy.</p>
+<p>In the longer-term future, of course anything could happen. Perhaps AI will super-charge formal verification to the point where it can easily prove ZK-EVM implementations equivalent and identify all the bugs that cause differences between them. Such a project may even be something that it might be practical to start working on now. If such a formal verification-based approach succeeds, different mechanisms would need to be put in place to ensure continued political decentralization of the protocol; perhaps at that point, the protocol would be considered &ldquo;complete&rdquo; and immutability norms would be stronger. But even if that is the longer-term future, the open multi-client ZK-EVM world seems like a natural stepping stone that is likely to happen anyway.</p>
+<p>In the nearer term, this is still a long journey. ZK-EVMs <em>are</em> here, but ZK-EVMs becoming truly viable at layer 1 would require them to become type 1, and make proving fast enough that it can happen in real time. With enough parallelization, this is doable, but it will still be a lot of work to get there. Consensus changes like raising the gas cost of KECCAK, SHA256 and other hash function precompiles will also be an important part of the picture. That said, the first steps of the transition may happen sooner than we expect: once we switch to <a href="https://vitalik.ca/general/2021/06/18/verkle.html">Verkle trees</a> and stateless clients, clients could start gradually using ZK-EVMs, and a transition to an &ldquo;open multi-ZK-EVM&rdquo; world could start happening all on its own.</p>
+<p>Credits :  <a href="https:vitalik.ca">Vitalik Buterin</a> - Founder of <a href="https://ethereum.org">Ethereum</a></p>
+
+        </section>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="The Rise of ZK-EVMs: How Ethereum&#39;s Multi-Client Philosophy Enables Continued Decentralization">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/">
+        <input id="mastodonText" type="hidden" name="text" value="The Rise of ZK-EVMs: How Ethereum&#39;s Multi-Client Philosophy Enables Continued Decentralization http://localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=The%20Rise%20of%20ZK-EVMs%3a%20How%20Ethereum%26%2339%3bs%20Multi-Client%20Philosophy%20Enables%20Continued%20Decentralization&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2023-04-10-how-ethereum-makes-decentralization-possible%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=The%20Rise%20of%20ZK-EVMs%3a%20How%20Ethereum%26%2339%3bs%20Multi-Client%20Philosophy%20Enables%20Continued%20Decentralization%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2023-04-10-how-ethereum-makes-decentralization-possible%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=The%20Rise%20of%20ZK-EVMs:%20How%20Ethereum&amp;#39;s%20Multi-Client%20Philosophy%20Enables%20Continued%20Decentralization&amp;url=http://localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=The%20Rise%20of%20ZK-EVMs:%20How%20Ethereum&amp;#39;s%20Multi-Client%20Philosophy%20Enables%20Continued%20Decentralization&amp;url=http://localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/&amp;t=The%20Rise%20of%20ZK-EVMs:%20How%20Ethereum&amp;#39;s%20Multi-Client%20Philosophy%20Enables%20Continued%20Decentralization" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/&amp;title=The%20Rise%20of%20ZK-EVMs:%20How%20Ethereum&amp;#39;s%20Multi-Client%20Philosophy%20Enables%20Continued%20Decentralization&amp;summary=The%20Rise%20of%20ZK-EVMs:%20How%20Ethereum&amp;#39;s%20Multi-Client%20Philosophy%20Enables%20Continued%20Decentralization&amp;source=http://localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/&amp;media=http://localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/&amp;description=The%20Rise%20of%20ZK-EVMs:%20How%20Ethereum&amp;#39;s%20Multi-Client%20Philosophy%20Enables%20Continued%20Decentralization" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/&amp;resubmit=true&amp;title=The%20Rise%20of%20ZK-EVMs:%20How%20Ethereum&amp;#39;s%20Multi-Client%20Philosophy%20Enables%20Continued%20Decentralization" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=The%20Rise%20of%20ZK-EVMs:%20How%20Ethereum&amp;#39;s%20Multi-Client%20Philosophy%20Enables%20Continued%20Decentralization&amp;caption=The%20Rise%20of%20ZK-EVMs:%20How%20Ethereum&amp;#39;s%20Multi-Client%20Philosophy%20Enables%20Continued%20Decentralization&amp;content=http://localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/&amp;canonicalUrl=http://localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=The%20Rise%20of%20ZK-EVMs:%20How%20Ethereum&amp;#39;s%20Multi-Client%20Philosophy%20Enables%20Continued%20Decentralization&amp;url=http://localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=The%20Rise%20of%20ZK-EVMs:%20How%20Ethereum&amp;#39;s%20Multi-Client%20Philosophy%20Enables%20Continued%20Decentralization&amp;url=http://localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/;title=The%20Rise%20of%20ZK-EVMs:%20How%20Ethereum&amp;#39;s%20Multi-Client%20Philosophy%20Enables%20Continued%20Decentralization" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Founder &amp; Tech Lead, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impressum</strong>
+<p>Innovating India&rsquo;s digital infrastructure: AI, IoT, and Full Stack Solutions.<br>
+Some rights reserved. For inquiries, contact: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 15rem">
+                        <div
+                            aria-labelledby="footer-2">
+                            <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Pendiri &amp; Pemimpin Teknologi, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impresium</strong>
+<p>Berinovasi dalam infrastruktur digital India: AI, IoT, dan Solusi Full Stack.<br>
+Beberapa hak dilindungi undang-undang. Untuk pertanyaan, hubungi: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                        </div>
+                        <div id="coffee-counter">
+                            <strong class="section-title">Coffee Stat</strong>
+                            <p>Making this website has taken at least 13 cups of coffee, if not more.</p>
+                        </div>                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key" aria-hidden="true">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" aria-label="Accessibility"
+        data-i18n-optimizeSR="Screen Reader Optimization"
+        data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+        data-i18n-colorSettings="Color Settings"
+        data-i18n-darkMode="Dark Mode"
+        data-i18n-light="Light"
+        data-i18n-dark="Dark"
+        data-i18n-contrast="Contrast"
+        data-i18n-lessContrast="Low"
+        data-i18n-moreContrast="High"
+        data-i18n-defaultContrast="Default"
+        data-i18n-colorPalette="Color Palette"
+        data-i18n-defaultColor="Default"
+        data-i18n-deuteranopia="Deuteranopia"
+        data-i18n-protanopia="Protanopia"
+        data-i18n-tritanopia="Tritanopia"
+        data-i18n-monochrome="Monochrome"
+        data-i18n-fontSize="Font Size"
+        data-i18n-baselineStretch="Baseline Stretch"        
+        data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+        data-i18n-menuControls="Accessibility Menu Controls"
+        data-i18n-save="Save"
+        data-i18n-reset="Reset"
+        data-i18n-close="Close"
+        data-i18n-bionRead="BionRead Mode"
+        data-i18n-focusMode="Focus Mode"
+        data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+        </a>
+    </nav>
+</footer>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</html>

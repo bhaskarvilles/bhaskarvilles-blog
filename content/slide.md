@@ -1,14 +1,13 @@
 ---
 type: 'slide'
-title: 'This is slide'
+title: 'Welcome to Bhaskar Website'
 cover: 'https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/28.svg'
 weight: 1
 params:
     headless: true
-    target: 'https://github.com/foxihd/hugo-brewm'
+    target: 'https://kerdos.in'
 ---
 
-This demonstrates an example of three slide item. The navigation will change when there are three or more slides.
+Welcome to Bhaskar Website's digital showcase. This slide demonstrates our commitment to innovative technology geopolitics and everything.
 
-This is slide layout with cover image in frontmatter.
-For a minimalist home page without a slide and flowlines, see the [Indonesian homepage](https://foxihd.github.io/hugo-brewm/id/).
+Our platform features dynamic navigation that adapts based on content depth, ensuring an optimal user experience.

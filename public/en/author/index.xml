@@ -9,25 +9,70 @@
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 16:41:43 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/en/author/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Author Name</title>
-      <link>http://localhost:1313/en/author/author-name/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <title>Bhaskar</title>
+      <link>http://localhost:1313/en/author/bhaskar/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/author/author-name/</guid>
+      <guid>http://localhost:1313/en/author/bhaskar/</guid>
       <description></description>
-      <enclosure url="https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_and_styrofoam_%E2%80%93_electrostatic_charge_%28235112299%29.jpg" length="0" type="image/jpeg" />
+      
+    </item>
+    <item>
+      <title>Youtube Mike Sir</title>
+      <link>http://localhost:1313/en/author/youtube-mike-sir/</link>
+      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/author/youtube-mike-sir/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>AFP</title>
+      <link>http://localhost:1313/en/author/afp/</link>
+      <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/author/afp/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Bhaskar Ville</title>
+      <link>http://localhost:1313/en/author/bhaskar-ville/</link>
+      <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/author/bhaskar-ville/</guid>
+      <description></description>
+      
     </item>
     <item>
       <title>A.N. Other</title>
       <link>http://localhost:1313/en/author/a.n.-other/</link>
-      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
       <guid>http://localhost:1313/en/author/a.n.-other/</guid>
       <description></description>
       
+    </item>
+    <item>
+      <title>Allam Bhaskara Ram</title>
+      <link>http://localhost:1313/en/author/allam-bhaskara-ram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/author/allam-bhaskara-ram/</guid>
+      <description></description>
+      <enclosure url="/images/profile.jpg" length="0" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Author Name</title>
+      <link>http://localhost:1313/en/author/author-name/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/author/author-name/</guid>
+      <description></description>
+      <enclosure url="https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_and_styrofoam_%E2%80%93_electrostatic_charge_%28235112299%29.jpg" length="0" type="image/jpeg" />
     </item>
   </channel>
 </rss>

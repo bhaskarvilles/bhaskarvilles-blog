@@ -9,68 +9,1319 @@
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 16:41:43 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/en/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Authoring</title>
-      <link>http://localhost:1313/en/categories/authoring/</link>
-      <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+      <title>Physics</title>
+      <link>http://localhost:1313/en/categories/physics/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/categories/authoring/</guid>
+      <guid>http://localhost:1313/en/categories/physics/</guid>
       <description></description>
       
     </item>
     <item>
-      <title>Configuration</title>
-      <link>http://localhost:1313/en/categories/configuration/</link>
-      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <title>Science</title>
+      <link>http://localhost:1313/en/categories/science/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/categories/configuration/</guid>
+      <guid>http://localhost:1313/en/categories/science/</guid>
       <description></description>
       
     </item>
     <item>
-      <title>Homepage</title>
-      <link>http://localhost:1313/en/categories/homepage/</link>
-      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <title>Theory</title>
+      <link>http://localhost:1313/en/categories/theory/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/categories/homepage/</guid>
+      <guid>http://localhost:1313/en/categories/theory/</guid>
       <description></description>
       
     </item>
     <item>
-      <title>Test</title>
-      <link>http://localhost:1313/en/categories/test/</link>
-      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <title>Apple</title>
+      <link>http://localhost:1313/en/categories/apple/</link>
+      <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/categories/test/</guid>
+      <guid>http://localhost:1313/en/categories/apple/</guid>
       <description></description>
       
     </item>
     <item>
-      <title>Katex</title>
-      <link>http://localhost:1313/en/categories/katex/</link>
-      <pubDate>Sat, 20 Feb 2016 13:56:01 -0800</pubDate>
+      <title>Product Launches</title>
+      <link>http://localhost:1313/en/categories/product-launches/</link>
+      <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/categories/katex/</guid>
+      <guid>http://localhost:1313/en/categories/product-launches/</guid>
       <description></description>
       
     </item>
     <item>
-      <title>Latex</title>
-      <link>http://localhost:1313/en/categories/latex/</link>
-      <pubDate>Sat, 20 Feb 2016 13:56:01 -0800</pubDate>
+      <title>Technology</title>
+      <link>http://localhost:1313/en/categories/technology/</link>
+      <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/categories/latex/</guid>
+      <guid>http://localhost:1313/en/categories/technology/</guid>
       <description></description>
       
     </item>
     <item>
-      <title>Tufte-Css</title>
-      <link>http://localhost:1313/en/categories/tufte-css/</link>
-      <pubDate>Sat, 20 Feb 2016 13:56:01 -0800</pubDate>
+      <title>Biotechnology</title>
+      <link>http://localhost:1313/en/categories/biotechnology/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/categories/tufte-css/</guid>
+      <guid>http://localhost:1313/en/categories/biotechnology/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Medical Research</title>
+      <link>http://localhost:1313/en/categories/medical-research/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/medical-research/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Artificial Intelligence</title>
+      <link>http://localhost:1313/en/categories/artificial-intelligence/</link>
+      <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/artificial-intelligence/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Creative Tools</title>
+      <link>http://localhost:1313/en/categories/creative-tools/</link>
+      <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/creative-tools/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Developer Tools</title>
+      <link>http://localhost:1313/en/categories/developer-tools/</link>
+      <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/developer-tools/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>http://localhost:1313/en/categories/programming/</link>
+      <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/programming/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Personal Growth</title>
+      <link>http://localhost:1313/en/categories/personal-growth/</link>
+      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/personal-growth/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Data Breach</title>
+      <link>http://localhost:1313/en/categories/data-breach/</link>
+      <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/data-breach/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Internet Archive</title>
+      <link>http://localhost:1313/en/categories/internet-archive/</link>
+      <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/internet-archive/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Image Generation</title>
+      <link>http://localhost:1313/en/categories/image-generation/</link>
+      <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/image-generation/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Open Source</title>
+      <link>http://localhost:1313/en/categories/open-source/</link>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/open-source/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Entrepreneurship</title>
+      <link>http://localhost:1313/en/categories/entrepreneurship/</link>
+      <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/entrepreneurship/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Innovation</title>
+      <link>http://localhost:1313/en/categories/innovation/</link>
+      <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/innovation/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Startups</title>
+      <link>http://localhost:1313/en/categories/startups/</link>
+      <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/startups/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>AI</title>
+      <link>http://localhost:1313/en/categories/ai/</link>
+      <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/ai/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Automation</title>
+      <link>http://localhost:1313/en/categories/automation/</link>
+      <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/automation/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Technical</title>
+      <link>http://localhost:1313/en/categories/technical/</link>
+      <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/technical/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Mobile</title>
+      <link>http://localhost:1313/en/categories/mobile/</link>
+      <pubDate>Tue, 22 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/mobile/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Finance</title>
+      <link>http://localhost:1313/en/categories/finance/</link>
+      <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/finance/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Forex</title>
+      <link>http://localhost:1313/en/categories/forex/</link>
+      <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/forex/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Success Stories</title>
+      <link>http://localhost:1313/en/categories/success-stories/</link>
+      <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/success-stories/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Trading</title>
+      <link>http://localhost:1313/en/categories/trading/</link>
+      <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/trading/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Stock Market</title>
+      <link>http://localhost:1313/en/categories/stock-market/</link>
+      <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/stock-market/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Conflict</title>
+      <link>http://localhost:1313/en/categories/conflict/</link>
+      <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/conflict/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>International News</title>
+      <link>http://localhost:1313/en/categories/international-news/</link>
+      <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/international-news/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Israel</title>
+      <link>http://localhost:1313/en/categories/israel/</link>
+      <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/israel/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Middle East</title>
+      <link>http://localhost:1313/en/categories/middle-east/</link>
+      <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/middle-east/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Syria</title>
+      <link>http://localhost:1313/en/categories/syria/</link>
+      <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/syria/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Cybersecurity</title>
+      <link>http://localhost:1313/en/categories/cybersecurity/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/cybersecurity/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Ethical Hacking</title>
+      <link>http://localhost:1313/en/categories/ethical-hacking/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/ethical-hacking/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Keylogging</title>
+      <link>http://localhost:1313/en/categories/keylogging/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/keylogging/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Python Programming</title>
+      <link>http://localhost:1313/en/categories/python-programming/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/python-programming/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Security Research</title>
+      <link>http://localhost:1313/en/categories/security-research/</link>
+      <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/security-research/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Event-Driven Architecture</title>
+      <link>http://localhost:1313/en/categories/event-driven-architecture/</link>
+      <pubDate>Mon, 23 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/event-driven-architecture/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Microservices</title>
+      <link>http://localhost:1313/en/categories/microservices/</link>
+      <pubDate>Mon, 23 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/microservices/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Real-Time Data Processing</title>
+      <link>http://localhost:1313/en/categories/real-time-data-processing/</link>
+      <pubDate>Mon, 23 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/real-time-data-processing/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Software Architecture</title>
+      <link>http://localhost:1313/en/categories/software-architecture/</link>
+      <pubDate>Mon, 23 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/software-architecture/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Business Growth</title>
+      <link>http://localhost:1313/en/categories/business-growth/</link>
+      <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/business-growth/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Customer Acquisition</title>
+      <link>http://localhost:1313/en/categories/customer-acquisition/</link>
+      <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/customer-acquisition/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Marketing</title>
+      <link>http://localhost:1313/en/categories/marketing/</link>
+      <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/marketing/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Small Business</title>
+      <link>http://localhost:1313/en/categories/small-business/</link>
+      <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/small-business/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Strategy</title>
+      <link>http://localhost:1313/en/categories/strategy/</link>
+      <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/strategy/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>JavaScript</title>
+      <link>http://localhost:1313/en/categories/javascript/</link>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/javascript/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Penetration Testing</title>
+      <link>http://localhost:1313/en/categories/penetration-testing/</link>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/penetration-testing/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/en/categories/security/</link>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/security/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Game Development</title>
+      <link>http://localhost:1313/en/categories/game-development/</link>
+      <pubDate>Tue, 17 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/game-development/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Gaming</title>
+      <link>http://localhost:1313/en/categories/gaming/</link>
+      <pubDate>Tue, 17 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/gaming/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>India</title>
+      <link>http://localhost:1313/en/categories/india/</link>
+      <pubDate>Tue, 17 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/india/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>OWASP</title>
+      <link>http://localhost:1313/en/categories/owasp/</link>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/owasp/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>OpenAI</title>
+      <link>http://localhost:1313/en/categories/openai/</link>
+      <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/openai/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Reviews</title>
+      <link>http://localhost:1313/en/categories/reviews/</link>
+      <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/reviews/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Hardware</title>
+      <link>http://localhost:1313/en/categories/hardware/</link>
+      <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/hardware/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Development</title>
+      <link>http://localhost:1313/en/categories/development/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/development/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Tools</title>
+      <link>http://localhost:1313/en/categories/tools/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/tools/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Web Scraping</title>
+      <link>http://localhost:1313/en/categories/web-scraping/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/web-scraping/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Cloud Computing</title>
+      <link>http://localhost:1313/en/categories/cloud-computing/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/cloud-computing/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Ethics</title>
+      <link>http://localhost:1313/en/categories/ethics/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/ethics/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>EU Politics</title>
+      <link>http://localhost:1313/en/categories/eu-politics/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/eu-politics/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>International Relations</title>
+      <link>http://localhost:1313/en/categories/international-relations/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/international-relations/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Military Strategy</title>
+      <link>http://localhost:1313/en/categories/military-strategy/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/military-strategy/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Privacy</title>
+      <link>http://localhost:1313/en/categories/privacy/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/privacy/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Russia-Ukraine Conflict</title>
+      <link>http://localhost:1313/en/categories/russia-ukraine-conflict/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/russia-ukraine-conflict/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>ARM</title>
+      <link>http://localhost:1313/en/categories/arm/</link>
+      <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/arm/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Machine Learning</title>
+      <link>http://localhost:1313/en/categories/machine-learning/</link>
+      <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/machine-learning/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Snapdragon X Elite</title>
+      <link>http://localhost:1313/en/categories/snapdragon-x-elite/</link>
+      <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/snapdragon-x-elite/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>LLaMA</title>
+      <link>http://localhost:1313/en/categories/llama/</link>
+      <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/llama/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Ollama</title>
+      <link>http://localhost:1313/en/categories/ollama/</link>
+      <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/ollama/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Humanitarian Crisis</title>
+      <link>http://localhost:1313/en/categories/humanitarian-crisis/</link>
+      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/humanitarian-crisis/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Ukraine</title>
+      <link>http://localhost:1313/en/categories/ukraine/</link>
+      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/ukraine/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>National Security</title>
+      <link>http://localhost:1313/en/categories/national-security/</link>
+      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/national-security/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Financial Scandals</title>
+      <link>http://localhost:1313/en/categories/financial-scandals/</link>
+      <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/financial-scandals/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Regulatory Affairs</title>
+      <link>http://localhost:1313/en/categories/regulatory-affairs/</link>
+      <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/regulatory-affairs/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Geopolitics</title>
+      <link>http://localhost:1313/en/categories/geopolitics/</link>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/geopolitics/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>US Foreign Policy</title>
+      <link>http://localhost:1313/en/categories/us-foreign-policy/</link>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/us-foreign-policy/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>DevOps</title>
+      <link>http://localhost:1313/en/categories/devops/</link>
+      <pubDate>Sun, 04 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/devops/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Deep Learning</title>
+      <link>http://localhost:1313/en/categories/deep-learning/</link>
+      <pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/deep-learning/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Neural Networks</title>
+      <link>http://localhost:1313/en/categories/neural-networks/</link>
+      <pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/neural-networks/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Customization</title>
+      <link>http://localhost:1313/en/categories/customization/</link>
+      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/customization/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/en/categories/linux/</link>
+      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/linux/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Resilience</title>
+      <link>http://localhost:1313/en/categories/resilience/</link>
+      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/resilience/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Blockchain</title>
+      <link>http://localhost:1313/en/categories/blockchain/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/blockchain/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Contributions</title>
+      <link>http://localhost:1313/en/categories/contributions/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/contributions/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>GPT</title>
+      <link>http://localhost:1313/en/categories/gpt/</link>
+      <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/gpt/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Language Model</title>
+      <link>http://localhost:1313/en/categories/language-model/</link>
+      <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/language-model/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>ZK</title>
+      <link>http://localhost:1313/en/categories/zk/</link>
+      <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/zk/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>&lt;Arketing</title>
+      <link>http://localhost:1313/en/categories/arketing/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/arketing/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>DeepFloyd</title>
+      <link>http://localhost:1313/en/categories/deepfloyd/</link>
+      <pubDate>Fri, 19 May 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/deepfloyd/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>NLP</title>
+      <link>http://localhost:1313/en/categories/nlp/</link>
+      <pubDate>Fri, 19 May 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/nlp/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>ChatGPT</title>
+      <link>http://localhost:1313/en/categories/chatgpt/</link>
+      <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/chatgpt/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Google</title>
+      <link>http://localhost:1313/en/categories/google/</link>
+      <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/google/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>HumanIntellegence</title>
+      <link>http://localhost:1313/en/categories/humanintellegence/</link>
+      <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/humanintellegence/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>LanguageModels</title>
+      <link>http://localhost:1313/en/categories/languagemodels/</link>
+      <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/languagemodels/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Chat GPT</title>
+      <link>http://localhost:1313/en/categories/chat-gpt/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/chat-gpt/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Brain Implants</title>
+      <link>http://localhost:1313/en/categories/brain-implants/</link>
+      <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/brain-implants/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Neuralink</title>
+      <link>http://localhost:1313/en/categories/neuralink/</link>
+      <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/neuralink/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Footprinting</title>
+      <link>http://localhost:1313/en/categories/footprinting/</link>
+      <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/footprinting/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Hacking</title>
+      <link>http://localhost:1313/en/categories/hacking/</link>
+      <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/hacking/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Reconnaissance</title>
+      <link>http://localhost:1313/en/categories/reconnaissance/</link>
+      <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/reconnaissance/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Ethereum</title>
+      <link>http://localhost:1313/en/categories/ethereum/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/ethereum/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>EVM</title>
+      <link>http://localhost:1313/en/categories/evm/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/evm/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Digital Marketing</title>
+      <link>http://localhost:1313/en/categories/digital-marketing/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/digital-marketing/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>SEO</title>
+      <link>http://localhost:1313/en/categories/seo/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/seo/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Metaverse</title>
+      <link>http://localhost:1313/en/categories/metaverse/</link>
+      <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/metaverse/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>NFTs</title>
+      <link>http://localhost:1313/en/categories/nfts/</link>
+      <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/nfts/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>DAOs</title>
+      <link>http://localhost:1313/en/categories/daos/</link>
+      <pubDate>Fri, 20 Jan 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/daos/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Organizations</title>
+      <link>http://localhost:1313/en/categories/organizations/</link>
+      <pubDate>Fri, 20 Jan 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/organizations/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Tech</title>
+      <link>http://localhost:1313/en/categories/tech/</link>
+      <pubDate>Fri, 20 Jan 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/tech/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Algorithm</title>
+      <link>http://localhost:1313/en/categories/algorithm/</link>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/algorithm/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Mathematics</title>
+      <link>http://localhost:1313/en/categories/mathematics/</link>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/mathematics/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Matrix Calculation</title>
+      <link>http://localhost:1313/en/categories/matrix-calculation/</link>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/matrix-calculation/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Anonymous</title>
+      <link>http://localhost:1313/en/categories/anonymous/</link>
+      <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/anonymous/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Investigation</title>
+      <link>http://localhost:1313/en/categories/investigation/</link>
+      <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/investigation/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Princess Diana</title>
+      <link>http://localhost:1313/en/categories/princess-diana/</link>
+      <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/princess-diana/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/en/categories/python/</link>
+      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/python/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Rashahacks</title>
+      <link>http://localhost:1313/en/categories/rashahacks/</link>
+      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/rashahacks/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Scappy</title>
+      <link>http://localhost:1313/en/categories/scappy/</link>
+      <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/scappy/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Cactus</title>
+      <link>http://localhost:1313/en/categories/cactus/</link>
+      <pubDate>Sat, 05 Nov 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/cactus/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Github</title>
+      <link>http://localhost:1313/en/categories/github/</link>
+      <pubDate>Sat, 05 Nov 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/github/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Github Copiolet</title>
+      <link>http://localhost:1313/en/categories/github-copiolet/</link>
+      <pubDate>Sat, 05 Nov 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/github-copiolet/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Hyperledger</title>
+      <link>http://localhost:1313/en/categories/hyperledger/</link>
+      <pubDate>Sat, 05 Nov 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/hyperledger/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Microsoft</title>
+      <link>http://localhost:1313/en/categories/microsoft/</link>
+      <pubDate>Sat, 05 Nov 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/microsoft/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Google Cloud Node</title>
+      <link>http://localhost:1313/en/categories/google-cloud-node/</link>
+      <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/google-cloud-node/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Global Crisis</title>
+      <link>http://localhost:1313/en/categories/global-crisis/</link>
+      <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/global-crisis/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Gnome</title>
+      <link>http://localhost:1313/en/categories/gnome/</link>
+      <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/gnome/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>OS</title>
+      <link>http://localhost:1313/en/categories/os/</link>
+      <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/os/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Recession</title>
+      <link>http://localhost:1313/en/categories/recession/</link>
+      <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/recession/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>World Economics</title>
+      <link>http://localhost:1313/en/categories/world-economics/</link>
+      <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/world-economics/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Script</title>
+      <link>http://localhost:1313/en/categories/script/</link>
+      <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/script/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Tradingview</title>
+      <link>http://localhost:1313/en/categories/tradingview/</link>
+      <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/tradingview/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Trends</title>
+      <link>http://localhost:1313/en/categories/trends/</link>
+      <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/trends/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>0 Day</title>
+      <link>http://localhost:1313/en/categories/0-day/</link>
+      <pubDate>Tue, 27 Sep 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/0-day/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Whatsapp</title>
+      <link>http://localhost:1313/en/categories/whatsapp/</link>
+      <pubDate>Tue, 27 Sep 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/whatsapp/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Fabric</title>
+      <link>http://localhost:1313/en/categories/fabric/</link>
+      <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/fabric/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Ethereum 2.0</title>
+      <link>http://localhost:1313/en/categories/ethereum-2.0/</link>
+      <pubDate>Wed, 21 Sep 2022 10:18:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/ethereum-2.0/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Fake SMS</title>
+      <link>http://localhost:1313/en/categories/fake-sms/</link>
+      <pubDate>Fri, 09 Sep 2022 10:18:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/fake-sms/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Social Engineering</title>
+      <link>http://localhost:1313/en/categories/social-engineering/</link>
+      <pubDate>Fri, 09 Sep 2022 10:18:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/social-engineering/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Hitachi</title>
+      <link>http://localhost:1313/en/categories/hitachi/</link>
+      <pubDate>Wed, 07 Sep 2022 11:30:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/hitachi/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Enterprises Project</title>
+      <link>http://localhost:1313/en/categories/enterprises-project/</link>
+      <pubDate>Tue, 06 Sep 2022 10:30:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/enterprises-project/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>First Post</title>
+      <link>http://localhost:1313/en/categories/first-post/</link>
+      <pubDate>Tue, 06 Sep 2022 10:30:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/first-post/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Red Hat</title>
+      <link>http://localhost:1313/en/categories/red-hat/</link>
+      <pubDate>Tue, 06 Sep 2022 10:30:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/categories/red-hat/</guid>
       <description></description>
       
     </item>

@@ -9,16 +9,7 @@
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 16:41:43 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/en/author/a.n.-other/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Authoring Terms Entry</title>
-      <link>http://localhost:1313/en/post/authoring-terms-entry/</link>
-      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
-      <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/authoring-terms-entry/</guid>
-      <description>&lt;h2 id=&#34;an-other&#34;&gt;A.N. Other&lt;/h2&gt;&#xA;&lt;p&gt;This author information is written in &lt;code&gt;content/en/author/A.N. Other/_index.md&lt;/code&gt;.&#xA;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</description>
-      
-    </item>
   </channel>
 </rss>

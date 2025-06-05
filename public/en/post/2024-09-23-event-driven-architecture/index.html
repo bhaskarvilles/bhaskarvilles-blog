@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Power of Event-Driven Architecture (EDA): How Netflix and Uber Handle Billions of Events Daily | Bhaskar&#39;s Website</title>
+<meta name="author" content="Bhaskar">
+<meta name="description" content="An in-depth exploration of Event-Driven Architecture (EDA) and its growing importance in modern software design, featuring case studies from Netflix …" >
+<meta name="keywords" content="Event-Driven Architecture,Real-Time Data Processing,Microservices,Software Architecture,Netflix,Uber,Big Data,Asynchronous Communication,Scalability,Technology Trends">
+<link rel="canonical" href="http://localhost:1313/en/post/2024-09-23-event-driven-architecture/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Power of Event-Driven Architecture (EDA): How Netflix and Uber Handle Billions of Events Daily | Bhaskar&#39;s Website" />
+    <meta name="twitter:description" content="An in-depth exploration of Event-Driven Architecture (EDA) and its growing importance in modern software design, featuring case studies from Netflix …" />
+        <meta name="twitter:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+        <meta name="twitter:site" content="@@bhaskarvilles" />
+        <meta name="twitter:creator" content="@@bhaskarvilles" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="The Power of Event-Driven Architecture (EDA): How Netflix and Uber Handle Billions of Events Daily | Bhaskar&#39;s Website" />
+    <meta property="og:description" content="An in-depth exploration of Event-Driven Architecture (EDA) and its growing importance in modern software design, featuring case studies from Netflix …" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/2024-09-23-event-driven-architecture/" />
+        <meta property="og:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+    <meta property="og:site_name" content="Bhaskar&#39;s Website" /><!-- js.html -->
+
+
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+
+
+
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+        
+    <!-- css/verbatim.html -->
+        <link href="http://localhost:1313/css/typesetting/verbatim.min.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/en/" aria-label="Bhaskar&#39;s Website" aria-description="Homepage">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="476pt" aria-label="Bhaskar&#39;s Website">
+            <text id="logotype__text" y="19.5pt" x="0">Bhaskar&#39;s Website</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2 srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="http://localhost:1313/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+                <!-- menu.html -->
+    <menu class="srm">
+        <a id="print-button" class="hide" href="javascript:window.print()" role="button" aria-label="Print">
+            <span class="t srt" role="tooltip">Print</span>
+        </a>
+        <a id="navigatorShare" href="#share" role="button" aria-label="Share">
+            <span class="t srt" role="tooltip">Share</span>
+        </a>
+        <a id="copyPermalink"  href="javascript:navigator.clipboard.writeText(window.location.href)" role="button" aria-label="Copy URL">
+            <span id="copy" class="t srt" role="tooltip">Copy URL</span>
+            <span id="isCopying" style="display: none;">Copying...</span>
+            <span id="copyText" style="display: none;">Copy URL</span>
+        </a>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t srt" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">The Power of Event-Driven Architecture (EDA): How Netflix and Uber Handle Billions of Events Daily
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth sf"
+        role="document" aria-labelledby="title"
+            data-pagefind-ignore="all">
+        <header aria-labelledby="title">
+            
+            <!-- title.html -->
+        <hgroup data-bionRead-safe>
+            <h1 id="title"
+                >The Power of Event-Driven Architecture (EDA): How Netflix and Uber Handle Billions of Events Daily</h1>
+            <p  class="subtitle"
+                role="doc-subtitle">An in-depth exploration of Event-Driven Architecture (EDA) and its growing importance in modern software design, featuring case studies from Netflix and Uber on how they manage billions of events daily.</p>
+        </hgroup>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <h3 id="the-rise-of-event-driven-architecture-eda-in-modern-software-design"><strong>The Rise of Event-Driven Architecture (EDA) in Modern Software Design</strong></h3>
+<p>In today&rsquo;s rapidly evolving digital landscape, the <strong>Event-Driven Architecture (EDA) pattern</strong> has emerged as a cornerstone in modern software design, especially with the rise of <strong>microservices</strong>, <strong>big data</strong>, and <strong>real-time processing</strong>. Companies need scalable and flexible ways to handle interactions between different components, and EDA offers a robust solution. In this post, we’ll break down the EDA pattern, explore why it’s gaining popularity, and examine how leading companies like <strong>Netflix</strong> and <strong>Uber</strong> leverage this architecture to handle billions of events daily.</p>
+<p><img src="https://www.tibco.com/content/dam/tibco/images/screenshot/event-driven-architecture-diagram.svg" alt="Eda"></p>
+<h3 id="why-traditional-architectures-fall-short"><strong>Why Traditional Architectures Fall Short</strong></h3>
+<p>As applications expand and more services are introduced, the <strong>traditional request-response model</strong> becomes increasingly inefficient. For instance, in a simple setup, <strong>Service A</strong> requests data from <strong>Service B</strong>, which processes the request and sends a response. However, as more services are introduced, managing these interactions becomes exponentially complex:</p>
+<ul>
+<li>Each service must be capable of handling requests from multiple other services.</li>
+<li>This results in <strong>tightly coupled interactions</strong>, making the system difficult to scale and evolve.</li>
+<li>Introducing or updating a service can disrupt the entire network of connections.</li>
+</ul>
+<hr>
+<h3 id="what-is-event-driven-architecture"><strong>What Is Event-Driven Architecture?</strong></h3>
+<p>EDA offers a solution to these challenges by <strong>decoupling services</strong> through the use of <strong>events</strong>. It allows for more <strong>scalable</strong>, <strong>flexible</strong>, and <strong>efficient system designs</strong>.</p>
+<p>At its core, <strong>EDA is a software design pattern where services communicate through the generation, propagation, and consumption of events</strong>. An event can be any significant occurrence, such as a user clicking a button, a new order being placed, or a device sending data.</p>
+<p><strong>Key Components of EDA</strong>:</p>
+<ul>
+<li><strong>Event Producers</strong>: Components or services that generate events. For example, in an e-commerce application, the order service produces an event like &ldquo;order placed&rdquo; or &ldquo;payment completed.&rdquo;</li>
+<li><strong>Event Consumers</strong>: Components that respond to events. For instance, an inventory service might consume the &ldquo;order placed&rdquo; event to reduce stock, while a shipping service might start processing the shipment.</li>
+</ul>
+<p>This model <strong>decouples the producer and consumer</strong>, allowing them to interact via a common messaging infrastructure without needing direct knowledge of each other.</p>
+<hr>
+<h3 id="case-studies-how-eda-powers-netflix-and-uber"><strong>Case Studies: How EDA Powers Netflix and Uber</strong></h3>
+<h4 id="netflix-managing-real-time-user-events"><strong>Netflix: Managing Real-Time User Events</strong></h4>
+<p>As one of the world’s largest media streaming platforms, Netflix handles <strong>over a billion events daily</strong>. Here’s how EDA plays a pivotal role in Netflix&rsquo;s architecture:</p>
+<ul>
+<li><strong>Real-Time Data Handling</strong>: Every action a user takes on Netflix, such as starting a show, pausing a stream, or rating a movie, produces an event.</li>
+<li>This event is gathered in real time and sent to different services like the <strong>recommendation engine</strong>. For instance, if you start watching a new show, that event is consumed by the recommendation service, which updates your list with similar content.</li>
+<li><strong>Error Handling &amp; Health Monitoring</strong>: Netflix’s architecture continuously monitors the health of every service. If a service slows down or fails, events are generated, and the monitoring service consumes them to alert engineers or trigger automatic recovery processes.</li>
+</ul>
+<p>By utilizing EDA, Netflix can handle <strong>massive amounts of real-time data</strong>, scale its services independently, and ensure users receive personalized recommendations instantly—all without tightly coupling services.</p>
+<h4 id="uber-handling-real-time-ride-requests-and-data-processing"><strong>Uber: Handling Real-Time Ride Requests and Data Processing</strong></h4>
+<p>Uber operates on a massive scale, handling millions of ride requests daily. Here’s how Uber uses EDA:</p>
+<ul>
+<li>When a user requests a ride, an event like &ldquo;ride requested&rdquo; is produced.</li>
+<li>This event is then consumed by multiple services:
+<ul>
+<li>The <strong>matching service</strong> finds an available driver.</li>
+<li>The <strong>ETA service</strong> estimates the arrival time.</li>
+<li>The <strong>pricing service</strong> calculates the ride cost based on distance and demand.</li>
+</ul>
+</li>
+</ul>
+<p>Additionally, Uber collects <strong>real-time traffic data</strong> through telemetry events from drivers&rsquo; phones, which is consumed by the routing service to provide optimized routes.</p>
+<p>Uber’s EDA architecture enables it to process high-frequency events like ride requests, location updates, and pricing changes efficiently and with fault tolerance.</p>
+<hr>
+<h3 id="eda-vs-service-mesh-and-sidecar-pattern"><strong>EDA vs. Service Mesh and Sidecar Pattern</strong></h3>
+<p>While EDA focuses on <strong>event-based asynchronous communication</strong>, the <strong>service mesh</strong> pattern manages <strong>synchronous communication</strong> between services. In many systems, these two patterns can work together:</p>
+<ul>
+<li><strong>Synchronous API calls</strong> between services can be managed by the service mesh, while event-driven communication flows asynchronously.</li>
+<li>For example, Netflix uses EDA for handling real-time events and a service mesh for synchronous communication, ensuring efficient load balancing, traffic routing, and secure data streams.</li>
+</ul>
+<hr>
+<h3 id="benefits-of-event-driven-architecture"><strong>Benefits of Event-Driven Architecture</strong></h3>
+<p>The primary benefits that make EDA appealing to modern enterprises include:</p>
+<ul>
+<li><strong>Scalability</strong>: Since producers and consumers are decoupled, services can scale independently, making it easier to handle spikes in traffic or workload.</li>
+<li><strong>Flexibility</strong>: Introducing new services or updating existing ones is simpler since components don&rsquo;t need to be tightly connected.</li>
+<li><strong>Real-Time Processing</strong>: EDA allows for efficient handling of real-time data, crucial for applications requiring immediate responses.</li>
+</ul>
+<hr>
+<h3 id="eda-styles-simple-vs-complex-event-processing"><strong>EDA Styles: Simple vs. Complex Event Processing</strong></h3>
+<ol>
+<li><strong>Simple Event Processing</strong>: An event triggers a straightforward reaction. For instance, an &ldquo;order placed&rdquo; event might trigger the inventory service to update stock.</li>
+<li><strong>Complex Event Processing (CEP)</strong>: Multiple events are aggregated and analyzed to detect patterns or trends. For example, Uber&rsquo;s pricing system might consider traffic, demand, and driver availability to trigger surge pricing.</li>
+</ol>
+<hr>
+<h3 id="tools-for-building-an-event-driven-system"><strong>Tools for Building an Event-Driven System</strong></h3>
+<p>Several tools and platforms make implementing EDA easier:</p>
+<ul>
+<li><strong>Apache Kafka</strong>: A highly scalable messaging platform widely used for real-time data streaming. It handles millions of events per second and is used by companies like LinkedIn and Uber.</li>
+<li><strong>Amazon SNS and SQS</strong>: AWS’s cloud-based messaging services are ideal for building event-driven architectures.</li>
+<li><strong>RabbitMQ</strong>: A lightweight messaging broker suitable for smaller-scale EDA systems.</li>
+</ul>
+<hr>
+<h3 id="challenges-of-eda"><strong>Challenges of EDA</strong></h3>
+<p>While EDA offers numerous benefits, it also comes with challenges:</p>
+<ul>
+<li><strong>Event Ordering</strong>: Ensuring events are processed in the correct order can be difficult in large systems.</li>
+<li><strong>Idempotency</strong>: Handling reprocessed events requires ensuring that actions (e.g., deducting stock) aren&rsquo;t performed multiple times.</li>
+<li><strong>Eventual Consistency</strong>: Managing consistency across multiple services requires careful planning since real-time event processing doesn’t always guarantee immediate consistency.</li>
+</ul>
+<p><img src="https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/images/event-driven.svg" alt="MIS"></p>
+<hr>
+<h3 id="1-java-swing-example"><strong>1. Java Swing Example</strong></h3>
+<p>Java Swing is a great example of an event-driven system where user actions (such as button clicks) are captured as events.</p>
+<p><strong>Example: Handling a Button Click Event in Java Swing</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">javax.swing.*</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.awt.event.*</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ButtonClickExample</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">JFrame</span><span class="w"> </span><span class="n">frame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">JFrame</span><span class="p">(</span><span class="s">&#34;Event-Driven Example&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">JButton</span><span class="w"> </span><span class="n">button</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">JButton</span><span class="p">(</span><span class="s">&#34;Click Me&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Adding an ActionListener (Event Listener) to handle button clicks</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">button</span><span class="p">.</span><span class="na">addActionListener</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">ActionListener</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nd">@Override</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">actionPerformed</span><span class="p">(</span><span class="n">ActionEvent</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Button clicked!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">});</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">frame</span><span class="p">.</span><span class="na">setDefaultCloseOperation</span><span class="p">(</span><span class="n">JFrame</span><span class="p">.</span><span class="na">EXIT_ON_CLOSE</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">frame</span><span class="p">.</span><span class="na">setSize</span><span class="p">(</span><span class="n">300</span><span class="p">,</span><span class="w"> </span><span class="n">200</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">frame</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">button</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">frame</span><span class="p">.</span><span class="na">setVisible</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>In this example, clicking the button emits an <code>ActionEvent</code> which is captured and processed by the <code>ActionListener</code>.</p>
+<h3 id="2-javascript-eventemitter-example"><strong>2. JavaScript EventEmitter Example</strong></h3>
+<p>JavaScript&rsquo;s <code>EventEmitter</code> module provides a straightforward way to implement event-driven functionality, which is extensively used in Node.js applications.</p>
+<p><strong>Example: Using EventEmitter in Node.js</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Importing the events module
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">EventEmitter</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;events&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Creating an instance of EventEmitter
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">eventEmitter</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">EventEmitter</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Defining an event handler for &#39;orderPlaced&#39;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">eventEmitter</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;orderPlaced&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">orderId</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Order received: </span><span class="si">${</span><span class="nx">orderId</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Emitting the &#39;orderPlaced&#39; event
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">eventEmitter</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">&#39;orderPlaced&#39;</span><span class="p">,</span> <span class="s1">&#39;12345&#39;</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Here, an <code>orderPlaced</code> event is emitted, and the associated event handler processes this event by logging the order ID.</p>
+<h3 id="3-object-pascal-event-handling-example"><strong>3. Object Pascal Event Handling Example</strong></h3>
+<p>Object Pascal also supports event-driven architecture, though its model is more uni-cast in nature.</p>
+<p><strong>Example: Defining and Using Events in Object Pascal</strong></p>
+<pre tabindex="0"><code class="language-pascal" data-lang="pascal">program EventDrivenExample;
+
+{$mode objfpc}{$H+}
+
+type
+  TNotifyEvent = procedure(Sender: TObject) of object;
+
+  TButton = class
+  private
+    FOnClick: TNotifyEvent;
+  public
+    procedure Click;
+    property OnClick: TNotifyEvent read FOnClick write FOnClick;
+  end;
+
+procedure TButton.Click;
+begin
+  if Assigned(FOnClick) then
+    FOnClick(Self);
+end;
+
+// Sample event handler
+procedure ButtonClicked(Sender: TObject);
+begin
+  WriteLn(&#39;Button clicked in Object Pascal!&#39;);
+end;
+
+var
+  MyButton: TButton;
+begin
+  MyButton := TButton.Create;
+  MyButton.OnClick := @ButtonClicked;  // Assigning the event handler
+  MyButton.Click;                      // Triggering the event
+  MyButton.Free;
+end.
+</code></pre><p>In this example, the <code>TButton</code> class defines an <code>OnClick</code> event, which is triggered when the <code>Click</code> method is called.</p>
+<h3 id="4-real-world-event-driven-example-uber-ride-booking-system"><strong>4. Real-World Event-Driven Example: Uber Ride Booking System</strong></h3>
+<p>To illustrate a real-world example, consider Uber’s ride booking system, which operates using an event-driven architecture.</p>
+<ul>
+<li>
+<p><strong>Step 1: Event Emitter (User Requests Ride)</strong></p>
+<p>A rider opens the Uber app and requests a ride, which triggers an event.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;event&#34;</span><span class="p">:</span> <span class="s2">&#34;RideRequested&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;riderId&#34;</span><span class="p">:</span> <span class="s2">&#34;12345&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;pickupLocation&#34;</span><span class="p">:</span> <span class="s2">&#34;New York&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;destination&#34;</span><span class="p">:</span> <span class="s2">&#34;Brooklyn&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>Step 2: Event Consumer (Driver Matching Service)</strong></p>
+<p>The &ldquo;RideRequested&rdquo; event is processed by the driver-matching service. It searches for nearby drivers and emits another event.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;event&#34;</span><span class="p">:</span> <span class="s2">&#34;DriverAssigned&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;driverId&#34;</span><span class="p">:</span> <span class="s2">&#34;98765&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;riderId&#34;</span><span class="p">:</span> <span class="s2">&#34;12345&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;eta&#34;</span><span class="p">:</span> <span class="s2">&#34;5 mins&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>Step 3: Notification Service Consumes the Event</strong></p>
+<p>The &ldquo;DriverAssigned&rdquo; event is picked up by a notification service, which then sends a push notification to the rider with the driver details and estimated time of arrival.</p>
+</li>
+</ul>
+<h3 id="5-real-world-event-driven-example-netflixs-video-streaming-system"><strong>5. Real-World Event-Driven Example: Netflix’s Video Streaming System</strong></h3>
+<p>Netflix utilizes EDA for delivering video content, processing, and logging user activities like play, pause, or stop events.</p>
+<ul>
+<li>
+<p><strong>Step 1: User Initiates Video Playback (Event Emission)</strong></p>
+<p>When a user starts a video, the event &ldquo;VideoPlaybackStarted&rdquo; is emitted.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;event&#34;</span><span class="p">:</span> <span class="s2">&#34;VideoPlaybackStarted&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;userId&#34;</span><span class="p">:</span> <span class="s2">&#34;user123&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;videoId&#34;</span><span class="p">:</span> <span class="s2">&#34;video789&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;timestamp&#34;</span><span class="p">:</span> <span class="s2">&#34;2024-09-24T10:15:00Z&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>Step 2: Event Processing (Recommendation System)</strong></p>
+<p>The &ldquo;VideoPlaybackStarted&rdquo; event is processed by Netflix’s recommendation engine, which might track this behavior to improve future recommendations.</p>
+</li>
+<li>
+<p><strong>Step 3: Logging Service Consumes the Event</strong></p>
+<p>This event is also consumed by a logging service to update viewing analytics, aiding Netflix in optimizing the user experience.</p>
+</li>
+</ul>
+<h3 id="6-event-stream-processing-example-using-kafka"><strong>6. Event Stream Processing Example Using Kafka</strong></h3>
+<p>Kafka is a popular event streaming platform that facilitates event-driven architectures by acting as an event channel.</p>
+<p><strong>Example: Using Kafka to Process User Activity Events</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Producing events (simulating user activity)</span>
+</span></span><span class="line"><span class="cl">kafka-console-producer.sh --broker-list localhost:9092 --topic user-activity
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># JSON data sent by producer</span>
+</span></span><span class="line"><span class="cl"><span class="o">{</span><span class="s2">&#34;userId&#34;</span>:<span class="s2">&#34;user123&#34;</span>, <span class="s2">&#34;action&#34;</span>:<span class="s2">&#34;login&#34;</span>, <span class="s2">&#34;timestamp&#34;</span>:<span class="s2">&#34;2024-09-24T10:15:00Z&#34;</span><span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">{</span><span class="s2">&#34;userId&#34;</span>:<span class="s2">&#34;user123&#34;</span>, <span class="s2">&#34;action&#34;</span>:<span class="s2">&#34;purchase&#34;</span>, <span class="s2">&#34;timestamp&#34;</span>:<span class="s2">&#34;2024-09-24T10:16:00Z&#34;</span><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Python Consumer Script:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">kafka</span> <span class="kn">import</span> <span class="n">KafkaConsumer</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">json</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Connecting to Kafka consumer</span>
+</span></span><span class="line"><span class="cl"><span class="n">consumer</span> <span class="o">=</span> <span class="n">KafkaConsumer</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;user-activity&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bootstrap_servers</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;localhost:9092&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="n">auto_offset_reset</span><span class="o">=</span><span class="s1">&#39;earliest&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">value_deserializer</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Processing incoming events</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">message</span> <span class="ow">in</span> <span class="n">consumer</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">event</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">value</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Received event: User </span><span class="si">{</span><span class="n">event</span><span class="p">[</span><span class="s1">&#39;userId&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> performed action </span><span class="si">{</span><span class="n">event</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> at </span><span class="si">{</span><span class="n">event</span><span class="p">[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>In this example, Kafka serves as the event channel, where the producer sends user activity events, and the consumer processes them.</p>
+<hr>
+<h3 id="final-thoughts"><strong>Final Thoughts</strong></h3>
+<p>The <strong>Event-Driven Architecture</strong> pattern is more than just a trend; it’s the <strong>backbone of modern, scalable, and flexible systems</strong>. As we&rsquo;ve seen with Netflix and Uber, EDA is enabling companies to handle billions of events daily, delivering real-time data processing, scalability, and efficient communication across microservices.</p>
+<p>As technology continues to evolve, <strong>EDA will play an even greater role</strong> in enabling businesses to respond to events and changes in real time, making it an indispensable architecture pattern in the digital era.</p>
+
+        </section>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="The Power of Event-Driven Architecture (EDA): How Netflix and Uber Handle Billions of Events Daily">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/2024-09-23-event-driven-architecture/">
+        <input id="mastodonText" type="hidden" name="text" value="The Power of Event-Driven Architecture (EDA): How Netflix and Uber Handle Billions of Events Daily http://localhost:1313/en/post/2024-09-23-event-driven-architecture/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=The%20Power%20of%20Event-Driven%20Architecture%20%28EDA%29%3a%20How%20Netflix%20and%20Uber%20Handle%20Billions%20of%20Events%20Daily&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2024-09-23-event-driven-architecture%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=The%20Power%20of%20Event-Driven%20Architecture%20%28EDA%29%3a%20How%20Netflix%20and%20Uber%20Handle%20Billions%20of%20Events%20Daily%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2024-09-23-event-driven-architecture%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=The%20Power%20of%20Event-Driven%20Architecture%20%28EDA%29:%20How%20Netflix%20and%20Uber%20Handle%20Billions%20of%20Events%20Daily&amp;url=http://localhost:1313/en/post/2024-09-23-event-driven-architecture/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=The%20Power%20of%20Event-Driven%20Architecture%20%28EDA%29:%20How%20Netflix%20and%20Uber%20Handle%20Billions%20of%20Events%20Daily&amp;url=http://localhost:1313/en/post/2024-09-23-event-driven-architecture/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/2024-09-23-event-driven-architecture/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/2024-09-23-event-driven-architecture/&amp;t=The%20Power%20of%20Event-Driven%20Architecture%20%28EDA%29:%20How%20Netflix%20and%20Uber%20Handle%20Billions%20of%20Events%20Daily" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/2024-09-23-event-driven-architecture/&amp;title=The%20Power%20of%20Event-Driven%20Architecture%20%28EDA%29:%20How%20Netflix%20and%20Uber%20Handle%20Billions%20of%20Events%20Daily&amp;summary=The%20Power%20of%20Event-Driven%20Architecture%20%28EDA%29:%20How%20Netflix%20and%20Uber%20Handle%20Billions%20of%20Events%20Daily&amp;source=http://localhost:1313/en/post/2024-09-23-event-driven-architecture/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/2024-09-23-event-driven-architecture/&amp;media=http://localhost:1313/en/post/2024-09-23-event-driven-architecture/&amp;description=The%20Power%20of%20Event-Driven%20Architecture%20%28EDA%29:%20How%20Netflix%20and%20Uber%20Handle%20Billions%20of%20Events%20Daily" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/2024-09-23-event-driven-architecture/&amp;resubmit=true&amp;title=The%20Power%20of%20Event-Driven%20Architecture%20%28EDA%29:%20How%20Netflix%20and%20Uber%20Handle%20Billions%20of%20Events%20Daily" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=The%20Power%20of%20Event-Driven%20Architecture%20%28EDA%29:%20How%20Netflix%20and%20Uber%20Handle%20Billions%20of%20Events%20Daily&amp;caption=The%20Power%20of%20Event-Driven%20Architecture%20%28EDA%29:%20How%20Netflix%20and%20Uber%20Handle%20Billions%20of%20Events%20Daily&amp;content=http://localhost:1313/en/post/2024-09-23-event-driven-architecture/&amp;canonicalUrl=http://localhost:1313/en/post/2024-09-23-event-driven-architecture/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=The%20Power%20of%20Event-Driven%20Architecture%20%28EDA%29:%20How%20Netflix%20and%20Uber%20Handle%20Billions%20of%20Events%20Daily&amp;url=http://localhost:1313/en/post/2024-09-23-event-driven-architecture/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=The%20Power%20of%20Event-Driven%20Architecture%20%28EDA%29:%20How%20Netflix%20and%20Uber%20Handle%20Billions%20of%20Events%20Daily&amp;url=http://localhost:1313/en/post/2024-09-23-event-driven-architecture/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/2024-09-23-event-driven-architecture/;title=The%20Power%20of%20Event-Driven%20Architecture%20%28EDA%29:%20How%20Netflix%20and%20Uber%20Handle%20Billions%20of%20Events%20Daily" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Founder &amp; Tech Lead, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impressum</strong>
+<p>Innovating India&rsquo;s digital infrastructure: AI, IoT, and Full Stack Solutions.<br>
+Some rights reserved. For inquiries, contact: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 15rem">
+                        <div
+                            aria-labelledby="footer-2">
+                            <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Pendiri &amp; Pemimpin Teknologi, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impresium</strong>
+<p>Berinovasi dalam infrastruktur digital India: AI, IoT, dan Solusi Full Stack.<br>
+Beberapa hak dilindungi undang-undang. Untuk pertanyaan, hubungi: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                        </div>
+                        <div id="coffee-counter">
+                            <strong class="section-title">Coffee Stat</strong>
+                            <p>Making this website has taken at least 13 cups of coffee, if not more.</p>
+                        </div>                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key" aria-hidden="true">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" aria-label="Accessibility"
+        data-i18n-optimizeSR="Screen Reader Optimization"
+        data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+        data-i18n-colorSettings="Color Settings"
+        data-i18n-darkMode="Dark Mode"
+        data-i18n-light="Light"
+        data-i18n-dark="Dark"
+        data-i18n-contrast="Contrast"
+        data-i18n-lessContrast="Low"
+        data-i18n-moreContrast="High"
+        data-i18n-defaultContrast="Default"
+        data-i18n-colorPalette="Color Palette"
+        data-i18n-defaultColor="Default"
+        data-i18n-deuteranopia="Deuteranopia"
+        data-i18n-protanopia="Protanopia"
+        data-i18n-tritanopia="Tritanopia"
+        data-i18n-monochrome="Monochrome"
+        data-i18n-fontSize="Font Size"
+        data-i18n-baselineStretch="Baseline Stretch"        
+        data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+        data-i18n-menuControls="Accessibility Menu Controls"
+        data-i18n-save="Save"
+        data-i18n-reset="Reset"
+        data-i18n-close="Close"
+        data-i18n-bionRead="BionRead Mode"
+        data-i18n-focusMode="Focus Mode"
+        data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+        </a>
+    </nav>
+</footer>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</html>

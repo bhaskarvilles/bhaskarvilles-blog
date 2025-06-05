@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Language Model on Bhaskar&#39;s Website</title>
+    <link>http://localhost:1313/en/categories/language-model/</link>
+    <description>Recent Posts in Language Model on Bhaskar&#39;s Website</description>
+    <generator>Hugo 0.147.3</generator>
+    <language>en</language>
+    <managingEditor>Bhaskar</managingEditor>
+    
+      <webMaster>Bhaskar</webMaster>
+    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/language-model/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zero Knowledge Protocols (ZK)</title>
+      <link>http://localhost:1313/en/post/2024-07-15-advancements-of-ai-through-digital-innovation/</link>
+      <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/2024-07-15-advancements-of-ai-through-digital-innovation/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Advanced Digital Marketing: Integrating AI, GPTs, and Blockchain Technologies for and secure record of ad impressions and clicks.</title>
+      <link>http://localhost:1313/en/post/2023-06-07-ai-gpt-blockchain-in-digital-marketing/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/2023-06-07-ai-gpt-blockchain-in-digital-marketing/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Designing Your Own Language Model with DeepFloyd AI</title>
+      <link>http://localhost:1313/en/post/2023-05-18-create-your-own-ai-language-model/</link>
+      <pubDate>Fri, 19 May 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/2023-05-18-create-your-own-ai-language-model/</guid>
+      <description></description>
+      
+    </item>
+  </channel>
+</rss>

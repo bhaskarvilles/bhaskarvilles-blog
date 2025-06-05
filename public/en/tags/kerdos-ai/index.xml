@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kerdos-Ai on Bhaskar&#39;s Website</title>
+    <link>http://localhost:1313/en/tags/kerdos-ai/</link>
+    <description>Recent Posts in Kerdos-Ai on Bhaskar&#39;s Website</description>
+    <generator>Hugo 0.147.3</generator>
+    <language>en</language>
+    <managingEditor>Bhaskar</managingEditor>
+    
+      <webMaster>Bhaskar</webMaster>
+    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/kerdos-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kerdos AI Introduces Enterprise-Grade AI API Platform</title>
+      <link>http://localhost:1313/en/post/2025-04-14-kerdos-ai-platform/</link>
+      <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/2025-04-14-kerdos-ai-platform/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Kerdos AI Launches Revolutionary Image Generator Powered by Stable Diffusion XL</title>
+      <link>http://localhost:1313/en/post/2025-04-14-kerdos-ai-image-generator/</link>
+      <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/2025-04-14-kerdos-ai-image-generator/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Kerdos AI Unveils Next-Generation Chat Application</title>
+      <link>http://localhost:1313/en/post/2025-04-14-kerdos-ai-chat-application/</link>
+      <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/2025-04-14-kerdos-ai-chat-application/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Unlocking the Power of Kerdos Vision AI for Image Generation</title>
+      <link>http://localhost:1313/en/post/2025-03-18-kerdos-vision-ai/</link>
+      <pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/2025-03-18-kerdos-vision-ai/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Kerdos AI Launches Revolutionary Chat Application with OpenAI Integration</title>
+      <link>http://localhost:1313/en/post/2025-03-15-kerdos-ai-launched-chat-application/</link>
+      <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/2025-03-15-kerdos-ai-launched-chat-application/</guid>
+      <description></description>
+      
+    </item>
+  </channel>
+</rss>

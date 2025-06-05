@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyperledger Fabric Deployment — How We Aced it from Testing to Production | Bhaskar&#39;s Website</title>
+<meta name="author" content="Bhaskar">
+<meta name="description" content="You’ve set up your Dev environment, developed your chaincode, designed some decent looking UIs, and passed all your tests to get everything up &amp; …" >
+<link rel="canonical" href="http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hyperledger Fabric Deployment — How We Aced it from Testing to Production | Bhaskar&#39;s Website" />
+    <meta name="twitter:description" content="You’ve set up your Dev environment, developed your chaincode, designed some decent looking UIs, and passed all your tests to get everything up &amp; …" />
+        <meta name="twitter:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+        <meta name="twitter:site" content="@@bhaskarvilles" />
+        <meta name="twitter:creator" content="@@bhaskarvilles" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="Hyperledger Fabric Deployment — How We Aced it from Testing to Production | Bhaskar&#39;s Website" />
+    <meta property="og:description" content="You’ve set up your Dev environment, developed your chaincode, designed some decent looking UIs, and passed all your tests to get everything up &amp; …" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/" />
+        <meta property="og:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+    <meta property="og:site_name" content="Bhaskar&#39;s Website" /><!-- js.html -->
+
+
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+
+
+
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+    
+</head>
+<body >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/en/" aria-label="Bhaskar&#39;s Website" aria-description="Homepage">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="476pt" aria-label="Bhaskar&#39;s Website">
+            <text id="logotype__text" y="19.5pt" x="0">Bhaskar&#39;s Website</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2 srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="http://localhost:1313/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+                <!-- menu.html -->
+    <menu class="srm">
+        <a id="print-button" class="hide" href="javascript:window.print()" role="button" aria-label="Print">
+            <span class="t srt" role="tooltip">Print</span>
+        </a>
+        <a id="navigatorShare" href="#share" role="button" aria-label="Share">
+            <span class="t srt" role="tooltip">Share</span>
+        </a>
+        <a id="copyPermalink"  href="javascript:navigator.clipboard.writeText(window.location.href)" role="button" aria-label="Copy URL">
+            <span id="copy" class="t srt" role="tooltip">Copy URL</span>
+            <span id="isCopying" style="display: none;">Copying...</span>
+            <span id="copyText" style="display: none;">Copy URL</span>
+        </a>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t srt" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">Hyperledger Fabric Deployment — How We Aced it from Testing to Production
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth sf"
+        role="document" aria-labelledby="title"
+            data-pagefind-ignore="all">
+        <header aria-labelledby="title">
+            
+            <!-- title.html -->
+        <h1 id="title"
+            data-bionRead-safe
+            >Hyperledger Fabric Deployment — How We Aced it from Testing to Production</h1>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <p>You’ve set up your Dev environment, developed your chaincode, designed some decent looking UIs, and passed all your tests to get everything up &amp; running locally. Now what? Is that everything you ever wanted? Of course not! You shouldn’t be satisfied at all. You need to do more. Your next target ought to be to scale the network and stimulate a production-level environment. Added to that, you should also focus on adding multiple orderers, organizations with their own peers and CAs, and try testing it on multiple machines.</p>
+<p><img src="https://miro.medium.com/max/1100/1*Lrt_Rz4Z3RuMQ7SSBATxGw.png" alt="alt"></p>
+<p>Although production environments come with countless benefits, there are an array of challenges associated with them, especially if you’re working on a private Blockchain platform like Hyperledger Fabric.</p>
+<p>Based on our <a href="https://www.fabricdeployer.com/">real-life</a> use case on permissioned DLTs like Blockchain, we’ve unveiled some key prerequisites that will help you ace the process of Hyperledger Fabric deployment — from testing to production. So, without further ado, let’s get started!</p>
+<ol>
+<li>Practical Experience with Docker &amp; Kubernetes</li>
+</ol>
+<p>When it comes to deploying a Fabric application to production, you’ve got two major options: Kubernetes and Docker Swarm. In simpler terms, all Hyperledger Fabric components work in Docker containers and can be deployed using either Kubernetes or Docker Swarm. Based on our personal experience in Hyperledger Fabric deployment, we highly recommend using Kubernetes as it is more robust, customizable and has wider industry adoption as compared to Docker Swarm.</p>
+<p>However, before getting started with deploying a Fabric application in Kubernetes, you would require the following:</p>
+<ul>
+<li>Docker images, based on which the container is launched;</li>
+<li>YAML-configuration behavior of your container in Kubernetes.</li>
+</ul>
+<p>Kubernetes supports auto-scaling and allows you to deploy multi-container applications on the go, which is not the case with Docker. On top of all, when used together, Hyperledger Fabric and Kubernetes offers a powerful, secure platform for processing Blockchain transactions.</p>
+<p>Here’s why Kubernetes is the ideal platform for deploying Fabric applications to production (based on what we discovered):</p>
+<ul>
+<li>By deploying the Fabric network on Kubernetes, you can achieve high availability (HA) for your application.</li>
+<li>While Hyperledger Fabric’s bits are developed into container images, Kubernetes assists in orchestrating, scaling, deploying, and managing containers.</li>
+<li>Since Kubernetes supports multi-tenancy, you can execute numerous isolated Fabric instances on your Kubernetes platform, making it enormously easy for you to develop and test Blockchain applications.</li>
+<li>Kubernetes comes with load balancing and fault-tolerance attributes, which can reduce overheads and decrease complexity.</li>
+<li>Long story short, both Hyperledger Fabric and Kubernetes naturally fit and go hand in hand with each other.</li>
+</ul>
+<ol start="2">
+<li>Exposure to Various Cloud Environments</li>
+</ol>
+<p>Earlier, developers typically followed the traditional approach of using a single cloud environment (CI/CD environment) or location to test their application and deploy it to production. However, that’s not the case any longer. Since different industries and networks require different infrastructure configurations, an innovative approach has been evolved which focuses on deploying Blockchain solutions across multiple clouds to maximize flexibility and performance.</p>
+<p>That’s why it’s more important than ever for you to test your Hyperledger Fabric solution across multiple cloud environments with different organizations in different geographical locations in order to best meet the diverse needs of your business. This practice resolves the exponentially growing challenge of keeping data available and consistent across multiple cloud environments in different geographies.</p>
+<p>We’ve been following this approach for quite some time now (for all our Blockchain projects), and we must say the benefits are countless (which are clearly visible); here are a few of them:</p>
+<ul>
+<li>Data residency and privacy: Deploying the Hyperledger Fabric instance across multiple cloud environments enabled our patrons to store a copy of their ledger in their own infrastructure (behind their firewall), mitigating the risks associated with data residency and privacy.</li>
+<li>Infrastructure without lock-in: It enabled organizations to work with the infrastructure of their choice without being locked into a single vendor.</li>
+<li>Recruitment and consortium growth: Offering flexible deployment options helped us attract many new members to our network or consortium.</li>
+</ul>
+<ol start="3">
+<li>Advanced Knowledge of Consensus in Hyperledger</li>
+</ol>
+<p>While setting up a production environment for Hyperledger Fabric, it’s important to have detailed knowledge of its consensus, which is defined as the full-circle verification of the correctness of all transactions in a proposed block. In simpler terms, the consensus in Hyperledger Fabric is a process in which all the nodes in the network provide a guaranteed ordering of the transactions that need to be committed to the ledger. It can be implemented in several ways, which include by using lottery-based algorithms such as <code>Proof of Work (PoW)</code> &amp; <code>Proof of Elapsed Time (PoET)</code> and voting-based methods like Paxos and Redundant <code>Byzantine Fault Tolerance (RBFT)</code>.</p>
+<p>There are three consensus algorithms used in Hyperledger Fabric: Solo, Kafka, and Raft. While Solo involves a single ordering node (not intended for production) and Kafka provides <code>crash fault-tolerance (CFT)</code>, Raft is highly recommended for high throughput and low latency.</p>
+<p>The consensus in Hyperledger Fabric is divided into three phases: Endorsement, Ordering, and Validation.</p>
+<ul>
+<li>The Endorsement phase is typically driven by policy (m out of n signatures) upon which applicants endorse a transaction.</li>
+<li>The endorsed transaction is passed over to the Ordering phase, which agrees to the order to be committed to the ledger.</li>
+<li>The Validation phase takes a block of ordered transactions and authenticates the exactness of the result.</li>
+</ul>
+<p><img src="https://miro.medium.com/max/1100/1*FYCP8Dc9b6cGxrFLIzLomQ.png" alt="alt"></p>
+<ol start="4">
+<li>Hands-on Experience with Helm for Kubernetes Package Management</li>
+</ol>
+<p>If you’re thinking about using Kubernetes to set up a production environment for your Hyperledger Fabric application, you need to have a strong understanding and experience with Helm. For your understanding, Helm is the package manager for Kubernetes which makes application deployment trouble-free, standardized, and reusable while improving developer productivity and reducing deployment complexity.</p>
+<p>Although Kubernetes is a powerful and highly extensible container management tool, several challenges can hinder its adoption. Simply put, Kubernetes deployment can turn out to be an extremely complex process with all the objects you need to handle, including ConfigMaps, services, pods, Persistent Volumes, and the number of releases you need to manage. This is where Kubernetes Helm comes in handy by providing you with a simple way to package everything into one single application and advertises what you’re planning to configure.</p>
+<p>Based on our in-production experience with Kubernetes and Hyperledger Fabric deployment, we’ve unveiled numerous Kubernetes related issues that can be alleviated using Helm. Below are a few of them:</p>
+<ul>
+<li>Impaired Developer Productivity: Developers often spend most of their time on deploying test environments to test their written code and imitate customer issues. With Kubernetes Helm, developers can primarily focus on developing applications rather than deploying dev-test environments. Helm charts like MySQL, MongoDB, etc. empower developers to quickly procure a working database for their application.</li>
+<li>Deployment Complexity: It’s no secret that deploying Kubernetes applications can be a tough ask for any developer. Programmers often use inappropriate inputs for configuration files; they hardly have the expertise to roll out these applications from YAML templates. This is where Helm charts really prove their worth by allowing software developers to preconfigure their apps with sensible default values. In addition to this, helm charts also allow developers to change parameters (memory, CPU resource limit, etc.) of the application using a consistent interface.</li>
+<li>Production Readiness: Deploying and maintaining Kubernetes-orchestrated containerized applications can be a tedious and error-prone process. Using helm charts can help you reduce the intricacy of maintaining an App Catalog in a Kubernetes production environment. Added to that, it also liberates operations teams from maintaining service tickets during Kubernetes application deployment.</li>
+</ul>
+<h1 id="final-words">Final Words</h1>
+<p>Besides the ones mentioned above, there are numerous other prerequisites that you need to meet to effectively set up a production environment for your Hyperledger Fabric application. This includes detailed knowledge of how to add multiple organizations within a Fabric network, a thorough understanding of which data migration strategy to pursue, and more.</p>
+<p>Once you meet all these prerequisites, you’re good to go. Now you can directly jump into deploying your Fabric solution on Kubernetes cluster. Good luck with that!</p>
+
+        </section>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="Hyperledger Fabric Deployment — How We Aced it from Testing to Production">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/">
+        <input id="mastodonText" type="hidden" name="text" value="Hyperledger Fabric Deployment — How We Aced it from Testing to Production http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=Hyperledger%20Fabric%20Deployment%20%e2%80%94%20How%20We%20Aced%20it%20from%20Testing%20to%20Production&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2022-09-26-fabric-from-development-to-production%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=Hyperledger%20Fabric%20Deployment%20%e2%80%94%20How%20We%20Aced%20it%20from%20Testing%20to%20Production%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2022-09-26-fabric-from-development-to-production%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=Hyperledger%20Fabric%20Deployment%20%e2%80%94%20How%20We%20Aced%20it%20from%20Testing%20to%20Production&amp;url=http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=Hyperledger%20Fabric%20Deployment%20%e2%80%94%20How%20We%20Aced%20it%20from%20Testing%20to%20Production&amp;url=http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/&amp;t=Hyperledger%20Fabric%20Deployment%20%e2%80%94%20How%20We%20Aced%20it%20from%20Testing%20to%20Production" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/&amp;title=Hyperledger%20Fabric%20Deployment%20%e2%80%94%20How%20We%20Aced%20it%20from%20Testing%20to%20Production&amp;summary=Hyperledger%20Fabric%20Deployment%20%e2%80%94%20How%20We%20Aced%20it%20from%20Testing%20to%20Production&amp;source=http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/&amp;media=http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/&amp;description=Hyperledger%20Fabric%20Deployment%20%e2%80%94%20How%20We%20Aced%20it%20from%20Testing%20to%20Production" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/&amp;resubmit=true&amp;title=Hyperledger%20Fabric%20Deployment%20%e2%80%94%20How%20We%20Aced%20it%20from%20Testing%20to%20Production" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Hyperledger%20Fabric%20Deployment%20%e2%80%94%20How%20We%20Aced%20it%20from%20Testing%20to%20Production&amp;caption=Hyperledger%20Fabric%20Deployment%20%e2%80%94%20How%20We%20Aced%20it%20from%20Testing%20to%20Production&amp;content=http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/&amp;canonicalUrl=http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=Hyperledger%20Fabric%20Deployment%20%e2%80%94%20How%20We%20Aced%20it%20from%20Testing%20to%20Production&amp;url=http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=Hyperledger%20Fabric%20Deployment%20%e2%80%94%20How%20We%20Aced%20it%20from%20Testing%20to%20Production&amp;url=http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/;title=Hyperledger%20Fabric%20Deployment%20%e2%80%94%20How%20We%20Aced%20it%20from%20Testing%20to%20Production" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Founder &amp; Tech Lead, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impressum</strong>
+<p>Innovating India&rsquo;s digital infrastructure: AI, IoT, and Full Stack Solutions.<br>
+Some rights reserved. For inquiries, contact: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 15rem">
+                        <div
+                            aria-labelledby="footer-2">
+                            <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Pendiri &amp; Pemimpin Teknologi, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impresium</strong>
+<p>Berinovasi dalam infrastruktur digital India: AI, IoT, dan Solusi Full Stack.<br>
+Beberapa hak dilindungi undang-undang. Untuk pertanyaan, hubungi: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                        </div>
+                        <div id="coffee-counter">
+                            <strong class="section-title">Coffee Stat</strong>
+                            <p>Making this website has taken at least 13 cups of coffee, if not more.</p>
+                        </div>                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key" aria-hidden="true">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" aria-label="Accessibility"
+        data-i18n-optimizeSR="Screen Reader Optimization"
+        data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+        data-i18n-colorSettings="Color Settings"
+        data-i18n-darkMode="Dark Mode"
+        data-i18n-light="Light"
+        data-i18n-dark="Dark"
+        data-i18n-contrast="Contrast"
+        data-i18n-lessContrast="Low"
+        data-i18n-moreContrast="High"
+        data-i18n-defaultContrast="Default"
+        data-i18n-colorPalette="Color Palette"
+        data-i18n-defaultColor="Default"
+        data-i18n-deuteranopia="Deuteranopia"
+        data-i18n-protanopia="Protanopia"
+        data-i18n-tritanopia="Tritanopia"
+        data-i18n-monochrome="Monochrome"
+        data-i18n-fontSize="Font Size"
+        data-i18n-baselineStretch="Baseline Stretch"        
+        data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+        data-i18n-menuControls="Accessibility Menu Controls"
+        data-i18n-save="Save"
+        data-i18n-reset="Reset"
+        data-i18n-close="Close"
+        data-i18n-bionRead="BionRead Mode"
+        data-i18n-focusMode="Focus Mode"
+        data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+        </a>
+    </nav>
+</footer>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</html>

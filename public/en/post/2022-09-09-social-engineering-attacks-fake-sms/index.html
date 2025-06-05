@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Engineering Attacks - Creating a Fake SMS Message | Bhaskar&#39;s Website</title>
+<meta name="author" content="Bhaskar">
+<meta name="description" content="Welcome back, my aspiring cyber warriors!
+Social engineering is a key feature of some of the biggest hacks in history! Many novice hackers are so …" >
+<link rel="canonical" href="http://localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Social Engineering Attacks - Creating a Fake SMS Message | Bhaskar&#39;s Website" />
+    <meta name="twitter:description" content="Welcome back, my aspiring cyber warriors!
+Social engineering is a key feature of some of the biggest hacks in history! Many novice hackers are so …" />
+        <meta name="twitter:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+        <meta name="twitter:site" content="@@bhaskarvilles" />
+        <meta name="twitter:creator" content="@@bhaskarvilles" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="Social Engineering Attacks - Creating a Fake SMS Message | Bhaskar&#39;s Website" />
+    <meta property="og:description" content="Welcome back, my aspiring cyber warriors!
+Social engineering is a key feature of some of the biggest hacks in history! Many novice hackers are so …" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/" />
+        <meta property="og:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+    <meta property="og:site_name" content="Bhaskar&#39;s Website" /><!-- js.html -->
+
+
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+
+
+
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+        
+    <!-- css/verbatim.html -->
+        <link href="http://localhost:1313/css/typesetting/verbatim.min.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/en/" aria-label="Bhaskar&#39;s Website" aria-description="Homepage">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="476pt" aria-label="Bhaskar&#39;s Website">
+            <text id="logotype__text" y="19.5pt" x="0">Bhaskar&#39;s Website</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2 srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="http://localhost:1313/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+                <!-- menu.html -->
+    <menu class="srm">
+        <a id="print-button" class="hide" href="javascript:window.print()" role="button" aria-label="Print">
+            <span class="t srt" role="tooltip">Print</span>
+        </a>
+        <a id="navigatorShare" href="#share" role="button" aria-label="Share">
+            <span class="t srt" role="tooltip">Share</span>
+        </a>
+        <a id="copyPermalink"  href="javascript:navigator.clipboard.writeText(window.location.href)" role="button" aria-label="Copy URL">
+            <span id="copy" class="t srt" role="tooltip">Copy URL</span>
+            <span id="isCopying" style="display: none;">Copying...</span>
+            <span id="copyText" style="display: none;">Copy URL</span>
+        </a>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t srt" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">Social Engineering Attacks - Creating a Fake SMS Message
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth sf"
+        role="document" aria-labelledby="title"
+            data-pagefind-ignore="all">
+        <header aria-labelledby="title">
+            
+            <!-- title.html -->
+        <h1 id="title"
+            data-bionRead-safe
+            >Social Engineering Attacks - Creating a Fake SMS Message</h1>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <p><strong>Welcome back, my aspiring cyber warriors!</strong></p>
+<p>Social engineering is a key feature of some of the biggest hacks in history! Many novice hackers are so focused upon mastering the technical aspects of hacking that they ignore at their own peril the power of social engineering. When nation-state actors such as Russia&rsquo;s Sandworm hacking team (one of the most technically advanced hacker organizations)  use social engineering to hack Ukraine&rsquo;s electrical grid and the US 2016 Presidential election, that should be a sign that social engineering is important and critical to your hacking toolbox.</p>
+<p>In the TV show, Mr Robot, Elliot and f/society use social engineering to hack Steel Mountain where Evil Corporation stores their backup tapes. Part of that social engineering is a SMS message (sent from a now obsolete feature in the <code>Social Engineering Toolkit (SET)</code>) to a manager that distracts her and enables Elliot to roam free in the facility, eventually leading him to the HVAC system of the vault where the tapes are stored. This is a complex and difficult hack but none of it would be possible without social engineering.</p>
+<p>SMS messages or commonly referred to as text messages is a protocol originally developed in the 1980&rsquo;s and first implemented on the European mobile standard GSM in the 1990&rsquo;s. It has since been implemented into nearly every mobile communication protocol. It allows the users to send a short message (SMS is an acronym for short message service) of less than 160 characters from one person to another over the mobile network. It has become a ubiquitous feature of mobile communication in the 21st century.</p>
+<h2 id="lets-take-a-look-at-how-you-can-send-fake-sms-messages">Let&rsquo;s take a look at how you can send fake SMS messages.</h2>
+<h3 id="step-1-download-and-install-fake-sms">Step 1 Download and Install Fake SMS</h3>
+<p>If we want to send fake SMS messages from Kali, we can download and install Fake-SMS. It&rsquo;s available on git hub.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kali &gt; sudo git clone https://github.com/machine1337/fake-sms
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Once it has been downloaded, navigate to the new directory;</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kali &gt; <span class="nb">cd</span> fake-sms
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Now, give yourself execute permissions on run.sh</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kali &gt; sudo chmod <span class="m">755</span> run.sh 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Now, execute the script</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">kali &gt; sudo ./run.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="https://raw.githubusercontent.com/bhaskarvilles/chirpy-images/main/posts/2022/parrotsec/fakesms/6a4a49_f3b7d7a0cc614da2b048fd843c870f66_mv2.webp" alt="alt"></p>
+<p>As you can see above, Fake-SMS opens a screen like that above with a simple menu. To send a SMS message, simply enter 2.</p>
+<p>You will now be prompted for a phone number and message as seen below. I found this number among the many scams currently being perpetuated via SMS. This one promises forgiveness of your student loans.</p>
+<p>I entered the phone number, hit enter and then was prompted for a message. I then entered &ldquo;Yes! I want student loan forgiveness!&rdquo;</p>
+<p><img src="https://raw.githubusercontent.com/bhaskarvilles/chirpy-images/main/posts/2022/parrotsec/fakesms/6a4a49_ed47e953ffc7499d918ad8aa12c55549_mv2.webp" alt="alt"></p>
+<p>As you can see, I was able to send my fake SMS message to the scammers! With this script, we are able to send one fake SMS per day.</p>
+<p>We can view the Fake-SMS script with any text editor. In this case, I opened it with mousepad. When we do so, we can see it is a simple BASH script. When we scroll down to lines 119-120, we can see a curl command to textbelt.com. Apparently, this script simply uses this SMS site to send text messages.</p>
+<p>Let&rsquo;s see whether we can bypass this script and work directly with this site.</p>
+<p><img src="https://raw.githubusercontent.com/bhaskarvilles/chirpy-images/main/posts/2022/parrotsec/fakesms/6a4a49_94d68719c80043daa477a3bda2e7c62c_mv2.webp" alt="alt"></p>
+<h3 id="step-2-use-the-curl-command-to-send-fake-sms">Step 2: Use the curl command to send Fake SMS</h3>
+<p>First, we need to open an account at textbelt.com. When we open an account, we can send one fake SMS message per day or we can purchase credits and get an API key to use their service.</p>
+<p>Now we can generate our own text messages without the Fake-SMS script directly by creating a curl command in Linux (once you have an API, you can use a variety of scripting languages, but I found this curl command to be the simplest). The syntax for this command is as follows:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -X POST https://textbelt.com/text --data-urlencode <span class="nv">phone</span><span class="o">=</span><span class="s1">&#39;phone number with country code&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> --data-urlencode<span class="o">=</span> <span class="nv">message</span><span class="o">=</span><span class="s1">&#39;text message&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">-d <span class="nv">key</span><span class="o">=</span>Your API Key
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>I can then construct a command to send a fake text message as seen below using the same info from above and including my API key (blacked out).</p>
+<p><a href="https://raw.githubusercontent.com/bhaskarvilles/chirpy-images/main/posts/2022/parrotsec/fakesms/6a4a49_55e2548489ed41f1a86275dfb14f00b7_mv2.webp">!alt</a></p>
+<p>This service responds with a message detailing the success of sending my message and the number of messages left in my quota.</p>
+<h2 id="summary">Summary</h2>
+<p>Although every hacker wants a nice, clean, technically advanced hack similar to EternalBlue, that is usually not possible except for in a limited number of cases. In reality, nearly all hacks today require an element of social engineering. As mentioned above, even the most sophisticated hacking organizations such as Russia&rsquo;s Sandworm have used elements of social engineering for some of their most important hacks in history. Being able to send fake SMS messages might be the critical element to your hack!</p>
+<h1 id="happy-hacking-">Happy Hacking !!</h1>
+
+        </section>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="Social Engineering Attacks - Creating a Fake SMS Message">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/">
+        <input id="mastodonText" type="hidden" name="text" value="Social Engineering Attacks - Creating a Fake SMS Message http://localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=Social%20Engineering%20Attacks%20-%20Creating%20a%20Fake%20SMS%20Message&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2022-09-09-social-engineering-attacks-fake-sms%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=Social%20Engineering%20Attacks%20-%20Creating%20a%20Fake%20SMS%20Message%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2022-09-09-social-engineering-attacks-fake-sms%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=Social%20Engineering%20Attacks%20-%20Creating%20a%20Fake%20SMS%20Message&amp;url=http://localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=Social%20Engineering%20Attacks%20-%20Creating%20a%20Fake%20SMS%20Message&amp;url=http://localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/&amp;t=Social%20Engineering%20Attacks%20-%20Creating%20a%20Fake%20SMS%20Message" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/&amp;title=Social%20Engineering%20Attacks%20-%20Creating%20a%20Fake%20SMS%20Message&amp;summary=Social%20Engineering%20Attacks%20-%20Creating%20a%20Fake%20SMS%20Message&amp;source=http://localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/&amp;media=http://localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/&amp;description=Social%20Engineering%20Attacks%20-%20Creating%20a%20Fake%20SMS%20Message" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/&amp;resubmit=true&amp;title=Social%20Engineering%20Attacks%20-%20Creating%20a%20Fake%20SMS%20Message" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Social%20Engineering%20Attacks%20-%20Creating%20a%20Fake%20SMS%20Message&amp;caption=Social%20Engineering%20Attacks%20-%20Creating%20a%20Fake%20SMS%20Message&amp;content=http://localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/&amp;canonicalUrl=http://localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=Social%20Engineering%20Attacks%20-%20Creating%20a%20Fake%20SMS%20Message&amp;url=http://localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=Social%20Engineering%20Attacks%20-%20Creating%20a%20Fake%20SMS%20Message&amp;url=http://localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/;title=Social%20Engineering%20Attacks%20-%20Creating%20a%20Fake%20SMS%20Message" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Founder &amp; Tech Lead, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impressum</strong>
+<p>Innovating India&rsquo;s digital infrastructure: AI, IoT, and Full Stack Solutions.<br>
+Some rights reserved. For inquiries, contact: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 15rem">
+                        <div
+                            aria-labelledby="footer-2">
+                            <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Pendiri &amp; Pemimpin Teknologi, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impresium</strong>
+<p>Berinovasi dalam infrastruktur digital India: AI, IoT, dan Solusi Full Stack.<br>
+Beberapa hak dilindungi undang-undang. Untuk pertanyaan, hubungi: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                        </div>
+                        <div id="coffee-counter">
+                            <strong class="section-title">Coffee Stat</strong>
+                            <p>Making this website has taken at least 13 cups of coffee, if not more.</p>
+                        </div>                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key" aria-hidden="true">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" aria-label="Accessibility"
+        data-i18n-optimizeSR="Screen Reader Optimization"
+        data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+        data-i18n-colorSettings="Color Settings"
+        data-i18n-darkMode="Dark Mode"
+        data-i18n-light="Light"
+        data-i18n-dark="Dark"
+        data-i18n-contrast="Contrast"
+        data-i18n-lessContrast="Low"
+        data-i18n-moreContrast="High"
+        data-i18n-defaultContrast="Default"
+        data-i18n-colorPalette="Color Palette"
+        data-i18n-defaultColor="Default"
+        data-i18n-deuteranopia="Deuteranopia"
+        data-i18n-protanopia="Protanopia"
+        data-i18n-tritanopia="Tritanopia"
+        data-i18n-monochrome="Monochrome"
+        data-i18n-fontSize="Font Size"
+        data-i18n-baselineStretch="Baseline Stretch"        
+        data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+        data-i18n-menuControls="Accessibility Menu Controls"
+        data-i18n-save="Save"
+        data-i18n-reset="Reset"
+        data-i18n-close="Close"
+        data-i18n-bionRead="BionRead Mode"
+        data-i18n-focusMode="Focus Mode"
+        data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+        </a>
+    </nav>
+</footer>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</html>

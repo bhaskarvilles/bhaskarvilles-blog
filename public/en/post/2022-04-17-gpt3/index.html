@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manually Computing Travel Times for Long-Distance Flights and Space Travel: Uncovering the Precise Power-Law Relationship between Travel Time and Distance | Bhaskar&#39;s Website</title>
+<meta name="author" content="Bhaskar">
+<meta name="description" content="GPT3 from Bhaskarvilles." >
+<link rel="canonical" href="http://localhost:1313/en/post/2022-04-17-gpt3/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Manually Computing Travel Times for Long-Distance Flights and Space Travel: Uncovering the Precise Power-Law Relationship between Travel Time and Distance | Bhaskar&#39;s Website" />
+    <meta name="twitter:description" content="GPT3 from Bhaskarvilles." />
+        <meta name="twitter:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+        <meta name="twitter:site" content="@@bhaskarvilles" />
+        <meta name="twitter:creator" content="@@bhaskarvilles" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="Manually Computing Travel Times for Long-Distance Flights and Space Travel: Uncovering the Precise Power-Law Relationship between Travel Time and Distance | Bhaskar&#39;s Website" />
+    <meta property="og:description" content="GPT3 from Bhaskarvilles." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/2022-04-17-gpt3/" />
+        <meta property="og:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+    <meta property="og:site_name" content="Bhaskar&#39;s Website" /><!-- js.html -->
+
+
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+
+
+
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+    
+</head>
+<body >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/en/" aria-label="Bhaskar&#39;s Website" aria-description="Homepage">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="476pt" aria-label="Bhaskar&#39;s Website">
+            <text id="logotype__text" y="19.5pt" x="0">Bhaskar&#39;s Website</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2 srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="http://localhost:1313/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+                <!-- menu.html -->
+    <menu class="srm">
+        <a id="print-button" class="hide" href="javascript:window.print()" role="button" aria-label="Print">
+            <span class="t srt" role="tooltip">Print</span>
+        </a>
+        <a id="navigatorShare" href="#share" role="button" aria-label="Share">
+            <span class="t srt" role="tooltip">Share</span>
+        </a>
+        <a id="copyPermalink"  href="javascript:navigator.clipboard.writeText(window.location.href)" role="button" aria-label="Copy URL">
+            <span id="copy" class="t srt" role="tooltip">Copy URL</span>
+            <span id="isCopying" style="display: none;">Copying...</span>
+            <span id="copyText" style="display: none;">Copy URL</span>
+        </a>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t srt" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">Manually Computing Travel Times for Long-Distance Flights and Space Travel: Uncovering the Precise Power-Law Relationship between Travel Time and Distance
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth sf"
+        role="document" aria-labelledby="title"
+            data-pagefind-ignore="all">
+        <header aria-labelledby="title">
+            
+            <!-- title.html -->
+        <hgroup data-bionRead-safe>
+            <h1 id="title"
+                >Manually Computing Travel Times for Long-Distance Flights and Space Travel: Uncovering the Precise Power-Law Relationship between Travel Time and Distance</h1>
+            <p  class="subtitle"
+                role="doc-subtitle">GPT3 from Bhaskarvilles.</p>
+        </hgroup>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <p>One day, a curious person (me) decided to explore an interesting question: how does the time it takes to travel from point A to point B scale with distance, in the real world? They knew that travel time would grow slower than linearly, but they wanted to know exactly how it scaled.</p>
+<p>In an attempt to see how travel time scales with distance in the real world, taking into account the different modes of transport available for various distances, I decided to explore this question by randomly selecting points from the GeoLife dataset where people are actually present, primarily in Seattle and Beijing, but with occasional visits to other cities. Using public transport to travel between these points, I asked ChatGPT to write a script to extract a randomly selected coordinate from each file. While it did make the mistake of assuming every item in the list was a number, I fixed it manually.</p>
+<p>With this script, I was able to get randomly selected points and an API to get the public transit travel time between them. I asked ChatGPT for more coding help to get an API key for the Google Maps Directions API, write a function to compute the straight-line distance between two GPS coordinates, draw a scatter plot with distance and time as axes and both axes logarithmically scaled, and do a linear regression on the logarithms of distance and time to fit the data to a power law. While it bugged on the first attempt to do a linear regression, it succeeded on the second attempt.</p>
+<p>This gave me a nice set of data that was filtered for distances under 500km, as distances over 500km would likely involve flying, which was not taken into account by Google Maps. I obtained data for longer distances manually, which involved selecting points more than 500km apart, getting public transit travel time from the starting point to the nearest airport, getting travel time from the end point to the nearest airport, and computing the travel time as (to_airport) * 1.5 + (90 if international else 60) + flight_time + from_airport. I did this for 16 cases, eight of which were within the United States and eight with at least one end outside the United States, skipping over city pairs that had already been covered.</p>
+<p>Finally, I added data for how long it would take to travel to various locations in space, such as the moon, Mars, Pluto, and Alpha Centauri, for fun. My complete code can be found here.</p>
+<p><img src="https://vitalik.ca/images/traveltime/chart1.png" alt="alt"></p>
+<p>From the resulting chart, it appears that there is a precise relationship governing travel time as a function of distance.</p>
+<p>To answer this question, they turned to ChatGPT 3.5, a large language model trained by OpenAI, and asked for help. They asked for the GeoLife dataset, which contains information about users&rsquo; locations around the world, and wrote a script to randomly select a coordinate from each file.</p>
+<p>With these coordinates, they used an API to get the public transit travel time between the points, and asked ChatGPT for more coding help, including how to get an API key for the Google Maps Directions API, how to compute the straight-line distance between two GPS coordinates, and how to draw a scatter plot of travel time versus distance.</p>
+<p>Using the scatter plot, they noticed a power-law relationship between travel time and distance, and did a linear regression on the logarithms of distance and time to fit the data to a power law. The resulting fit was: travel_time = 965.8020738916074 * distance^0.6138556361612214 (time in seconds, distance in km).</p>
+<p>However, they wanted to get travel time data for longer distances, where the optimal route would include flights. APIs were not available for this, so they resorted to doing it manually. They used the same script to select pairs of points that were more than 500km apart, and manually obtained travel time data for the first 8 results within the United States, and the first 8 with at least one end outside the United States.</p>
+<p>To compute the travel time for each pair, they used a formula that included the public transit travel time to and from the airport, flight time, and an aggressive estimate of when to leave for the airport. They added data for how long it would take to travel to various locations in space, including the moon, Mars, Pluto, and Alpha Centauri.</p>
+<p>The resulting chart showed a surprisingly precise relationship between travel time and distance, with a power-law fit of: travel_time = 733.002223593754 * distance^0.591980777827876 (time in hours, distance in km). This led the curious person to wonder about the underlying physics and mathematics that govern this relationship.</p>
+
+        </section>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="Manually Computing Travel Times for Long-Distance Flights and Space Travel: Uncovering the Precise Power-Law Relationship between Travel Time and Distance">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/2022-04-17-gpt3/">
+        <input id="mastodonText" type="hidden" name="text" value="Manually Computing Travel Times for Long-Distance Flights and Space Travel: Uncovering the Precise Power-Law Relationship between Travel Time and Distance http://localhost:1313/en/post/2022-04-17-gpt3/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=Manually%20Computing%20Travel%20Times%20for%20Long-Distance%20Flights%20and%20Space%20Travel%3a%20Uncovering%20the%20Precise%20Power-Law%20Relationship%20between%20Travel%20Time%20and%20Distance&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2022-04-17-gpt3%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=Manually%20Computing%20Travel%20Times%20for%20Long-Distance%20Flights%20and%20Space%20Travel%3a%20Uncovering%20the%20Precise%20Power-Law%20Relationship%20between%20Travel%20Time%20and%20Distance%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2022-04-17-gpt3%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=Manually%20Computing%20Travel%20Times%20for%20Long-Distance%20Flights%20and%20Space%20Travel:%20Uncovering%20the%20Precise%20Power-Law%20Relationship%20between%20Travel%20Time%20and%20Distance&amp;url=http://localhost:1313/en/post/2022-04-17-gpt3/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=Manually%20Computing%20Travel%20Times%20for%20Long-Distance%20Flights%20and%20Space%20Travel:%20Uncovering%20the%20Precise%20Power-Law%20Relationship%20between%20Travel%20Time%20and%20Distance&amp;url=http://localhost:1313/en/post/2022-04-17-gpt3/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/2022-04-17-gpt3/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/2022-04-17-gpt3/&amp;t=Manually%20Computing%20Travel%20Times%20for%20Long-Distance%20Flights%20and%20Space%20Travel:%20Uncovering%20the%20Precise%20Power-Law%20Relationship%20between%20Travel%20Time%20and%20Distance" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/2022-04-17-gpt3/&amp;title=Manually%20Computing%20Travel%20Times%20for%20Long-Distance%20Flights%20and%20Space%20Travel:%20Uncovering%20the%20Precise%20Power-Law%20Relationship%20between%20Travel%20Time%20and%20Distance&amp;summary=Manually%20Computing%20Travel%20Times%20for%20Long-Distance%20Flights%20and%20Space%20Travel:%20Uncovering%20the%20Precise%20Power-Law%20Relationship%20between%20Travel%20Time%20and%20Distance&amp;source=http://localhost:1313/en/post/2022-04-17-gpt3/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/2022-04-17-gpt3/&amp;media=http://localhost:1313/en/post/2022-04-17-gpt3/&amp;description=Manually%20Computing%20Travel%20Times%20for%20Long-Distance%20Flights%20and%20Space%20Travel:%20Uncovering%20the%20Precise%20Power-Law%20Relationship%20between%20Travel%20Time%20and%20Distance" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/2022-04-17-gpt3/&amp;resubmit=true&amp;title=Manually%20Computing%20Travel%20Times%20for%20Long-Distance%20Flights%20and%20Space%20Travel:%20Uncovering%20the%20Precise%20Power-Law%20Relationship%20between%20Travel%20Time%20and%20Distance" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Manually%20Computing%20Travel%20Times%20for%20Long-Distance%20Flights%20and%20Space%20Travel:%20Uncovering%20the%20Precise%20Power-Law%20Relationship%20between%20Travel%20Time%20and%20Distance&amp;caption=Manually%20Computing%20Travel%20Times%20for%20Long-Distance%20Flights%20and%20Space%20Travel:%20Uncovering%20the%20Precise%20Power-Law%20Relationship%20between%20Travel%20Time%20and%20Distance&amp;content=http://localhost:1313/en/post/2022-04-17-gpt3/&amp;canonicalUrl=http://localhost:1313/en/post/2022-04-17-gpt3/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=Manually%20Computing%20Travel%20Times%20for%20Long-Distance%20Flights%20and%20Space%20Travel:%20Uncovering%20the%20Precise%20Power-Law%20Relationship%20between%20Travel%20Time%20and%20Distance&amp;url=http://localhost:1313/en/post/2022-04-17-gpt3/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=Manually%20Computing%20Travel%20Times%20for%20Long-Distance%20Flights%20and%20Space%20Travel:%20Uncovering%20the%20Precise%20Power-Law%20Relationship%20between%20Travel%20Time%20and%20Distance&amp;url=http://localhost:1313/en/post/2022-04-17-gpt3/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/2022-04-17-gpt3/;title=Manually%20Computing%20Travel%20Times%20for%20Long-Distance%20Flights%20and%20Space%20Travel:%20Uncovering%20the%20Precise%20Power-Law%20Relationship%20between%20Travel%20Time%20and%20Distance" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Founder &amp; Tech Lead, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impressum</strong>
+<p>Innovating India&rsquo;s digital infrastructure: AI, IoT, and Full Stack Solutions.<br>
+Some rights reserved. For inquiries, contact: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 15rem">
+                        <div
+                            aria-labelledby="footer-2">
+                            <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Pendiri &amp; Pemimpin Teknologi, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impresium</strong>
+<p>Berinovasi dalam infrastruktur digital India: AI, IoT, dan Solusi Full Stack.<br>
+Beberapa hak dilindungi undang-undang. Untuk pertanyaan, hubungi: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                        </div>
+                        <div id="coffee-counter">
+                            <strong class="section-title">Coffee Stat</strong>
+                            <p>Making this website has taken at least 13 cups of coffee, if not more.</p>
+                        </div>                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key" aria-hidden="true">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" aria-label="Accessibility"
+        data-i18n-optimizeSR="Screen Reader Optimization"
+        data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+        data-i18n-colorSettings="Color Settings"
+        data-i18n-darkMode="Dark Mode"
+        data-i18n-light="Light"
+        data-i18n-dark="Dark"
+        data-i18n-contrast="Contrast"
+        data-i18n-lessContrast="Low"
+        data-i18n-moreContrast="High"
+        data-i18n-defaultContrast="Default"
+        data-i18n-colorPalette="Color Palette"
+        data-i18n-defaultColor="Default"
+        data-i18n-deuteranopia="Deuteranopia"
+        data-i18n-protanopia="Protanopia"
+        data-i18n-tritanopia="Tritanopia"
+        data-i18n-monochrome="Monochrome"
+        data-i18n-fontSize="Font Size"
+        data-i18n-baselineStretch="Baseline Stretch"        
+        data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+        data-i18n-menuControls="Accessibility Menu Controls"
+        data-i18n-save="Save"
+        data-i18n-reset="Reset"
+        data-i18n-close="Close"
+        data-i18n-bionRead="BionRead Mode"
+        data-i18n-focusMode="Focus Mode"
+        data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+        </a>
+    </nav>
+</footer>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</html>

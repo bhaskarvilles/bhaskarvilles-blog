@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DAOs on Bhaskar&#39;s Website</title>
+    <link>http://localhost:1313/en/categories/daos/</link>
+    <description>Recent Posts in DAOs on Bhaskar&#39;s Website</description>
+    <generator>Hugo 0.147.3</generator>
+    <language>en</language>
+    <managingEditor>Bhaskar</managingEditor>
+    
+      <webMaster>Bhaskar</webMaster>
+    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/daos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Filecoin EVM (FEVM) is the Ethereum Virtual Machine (EVM) virtualized as a runtime on top of the Filecoin Virtual Machine (FVM). Before understanding the FEVM you must be familiar with the regular EVM.</title>
+      <link>http://localhost:1313/en/post/2023-01-20-fvm/</link>
+      <pubDate>Fri, 20 Jan 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/2023-01-20-fvm/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>DAOs and the Future of Decentralization - Insights from Bhaskar Developer, ETHGlobal Fellow, and Vitalik Buterin, the founder of Ethereum</title>
+      <link>http://localhost:1313/en/post/2023-01-16-daos-are-not-corporations-where-decentralization-in-autonomous-organizations-matters/</link>
+      <pubDate>Wed, 21 Dec 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/2023-01-16-daos-are-not-corporations-where-decentralization-in-autonomous-organizations-matters/</guid>
+      <description></description>
+      
+    </item>
+  </channel>
+</rss>

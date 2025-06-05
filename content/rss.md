@@ -1,14 +1,14 @@
 ---
 type: 'slide'
-title: 'Hugo Release News'
+title: 'Latest Updates from Kerdos'
 params:
     headless: true
-    alias: 'https://github.com/foxihd/hugo-brewm'
+    alias: 'https://kerdos.in'
 ---
 
-This is a slide with RSS feed.
-RSS shortcodes allow you to integrate and display feeds from various sources like YouTube channels or external blogs.
+This slide demonstrates RSS feed integration capabilities.
+RSS shortcodes enable displaying dynamic content from various sources like our GitHub repositories, blog posts, and technical updates.
 
-Note that The Hugo Release News RSS feed listed below displays only titles since content descriptions are not included in the RSS feed xml.
+Below is a feed of our latest technical updates and announcements from Kerdos Infrasoft's development blog.
 
-{{< rss url="https://gohugo.io/news/index.xml" >}}
+{{< rss url="https://kerdos.in/sitemap.xml" >}}

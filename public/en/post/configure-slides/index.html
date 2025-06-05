@@ -220,8 +220,9 @@
                                     aria-description="Available for hire (example flair)">Author Name</a>
             </div>
             <!-- timestamp.html-->
-    <div >
+    <div class="date-has-label">
         <time class="doc-publish-date" datetime="2025-01-26T00:00:00&#43;00:00" data-time-label="Published on">January 26, 2025</time>
+            <time class="doc-lastmod-date" datetime="2025-06-05T16:44:30&#43;05:30" data-time-label="Modified on">June 5, 2025</time>
     </div>
         </header>
         <!-- audio.html -->
@@ -332,12 +333,26 @@ To create multiple slides, you&rsquo;ll need to make separate files containing t
             <div id="qr" role="img" aria-label="QR code"></div>
             <div class="verbose">
                 <div class="has-aria-label-top" aria-label="Configure Homepage Slides"><span>http://localhost:1313/en/post/configure-slides/</span></div><div><span>Copyright © Bhaskar</span></div>
-                <div><span>This page is built on: </span><time datetime="2025-06-05T16:41:43&#43;05:30">2025-06-05 16:41</time></div>
+                <div><span>This page is built on: </span><time datetime="2025-06-05T22:19:22&#43;05:30">2025-06-05 22:19</time></div>
                 <div><span>This page is accessed on: </span><time id="time-stamp"></time></div>
             </div>
         </div>
     </div>
                 <!-- history.html -->
+        <div id="has-timeline">
+            <strong class="section-title">Redaction History</strong>
+            <ol aria-label="Redaction History">
+                <li>
+                    <time datetime="2025-01-26T00:00:00&#43;00:00">January 26, 2025</time>
+                    <span>(Published)</span>
+                </li>
+                <li>
+                    <time datetime="2025-06-05T16:44:30&#43;05:30">June 5, 2025</time>
+                    <span>(Modified)</span>
+                </li>
+            </ol>
+            <p>Some information might changes over time, we keep redaction up to date.</p>
+        </div>
             
             <!-- nav.html -->
 <details class="presentation" aria-expanded="true" id="has-share" open>

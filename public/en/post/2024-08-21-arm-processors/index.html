@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced RISC Machines | Bhaskar&#39;s Website</title>
+<meta name="author" content="Bhaskar">
+<meta name="description" content="A Descriptive post on ARM based processors risk, benifits and future." >
+<meta name="keywords" content="AI,Machine Learning,ARM,Snapdragon X Elite">
+<link rel="canonical" href="http://localhost:1313/en/post/2024-08-21-arm-processors/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Advanced RISC Machines | Bhaskar&#39;s Website" />
+    <meta name="twitter:description" content="A Descriptive post on ARM based processors risk, benifits and future." />
+        <meta name="twitter:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+        <meta name="twitter:site" content="@@bhaskarvilles" />
+        <meta name="twitter:creator" content="@@bhaskarvilles" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="Advanced RISC Machines | Bhaskar&#39;s Website" />
+    <meta property="og:description" content="A Descriptive post on ARM based processors risk, benifits and future." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/2024-08-21-arm-processors/" />
+        <meta property="og:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+    <meta property="og:site_name" content="Bhaskar&#39;s Website" /><!-- js.html -->
+
+
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+
+
+
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+    
+</head>
+<body >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/en/" aria-label="Bhaskar&#39;s Website" aria-description="Homepage">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="476pt" aria-label="Bhaskar&#39;s Website">
+            <text id="logotype__text" y="19.5pt" x="0">Bhaskar&#39;s Website</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2 srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="http://localhost:1313/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+                <!-- menu.html -->
+    <menu class="srm">
+        <a id="print-button" class="hide" href="javascript:window.print()" role="button" aria-label="Print">
+            <span class="t srt" role="tooltip">Print</span>
+        </a>
+        <a id="navigatorShare" href="#share" role="button" aria-label="Share">
+            <span class="t srt" role="tooltip">Share</span>
+        </a>
+        <a id="copyPermalink"  href="javascript:navigator.clipboard.writeText(window.location.href)" role="button" aria-label="Copy URL">
+            <span id="copy" class="t srt" role="tooltip">Copy URL</span>
+            <span id="isCopying" style="display: none;">Copying...</span>
+            <span id="copyText" style="display: none;">Copy URL</span>
+        </a>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t srt" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">Advanced RISC Machines
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth sf"
+        role="document" aria-labelledby="title"
+            data-pagefind-ignore="all">
+        <header aria-labelledby="title">
+            
+            <!-- title.html -->
+        <hgroup data-bionRead-safe>
+            <h1 id="title"
+                >Advanced RISC Machines</h1>
+            <p  class="subtitle"
+                role="doc-subtitle">A Descriptive post on ARM based processors risk, benifits and future.</p>
+        </hgroup>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <h3 id="arm-based-processors">ARM-Based Processors</h3>
+<p><strong>ARM (Advanced RISC Machines)</strong> architecture refers to a family of reduced instruction set computing (RISC) architectures for processors, renowned for their power efficiency. ARM processors are distinct from traditional x86 processors (from companies like Intel and AMD) due to their focus on lower power consumption, making them especially suitable for mobile devices, embedded systems, and increasingly, high-performance computing.</p>
+<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20200711133437/Screenshot37.png" alt="ARM Architecture"></p>
+<h3 id="key-features-of-arm-based-processors">Key Features of ARM-Based Processors:</h3>
+<ol>
+<li><strong>Power Efficiency</strong>: ARM&rsquo;s RISC architecture simplifies instructions and requires fewer transistors compared to x86 designs. This results in lower power consumption and less heat, critical for battery-powered devices.</li>
+<li><strong>Scalability</strong>: ARM processors are designed to scale across different uses, from tiny microcontrollers to powerful server CPUs. Companies can customize ARM architectures to suit their specific products.</li>
+<li><strong>Customizability</strong>: Original Equipment Manufacturers (OEMs) can license ARM architecture and create custom chips tailored for specific applications. Companies such as Qualcomm, Apple, and Samsung develop their system-on-chips (SoCs) based on ARM designs.</li>
+<li><strong>Growing Ecosystem</strong>: ARM processors have an ever-expanding ecosystem, supporting various applications from smartphone computing to data center operations.</li>
+<li><strong>High Performance Per Watt</strong>: The ARM architecture has evolved significantly, offering excellent performance for every watt of power consumed.</li>
+</ol>
+<p><img src="https://static1.xdaimages.com/wordpress/wp-content/uploads/wm/2023/10/snapdragon-x-elite-6.jpg" alt="snapdragon X Elite ARM based x64 processor hands-on"></p>
+<h2 id="qualcomm-snapdragon-x-elite-evolution-in-arm-based-computing">Qualcomm Snapdragon X Elite: Evolution in ARM-Based Computing</h2>
+<p>Recently, Qualcomm introduced the <strong>Snapdragon X Elite</strong> processor as part of its foray into high-performance ARM-based chips targeted at laptops and PCs. This move attempts to challenge Apple’s M1/M2 chips and rival AMD/Intel laptop processors.</p>
+<h3 id="snapdragon-x-elite-features">Snapdragon X Elite Features:</h3>
+<ol>
+<li><strong>CPU Design</strong>:
+<ul>
+<li>The Snapdragon X Elite is likely to feature a multi-core design optimized for a blend of performance and power efficiency. Qualcomm might achieve this by grouping cores differently, similar to ARM’s &ldquo;big.LITTLE&rdquo; or &ldquo;DynamIQ&rdquo; designs, balancing high-performance cores with energy-efficient ones.</li>
+</ul>
+</li>
+<li><strong>Adreno GPU</strong>:
+<ul>
+<li>Expected to include a powerful Adreno GPU, making it not only apt for general computing but also capable of handling graphics-intensive tasks and AI workloads.</li>
+</ul>
+</li>
+<li><strong>Advanced AI Engine</strong>:
+<ul>
+<li>The Snapdragon X Elite is likely to have a dedicated AI engine. This is increasingly important as AI is being embedded into devices for tasks like real-time translation, computational photography, and other machine learning functionalities.</li>
+</ul>
+</li>
+<li><strong>5G Connectivity</strong>:
+<ul>
+<li>Snapdragon X Elite is anticipated to have integrated 5G capabilities, empowering laptops with always-on, high-speed connectivity—an attractive feature for business and mobile users.</li>
+</ul>
+</li>
+<li><strong>Efficient Manufacturing</strong>:
+<ul>
+<li>Qualcomm typically utilizes advanced manufacturing processes, like 5nm or smaller, to produce more efficient and powerful chips with higher transistor density.</li>
+</ul>
+</li>
+</ol>
+<h3 id="performance-expectations">Performance Expectations:</h3>
+<p>Snapdragon X Elite aims to close the gap between ARM and x86 processors, particularly in several key areas:</p>
+<ul>
+<li><strong>Multitasking &amp; Performance</strong>: With more cores and an optimized architecture, it is expected to handle multitasking and CPU-intensive tasks efficiently. Qualcomm aims to match or surpass the performance of Intel’s i7/i9 and AMD’s Ryzen 7/9 series.</li>
+<li><strong>Thermal Management</strong>: The ARM-based design focuses on thermal efficiency, ensuring sustained high-performance with lower heat dissipation, a common challenge for x86 chips in compact form factors such as ultra-thin laptops.</li>
+<li><strong>AI and Machine Learning</strong>: Evolving from mobile prowess, Snapdragon X Elite is expected to handle AI workloads efficiently thanks to its dedicated AI capabilities, positioning it as a specialized processor for AI-driven tasks.</li>
+</ul>
+<p><img src="https://assets.hardwarezone.com/img/2024/04/snaprdragon-x-elite.jpg" alt="Snapdragon X Elite CPU, First in it&rsquo;s kind of ARM Processors"></p>
+<h2 id="future-scope">Future Scope:</h2>
+<p>With the evolution of ARM processors, a few trends are becoming clear in the industry:</p>
+<h3 id="1-disruption-in-the-pc-market">1. <strong>Disruption in the PC Market</strong>:</h3>
+<ul>
+<li>Apple has already shown the potential of ARM-based processors like the M1/M2 in high-performance computing. Qualcomm’s Snapdragon X Elite could solidify ARM&rsquo;s presence in the PC market, providing more energy-efficient and potent alternatives to traditional x86 PCs.</li>
+</ul>
+<h3 id="2-enterprise--server-markets">2. <strong>Enterprise &amp; Server Markets</strong>:</h3>
+<ul>
+<li>ARM processors are making their way into the data center space, with companies like Amazon (AWS Graviton) and Microsoft testing ARM-based servers. Snapdragon X Elite could similarly branch into high-performance computing environments if it proves competitively capable.</li>
+</ul>
+<h3 id="3-focus-on-ai--ml">3. <strong>Focus on AI &amp; ML</strong>:</h3>
+<ul>
+<li>With AI becoming increasingly common across industries, ARM processors with dedicated AI functionalities, like the Snapdragon X Elite, will find more applications in various devices and perhaps even reach autonomous vehicles, smart appliances, and consumer electronics.</li>
+</ul>
+<h3 id="4-growing-presence-in-laptops--ultrabooks">4. <strong>Growing Presence in Laptops &amp; Ultrabooks</strong>:</h3>
+<ul>
+<li>Ultra-thin laptops benefit greatly from ARM&rsquo;s efficiency. Snapdragon X Elite and similar processors will likely spur a new generation of always-connected, ultra-light, long-battery-life devices.</li>
+</ul>
+<h3 id="5-battery-life-enhancement">5. <strong>Battery Life Enhancement</strong>:</h3>
+<ul>
+<li>One of ARM’s key strengths is delivering extended battery performance compared to x86 processors. Snapdragon X Elite&rsquo;s adoption could see laptops with significantly longer battery life, a crucial selling point in modern laptops.</li>
+</ul>
+<h3 id="6-expansion-in-gaming--content-creation">6. <strong>Expansion in Gaming &amp; Content Creation</strong>:</h3>
+<ul>
+<li>The inclusion of advanced GPUs and CPUs in ARM processors means they may soon tackle the domain of gaming and content creation, offering yet another alternative to existing x86-based systems.</li>
+</ul>
+<h2 id="challenges-ahead">Challenges Ahead:</h2>
+<p>Despite the promising future, certain challenges persist:</p>
+<ol>
+<li><strong>Software Compatibility</strong>:
+<ul>
+<li>While ARM-compatible software is growing, primarily with Windows support for ARM, there are still many legacy and specialized applications that rely on x86 architecture. It may take time for ARM to achieve software parity.</li>
+</ul>
+</li>
+<li><strong>Adoption Rates</strong>:
+<ul>
+<li>Convincing both consumers and enterprises to move from well-known x86 platforms to ARM-based systems could be a slow and gradual process.</li>
+</ul>
+</li>
+<li><strong>Ecosystem Development</strong>:
+<ul>
+<li>Building an extensive ecosystem that supports new hardware is crucial. Qualcomm will need to work closely with software developers and OEMs to ensure ecosystem maturity.</li>
+</ul>
+</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>ARM-based processors are well-positioned to offer strong competition to the traditional x86 processors across various computing markets. With innovations like Qualcomm&rsquo;s Snapdragon X Elite, ARM is pushing the boundaries of performance while maintaining its edge in power efficiency. While challenges remain, the ongoing shift points toward a more ARM-dominated future, especially as the focus on mobile, energy-efficient, and AI-powered computing continues to grow.</p>
+
+        </section>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="Advanced RISC Machines">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/2024-08-21-arm-processors/">
+        <input id="mastodonText" type="hidden" name="text" value="Advanced RISC Machines http://localhost:1313/en/post/2024-08-21-arm-processors/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=Advanced%20RISC%20Machines&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2024-08-21-arm-processors%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=Advanced%20RISC%20Machines%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2024-08-21-arm-processors%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=Advanced%20RISC%20Machines&amp;url=http://localhost:1313/en/post/2024-08-21-arm-processors/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=Advanced%20RISC%20Machines&amp;url=http://localhost:1313/en/post/2024-08-21-arm-processors/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/2024-08-21-arm-processors/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/2024-08-21-arm-processors/&amp;t=Advanced%20RISC%20Machines" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/2024-08-21-arm-processors/&amp;title=Advanced%20RISC%20Machines&amp;summary=Advanced%20RISC%20Machines&amp;source=http://localhost:1313/en/post/2024-08-21-arm-processors/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/2024-08-21-arm-processors/&amp;media=http://localhost:1313/en/post/2024-08-21-arm-processors/&amp;description=Advanced%20RISC%20Machines" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/2024-08-21-arm-processors/&amp;resubmit=true&amp;title=Advanced%20RISC%20Machines" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Advanced%20RISC%20Machines&amp;caption=Advanced%20RISC%20Machines&amp;content=http://localhost:1313/en/post/2024-08-21-arm-processors/&amp;canonicalUrl=http://localhost:1313/en/post/2024-08-21-arm-processors/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=Advanced%20RISC%20Machines&amp;url=http://localhost:1313/en/post/2024-08-21-arm-processors/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=Advanced%20RISC%20Machines&amp;url=http://localhost:1313/en/post/2024-08-21-arm-processors/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/2024-08-21-arm-processors/;title=Advanced%20RISC%20Machines" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Founder &amp; Tech Lead, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impressum</strong>
+<p>Innovating India&rsquo;s digital infrastructure: AI, IoT, and Full Stack Solutions.<br>
+Some rights reserved. For inquiries, contact: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 15rem">
+                        <div
+                            aria-labelledby="footer-2">
+                            <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Pendiri &amp; Pemimpin Teknologi, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impresium</strong>
+<p>Berinovasi dalam infrastruktur digital India: AI, IoT, dan Solusi Full Stack.<br>
+Beberapa hak dilindungi undang-undang. Untuk pertanyaan, hubungi: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                        </div>
+                        <div id="coffee-counter">
+                            <strong class="section-title">Coffee Stat</strong>
+                            <p>Making this website has taken at least 13 cups of coffee, if not more.</p>
+                        </div>                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key" aria-hidden="true">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" aria-label="Accessibility"
+        data-i18n-optimizeSR="Screen Reader Optimization"
+        data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+        data-i18n-colorSettings="Color Settings"
+        data-i18n-darkMode="Dark Mode"
+        data-i18n-light="Light"
+        data-i18n-dark="Dark"
+        data-i18n-contrast="Contrast"
+        data-i18n-lessContrast="Low"
+        data-i18n-moreContrast="High"
+        data-i18n-defaultContrast="Default"
+        data-i18n-colorPalette="Color Palette"
+        data-i18n-defaultColor="Default"
+        data-i18n-deuteranopia="Deuteranopia"
+        data-i18n-protanopia="Protanopia"
+        data-i18n-tritanopia="Tritanopia"
+        data-i18n-monochrome="Monochrome"
+        data-i18n-fontSize="Font Size"
+        data-i18n-baselineStretch="Baseline Stretch"        
+        data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+        data-i18n-menuControls="Accessibility Menu Controls"
+        data-i18n-save="Save"
+        data-i18n-reset="Reset"
+        data-i18n-close="Close"
+        data-i18n-bionRead="BionRead Mode"
+        data-i18n-focusMode="Focus Mode"
+        data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+        </a>
+    </nav>
+</footer>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</html>

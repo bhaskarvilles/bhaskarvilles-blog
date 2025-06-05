@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Understanding Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs) | Bhaskar&#39;s Website</title>
+<meta name="author" content="Bhaskar">
+<meta name="description" content="A detailed exploration of Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs), their structures, functionalities, and …" >
+<meta name="keywords" content="AI,Machine Learning,Deep Learning,Neural Networks">
+<link rel="canonical" href="http://localhost:1313/en/post/2024-07-29-ann-cnn/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Understanding Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs) | Bhaskar&#39;s Website" />
+    <meta name="twitter:description" content="A detailed exploration of Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs), their structures, functionalities, and …" />
+        <meta name="twitter:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+        <meta name="twitter:site" content="@@bhaskarvilles" />
+        <meta name="twitter:creator" content="@@bhaskarvilles" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="Understanding Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs) | Bhaskar&#39;s Website" />
+    <meta property="og:description" content="A detailed exploration of Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs), their structures, functionalities, and …" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/2024-07-29-ann-cnn/" />
+        <meta property="og:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+    <meta property="og:site_name" content="Bhaskar&#39;s Website" /><!-- js.html -->
+
+
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+
+
+
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+    
+</head>
+<body >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/en/" aria-label="Bhaskar&#39;s Website" aria-description="Homepage">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="476pt" aria-label="Bhaskar&#39;s Website">
+            <text id="logotype__text" y="19.5pt" x="0">Bhaskar&#39;s Website</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2 srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="http://localhost:1313/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+                <!-- menu.html -->
+    <menu class="srm">
+        <a id="print-button" class="hide" href="javascript:window.print()" role="button" aria-label="Print">
+            <span class="t srt" role="tooltip">Print</span>
+        </a>
+        <a id="navigatorShare" href="#share" role="button" aria-label="Share">
+            <span class="t srt" role="tooltip">Share</span>
+        </a>
+        <a id="copyPermalink"  href="javascript:navigator.clipboard.writeText(window.location.href)" role="button" aria-label="Copy URL">
+            <span id="copy" class="t srt" role="tooltip">Copy URL</span>
+            <span id="isCopying" style="display: none;">Copying...</span>
+            <span id="copyText" style="display: none;">Copy URL</span>
+        </a>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t srt" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">Understanding Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs)
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth sf"
+        role="document" aria-labelledby="title"
+            data-pagefind-ignore="all">
+        <header aria-labelledby="title">
+            
+            <!-- title.html -->
+        <hgroup data-bionRead-safe>
+            <h1 id="title"
+                >Understanding Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs)</h1>
+            <p  class="subtitle"
+                role="doc-subtitle">A detailed exploration of Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs), their structures, functionalities, and applications.</p>
+        </hgroup>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <h1 id="understanding-artificial-neural-networks-anns-and-convolutional-neural-networks-cnns">Understanding Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs)</h1>
+<p>Neural networks have revolutionized the field of artificial intelligence and machine learning. Their ability to model complex patterns and relationships has led to significant advancements in various domains, from computer vision to natural language processing. Among the myriad types of neural networks, Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs) are two of the most prominent and widely used architectures.</p>
+<p>In this comprehensive blog post, we will delve deep into the intricacies of ANNs and CNNs, exploring their structures, functionalities, and applications. By the end of this post, you will have a thorough understanding of these neural networks and how they are applied to solve real-world problems.</p>
+<h2 id="fundamentals-of-artificial-neural-networks-anns">Fundamentals of Artificial Neural Networks (ANNs)</h2>
+<h3 id="basic-structure-and-components">Basic Structure and Components</h3>
+<p>Artificial Neural Networks (ANNs) are computational models inspired by the human brain&rsquo;s neural architecture. They consist of interconnected nodes (neurons) organized into layers. The basic structure includes:</p>
+<ul>
+<li><strong>Input Layer</strong>: Receives the input data.</li>
+<li><strong>Hidden Layers</strong>: Intermediate layers where computations are performed.</li>
+<li><strong>Output Layer</strong>: Produces the final output.</li>
+</ul>
+<p>Each connection between neurons has an associated weight, which determines the strength and direction of the influence between neurons.</p>
+<h3 id="neurons-and-layers">Neurons and Layers</h3>
+<p>Neurons are the fundamental units of ANNs. Each neuron takes inputs, processes them using an activation function, and produces an output. Layers in ANNs can be classified as:</p>
+<ul>
+<li><strong>Dense (Fully Connected) Layers</strong>: Every neuron in one layer is connected to every neuron in the next layer.</li>
+<li><strong>Activation Functions</strong>: Functions applied to the output of each neuron to introduce non-linearity, enabling the network to model complex relationships. Common activation functions include sigmoid, tanh, and ReLU (Rectified Linear Unit).</li>
+</ul>
+<h3 id="mathematical-representation">Mathematical Representation</h3>
+<p>The operation of a single neuron can be mathematically represented as:</p>
+<p>[ y = f\left( \sum_{i=1}^{n} w_i x_i + b \right) ]</p>
+<p>where ( y ) is the output, ( f ) is the activation function, ( w_i ) are the weights, ( x_i ) are the inputs, and ( b ) is the bias term.</p>
+<h3 id="training-anns">Training ANNs</h3>
+<p>Training an ANN involves adjusting the weights and biases to minimize the error between the predicted output and the actual output. This process is typically done using:</p>
+<h4 id="forward-propagation">Forward Propagation</h4>
+<p>In forward propagation, inputs are passed through the network layer by layer to obtain the output. The process involves:</p>
+<ol>
+<li>Calculating the weighted sum of inputs for each neuron.</li>
+<li>Applying the activation function.</li>
+<li>Passing the result to the next layer.</li>
+</ol>
+<h4 id="backpropagation">Backpropagation</h4>
+<p>Backpropagation is the primary method for training ANNs. It involves:</p>
+<ol>
+<li>Calculating the error (loss) at the output layer.</li>
+<li>Propagating this error backward through the network.</li>
+<li>Updating the weights and biases using gradient descent to minimize the error.</li>
+</ol>
+<h4 id="loss-functions-and-optimization">Loss Functions and Optimization</h4>
+<p>Loss functions measure the difference between the predicted and actual outputs. Common loss functions include mean squared error (MSE) for regression tasks and cross-entropy loss for classification tasks. Optimization algorithms like stochastic gradient descent (SGD), Adam, and RMSprop are used to update the network&rsquo;s weights during training.</p>
+<h3 id="common-architectures">Common Architectures</h3>
+<h4 id="feedforward-neural-networks">Feedforward Neural Networks</h4>
+<p>Feedforward Neural Networks (FNNs) are the simplest type of ANNs where connections between neurons do not form cycles. Information moves in one direction, from input to output.</p>
+<h4 id="recurrent-neural-networks-rnns">Recurrent Neural Networks (RNNs)</h4>
+<p>Recurrent Neural Networks (RNNs) are designed for sequential data. They have connections that form directed cycles, allowing information to persist and enabling the network to maintain a memory of previous inputs. This makes RNNs suitable for tasks like language modeling and time series prediction.</p>
+<h3 id="applications-of-anns">Applications of ANNs</h3>
+<p>ANNs are versatile and can be applied to a wide range of tasks, including:</p>
+<ul>
+<li><strong>Classification</strong>: Identifying categories or classes of input data (e.g., spam detection, image classification).</li>
+<li><strong>Regression</strong>: Predicting continuous values (e.g., house price prediction).</li>
+<li><strong>Clustering</strong>: Grouping similar data points (e.g., customer segmentation).</li>
+<li><strong>Anomaly Detection</strong>: Identifying unusual patterns (e.g., fraud detection).</li>
+</ul>
+<h2 id="convolutional-neural-networks-cnns">Convolutional Neural Networks (CNNs)</h2>
+<h3 id="introduction-to-cnns">Introduction to CNNs</h3>
+<p>Convolutional Neural Networks (CNNs) are specialized neural networks designed to process structured grid data, such as images. They are particularly effective at capturing spatial hierarchies in data, making them the go-to choice for computer vision tasks.</p>
+<h3 id="components-of-cnns">Components of CNNs</h3>
+<p>CNNs consist of several key components:</p>
+<h4 id="convolutional-layers">Convolutional Layers</h4>
+<p>Convolutional layers apply convolution operations to the input data. A convolution operation involves a filter (kernel) that slides over the input, performing element-wise multiplications and summing the results to produce feature maps. These layers capture local patterns, such as edges and textures.</p>
+<h4 id="pooling-layers">Pooling Layers</h4>
+<p>Pooling layers reduce the dimensionality of feature maps, retaining essential information while reducing computational complexity. Common pooling operations include max pooling and average pooling.</p>
+<h4 id="fully-connected-layers">Fully Connected Layers</h4>
+<p>Fully connected layers, similar to those in ANNs, are used at the end of the network to perform classification or regression tasks based on the extracted features.</p>
+<h3 id="detailed-operation-of-cnns">Detailed Operation of CNNs</h3>
+<h4 id="convolution-operation">Convolution Operation</h4>
+<p>The convolution operation can be mathematically represented as:</p>
+<p>[ (I * K)(x, y) = \sum_{i=1}^{m} \sum_{j=1}^{n} I(x+i, y+j) \cdot K(i, j) ]</p>
+<p>where ( I ) is the input image, ( K ) is the kernel, and ( (x, y) ) are the coordinates of the output feature map.</p>
+<h4 id="pooling-operation">Pooling Operation</h4>
+<p>Pooling reduces the size of the feature maps. For example, in max pooling, the maximum value within a specified window is selected. This can be represented as:</p>
+<p>[ P(x, y) = \max_{(i, j) \in \text{window}} I(x+i, y+j) ]</p>
+<h4 id="flattening-and-fully-connected-layers">Flattening and Fully Connected Layers</h4>
+<p>After convolutional and pooling layers, the feature maps are flattened into a one-dimensional vector, which is then passed through fully connected layers for final classification or regression.</p>
+<h3 id="training-cnns">Training CNNs</h3>
+<h4 id="backpropagation-in-cnns">Backpropagation in CNNs</h4>
+<p>Backpropagation in CNNs follows the same principles as in ANNs but includes the convolutional layers. The gradients of the convolutional and pooling layers are calculated and used to update the weights of the kernels.</p>
+<h4 id="regularization-techniques">Regularization Techniques</h4>
+<p>To prevent overfitting, CNNs often employ regularization techniques such as dropout (randomly setting some neurons to zero during training) and batch normalization (normalizing the inputs of each layer).</p>
+<h3 id="common-cnn-architectures">Common CNN Architectures</h3>
+<p>Several well-known CNN architectures have been developed, each with its unique features and improvements:</p>
+<h4 id="lenet">LeNet</h4>
+<p>One of the earliest CNN architectures, designed for handwritten digit recognition (MNIST dataset).</p>
+<h4 id="alexnet">AlexNet</h4>
+<p>A deeper and wider network that won the ImageNet competition in 2012, bringing CNNs to prominence.</p>
+<h4 id="vgg">VGG</h4>
+<p>Known for its simplicity and use of very small (3x3) convolution filters, which significantly increased the depth of the network.</p>
+<h4 id="resnet">ResNet</h4>
+<p>Introduced the concept of residual connections, allowing very deep networks by mitigating the vanishing gradient problem.</p>
+<h4 id="inception">Inception</h4>
+<p>Uses a combination of convolutions with different sizes in parallel, allowing the network to capture features at multiple scales.</p>
+<h3 id="applications-of-cnns">Applications of CNNs</h3>
+<p>CNNs excel in various computer vision tasks, including:</p>
+<ul>
+<li><strong>Image Classification</strong>: Identifying objects in images (e.g., cat vs. dog classification).</li>
+<li><strong>Object Detection</strong>: Locating and classifying objects within an image (e.g., face detection).</li>
+<li><strong>Image Segmentation</strong>: Dividing an image into meaningful parts (e.g., autonomous driving).</li>
+<li><strong>Image Generation</strong>: Generating new images from existing data (e.g., GANs).</li>
+</ul>
+<h2 id="comparison-of-anns-and-cnns">Comparison of ANNs and CNNs</h2>
+<h3 id="structural-differences">Structural Differences</h3>
+<p>ANNs and CNNs differ significantly in their architecture. While ANNs consist mainly of fully connected layers, CNNs include convolutional and pooling layers designed to handle spatial data.</p>
+<h3 id="performance-and-efficiency">Performance and Efficiency</h3>
+<p>CNNs are more efficient for image-related tasks due to their ability to capture spatial hierarchies and reduce the number of parameters compared to fully connected networks. ANNs, on the other hand, are versatile and can be used for a wide range of applications beyond image processing.</p>
+<h3 id="use-cases-and-suitability">Use Cases and Suitability</h3>
+<ul>
+<li><strong>ANNs</strong>: Suitable for tasks where the data does not have a spatial structure (e.g., tabular data, time series).</li>
+<li><strong>CNNs</strong>: Ideal for tasks involving spatial data (e.g., images, videos).</li>
+</ul>
+<h2 id="advanced-topics">Advanced Topics</h2>
+<h3 id="transfer-learning">Transfer Learning</h3>
+<p>Transfer learning involves taking a pre-trained model on a large dataset and fine-tuning it on a smaller, specific dataset. This approach is particularly useful in CNNs, where large datasets are often required for effective training.</p>
+<h3 id="fine-tuning">Fine-Tuning</h3>
+<p>Fine-tuning is the process of adjusting a pre-trained model&rsquo;s weights to better fit a new dataset. This technique helps improve performance on specific tasks without the need for extensive training from scratch.</p>
+<h3 id="zero-shot-learning">Zero-Shot Learning</h3>
+<p>Zero-shot learning aims to recognize objects or classes that the model has not seen during training. It leverages knowledge transfer and semantic relationships to identify new categories.</p>
+<h3 id="explainability-and-interpretability">Explainability and Interpretability</h3>
+<p>Understanding how neural networks make decisions is crucial, especially in critical applications. Techniques like Grad-CAM and LIME help visualize and interpret the model&rsquo;s decision-making process, enhancing transparency and trust.</p>
+<h2 id="future-directions">Future Directions</h2>
+<h3 id="trends-in-neural-network-research">Trends in Neural Network Research</h3>
+<p>Research in neural networks is rapidly evolving, with trends focusing on improving efficiency, robustness, and interpretability. Areas such as self-supervised learning, reinforcement learning, and neural architecture search are gaining significant attention.</p>
+<h3 id="emerging-applications">Emerging Applications</h3>
+<p>Neural networks are finding applications in various fields, including healthcare (e.g., disease diagnosis), finance (e.g., fraud detection), and autonomous systems (e.g., self-driving cars).</p>
+<h3 id="ethical-considerations-and-challenges">Ethical Considerations and Challenges</h3>
+<p>As neural networks become more integrated into society, ethical considerations around bias, fairness, and accountability are becoming increasingly important. Addressing these challenges is crucial for the responsible development and deployment of AI technologies.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs) have revolutionized the field of artificial intelligence and machine learning. Their ability to model complex patterns and relationships has led to significant advancements in various domains. Understanding their structures, functionalities, and applications is essential for leveraging their full potential.</p>
+<p>As we continue to explore and innovate, the future of neural networks promises even greater advancements and applications. Whether in image processing, natural language processing, or beyond, ANNs and CNNs will undoubtedly play a pivotal role in shaping the future of AI.</p>
+<p>For more insights and updates, connect with me on <a href="https://linkedin.com/in/bhaskarvilles">LinkedIn</a>.</p>
+<p><img src="https://editor.analyticsvidhya.com/uploads/59954intro%20to%20CNN.JPG" alt="Neural Networks"></p>
+
+        </section>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="Understanding Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs)">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/2024-07-29-ann-cnn/">
+        <input id="mastodonText" type="hidden" name="text" value="Understanding Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs) http://localhost:1313/en/post/2024-07-29-ann-cnn/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=Understanding%20Artificial%20Neural%20Networks%20%28ANNs%29%20and%20Convolutional%20Neural%20Networks%20%28CNNs%29&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2024-07-29-ann-cnn%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=Understanding%20Artificial%20Neural%20Networks%20%28ANNs%29%20and%20Convolutional%20Neural%20Networks%20%28CNNs%29%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2024-07-29-ann-cnn%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=Understanding%20Artificial%20Neural%20Networks%20%28ANNs%29%20and%20Convolutional%20Neural%20Networks%20%28CNNs%29&amp;url=http://localhost:1313/en/post/2024-07-29-ann-cnn/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=Understanding%20Artificial%20Neural%20Networks%20%28ANNs%29%20and%20Convolutional%20Neural%20Networks%20%28CNNs%29&amp;url=http://localhost:1313/en/post/2024-07-29-ann-cnn/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/2024-07-29-ann-cnn/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/2024-07-29-ann-cnn/&amp;t=Understanding%20Artificial%20Neural%20Networks%20%28ANNs%29%20and%20Convolutional%20Neural%20Networks%20%28CNNs%29" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/2024-07-29-ann-cnn/&amp;title=Understanding%20Artificial%20Neural%20Networks%20%28ANNs%29%20and%20Convolutional%20Neural%20Networks%20%28CNNs%29&amp;summary=Understanding%20Artificial%20Neural%20Networks%20%28ANNs%29%20and%20Convolutional%20Neural%20Networks%20%28CNNs%29&amp;source=http://localhost:1313/en/post/2024-07-29-ann-cnn/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/2024-07-29-ann-cnn/&amp;media=http://localhost:1313/en/post/2024-07-29-ann-cnn/&amp;description=Understanding%20Artificial%20Neural%20Networks%20%28ANNs%29%20and%20Convolutional%20Neural%20Networks%20%28CNNs%29" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/2024-07-29-ann-cnn/&amp;resubmit=true&amp;title=Understanding%20Artificial%20Neural%20Networks%20%28ANNs%29%20and%20Convolutional%20Neural%20Networks%20%28CNNs%29" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Understanding%20Artificial%20Neural%20Networks%20%28ANNs%29%20and%20Convolutional%20Neural%20Networks%20%28CNNs%29&amp;caption=Understanding%20Artificial%20Neural%20Networks%20%28ANNs%29%20and%20Convolutional%20Neural%20Networks%20%28CNNs%29&amp;content=http://localhost:1313/en/post/2024-07-29-ann-cnn/&amp;canonicalUrl=http://localhost:1313/en/post/2024-07-29-ann-cnn/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=Understanding%20Artificial%20Neural%20Networks%20%28ANNs%29%20and%20Convolutional%20Neural%20Networks%20%28CNNs%29&amp;url=http://localhost:1313/en/post/2024-07-29-ann-cnn/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=Understanding%20Artificial%20Neural%20Networks%20%28ANNs%29%20and%20Convolutional%20Neural%20Networks%20%28CNNs%29&amp;url=http://localhost:1313/en/post/2024-07-29-ann-cnn/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/2024-07-29-ann-cnn/;title=Understanding%20Artificial%20Neural%20Networks%20%28ANNs%29%20and%20Convolutional%20Neural%20Networks%20%28CNNs%29" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Founder &amp; Tech Lead, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impressum</strong>
+<p>Innovating India&rsquo;s digital infrastructure: AI, IoT, and Full Stack Solutions.<br>
+Some rights reserved. For inquiries, contact: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 15rem">
+                        <div
+                            aria-labelledby="footer-2">
+                            <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Pendiri &amp; Pemimpin Teknologi, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impresium</strong>
+<p>Berinovasi dalam infrastruktur digital India: AI, IoT, dan Solusi Full Stack.<br>
+Beberapa hak dilindungi undang-undang. Untuk pertanyaan, hubungi: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                        </div>
+                        <div id="coffee-counter">
+                            <strong class="section-title">Coffee Stat</strong>
+                            <p>Making this website has taken at least 13 cups of coffee, if not more.</p>
+                        </div>                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key" aria-hidden="true">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" aria-label="Accessibility"
+        data-i18n-optimizeSR="Screen Reader Optimization"
+        data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+        data-i18n-colorSettings="Color Settings"
+        data-i18n-darkMode="Dark Mode"
+        data-i18n-light="Light"
+        data-i18n-dark="Dark"
+        data-i18n-contrast="Contrast"
+        data-i18n-lessContrast="Low"
+        data-i18n-moreContrast="High"
+        data-i18n-defaultContrast="Default"
+        data-i18n-colorPalette="Color Palette"
+        data-i18n-defaultColor="Default"
+        data-i18n-deuteranopia="Deuteranopia"
+        data-i18n-protanopia="Protanopia"
+        data-i18n-tritanopia="Tritanopia"
+        data-i18n-monochrome="Monochrome"
+        data-i18n-fontSize="Font Size"
+        data-i18n-baselineStretch="Baseline Stretch"        
+        data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+        data-i18n-menuControls="Accessibility Menu Controls"
+        data-i18n-save="Save"
+        data-i18n-reset="Reset"
+        data-i18n-close="Close"
+        data-i18n-bionRead="BionRead Mode"
+        data-i18n-focusMode="Focus Mode"
+        data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+        </a>
+    </nav>
+</footer>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</html>

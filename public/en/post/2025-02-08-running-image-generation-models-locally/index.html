@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Running Local Large Language Models (LLMs) for Image Generation | Bhaskar&#39;s Website</title>
+<meta name="author" content="Bhaskar">
+<meta name="description" content="A comprehensive guide to running local large language models (LLMs) for image generation, exploring different tools and frameworks for creating …" >
+<meta name="keywords" content="LLMs,Image Generation,Local Deployment,Stable Diffusion,DALL-E,Custom Models">
+<link rel="canonical" href="http://localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Running Local Large Language Models (LLMs) for Image Generation | Bhaskar&#39;s Website" />
+    <meta name="twitter:description" content="A comprehensive guide to running local large language models (LLMs) for image generation, exploring different tools and frameworks for creating …" />
+        <meta name="twitter:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+        <meta name="twitter:site" content="@@bhaskarvilles" />
+        <meta name="twitter:creator" content="@@bhaskarvilles" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="Running Local Large Language Models (LLMs) for Image Generation | Bhaskar&#39;s Website" />
+    <meta property="og:description" content="A comprehensive guide to running local large language models (LLMs) for image generation, exploring different tools and frameworks for creating …" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/" />
+        <meta property="og:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+    <meta property="og:site_name" content="Bhaskar&#39;s Website" /><!-- js.html -->
+
+
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+
+
+
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+        
+    <!-- css/verbatim.html -->
+        <link href="http://localhost:1313/css/typesetting/verbatim.min.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/en/" aria-label="Bhaskar&#39;s Website" aria-description="Homepage">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="476pt" aria-label="Bhaskar&#39;s Website">
+            <text id="logotype__text" y="19.5pt" x="0">Bhaskar&#39;s Website</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2 srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="http://localhost:1313/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+                <!-- menu.html -->
+    <menu class="srm">
+        <a id="print-button" class="hide" href="javascript:window.print()" role="button" aria-label="Print">
+            <span class="t srt" role="tooltip">Print</span>
+        </a>
+        <a id="navigatorShare" href="#share" role="button" aria-label="Share">
+            <span class="t srt" role="tooltip">Share</span>
+        </a>
+        <a id="copyPermalink"  href="javascript:navigator.clipboard.writeText(window.location.href)" role="button" aria-label="Copy URL">
+            <span id="copy" class="t srt" role="tooltip">Copy URL</span>
+            <span id="isCopying" style="display: none;">Copying...</span>
+            <span id="copyText" style="display: none;">Copy URL</span>
+        </a>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t srt" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">Running Local Large Language Models (LLMs) for Image Generation
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth sf"
+        role="document" aria-labelledby="title"
+            data-pagefind-ignore="all">
+        <header aria-labelledby="title">
+            
+            <!-- title.html -->
+        <hgroup data-bionRead-safe>
+            <h1 id="title"
+                >Running Local Large Language Models (LLMs) for Image Generation</h1>
+            <p  class="subtitle"
+                role="doc-subtitle">A comprehensive guide to running local large language models (LLMs) for image generation, exploring different tools and frameworks for creating high-quality images from text prompts.</p>
+        </hgroup>
+        </header>
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-TableOfContents" open>
+    <summary id="TableOfContents" tabindex="-1">
+        <span>Table of Contents</span>
+    </summary><nav data-pagefind-body role="doc-toc">
+  <ul>
+    <li><a href="#running-local-large-language-models-llms-for-image-generation"><img src="https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2023/03/14225516/How-to-Build-a-Generative-Ai-Model-for-Image-Synthesis-Banner.png" alt="Running Local Large Language Models (LLMs) for Image Generation"></a></li>
+    <li><a href="#why-run-an-llm-locally-for-image-generation">Why Run an LLM Locally for Image Generation?</a></li>
+    <li><a href="#tools-for-running-llms-locally-for-image-generation">Tools for Running LLMs Locally for Image Generation</a>
+      <ul>
+        <li><a href="#1-dall-e-openai">1. <strong>DALL-E (OpenAI)</strong></a>
+          <ul>
+            <li><a href="#how-it-works">How It Works:</a></li>
+            <li><a href="#benefits">Benefits:</a></li>
+          </ul>
+        </li>
+        <li><a href="#2-stable-diffusion">2. <strong>Stable Diffusion</strong></a>
+          <ul>
+            <li><a href="#how-it-works-1">How It Works:</a></li>
+            <li><a href="#benefits-1">Benefits:</a></li>
+          </ul>
+        </li>
+        <li><a href="#3-runway-ml">3. <strong>Runway ML</strong></a>
+          <ul>
+            <li><a href="#how-it-works-2">How It Works:</a></li>
+            <li><a href="#benefits-2">Benefits:</a></li>
+          </ul>
+        </li>
+        <li><a href="#4-custom-models-with-tensorflow-or-pytorch">4. <strong>Custom Models with TensorFlow or PyTorch</strong></a>
+          <ul>
+            <li><a href="#how-it-works-3">How It Works:</a></li>
+            <li><a href="#benefits-3">Benefits:</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#step-by-step-gudata-pagefind-body rolee-to-running-local-llms-for-image-generation">Step-by-Step Gudata-pagefind-body rolee to Running Local LLMs for Image Generation</a>
+      <ul>
+        <li><a href="#step-1-choose-your-model-and-framework">Step 1: Choose Your Model and Framework</a></li>
+        <li><a href="#step-2-set-up-your-environment">Step 2: Set Up Your Environment</a></li>
+        <li><a href="#step-3-download-pre-trained-models">Step 3: Download Pre-trained Models</a></li>
+        <li><a href="#step-4-implement-image-generation-logic">Step 4: Implement Image Generation Logic</a></li>
+        <li><a href="#step-5-optimize-for-local-hardware">Step 5: Optimize for Local Hardware</a></li>
+        <li><a href="#step-6-fine-tune-if-necessary">Step 6: Fine-tune if Necessary</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+</details>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <h1 id="running-local-large-language-models-llms-for-image-generation-a-comprehensive-guide">Running Local Large Language Models (LLMs) for Image Generation: A Comprehensive Guide</h1>
+<p>In recent years, large language models (LLMs) have made significant strides in various applications, including text generation, translation, and even image creation. With the advent of tools like DALL-E, Stable Diffusion, and others, generating high-quality images from textual descriptions has become more accessible than ever. However, many users are now looking to run these models locally for reasons such as privacy concerns, faster processing times, and avoiding reliance on cloud services.</p>
+<p>This blog post will explore the possibilities of running LLMs locally for image generation, discuss the tools available, and provide a step-by-step guide on how to set up your own local environment for generating images using text prompts.</p>
+<h2 id="running-local-large-language-models-llms-for-image-generation"><img src="https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2023/03/14225516/How-to-Build-a-Generative-Ai-Model-for-Image-Synthesis-Banner.png" alt="Running Local Large Language Models (LLMs) for Image Generation"></h2>
+<h2 id="why-run-an-llm-locally-for-image-generation">Why Run an LLM Locally for Image Generation?</h2>
+<p>Running an LLM locally offers several advantages over relying on cloud-based services:</p>
+<ol>
+<li><strong>Privacy</strong>: By processing data locally, you retain control over your sensitive information and avoid potential security risks associated with sending data to third-party servers.</li>
+<li><strong>Cost Efficiency</strong>: Cloud-based AI services can be expensive, especially for high-volume or continuous use cases. Running models locally allows you to save money by leveraging your existing hardware.</li>
+<li><strong>Customization</strong>: Local setups allow for greater flexibility in tailoring the model to specific needs, including fine-tuning the model on custom datasets.</li>
+<li><strong>Speed</strong>: Depending on your hardware setup, local processing can be faster than waiting for responses from remote servers.</li>
+</ol>
+<hr>
+<h2 id="tools-for-running-llms-locally-for-image-generation">Tools for Running LLMs Locally for Image Generation</h2>
+<p>Several tools and frameworks enable you to run image generation models locally. Below are some of the most popular options:</p>
+<h3 id="1-dall-e-openai">1. <strong>DALL-E (OpenAI)</strong></h3>
+<p>DALL-E is a state-of-the-art AI model developed by OpenAI that generates images from text prompts. While OpenAI provides an API for using DALL-E in the cloud, you can also run it locally if you have access to sufficient computational resources.</p>
+<h4 id="how-it-works">How It Works:</h4>
+<ul>
+<li><strong>Setup</strong>: Running DALL-E locally requires significant computational power due to its size and complexity. You&rsquo;ll need a powerful GPU or CPU with ample memory.</li>
+<li><strong>Process</strong>:
+<ol>
+<li>Install the necessary dependencies (e.g., Python, PyTorch).</li>
+<li>Download the pre-trained model weights.</li>
+<li>Write a script to generate images based on text prompts.</li>
+<li>Run the script and receive your generated image.</li>
+</ol>
+</li>
+</ul>
+<h4 id="benefits">Benefits:</h4>
+<ul>
+<li>High-quality outputs with realistic details.</li>
+<li>Access to cutting-edge AI capabilities.</li>
+</ul>
+<h3 id="2-stable-diffusion">2. <strong>Stable Diffusion</strong></h3>
+<p>Developed by Stability AI, Stable Diffusion is an open-source model that generates high-resolution images from text descriptions. One of its key advantages is that it can be run locally without requiring access to cloud services.</p>
+<h4 id="how-it-works-1">How It Works:</h4>
+<ul>
+<li><strong>Setup</strong>:
+<ul>
+<li>Download the pre-trained model (available in different sizes).</li>
+<li>Install the necessary libraries (e.g., PyTorch, FastAPI for serving the model as a web service).</li>
+</ul>
+</li>
+<li><strong>Process</strong>:
+<ol>
+<li>Write or adapt code to interface with the model.</li>
+<li>Provide a text prompt.</li>
+<li>Generate and save the resulting image.</li>
+</ol>
+</li>
+</ul>
+<h4 id="benefits-1">Benefits:</h4>
+<ul>
+<li>Open-source and customizable.</li>
+<li>Lightweight compared to DALL-E, making it feasible for local deployment on mid-range hardware.</li>
+</ul>
+<h3 id="3-runway-ml">3. <strong>Runway ML</strong></h3>
+<p>Runway ML is a platform that provides tools for creative coding with AI. It offers a user-friendly interface for experimenting with image generation models, including those based on LLMs.</p>
+<h4 id="how-it-works-2">How It Works:</h4>
+<ul>
+<li><strong>Setup</strong>:
+<ul>
+<li>Sign up for an account and install the Runway CLI.</li>
+<li>Choose an AI model for image generation (e.g., &ldquo;Draw This in Your Style&rdquo;).</li>
+</ul>
+</li>
+<li><strong>Process</strong>:
+<ul>
+<li>Use the provided interface to input text prompts.</li>
+<li>Generate and preview images directly from your local machine.</li>
+</ul>
+</li>
+</ul>
+<h4 id="benefits-2">Benefits:</h4>
+<ul>
+<li>No coding required for basic use cases.</li>
+<li>Access to a growing library of creative tools and models.</li>
+</ul>
+<h3 id="4-custom-models-with-tensorflow-or-pytorch">4. <strong>Custom Models with TensorFlow or PyTorch</strong></h3>
+<p>If you&rsquo;re comfortable with deep learning frameworks, you can train or fine-tune your own image generation models using TensorFlow or PyTorch. This approach offers maximum flexibility but requires significant expertise and computational resources.</p>
+<h4 id="how-it-works-3">How It Works:</h4>
+<ul>
+<li><strong>Setup</strong>:
+<ul>
+<li>Build a custom model architecture.</li>
+<li>Train the model on your dataset of images and text descriptions.</li>
+</ul>
+</li>
+<li><strong>Process</strong>:
+<ul>
+<li>Fine-tune the model if necessary.</li>
+<li>Use it to generate new images based on user input.</li>
+</ul>
+</li>
+</ul>
+<h4 id="benefits-3">Benefits:</h4>
+<ul>
+<li>Completely customizable to your needs.</li>
+<li>Potential for superior performance tailored to specific datasets.</li>
+</ul>
+<hr>
+<h2 id="step-by-step-guide-to-running-local-llms-for-image-generation">Step-by-Step Guide to Running Local LLMs for Image Generation</h2>
+<h3 id="step-1-choose-your-model-and-framework">Step 1: Choose Your Model and Framework</h3>
+<p>Decide which model you want to use (e.g., Stable Diffusion, DALL-E, or a custom model). Select a deep learning framework like PyTorch or TensorFlow based on your familiarity and the model&rsquo;s requirements.</p>
+<h3 id="step-2-set-up-your-environment">Step 2: Set Up Your Environment</h3>
+<ul>
+<li>Install necessary libraries:
+<ul>
+<li><code>python</code></li>
+<li><code>torch</code> (for PyTorch)</li>
+<li><code>transformers</code> (for NLP tasks)</li>
+<li><code> PIL</code> (Python Imaging Library for image manipulation)</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install torch transformers pillow
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="step-3-download-pre-trained-models">Step 3: Download Pre-trained Models</h3>
+<p>Download the pre-trained model weights from reliable sources. For example, you can use Hugging Face&rsquo;s Model Hub to find suitable models.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">transformers</span> <span class="kn">import</span> <span class="n">AutoTokenizer</span><span class="p">,</span> <span class="n">AutoModelForSeq2SeqLM</span>
+</span></span><span class="line"><span class="cl"><span class="n">tokenizer</span> <span class="o">=</span> <span class="n">AutoTokenizer</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&#34;model_name&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">model</span> <span class="o">=</span> <span class="n">AutoModelForSeq2SeqLM</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&#34;model_name&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="step-4-implement-image-generation-logic">Step 4: Implement Image Generation Logic</h3>
+<p>Write a script that takes text input, processes it through the LLM, and generates an image. Below is a basic example using Stable Diffusion:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">stable_diffusion</span> <span class="kn">import</span> <span class="n">generate_image</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Input your text prompt</span>
+</span></span><span class="line"><span class="cl"><span class="n">prompt</span> <span class="o">=</span> <span class="s2">&#34;A beautiful sunset over a mountain lake&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Generate an image based on the prompt</span>
+</span></span><span class="line"><span class="cl"><span class="n">image</span> <span class="o">=</span> <span class="n">generate_image</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Save the generated image</span>
+</span></span><span class="line"><span class="cl"><span class="n">image</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&#34;output.png&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="step-5-optimize-for-local-hardware">Step 5: Optimize for Local Hardware</h3>
+<p>Ensure that your hardware (CPU/GPU) is capable of handling the model size and computations. Use frameworks like TensorFlow Lite or ONNX to optimize models for local inference.</p>
+<h3 id="step-6-fine-tune-if-necessary">Step 6: Fine-tune if Necessary</h3>
+<p>If you have access to a custom dataset, fine-tune the model to improve its performance on specific types of images or styles.</p>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>Running large language models locally for image generation opens up exciting possibilities for creativity and innovation. With tools like Stable Diffusion and DALL-E, you can generate high-quality images without relying on external services. By leveraging frameworks like PyTorch and TensorFlow, you can even build and customize your own models to suit specific needs.</p>
+<p>As AI technology continues to evolve, the ability to run sophisticated models locally will become increasingly important for developers, artists, and businesses looking to harness the power of generative AI while maintaining control over their data.</p>
+
+        </section>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="Running Local Large Language Models (LLMs) for Image Generation">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/">
+        <input id="mastodonText" type="hidden" name="text" value="Running Local Large Language Models (LLMs) for Image Generation http://localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=Running%20Local%20Large%20Language%20Models%20%28LLMs%29%20for%20Image%20Generation&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2025-02-08-running-image-generation-models-locally%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=Running%20Local%20Large%20Language%20Models%20%28LLMs%29%20for%20Image%20Generation%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2025-02-08-running-image-generation-models-locally%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=Running%20Local%20Large%20Language%20Models%20%28LLMs%29%20for%20Image%20Generation&amp;url=http://localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=Running%20Local%20Large%20Language%20Models%20%28LLMs%29%20for%20Image%20Generation&amp;url=http://localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/&amp;t=Running%20Local%20Large%20Language%20Models%20%28LLMs%29%20for%20Image%20Generation" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/&amp;title=Running%20Local%20Large%20Language%20Models%20%28LLMs%29%20for%20Image%20Generation&amp;summary=Running%20Local%20Large%20Language%20Models%20%28LLMs%29%20for%20Image%20Generation&amp;source=http://localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/&amp;media=http://localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/&amp;description=Running%20Local%20Large%20Language%20Models%20%28LLMs%29%20for%20Image%20Generation" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/&amp;resubmit=true&amp;title=Running%20Local%20Large%20Language%20Models%20%28LLMs%29%20for%20Image%20Generation" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Running%20Local%20Large%20Language%20Models%20%28LLMs%29%20for%20Image%20Generation&amp;caption=Running%20Local%20Large%20Language%20Models%20%28LLMs%29%20for%20Image%20Generation&amp;content=http://localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/&amp;canonicalUrl=http://localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=Running%20Local%20Large%20Language%20Models%20%28LLMs%29%20for%20Image%20Generation&amp;url=http://localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=Running%20Local%20Large%20Language%20Models%20%28LLMs%29%20for%20Image%20Generation&amp;url=http://localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/;title=Running%20Local%20Large%20Language%20Models%20%28LLMs%29%20for%20Image%20Generation" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Founder &amp; Tech Lead, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impressum</strong>
+<p>Innovating India&rsquo;s digital infrastructure: AI, IoT, and Full Stack Solutions.<br>
+Some rights reserved. For inquiries, contact: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 15rem">
+                        <div
+                            aria-labelledby="footer-2">
+                            <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Pendiri &amp; Pemimpin Teknologi, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impresium</strong>
+<p>Berinovasi dalam infrastruktur digital India: AI, IoT, dan Solusi Full Stack.<br>
+Beberapa hak dilindungi undang-undang. Untuk pertanyaan, hubungi: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                        </div>
+                        <div id="coffee-counter">
+                            <strong class="section-title">Coffee Stat</strong>
+                            <p>Making this website has taken at least 13 cups of coffee, if not more.</p>
+                        </div>                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key" aria-hidden="true">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" aria-label="Accessibility"
+        data-i18n-optimizeSR="Screen Reader Optimization"
+        data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+        data-i18n-colorSettings="Color Settings"
+        data-i18n-darkMode="Dark Mode"
+        data-i18n-light="Light"
+        data-i18n-dark="Dark"
+        data-i18n-contrast="Contrast"
+        data-i18n-lessContrast="Low"
+        data-i18n-moreContrast="High"
+        data-i18n-defaultContrast="Default"
+        data-i18n-colorPalette="Color Palette"
+        data-i18n-defaultColor="Default"
+        data-i18n-deuteranopia="Deuteranopia"
+        data-i18n-protanopia="Protanopia"
+        data-i18n-tritanopia="Tritanopia"
+        data-i18n-monochrome="Monochrome"
+        data-i18n-fontSize="Font Size"
+        data-i18n-baselineStretch="Baseline Stretch"        
+        data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+        data-i18n-menuControls="Accessibility Menu Controls"
+        data-i18n-save="Save"
+        data-i18n-reset="Reset"
+        data-i18n-close="Close"
+        data-i18n-bionRead="BionRead Mode"
+        data-i18n-focusMode="Focus Mode"
+        data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+        </a>
+    </nav>
+</footer>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</html>

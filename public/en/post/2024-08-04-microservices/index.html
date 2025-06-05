@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exploring Microservices Architecture: Benefits, Challenges, and Best Practices | Bhaskar&#39;s Website</title>
+<meta name="author" content="Bhaskar">
+<meta name="description" content="An in-depth look at microservices architecture, including its benefits, challenges, and best practices for implementation." >
+<meta name="keywords" content="Software Architecture,Microservices,DevOps">
+<link rel="canonical" href="http://localhost:1313/en/post/2024-08-04-microservices/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Exploring Microservices Architecture: Benefits, Challenges, and Best Practices | Bhaskar&#39;s Website" />
+    <meta name="twitter:description" content="An in-depth look at microservices architecture, including its benefits, challenges, and best practices for implementation." />
+        <meta name="twitter:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+        <meta name="twitter:site" content="@@bhaskarvilles" />
+        <meta name="twitter:creator" content="@@bhaskarvilles" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="Exploring Microservices Architecture: Benefits, Challenges, and Best Practices | Bhaskar&#39;s Website" />
+    <meta property="og:description" content="An in-depth look at microservices architecture, including its benefits, challenges, and best practices for implementation." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/2024-08-04-microservices/" />
+        <meta property="og:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+    <meta property="og:site_name" content="Bhaskar&#39;s Website" /><!-- js.html -->
+
+
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+
+
+
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+    
+</head>
+<body >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/en/" aria-label="Bhaskar&#39;s Website" aria-description="Homepage">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="476pt" aria-label="Bhaskar&#39;s Website">
+            <text id="logotype__text" y="19.5pt" x="0">Bhaskar&#39;s Website</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2 srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="http://localhost:1313/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+                <!-- menu.html -->
+    <menu class="srm">
+        <a id="print-button" class="hide" href="javascript:window.print()" role="button" aria-label="Print">
+            <span class="t srt" role="tooltip">Print</span>
+        </a>
+        <a id="navigatorShare" href="#share" role="button" aria-label="Share">
+            <span class="t srt" role="tooltip">Share</span>
+        </a>
+        <a id="copyPermalink"  href="javascript:navigator.clipboard.writeText(window.location.href)" role="button" aria-label="Copy URL">
+            <span id="copy" class="t srt" role="tooltip">Copy URL</span>
+            <span id="isCopying" style="display: none;">Copying...</span>
+            <span id="copyText" style="display: none;">Copy URL</span>
+        </a>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t srt" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">Exploring Microservices Architecture: Benefits, Challenges, and Best Practices
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth sf"
+        role="document" aria-labelledby="title"
+            data-pagefind-ignore="all">
+        <header aria-labelledby="title">
+            
+            <!-- title.html -->
+        <hgroup data-bionRead-safe>
+            <h1 id="title"
+                >Exploring Microservices Architecture: Benefits, Challenges, and Best Practices</h1>
+            <p  class="subtitle"
+                role="doc-subtitle">An in-depth look at microservices architecture, including its benefits, challenges, and best practices for implementation.</p>
+        </hgroup>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <p>Microservices architecture has emerged as a dominant approach for designing and building complex software systems. Unlike monolithic architectures, where all components are tightly coupled and interdependent, microservices architecture structures an application as a collection of loosely coupled services, each responsible for a specific business capability. This blog post explores the benefits, challenges, and best practices for implementing microservices architecture.</p>
+<p><img src="https://learn.microsoft.com/en-us/azure/architecture/includes/images/microservices-logical.png" alt="Microservices Architecture"></p>
+<h2 id="what-are-microservices">What Are Microservices?</h2>
+<p>Microservices are a style of software architecture where a large application is composed of small, independent services that communicate over well-defined APIs. Each service is responsible for a specific piece of functionality and can be developed, deployed, and scaled independently.</p>
+<h3 id="key-characteristics-of-microservices">Key Characteristics of Microservices</h3>
+<ol>
+<li><strong>Single Responsibility</strong>: Each microservice focuses on a single business capability.</li>
+<li><strong>Decentralized Data Management</strong>: Services manage their own databases.</li>
+<li><strong>Inter-Service Communication</strong>: Services communicate via APIs, often using protocols like HTTP/REST or messaging queues.</li>
+<li><strong>Independent Deployment</strong>: Services can be deployed independently, facilitating continuous delivery and deployment.</li>
+<li><strong>Technological Diversity</strong>: Different services can use different technologies and programming languages.</li>
+<li><strong>Fault Isolation</strong>: Failure of one service does not necessarily impact the entire system.</li>
+</ol>
+<h2 id="benefits-of-microservices">Benefits of Microservices</h2>
+<h3 id="scalability">Scalability</h3>
+<p>Microservices allow individual components to be scaled independently based on demand. This can lead to more efficient resource utilization and cost savings.</p>
+<h3 id="flexibility-in-development">Flexibility in Development</h3>
+<p>Teams can develop and deploy services independently, using the best tools and technologies for each specific service. This promotes a more agile and flexible development process.</p>
+<h3 id="agility">Agility</h3>
+<p>With microservices, new features can be added and deployed rapidly without the need to update the entire system. This enables faster innovation and quicker response to market changes.</p>
+<h3 id="resilience">Resilience</h3>
+<p>The isolation of faults in a microservices architecture means that the failure of one service is less likely to impact the overall system, improving its resilience and uptime.</p>
+<h2 id="challenges-of-microservices">Challenges of Microservices</h2>
+<h3 id="increased-complexity">Increased Complexity</h3>
+<p>Managing a large number of microservices can be complex, requiring sophisticated orchestration and management tools.</p>
+<h3 id="data-consistency">Data Consistency</h3>
+<p>Ensuring data consistency across distributed services can be challenging and may require implementing eventual consistency models.</p>
+<h3 id="network-latency">Network Latency</h3>
+<p>Inter-service communication over a network introduces latency, which can affect performance.</p>
+<h3 id="deployment">Deployment</h3>
+<p>Deploying and managing multiple services can be more complicated than deploying a single monolithic application.</p>
+<h2 id="best-practices-for-implementing-microservices">Best Practices for Implementing Microservices</h2>
+<h3 id="design-services-around-business-capabilities">Design Services Around Business Capabilities</h3>
+<p>Each microservice should correspond to a specific business capability. This alignment ensures that services are cohesive and focused.</p>
+<h3 id="use-domain-driven-design-ddd">Use Domain-Driven Design (DDD)</h3>
+<p>Domain-Driven Design principles help in defining clear service boundaries and ensuring that each service has a well-defined responsibility.</p>
+<h3 id="implement-api-gateways">Implement API Gateways</h3>
+<p>API gateways can manage and route requests to the appropriate services, handle authentication, and provide a single entry point for clients.</p>
+<h3 id="automate-testing-and-deployment">Automate Testing and Deployment</h3>
+<p>Continuous integration and continuous deployment (CI/CD) pipelines are essential for automating testing and deployment processes, ensuring that changes can be delivered quickly and reliably.</p>
+<h3 id="monitor-and-log-everything">Monitor and Log Everything</h3>
+<p>Comprehensive monitoring and logging are crucial for managing a microservices architecture. Tools like Prometheus, Grafana, ELK stack, and Jaeger can provide visibility into service performance and help in diagnosing issues.</p>
+<h3 id="use-service-meshes">Use Service Meshes</h3>
+<p>Service meshes like Istio or Linkerd can manage inter-service communication, handle retries and circuit breaking, and provide additional security and observability features.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Microservices architecture offers a powerful approach for building scalable, flexible, and resilient applications. By breaking down a large application into smaller, independent services, organizations can achieve greater agility and faster time-to-market. However, the benefits come with increased complexity and the need for robust management practices. By following best practices and leveraging appropriate tools, the challenges can be effectively managed, enabling successful implementation of microservices architecture.</p>
+<p>For more insights and updates, connect with me on <a href="https://linkedin.com/in/bhaskarvilles">LinkedIn</a>.</p>
+<hr>
+
+        </section>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="Exploring Microservices Architecture: Benefits, Challenges, and Best Practices">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/2024-08-04-microservices/">
+        <input id="mastodonText" type="hidden" name="text" value="Exploring Microservices Architecture: Benefits, Challenges, and Best Practices http://localhost:1313/en/post/2024-08-04-microservices/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=Exploring%20Microservices%20Architecture%3a%20Benefits%2c%20Challenges%2c%20and%20Best%20Practices&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2024-08-04-microservices%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=Exploring%20Microservices%20Architecture%3a%20Benefits%2c%20Challenges%2c%20and%20Best%20Practices%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2024-08-04-microservices%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=Exploring%20Microservices%20Architecture:%20Benefits,%20Challenges,%20and%20Best%20Practices&amp;url=http://localhost:1313/en/post/2024-08-04-microservices/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=Exploring%20Microservices%20Architecture:%20Benefits,%20Challenges,%20and%20Best%20Practices&amp;url=http://localhost:1313/en/post/2024-08-04-microservices/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/2024-08-04-microservices/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/2024-08-04-microservices/&amp;t=Exploring%20Microservices%20Architecture:%20Benefits,%20Challenges,%20and%20Best%20Practices" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/2024-08-04-microservices/&amp;title=Exploring%20Microservices%20Architecture:%20Benefits,%20Challenges,%20and%20Best%20Practices&amp;summary=Exploring%20Microservices%20Architecture:%20Benefits,%20Challenges,%20and%20Best%20Practices&amp;source=http://localhost:1313/en/post/2024-08-04-microservices/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/2024-08-04-microservices/&amp;media=http://localhost:1313/en/post/2024-08-04-microservices/&amp;description=Exploring%20Microservices%20Architecture:%20Benefits,%20Challenges,%20and%20Best%20Practices" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/2024-08-04-microservices/&amp;resubmit=true&amp;title=Exploring%20Microservices%20Architecture:%20Benefits,%20Challenges,%20and%20Best%20Practices" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Exploring%20Microservices%20Architecture:%20Benefits,%20Challenges,%20and%20Best%20Practices&amp;caption=Exploring%20Microservices%20Architecture:%20Benefits,%20Challenges,%20and%20Best%20Practices&amp;content=http://localhost:1313/en/post/2024-08-04-microservices/&amp;canonicalUrl=http://localhost:1313/en/post/2024-08-04-microservices/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=Exploring%20Microservices%20Architecture:%20Benefits,%20Challenges,%20and%20Best%20Practices&amp;url=http://localhost:1313/en/post/2024-08-04-microservices/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=Exploring%20Microservices%20Architecture:%20Benefits,%20Challenges,%20and%20Best%20Practices&amp;url=http://localhost:1313/en/post/2024-08-04-microservices/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/2024-08-04-microservices/;title=Exploring%20Microservices%20Architecture:%20Benefits,%20Challenges,%20and%20Best%20Practices" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Founder &amp; Tech Lead, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impressum</strong>
+<p>Innovating India&rsquo;s digital infrastructure: AI, IoT, and Full Stack Solutions.<br>
+Some rights reserved. For inquiries, contact: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 15rem">
+                        <div
+                            aria-labelledby="footer-2">
+                            <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Pendiri &amp; Pemimpin Teknologi, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impresium</strong>
+<p>Berinovasi dalam infrastruktur digital India: AI, IoT, dan Solusi Full Stack.<br>
+Beberapa hak dilindungi undang-undang. Untuk pertanyaan, hubungi: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                        </div>
+                        <div id="coffee-counter">
+                            <strong class="section-title">Coffee Stat</strong>
+                            <p>Making this website has taken at least 13 cups of coffee, if not more.</p>
+                        </div>                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key" aria-hidden="true">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" aria-label="Accessibility"
+        data-i18n-optimizeSR="Screen Reader Optimization"
+        data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+        data-i18n-colorSettings="Color Settings"
+        data-i18n-darkMode="Dark Mode"
+        data-i18n-light="Light"
+        data-i18n-dark="Dark"
+        data-i18n-contrast="Contrast"
+        data-i18n-lessContrast="Low"
+        data-i18n-moreContrast="High"
+        data-i18n-defaultContrast="Default"
+        data-i18n-colorPalette="Color Palette"
+        data-i18n-defaultColor="Default"
+        data-i18n-deuteranopia="Deuteranopia"
+        data-i18n-protanopia="Protanopia"
+        data-i18n-tritanopia="Tritanopia"
+        data-i18n-monochrome="Monochrome"
+        data-i18n-fontSize="Font Size"
+        data-i18n-baselineStretch="Baseline Stretch"        
+        data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+        data-i18n-menuControls="Accessibility Menu Controls"
+        data-i18n-save="Save"
+        data-i18n-reset="Reset"
+        data-i18n-close="Close"
+        data-i18n-bionRead="BionRead Mode"
+        data-i18n-focusMode="Focus Mode"
+        data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+        </a>
+    </nav>
+</footer>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</html>

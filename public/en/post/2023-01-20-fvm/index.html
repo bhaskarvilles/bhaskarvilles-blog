@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Filecoin EVM (FEVM) is the Ethereum Virtual Machine (EVM) virtualized as a runtime on top of the Filecoin Virtual Machine (FVM). Before understanding the FEVM you must be familiar with the regular EVM. | Bhaskar&#39;s Website</title>
+<meta name="author" content="Bhaskar">
+<meta name="description" content="What’s it for The FVM enables developers to build many new use cases on top of and with the Filecoin network.
+Data access control One advantage …" >
+<link rel="canonical" href="http://localhost:1313/en/post/2023-01-20-fvm/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Filecoin EVM (FEVM) is the Ethereum Virtual Machine (EVM) virtualized as a runtime on top of the Filecoin Virtual Machine (FVM). Before understanding the FEVM you must be familiar with the regular EVM. | Bhaskar&#39;s Website" />
+    <meta name="twitter:description" content="What’s it for The FVM enables developers to build many new use cases on top of and with the Filecoin network.
+Data access control One advantage …" />
+        <meta name="twitter:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+        <meta name="twitter:site" content="@@bhaskarvilles" />
+        <meta name="twitter:creator" content="@@bhaskarvilles" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="The Filecoin EVM (FEVM) is the Ethereum Virtual Machine (EVM) virtualized as a runtime on top of the Filecoin Virtual Machine (FVM). Before understanding the FEVM you must be familiar with the regular EVM. | Bhaskar&#39;s Website" />
+    <meta property="og:description" content="What’s it for The FVM enables developers to build many new use cases on top of and with the Filecoin network.
+Data access control One advantage …" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/2023-01-20-fvm/" />
+        <meta property="og:image" content="[/logo.png /featured-image.jpg /author-avatar.png]" />
+    <meta property="og:site_name" content="Bhaskar&#39;s Website" /><!-- js.html -->
+
+
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+
+
+
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+    
+</head>
+<body >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/en/" aria-label="Bhaskar&#39;s Website" aria-description="Homepage">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="476pt" aria-label="Bhaskar&#39;s Website">
+            <text id="logotype__text" y="19.5pt" x="0">Bhaskar&#39;s Website</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2 srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="http://localhost:1313/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+                <!-- menu.html -->
+    <menu class="srm">
+        <a id="print-button" class="hide" href="javascript:window.print()" role="button" aria-label="Print">
+            <span class="t srt" role="tooltip">Print</span>
+        </a>
+        <a id="navigatorShare" href="#share" role="button" aria-label="Share">
+            <span class="t srt" role="tooltip">Share</span>
+        </a>
+        <a id="copyPermalink"  href="javascript:navigator.clipboard.writeText(window.location.href)" role="button" aria-label="Copy URL">
+            <span id="copy" class="t srt" role="tooltip">Copy URL</span>
+            <span id="isCopying" style="display: none;">Copying...</span>
+            <span id="copyText" style="display: none;">Copy URL</span>
+        </a>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t srt" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">The Filecoin EVM (FEVM) is the Ethereum Virtual Machine (EVM) virtualized as a runtime on top of the Filecoin Virtual Machine (FVM). Before understanding the FEVM you must be familiar with the regular EVM.
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth sf"
+        role="document" aria-labelledby="title"
+            data-pagefind-ignore="all">
+        <header aria-labelledby="title">
+            
+            <!-- title.html -->
+        <h1 id="title"
+            data-bionRead-safe
+            >The Filecoin EVM (FEVM) is the Ethereum Virtual Machine (EVM) virtualized as a runtime on top of the Filecoin Virtual Machine (FVM). Before understanding the FEVM you must be familiar with the regular EVM.</h1>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <h2 id="whats-it-for">What&rsquo;s it for</h2>
+<p>The FVM enables developers to build many new use cases on top of and with the Filecoin network.</p>
+<h3 id="data-access-control">Data access control</h3>
+<p>One advantage centralized storage solutions have over web3 services is that they can limit individual data access.</p>
+<p>The FVM enables Filecoin network participants to do the same. Threshold encryption networks, like Medusa, can individually or programmatically govern who can access a data collection without any contracts or validators having access to the data themselves.</p>
+<h3 id="data-dao">Data DAO</h3>
+<p>In combination with data access controls, the FVM enables the creation and management of data-decentralized-autonomous-organizations (data DAOs). The FVM allows a group of individuals, or organizations, to curate and preserve data collection. Data DAOs can govern and monetize data access and pool the returns into a shared treasury to fund the collections preservation and long-term growth.</p>
+<h3 id="perpetual-storage">Perpetual storage</h3>
+<p>Before the FVM, storage deals only lasted a year or two. If users wanted to continue storing their data, they had to create new deals before the end of the current deal. This process was manual.</p>
+<p>Now, the FVM allows users to store once and have repair and replication bots manage the repetitive storage deal creation tasks. Using a smart contract, users can provision a wallet with FIL, and storage providers can use that FIL to fund data storage permanently. Repair bots can monitor the storage deals and replicate the data with other storage providers when necessary.</p>
+<p>This process gives users the long-term storage permanence that other blockchains claim while also benefiting from Filecoin&rsquo;s verifiable storage proofs, ensuring that the network stores and replicates the data correctly.</p>
+<h3 id="loans">Loans</h3>
+<p>Put your FIL to work. FIL token holds can help Filecoin storage providers gain access to FIL for storage collateral and receive interest in exchange. These loans can be under-collateralized thanks to the on-chain storage history of past storage provider performance. Community members can use this history to generate reputation scores, enabling everyone to identify good borrowers. On top of that, loans can be automatically paid back to investors by using a multisig as the storage provider&rsquo;s <em>owner</em> address that includes lenders and a third party to help negotiate payback.</p>
+<p>New FVM-enabled smart contracts give every FIL token holder access to new yield opportunities on their holdings while also benefiting the whole Filecoin economy.</p>
+<h3 id="ethereum-compatibility">Ethereum compatibility</h3>
+<p>Since the FVM is fully EVM-compatible, new ERC-20 tokens can be launched on the Filecoin network or bridged directly to token pools on other chains. As well as that, layer two networks can plug into Filecoin and leverage its storage power and security.</p>
+<h2 id="why-now">Why now</h2>
+<p>There are three stages to the development of Filecoin:</p>
+<ol>
+<li>Build a robust decentralized storage network.</li>
+<li>Onboard and safeguard humanity&rsquo;s most important data.</li>
+<li>Allow computation over that data to enable web-scale applications.</li>
+</ol>
+<p>The FVM covers stage 3. We had to ensure that the Filecoin network was stable, robust, and secure before we allowed any development on top of the network.</p>
+<h2 id="fil-lisbon">FIL Lisbon</h2>
+<p>Molly and Raul from Protocol Labs hosted a great introduction to the FVM project. A recording of the presentation is <a href="https://www.youtube.com/watch?v=EqLlyJ13DLY">available on YouTube</a>.</p>
+<p>The Ethereum Virtual Machine is an execution environment initially designed, built for, and run on the Ethereum blockchain. The EVM was revolutionary because, for the first time, any arbitrary code could be deployed to and run on a blockchain. This code inherited all the decentralized properties of the Ethereum blockchain. Before the EVM, a new blockchain had to be created with custom logic and then bootstrapped with validators every time a new type of decentralized application needed to be built.</p>
+<p><img src="https://user-images.githubusercontent.com/310223/150043037-d17ca5d3-f21c-4afc-850c-968807014524.png" alt="alt"></p>
+<p>Code deployed to EVM is typically written in the high-level language Solidity, although other languages, such as Vyper, exist. The high-level Solidity code is compiled to EVM bytecode which is what is actually deployed to and run on the EVM. Due to it being the first virtual machine to run on top of a blockchain, the EVM has developed one of the strongest developer ecosystems in Web3 to date. Today, many different blockchains run their own instance of the EVM to allow developers to easily port their existing applications into the new blockchain&rsquo;s ecosystem.</p>
+<h2 id="ethereum-virtual-machine">Ethereum Virtual Machine</h2>
+<p>The Filecoin EVM (FEVM) is the Ethereum Virtual Machine virtualized as a runtime on top of the Filecoin Virtual Machine. It will allow developers to port any existing EVM-based smart contracts straight onto the FVM (where we call them actors). FEVM is also completely compatible with any EVM development tools, such as Hardhat, Brownie, and Metamask, making deploying and interacting with EVM-based actors easy! This is because Filecoin nodes offer the Ethereum JSON-RPC API.</p>
+<p>FEVM is Milestone 2.1 on the FVM roadmap and will actually be ready before native WASM actors are able to be deployed to the FVM. This is to allow existing smart contract developers, which are largely used to the EVM ecosystem and writing code in Solidity, to quickly begin porting their existing applications and writing new applications on top of the FVM.</p>
+<h2 id="fevm-and-native-fvm">FEVM and native FVM</h2>
+<p>Once Milestone 2.2 of the FVM roadmap is complete, developers will have the option to deploy actors on either the FEVM or native FVM (or both if they really want to). But which should you choose? The decision can be summed up as such: if you want better performance, write actors that are compiled to WASM and deployed to native FVM. If you are familiar with Solidity and want access to the EVM ecosystem of tools, but don&rsquo;t mind less performance, deploy to the FEVM. See the pros and cons of each below:</p>
+<table>
+  <thead>
+      <tr>
+          <th> </th>
+          <th>FVM</th>
+          <th>FEVM</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Pros</strong></td>
+          <td>Native execution speed and performance on Filecoin (i.e., less gas cost per unit of actor code executed).<br><br>Write actors in any language that compiles to WASM 1.</td>
+          <td>Take advantage of current Solidity and EVM tooling to quickly port or write actors.</td>
+      </tr>
+      <tr>
+          <td><strong>Cons</strong></td>
+          <td>Tooling is not yet as mature as EVM tooling.</td>
+          <td>Higher gas fees and lower performance due to the virtualization overhead of the FEVM.</td>
+      </tr>
+  </tbody>
+</table>
+<p>In both cases, you have access to all the awesome power of the Filecoin blockchain, including storage contracts as a native primitive!</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>The FEVM allows current Web3 developers to quickly start writing actors on the Filecoin blockchain while also using all of the tools, software packages, and languages they are used to while also having access to Filecoin storage deals as a native. It will be complete with Milestone 2.1 in the FVM roadmap. Due to the virtualization overhead of the EVM, it will not have the same performance as native actors, which will arrive with Milestone 2.2.</p>
+<blockquote>
+<p>Thanks to <a href="https://fvm.filecoin.io">FVM</a> &amp; <a href="https://filecoin.io">Filecoin Network</a></p></blockquote>
+
+        </section>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="The Filecoin EVM (FEVM) is the Ethereum Virtual Machine (EVM) virtualized as a runtime on top of the Filecoin Virtual Machine (FVM). Before understanding the FEVM you must be familiar with the regular EVM.">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/2023-01-20-fvm/">
+        <input id="mastodonText" type="hidden" name="text" value="The Filecoin EVM (FEVM) is the Ethereum Virtual Machine (EVM) virtualized as a runtime on top of the Filecoin Virtual Machine (FVM). Before understanding the FEVM you must be familiar with the regular EVM. http://localhost:1313/en/post/2023-01-20-fvm/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=The%20Filecoin%20EVM%20%28FEVM%29%20is%20the%20Ethereum%20Virtual%20Machine%20%28EVM%29%20virtualized%20as%20a%20runtime%20on%20top%20of%20the%20Filecoin%20Virtual%20Machine%20%28FVM%29.%20Before%20understanding%20the%20FEVM%20you%20must%20be%20familiar%20with%20the%20regular%20EVM.&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2023-01-20-fvm%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=The%20Filecoin%20EVM%20%28FEVM%29%20is%20the%20Ethereum%20Virtual%20Machine%20%28EVM%29%20virtualized%20as%20a%20runtime%20on%20top%20of%20the%20Filecoin%20Virtual%20Machine%20%28FVM%29.%20Before%20understanding%20the%20FEVM%20you%20must%20be%20familiar%20with%20the%20regular%20EVM.%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2f2023-01-20-fvm%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=The%20Filecoin%20EVM%20%28FEVM%29%20is%20the%20Ethereum%20Virtual%20Machine%20%28EVM%29%20virtualized%20as%20a%20runtime%20on%20top%20of%20the%20Filecoin%20Virtual%20Machine%20%28FVM%29.%20Before%20understanding%20the%20FEVM%20you%20must%20be%20familiar%20with%20the%20regular%20EVM.&amp;url=http://localhost:1313/en/post/2023-01-20-fvm/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=The%20Filecoin%20EVM%20%28FEVM%29%20is%20the%20Ethereum%20Virtual%20Machine%20%28EVM%29%20virtualized%20as%20a%20runtime%20on%20top%20of%20the%20Filecoin%20Virtual%20Machine%20%28FVM%29.%20Before%20understanding%20the%20FEVM%20you%20must%20be%20familiar%20with%20the%20regular%20EVM.&amp;url=http://localhost:1313/en/post/2023-01-20-fvm/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/2023-01-20-fvm/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/2023-01-20-fvm/&amp;t=The%20Filecoin%20EVM%20%28FEVM%29%20is%20the%20Ethereum%20Virtual%20Machine%20%28EVM%29%20virtualized%20as%20a%20runtime%20on%20top%20of%20the%20Filecoin%20Virtual%20Machine%20%28FVM%29.%20Before%20understanding%20the%20FEVM%20you%20must%20be%20familiar%20with%20the%20regular%20EVM." role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/2023-01-20-fvm/&amp;title=The%20Filecoin%20EVM%20%28FEVM%29%20is%20the%20Ethereum%20Virtual%20Machine%20%28EVM%29%20virtualized%20as%20a%20runtime%20on%20top%20of%20the%20Filecoin%20Virtual%20Machine%20%28FVM%29.%20Before%20understanding%20the%20FEVM%20you%20must%20be%20familiar%20with%20the%20regular%20EVM.&amp;summary=The%20Filecoin%20EVM%20%28FEVM%29%20is%20the%20Ethereum%20Virtual%20Machine%20%28EVM%29%20virtualized%20as%20a%20runtime%20on%20top%20of%20the%20Filecoin%20Virtual%20Machine%20%28FVM%29.%20Before%20understanding%20the%20FEVM%20you%20must%20be%20familiar%20with%20the%20regular%20EVM.&amp;source=http://localhost:1313/en/post/2023-01-20-fvm/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/2023-01-20-fvm/&amp;media=http://localhost:1313/en/post/2023-01-20-fvm/&amp;description=The%20Filecoin%20EVM%20%28FEVM%29%20is%20the%20Ethereum%20Virtual%20Machine%20%28EVM%29%20virtualized%20as%20a%20runtime%20on%20top%20of%20the%20Filecoin%20Virtual%20Machine%20%28FVM%29.%20Before%20understanding%20the%20FEVM%20you%20must%20be%20familiar%20with%20the%20regular%20EVM." role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/2023-01-20-fvm/&amp;resubmit=true&amp;title=The%20Filecoin%20EVM%20%28FEVM%29%20is%20the%20Ethereum%20Virtual%20Machine%20%28EVM%29%20virtualized%20as%20a%20runtime%20on%20top%20of%20the%20Filecoin%20Virtual%20Machine%20%28FVM%29.%20Before%20understanding%20the%20FEVM%20you%20must%20be%20familiar%20with%20the%20regular%20EVM." role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=The%20Filecoin%20EVM%20%28FEVM%29%20is%20the%20Ethereum%20Virtual%20Machine%20%28EVM%29%20virtualized%20as%20a%20runtime%20on%20top%20of%20the%20Filecoin%20Virtual%20Machine%20%28FVM%29.%20Before%20understanding%20the%20FEVM%20you%20must%20be%20familiar%20with%20the%20regular%20EVM.&amp;caption=The%20Filecoin%20EVM%20%28FEVM%29%20is%20the%20Ethereum%20Virtual%20Machine%20%28EVM%29%20virtualized%20as%20a%20runtime%20on%20top%20of%20the%20Filecoin%20Virtual%20Machine%20%28FVM%29.%20Before%20understanding%20the%20FEVM%20you%20must%20be%20familiar%20with%20the%20regular%20EVM.&amp;content=http://localhost:1313/en/post/2023-01-20-fvm/&amp;canonicalUrl=http://localhost:1313/en/post/2023-01-20-fvm/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=The%20Filecoin%20EVM%20%28FEVM%29%20is%20the%20Ethereum%20Virtual%20Machine%20%28EVM%29%20virtualized%20as%20a%20runtime%20on%20top%20of%20the%20Filecoin%20Virtual%20Machine%20%28FVM%29.%20Before%20understanding%20the%20FEVM%20you%20must%20be%20familiar%20with%20the%20regular%20EVM.&amp;url=http://localhost:1313/en/post/2023-01-20-fvm/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=The%20Filecoin%20EVM%20%28FEVM%29%20is%20the%20Ethereum%20Virtual%20Machine%20%28EVM%29%20virtualized%20as%20a%20runtime%20on%20top%20of%20the%20Filecoin%20Virtual%20Machine%20%28FVM%29.%20Before%20understanding%20the%20FEVM%20you%20must%20be%20familiar%20with%20the%20regular%20EVM.&amp;url=http://localhost:1313/en/post/2023-01-20-fvm/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/2023-01-20-fvm/;title=The%20Filecoin%20EVM%20%28FEVM%29%20is%20the%20Ethereum%20Virtual%20Machine%20%28EVM%29%20virtualized%20as%20a%20runtime%20on%20top%20of%20the%20Filecoin%20Virtual%20Machine%20%28FVM%29.%20Before%20understanding%20the%20FEVM%20you%20must%20be%20familiar%20with%20the%20regular%20EVM." role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Founder &amp; Tech Lead, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impressum</strong>
+<p>Innovating India&rsquo;s digital infrastructure: AI, IoT, and Full Stack Solutions.<br>
+Some rights reserved. For inquiries, contact: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 15rem">
+                        <div
+                            aria-labelledby="footer-2">
+                            <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Pendiri &amp; Pemimpin Teknologi, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impresium</strong>
+<p>Berinovasi dalam infrastruktur digital India: AI, IoT, dan Solusi Full Stack.<br>
+Beberapa hak dilindungi undang-undang. Untuk pertanyaan, hubungi: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                        </div>
+                        <div id="coffee-counter">
+                            <strong class="section-title">Coffee Stat</strong>
+                            <p>Making this website has taken at least 13 cups of coffee, if not more.</p>
+                        </div>                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key" aria-hidden="true">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" aria-label="Accessibility"
+        data-i18n-optimizeSR="Screen Reader Optimization"
+        data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+        data-i18n-colorSettings="Color Settings"
+        data-i18n-darkMode="Dark Mode"
+        data-i18n-light="Light"
+        data-i18n-dark="Dark"
+        data-i18n-contrast="Contrast"
+        data-i18n-lessContrast="Low"
+        data-i18n-moreContrast="High"
+        data-i18n-defaultContrast="Default"
+        data-i18n-colorPalette="Color Palette"
+        data-i18n-defaultColor="Default"
+        data-i18n-deuteranopia="Deuteranopia"
+        data-i18n-protanopia="Protanopia"
+        data-i18n-tritanopia="Tritanopia"
+        data-i18n-monochrome="Monochrome"
+        data-i18n-fontSize="Font Size"
+        data-i18n-baselineStretch="Baseline Stretch"        
+        data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+        data-i18n-menuControls="Accessibility Menu Controls"
+        data-i18n-save="Save"
+        data-i18n-reset="Reset"
+        data-i18n-close="Close"
+        data-i18n-bionRead="BionRead Mode"
+        data-i18n-focusMode="Focus Mode"
+        data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+        </a>
+    </nav>
+</footer>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</html>
