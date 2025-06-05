@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open AI on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/tags/open-ai/</link>
+    <link>//localhost:1313/en/tags/open-ai/</link>
     <description>Recent Posts in Open AI on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.147.3</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/open-ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/en/tags/open-ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Core of OpenAI o1</title>
-      <link>http://localhost:1313/en/post/2024-09-12-openai-o1-preview/</link>
+      <link>//localhost:1313/en/post/2024-09-12-openai-o1-preview/</link>
       <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-09-12-openai-o1-preview/</guid>
+      <guid>//localhost:1313/en/post/2024-09-12-openai-o1-preview/</guid>
       <description></description>
       
     </item>

@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>India on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/tags/india/</link>
+    <link>//localhost:1313/en/tags/india/</link>
     <description>Recent Posts in India on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.147.3</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/india/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/en/tags/india/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BHASKAR: Transforming India&#39;s Startup Ecosystem</title>
-      <link>http://localhost:1313/en/post/2024-10-25-bhaskar-platform/</link>
+      <link>//localhost:1313/en/post/2024-10-25-bhaskar-platform/</link>
       <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-10-25-bhaskar-platform/</guid>
+      <guid>//localhost:1313/en/post/2024-10-25-bhaskar-platform/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Why India Can&#39;t Yet Replicate the Success of Black Myth: Wukong in the AAA PC Game Market</title>
-      <link>http://localhost:1313/en/post/2024-09-17-indian-aaa-game-market/</link>
+      <link>//localhost:1313/en/post/2024-09-17-indian-aaa-game-market/</link>
       <pubDate>Tue, 17 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-09-17-indian-aaa-game-market/</guid>
+      <guid>//localhost:1313/en/post/2024-09-17-indian-aaa-game-market/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Whistleblower Documents Expose SEBI Chairperson&#39;s Alleged Involvement in the Adani Money Siphoning Scandal</title>
-      <link>http://localhost:1313/en/post/2024-08-11-sebi-chair-involved-in-adani-foreign-investors-scandal/</link>
+      <link>//localhost:1313/en/post/2024-08-11-sebi-chair-involved-in-adani-foreign-investors-scandal/</link>
       <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-08-11-sebi-chair-involved-in-adani-foreign-investors-scandal/</guid>
+      <guid>//localhost:1313/en/post/2024-08-11-sebi-chair-involved-in-adani-foreign-investors-scandal/</guid>
       <description></description>
       
     </item>

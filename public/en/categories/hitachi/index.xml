@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hitachi on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/hitachi/</link>
+    <link>//localhost:1313/en/categories/hitachi/</link>
     <description>Recent Posts in Hitachi on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.147.3</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/hitachi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/en/categories/hitachi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hitachi Shifts to Paperless, Secure Procurement Contracts with Hyperledger Fabric</title>
-      <link>http://localhost:1313/en/post/2022-09-07-hitachi/</link>
+      <link>//localhost:1313/en/post/2022-09-07-hitachi/</link>
       <pubDate>Wed, 07 Sep 2022 11:30:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2022-09-07-hitachi/</guid>
+      <guid>//localhost:1313/en/post/2022-09-07-hitachi/</guid>
       <description></description>
       
     </item>

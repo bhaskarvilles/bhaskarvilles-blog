@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Middle East on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/middle-east/</link>
+    <link>//localhost:1313/en/categories/middle-east/</link>
     <description>Recent Posts in Middle East on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.147.3</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/middle-east/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/en/categories/middle-east/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Israel&#39;s Air Strike on Damascus: Rising Tensions Amidst Iranian Influence</title>
-      <link>http://localhost:1313/en/post/2024-10-03-israel-air-strike/</link>
+      <link>//localhost:1313/en/post/2024-10-03-israel-air-strike/</link>
       <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-10-03-israel-air-strike/</guid>
+      <guid>//localhost:1313/en/post/2024-10-03-israel-air-strike/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The US &amp; Islamists: A History of Connivance in Syria</title>
-      <link>http://localhost:1313/en/post/2024-08-07-syrian-civil-war-3/</link>
+      <link>//localhost:1313/en/post/2024-08-07-syrian-civil-war-3/</link>
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-08-07-syrian-civil-war-3/</guid>
+      <guid>//localhost:1313/en/post/2024-08-07-syrian-civil-war-3/</guid>
       <description></description>
       
     </item>

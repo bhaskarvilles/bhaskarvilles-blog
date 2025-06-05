@@ -2,75 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blockchain on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/blockchain/</link>
+    <link>//localhost:1313/en/categories/blockchain/</link>
     <description>Recent Posts in Blockchain on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.147.3</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/en/categories/blockchain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contributions to Open Source Projects</title>
-      <link>http://localhost:1313/en/post/2024-07-18-my-security-contributions/</link>
+      <link>//localhost:1313/en/post/2024-07-18-my-security-contributions/</link>
       <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-07-18-my-security-contributions/</guid>
+      <guid>//localhost:1313/en/post/2024-07-18-my-security-contributions/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Zero Knowledge Protocols (ZK)</title>
-      <link>http://localhost:1313/en/post/2024-07-15-advancements-of-ai-through-digital-innovation/</link>
+      <link>//localhost:1313/en/post/2024-07-15-advancements-of-ai-through-digital-innovation/</link>
       <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-07-15-advancements-of-ai-through-digital-innovation/</guid>
+      <guid>//localhost:1313/en/post/2024-07-15-advancements-of-ai-through-digital-innovation/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The Filecoin EVM (FEVM) is the Ethereum Virtual Machine (EVM) virtualized as a runtime on top of the Filecoin Virtual Machine (FVM). Before understanding the FEVM you must be familiar with the regular EVM.</title>
-      <link>http://localhost:1313/en/post/2023-01-20-fvm/</link>
+      <link>//localhost:1313/en/post/2023-01-20-fvm/</link>
       <pubDate>Fri, 20 Jan 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2023-01-20-fvm/</guid>
+      <guid>//localhost:1313/en/post/2023-01-20-fvm/</guid>
       <description></description>
       
     </item>
     <item>
       <title>DAOs and the Future of Decentralization - Insights from Bhaskar Developer, ETHGlobal Fellow, and Vitalik Buterin, the founder of Ethereum</title>
-      <link>http://localhost:1313/en/post/2023-01-16-daos-are-not-corporations-where-decentralization-in-autonomous-organizations-matters/</link>
+      <link>//localhost:1313/en/post/2023-01-16-daos-are-not-corporations-where-decentralization-in-autonomous-organizations-matters/</link>
       <pubDate>Wed, 21 Dec 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2023-01-16-daos-are-not-corporations-where-decentralization-in-autonomous-organizations-matters/</guid>
+      <guid>//localhost:1313/en/post/2023-01-16-daos-are-not-corporations-where-decentralization-in-autonomous-organizations-matters/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Hyperledger Cactus Project moved to Cacti</title>
-      <link>http://localhost:1313/en/post/2022-11-05-tsc-approves-cactus-merging-into-cacti/</link>
+      <link>//localhost:1313/en/post/2022-11-05-tsc-approves-cactus-merging-into-cacti/</link>
       <pubDate>Sat, 05 Nov 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2022-11-05-tsc-approves-cactus-merging-into-cacti/</guid>
+      <guid>//localhost:1313/en/post/2022-11-05-tsc-approves-cactus-merging-into-cacti/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Hyperledger Fabric Deployment — How We Aced it from Testing to Production</title>
-      <link>http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/</link>
+      <link>//localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/</link>
       <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/</guid>
+      <guid>//localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Ethereum 2.0 Merging</title>
-      <link>http://localhost:1313/en/post/2022-09-21-ethereum-2-0/</link>
+      <link>//localhost:1313/en/post/2022-09-21-ethereum-2-0/</link>
       <pubDate>Wed, 21 Sep 2022 10:18:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2022-09-21-ethereum-2-0/</guid>
+      <guid>//localhost:1313/en/post/2022-09-21-ethereum-2-0/</guid>
       <description></description>
       
     </item>

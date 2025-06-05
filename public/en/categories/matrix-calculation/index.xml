@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matrix Calculation on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/matrix-calculation/</link>
+    <link>//localhost:1313/en/categories/matrix-calculation/</link>
     <description>Recent Posts in Matrix Calculation on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.147.3</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/matrix-calculation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/en/categories/matrix-calculation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Strassen`s Algorithm</title>
-      <link>http://localhost:1313/en/post/2022-12-12-strassens-algorithm/</link>
+      <link>//localhost:1313/en/post/2022-12-12-strassens-algorithm/</link>
       <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2022-12-12-strassens-algorithm/</guid>
+      <guid>//localhost:1313/en/post/2022-12-12-strassens-algorithm/</guid>
       <description></description>
       
     </item>

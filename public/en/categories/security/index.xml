@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Security on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/security/</link>
+    <link>//localhost:1313/en/categories/security/</link>
     <description>Recent Posts in Security on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.147.3</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/en/categories/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JSMON: Revolutionizing JavaScript Security Monitoring</title>
-      <link>http://localhost:1313/en/post/2024-09-20-jsmon-sh/</link>
+      <link>//localhost:1313/en/post/2024-09-20-jsmon-sh/</link>
       <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-09-20-jsmon-sh/</guid>
+      <guid>//localhost:1313/en/post/2024-09-20-jsmon-sh/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Discovering JavaScript Files with JSFinder</title>
-      <link>http://localhost:1313/en/post/2024-08-31-jsfinder-standard/</link>
+      <link>//localhost:1313/en/post/2024-08-31-jsfinder-standard/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-08-31-jsfinder-standard/</guid>
+      <guid>//localhost:1313/en/post/2024-08-31-jsfinder-standard/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Contributions to Open Source Projects</title>
-      <link>http://localhost:1313/en/post/2024-07-18-my-security-contributions/</link>
+      <link>//localhost:1313/en/post/2024-07-18-my-security-contributions/</link>
       <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-07-18-my-security-contributions/</guid>
+      <guid>//localhost:1313/en/post/2024-07-18-my-security-contributions/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Google&#39;s new password less authentication technology</title>
-      <link>http://localhost:1313/en/post/2022-10-12-google-rolling-new-passwordless-authentication/</link>
+      <link>//localhost:1313/en/post/2022-10-12-google-rolling-new-passwordless-authentication/</link>
       <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2022-10-12-google-rolling-new-passwordless-authentication/</guid>
+      <guid>//localhost:1313/en/post/2022-10-12-google-rolling-new-passwordless-authentication/</guid>
       <description></description>
       
     </item>

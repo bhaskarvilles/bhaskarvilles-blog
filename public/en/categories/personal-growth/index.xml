@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Personal Growth on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/personal-growth/</link>
+    <link>//localhost:1313/en/categories/personal-growth/</link>
     <description>Recent Posts in Personal Growth on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.147.3</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/personal-growth/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/en/categories/personal-growth/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Finding Your Inner Drive: A Guide to Motivation</title>
-      <link>http://localhost:1313/en/post/2025-03-09-finding-your-inner-drive/</link>
+      <link>//localhost:1313/en/post/2025-03-09-finding-your-inner-drive/</link>
       <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2025-03-09-finding-your-inner-drive/</guid>
+      <guid>//localhost:1313/en/post/2025-03-09-finding-your-inner-drive/</guid>
       <description></description>
       
     </item>

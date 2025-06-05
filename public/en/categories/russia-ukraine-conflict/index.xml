@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Russia-Ukraine Conflict on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/russia-ukraine-conflict/</link>
+    <link>//localhost:1313/en/categories/russia-ukraine-conflict/</link>
     <description>Recent Posts in Russia-Ukraine Conflict on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.147.3</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/russia-ukraine-conflict/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/en/categories/russia-ukraine-conflict/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EU&#39;s Stance on Lifting Restrictions for Kiev&#39;s Strikes on Russian Territory: Risks, Benefits, and Future Implications</title>
-      <link>http://localhost:1313/en/post/2024-08-29-eu-ristrictions-on-kiev-strikes/</link>
+      <link>//localhost:1313/en/post/2024-08-29-eu-ristrictions-on-kiev-strikes/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-08-29-eu-ristrictions-on-kiev-strikes/</guid>
+      <guid>//localhost:1313/en/post/2024-08-29-eu-ristrictions-on-kiev-strikes/</guid>
       <description></description>
       
     </item>

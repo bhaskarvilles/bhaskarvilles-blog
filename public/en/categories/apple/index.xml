@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Apple on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/apple/</link>
+    <link>//localhost:1313/en/categories/apple/</link>
     <description>Recent Posts in Apple on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.147.3</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/apple/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/en/categories/apple/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Apple&#39;s 2025 Lineup: A Glimpse into the Future of Innovation</title>
-      <link>http://localhost:1313/en/post/2025-04-28-apple-new-updates/</link>
+      <link>//localhost:1313/en/post/2025-04-28-apple-new-updates/</link>
       <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2025-04-28-apple-new-updates/</guid>
+      <guid>//localhost:1313/en/post/2025-04-28-apple-new-updates/</guid>
       <description></description>
       
     </item>
     <item>
       <title>iOS and iPadOS 18.4: A Comprehensive Overview of the Latest Updates</title>
-      <link>http://localhost:1313/en/post/2025-03-24-ios-ipados-18-4-release/</link>
+      <link>//localhost:1313/en/post/2025-03-24-ios-ipados-18-4-release/</link>
       <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2025-03-24-ios-ipados-18-4-release/</guid>
+      <guid>//localhost:1313/en/post/2025-03-24-ios-ipados-18-4-release/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Apple Airpods 4: Apple&#39;s next-generation wireless earbuds with improved audio quality, adaptive noise cancellation, and personalized spatial audio.</title>
-      <link>http://localhost:1313/en/post/2024-09-09-apple-airpods-4/</link>
+      <link>//localhost:1313/en/post/2024-09-09-apple-airpods-4/</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-09-09-apple-airpods-4/</guid>
+      <guid>//localhost:1313/en/post/2024-09-09-apple-airpods-4/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Apple Watch Ultra 2 &amp; Series 10 Watch: The rugged, high-performance smartwatch designed for extreme conditions, featuring a larger display, advanced sensors, and enhanced durability.</title>
-      <link>http://localhost:1313/en/post/2024-09-09-apple-watch-ultra-2/</link>
+      <link>//localhost:1313/en/post/2024-09-09-apple-watch-ultra-2/</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-09-09-apple-watch-ultra-2/</guid>
+      <guid>//localhost:1313/en/post/2024-09-09-apple-watch-ultra-2/</guid>
       <description></description>
       
     </item>
     <item>
       <title>iPhone 16 Series: Apple&#39;s latest flagship smartphones, offering groundbreaking advancements in camera technology and performance with new features across four models.</title>
-      <link>http://localhost:1313/en/post/2024-09-09-apple-iphone16-and-16-pro/</link>
+      <link>//localhost:1313/en/post/2024-09-09-apple-iphone16-and-16-pro/</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-09-09-apple-iphone16-and-16-pro/</guid>
+      <guid>//localhost:1313/en/post/2024-09-09-apple-iphone16-and-16-pro/</guid>
       <description></description>
       
     </item>

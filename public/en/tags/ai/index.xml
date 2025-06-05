@@ -2,147 +2,147 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ai on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/tags/ai/</link>
+    <link>//localhost:1313/en/tags/ai/</link>
     <description>Recent Posts in Ai on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.147.3</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/en/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kerdos AI Introduces Enterprise-Grade AI API Platform</title>
-      <link>http://localhost:1313/en/post/2025-04-14-kerdos-ai-platform/</link>
+      <link>//localhost:1313/en/post/2025-04-14-kerdos-ai-platform/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2025-04-14-kerdos-ai-platform/</guid>
+      <guid>//localhost:1313/en/post/2025-04-14-kerdos-ai-platform/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Kerdos AI Launches Revolutionary Image Generator Powered by Stable Diffusion XL</title>
-      <link>http://localhost:1313/en/post/2025-04-14-kerdos-ai-image-generator/</link>
+      <link>//localhost:1313/en/post/2025-04-14-kerdos-ai-image-generator/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2025-04-14-kerdos-ai-image-generator/</guid>
+      <guid>//localhost:1313/en/post/2025-04-14-kerdos-ai-image-generator/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Kerdos AI Unveils Next-Generation Chat Application</title>
-      <link>http://localhost:1313/en/post/2025-04-14-kerdos-ai-chat-application/</link>
+      <link>//localhost:1313/en/post/2025-04-14-kerdos-ai-chat-application/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2025-04-14-kerdos-ai-chat-application/</guid>
+      <guid>//localhost:1313/en/post/2025-04-14-kerdos-ai-chat-application/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Unlocking the Power of Kerdos Vision AI for Image Generation</title>
-      <link>http://localhost:1313/en/post/2025-03-18-kerdos-vision-ai/</link>
+      <link>//localhost:1313/en/post/2025-03-18-kerdos-vision-ai/</link>
       <pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2025-03-18-kerdos-vision-ai/</guid>
+      <guid>//localhost:1313/en/post/2025-03-18-kerdos-vision-ai/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Kerdos AI Launches Revolutionary Chat Application with OpenAI Integration</title>
-      <link>http://localhost:1313/en/post/2025-03-15-kerdos-ai-launched-chat-application/</link>
+      <link>//localhost:1313/en/post/2025-03-15-kerdos-ai-launched-chat-application/</link>
       <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2025-03-15-kerdos-ai-launched-chat-application/</guid>
+      <guid>//localhost:1313/en/post/2025-03-15-kerdos-ai-launched-chat-application/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The Dark Side of AI: Navigating Ethical Challenges in Artificial Intelligence</title>
-      <link>http://localhost:1313/en/post/2024-12-27-the-dark-side-of-ai/</link>
+      <link>//localhost:1313/en/post/2024-12-27-the-dark-side-of-ai/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-12-27-the-dark-side-of-ai/</guid>
+      <guid>//localhost:1313/en/post/2024-12-27-the-dark-side-of-ai/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Technical Deep Dive: How Claude AI Can Control Computers</title>
-      <link>http://localhost:1313/en/post/2024-10-23-claude-ai-computer-control/</link>
+      <link>//localhost:1313/en/post/2024-10-23-claude-ai-computer-control/</link>
       <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-10-23-claude-ai-computer-control/</guid>
+      <guid>//localhost:1313/en/post/2024-10-23-claude-ai-computer-control/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Snapdragon 8 Elite: Revolutionizing Mobile Performance</title>
-      <link>http://localhost:1313/en/post/2024-10-22-snapdragon-8-elite-mobile/</link>
+      <link>//localhost:1313/en/post/2024-10-22-snapdragon-8-elite-mobile/</link>
       <pubDate>Tue, 22 Oct 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-10-22-snapdragon-8-elite-mobile/</guid>
+      <guid>//localhost:1313/en/post/2024-10-22-snapdragon-8-elite-mobile/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The Dark Side of AI in Call Summarization: Privacy, Personalization</title>
-      <link>http://localhost:1313/en/post/2024-08-29-the-dark-side-of-ai-calls-summary/</link>
+      <link>//localhost:1313/en/post/2024-08-29-the-dark-side-of-ai-calls-summary/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-08-29-the-dark-side-of-ai-calls-summary/</guid>
+      <guid>//localhost:1313/en/post/2024-08-29-the-dark-side-of-ai-calls-summary/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Advanced RISC Machines</title>
-      <link>http://localhost:1313/en/post/2024-08-21-arm-processors/</link>
+      <link>//localhost:1313/en/post/2024-08-21-arm-processors/</link>
       <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-08-21-arm-processors/</guid>
+      <guid>//localhost:1313/en/post/2024-08-21-arm-processors/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Running LLaMA 3.1 Locally with Ollama: A Step-by-Step process</title>
-      <link>http://localhost:1313/en/post/2024-08-20-running-llama3.1-locally-on-your-system/</link>
+      <link>//localhost:1313/en/post/2024-08-20-running-llama3.1-locally-on-your-system/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-08-20-running-llama3.1-locally-on-your-system/</guid>
+      <guid>//localhost:1313/en/post/2024-08-20-running-llama3.1-locally-on-your-system/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Understanding Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs)</title>
-      <link>http://localhost:1313/en/post/2024-07-29-ann-cnn/</link>
+      <link>//localhost:1313/en/post/2024-07-29-ann-cnn/</link>
       <pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-07-29-ann-cnn/</guid>
+      <guid>//localhost:1313/en/post/2024-07-29-ann-cnn/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Zero Knowledge Protocols (ZK)</title>
-      <link>http://localhost:1313/en/post/2024-07-15-advancements-of-ai-through-digital-innovation/</link>
+      <link>//localhost:1313/en/post/2024-07-15-advancements-of-ai-through-digital-innovation/</link>
       <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-07-15-advancements-of-ai-through-digital-innovation/</guid>
+      <guid>//localhost:1313/en/post/2024-07-15-advancements-of-ai-through-digital-innovation/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Advanced Digital Marketing: Integrating AI, GPTs, and Blockchain Technologies for and secure record of ad impressions and clicks.</title>
-      <link>http://localhost:1313/en/post/2023-06-07-ai-gpt-blockchain-in-digital-marketing/</link>
+      <link>//localhost:1313/en/post/2023-06-07-ai-gpt-blockchain-in-digital-marketing/</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2023-06-07-ai-gpt-blockchain-in-digital-marketing/</guid>
+      <guid>//localhost:1313/en/post/2023-06-07-ai-gpt-blockchain-in-digital-marketing/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Designing Your Own Language Model with DeepFloyd AI</title>
-      <link>http://localhost:1313/en/post/2023-05-18-create-your-own-ai-language-model/</link>
+      <link>//localhost:1313/en/post/2023-05-18-create-your-own-ai-language-model/</link>
       <pubDate>Fri, 19 May 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2023-05-18-create-your-own-ai-language-model/</guid>
+      <guid>//localhost:1313/en/post/2023-05-18-create-your-own-ai-language-model/</guid>
       <description></description>
       
     </item>

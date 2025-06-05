@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LLaMA on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/llama/</link>
+    <link>//localhost:1313/en/categories/llama/</link>
     <description>Recent Posts in LLaMA on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.147.3</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 22:53:04 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/llama/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
+    <atom:link href="//localhost:1313/en/categories/llama/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Running LLaMA 3.1 Locally with Ollama: A Step-by-Step process</title>
-      <link>http://localhost:1313/en/post/2024-08-20-running-llama3.1-locally-on-your-system/</link>
+      <link>//localhost:1313/en/post/2024-08-20-running-llama3.1-locally-on-your-system/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/2024-08-20-running-llama3.1-locally-on-your-system/</guid>
+      <guid>//localhost:1313/en/post/2024-08-20-running-llama3.1-locally-on-your-system/</guid>
       <description></description>
       
     </item>
