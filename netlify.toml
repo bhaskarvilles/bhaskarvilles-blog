@@ -10,26 +10,26 @@
 
 # Redirect rules for alternate domain
 [[redirects]]
-  from = "https://bhaskarvilles.blog/*"
-  to = "https://bhaskar.blog/:splat"
+  from = "https://bhaskar.blog/*"
+  to = "https://bhaskarvilles.blog/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "http://bhaskarvilles.blog/*"
-  to = "https://bhaskar.blog/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.bhaskarvilles.blog/*"
-  to = "https://bhaskar.blog/:splat"
+  from = "http://bhaskar.blog/*"
+  to = "https://bhaskarvilles.blog/:splat"
   status = 301
   force = true
 
 [[redirects]]
   from = "https://www.bhaskar.blog/*"
-  to = "https://bhaskar.blog/:splat"
+  to = "https://bhaskarvilles.blog/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.bhaskarvilles.blog/*"
+  to = "https://bhaskarvilles.blog/:splat"
   status = 301
   force = true
 
@@ -37,7 +37,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Link = "<https://bhaskarvilles.blog>; rel=\"alternate\""
+    Link = "<https://bhaskar.blog>; rel=\"alternate\""
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"

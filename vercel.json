@@ -11,21 +11,10 @@
       "has": [
         {
           "type": "host",
-          "value": "bhaskarvilles.blog"
+          "value": "bhaskar.blog"
         }
       ],
-      "destination": "https://bhaskar.blog/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.bhaskarvilles.blog"
-        }
-      ],
-      "destination": "https://bhaskar.blog/:path*",
+      "destination": "https://bhaskarvilles.blog/:path*",
       "permanent": true
     },
     {
@@ -36,7 +25,18 @@
           "value": "www.bhaskar.blog"
         }
       ],
-      "destination": "https://bhaskar.blog/:path*",
+      "destination": "https://bhaskarvilles.blog/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bhaskarvilles.blog"
+        }
+      ],
+      "destination": "https://bhaskarvilles.blog/:path*",
       "permanent": true
     }
   ],
@@ -46,7 +46,7 @@
       "headers": [
         {
           "key": "Link",
-          "value": "<https://bhaskarvilles.blog>; rel=\"alternate\""
+          "value": "<https://bhaskar.blog>; rel=\"alternate\""
         },
         {
           "key": "X-Frame-Options",
