@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Stable Diffusion on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/tags/stable-diffusion/</link>
-    <description>Recent Posts in Stable Diffusion on Bhaskar&#39;s Website</description>
+    <title>Stable-Diffusion on Bhaskar&#39;s Website</title>
+    <link>https://bhaskar.blog/en/tags/stable-diffusion/</link>
+    <description>Recent Posts in Stable-Diffusion on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/stable-diffusion/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:53:53 +0530</lastBuildDate>
+    <atom:link href="https://bhaskar.blog/en/tags/stable-diffusion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kerdos AI Launches Revolutionary Image Generator Powered by Stable Diffusion XL</title>
-      <link>http://localhost:1313/en/post/kerdos-ai-launches-revolutionary-image-generator-powered-by-stable-diffusion-xl/</link>
+      <link>https://bhaskar.blog/en/post/kerdos-ai-launches-revolutionary-image-generator-powered-by-stable-diffusion-xl/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/kerdos-ai-launches-revolutionary-image-generator-powered-by-stable-diffusion-xl/</guid>
+      <guid>https://bhaskar.blog/en/post/kerdos-ai-launches-revolutionary-image-generator-powered-by-stable-diffusion-xl/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Running Local Large Language Models (LLMs) for Image Generation</title>
-      <link>http://localhost:1313/en/post/running-local-large-language-models-llms-for-image-generation/</link>
+      <link>https://bhaskar.blog/en/post/running-local-large-language-models-llms-for-image-generation/</link>
       <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/running-local-large-language-models-llms-for-image-generation/</guid>
+      <guid>https://bhaskar.blog/en/post/running-local-large-language-models-llms-for-image-generation/</guid>
       <description></description>
       
     </item>

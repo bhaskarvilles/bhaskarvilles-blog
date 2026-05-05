@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: http://localhost:1313//sitemap.xml
+Sitemap: https://bhaskar.blog//sitemap.xml
 
 # Block AI crawlers as per site configuration
 User-agent: AI2Bot

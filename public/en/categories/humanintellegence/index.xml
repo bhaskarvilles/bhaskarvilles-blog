@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HumanIntellegence on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/humanintellegence/</link>
+    <link>https://bhaskar.blog/en/categories/humanintellegence/</link>
     <description>Recent Posts in HumanIntellegence on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/humanintellegence/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:53:53 +0530</lastBuildDate>
+    <atom:link href="https://bhaskar.blog/en/categories/humanintellegence/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google Bard: A Large Language Model Chatbot</title>
-      <link>http://localhost:1313/en/post/google-bard-large-language-model-chatbot/</link>
+      <link>https://bhaskar.blog/en/post/google-bard-large-language-model-chatbot/</link>
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/google-bard-large-language-model-chatbot/</guid>
+      <guid>https://bhaskar.blog/en/post/google-bard-large-language-model-chatbot/</guid>
       <description></description>
       <enclosure url="/images/posts/google-bard.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>ChatGPT vs. Humans: Delving Deeper into Technical and Brain Intelligence Aspects</title>
-      <link>http://localhost:1313/en/post/chatgpt-vs-human-intelligence-comparison/</link>
+      <link>https://bhaskar.blog/en/post/chatgpt-vs-human-intelligence-comparison/</link>
       <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/chatgpt-vs-human-intelligence-comparison/</guid>
+      <guid>https://bhaskar.blog/en/post/chatgpt-vs-human-intelligence-comparison/</guid>
       <description></description>
       <enclosure url="/images/posts/ai-human-intelligence.jpg" length="0" type="image/jpeg" />
     </item>

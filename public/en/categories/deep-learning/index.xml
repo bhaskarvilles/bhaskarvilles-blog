@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deep Learning on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/deep-learning/</link>
+    <link>https://bhaskar.blog/en/categories/deep-learning/</link>
     <description>Recent Posts in Deep Learning on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:53:53 +0530</lastBuildDate>
+    <atom:link href="https://bhaskar.blog/en/categories/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understanding Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs)</title>
-      <link>http://localhost:1313/en/post/understanding-artificial-neural-networks-anns-and-convolutional-neural-networks-cnns/</link>
+      <link>https://bhaskar.blog/en/post/understanding-artificial-neural-networks-anns-and-convolutional-neural-networks-cnns/</link>
       <pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/understanding-artificial-neural-networks-anns-and-convolutional-neural-networks-cnns/</guid>
+      <guid>https://bhaskar.blog/en/post/understanding-artificial-neural-networks-anns-and-convolutional-neural-networks-cnns/</guid>
       <description></description>
       
     </item>

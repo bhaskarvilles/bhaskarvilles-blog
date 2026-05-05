@@ -2,75 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blockchain on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/blockchain/</link>
+    <link>https://bhaskar.blog/en/categories/blockchain/</link>
     <description>Recent Posts in Blockchain on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:53:53 +0530</lastBuildDate>
+    <atom:link href="https://bhaskar.blog/en/categories/blockchain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contributions to Open Source Projects</title>
-      <link>http://localhost:1313/en/post/contributions-to-open-source-projects/</link>
+      <link>https://bhaskar.blog/en/post/contributions-to-open-source-projects/</link>
       <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/contributions-to-open-source-projects/</guid>
+      <guid>https://bhaskar.blog/en/post/contributions-to-open-source-projects/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Zero Knowledge Protocols (ZK)</title>
-      <link>http://localhost:1313/en/post/zero-knowledge-protocols-zk/</link>
+      <link>https://bhaskar.blog/en/post/zero-knowledge-protocols-zk/</link>
       <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/zero-knowledge-protocols-zk/</guid>
+      <guid>https://bhaskar.blog/en/post/zero-knowledge-protocols-zk/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The Filecoin EVM (FEVM) is the Ethereum Virtual Machine (EVM) virtualized as a runtime on top of the Filecoin Virtual Machine (FVM). Before understanding the FEVM you must be familiar with the regular EVM.</title>
-      <link>http://localhost:1313/en/post/the-filecoin-evm-fevm-is-the-ethereum-virtual-machine-evm-virtualized-as-a-runtime-on-top-of-the-filecoin-virtual-machine-fvm.-before-understanding-the-fevm-you-must-be-familiar-with-the-regular-evm./</link>
+      <link>https://bhaskar.blog/en/post/the-filecoin-evm-fevm-is-the-ethereum-virtual-machine-evm-virtualized-as-a-runtime-on-top-of-the-filecoin-virtual-machine-fvm.-before-understanding-the-fevm-you-must-be-familiar-with-the-regular-evm./</link>
       <pubDate>Fri, 20 Jan 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/the-filecoin-evm-fevm-is-the-ethereum-virtual-machine-evm-virtualized-as-a-runtime-on-top-of-the-filecoin-virtual-machine-fvm.-before-understanding-the-fevm-you-must-be-familiar-with-the-regular-evm./</guid>
+      <guid>https://bhaskar.blog/en/post/the-filecoin-evm-fevm-is-the-ethereum-virtual-machine-evm-virtualized-as-a-runtime-on-top-of-the-filecoin-virtual-machine-fvm.-before-understanding-the-fevm-you-must-be-familiar-with-the-regular-evm./</guid>
       <description></description>
       
     </item>
     <item>
       <title>DAOs and the Future of Decentralization - Insights from Bhaskar Developer, ETHGlobal Fellow, and Vitalik Buterin, the founder of Ethereum</title>
-      <link>http://localhost:1313/en/post/daos-and-the-future-of-decentralization-insights-from-bhaskar-developer-ethglobal-fellow-and-vitalik-buterin-the-founder-of-ethereum/</link>
+      <link>https://bhaskar.blog/en/post/daos-and-the-future-of-decentralization-insights-from-bhaskar-developer-ethglobal-fellow-and-vitalik-buterin-the-founder-of-ethereum/</link>
       <pubDate>Wed, 21 Dec 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/daos-and-the-future-of-decentralization-insights-from-bhaskar-developer-ethglobal-fellow-and-vitalik-buterin-the-founder-of-ethereum/</guid>
+      <guid>https://bhaskar.blog/en/post/daos-and-the-future-of-decentralization-insights-from-bhaskar-developer-ethglobal-fellow-and-vitalik-buterin-the-founder-of-ethereum/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Hyperledger Cactus Project moved to Cacti</title>
-      <link>http://localhost:1313/en/post/hyperledger-cactus-project-moved-to-cacti/</link>
+      <link>https://bhaskar.blog/en/post/hyperledger-cactus-project-moved-to-cacti/</link>
       <pubDate>Sat, 05 Nov 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/hyperledger-cactus-project-moved-to-cacti/</guid>
+      <guid>https://bhaskar.blog/en/post/hyperledger-cactus-project-moved-to-cacti/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Hyperledger Fabric Deployment — How We Aced it from Testing to Production</title>
-      <link>http://localhost:1313/en/post/hyperledger-fabric-deployment-how-we-aced-it-from-testing-to-production/</link>
+      <link>https://bhaskar.blog/en/post/hyperledger-fabric-deployment-how-we-aced-it-from-testing-to-production/</link>
       <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/hyperledger-fabric-deployment-how-we-aced-it-from-testing-to-production/</guid>
+      <guid>https://bhaskar.blog/en/post/hyperledger-fabric-deployment-how-we-aced-it-from-testing-to-production/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Ethereum 2.0 Merging</title>
-      <link>http://localhost:1313/en/post/ethereum-2.0-merging/</link>
+      <link>https://bhaskar.blog/en/post/ethereum-2.0-merging/</link>
       <pubDate>Wed, 21 Sep 2022 10:18:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/ethereum-2.0-merging/</guid>
+      <guid>https://bhaskar.blog/en/post/ethereum-2.0-merging/</guid>
       <description></description>
       
     </item>

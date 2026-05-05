@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cybersecurity on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/cybersecurity/</link>
+    <link>https://bhaskar.blog/en/categories/cybersecurity/</link>
     <description>Recent Posts in Cybersecurity on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/cybersecurity/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:53:53 +0530</lastBuildDate>
+    <atom:link href="https://bhaskar.blog/en/categories/cybersecurity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building a Python Keylogger: A Security Researcher’s development to Understanding Keystroke Logging</title>
-      <link>http://localhost:1313/en/post/building-a-python-keylogger-a-security-researchers-development-to-understanding-keystroke-logging/</link>
+      <link>https://bhaskar.blog/en/post/building-a-python-keylogger-a-security-researchers-development-to-understanding-keystroke-logging/</link>
       <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/building-a-python-keylogger-a-security-researchers-development-to-understanding-keystroke-logging/</guid>
+      <guid>https://bhaskar.blog/en/post/building-a-python-keylogger-a-security-researchers-development-to-understanding-keystroke-logging/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Intercepting Mobile Calls: A Deep Dive into Threats to National Security</title>
-      <link>http://localhost:1313/en/post/intercepting-mobile-calls-a-deep-dive-into-threats-to-national-security/</link>
+      <link>https://bhaskar.blog/en/post/intercepting-mobile-calls-a-deep-dive-into-threats-to-national-security/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/intercepting-mobile-calls-a-deep-dive-into-threats-to-national-security/</guid>
+      <guid>https://bhaskar.blog/en/post/intercepting-mobile-calls-a-deep-dive-into-threats-to-national-security/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Tools for reconnaissance and footprinting</title>
-      <link>http://localhost:1313/en/post/reconnaissance-footprinting-tools-guide/</link>
+      <link>https://bhaskar.blog/en/post/reconnaissance-footprinting-tools-guide/</link>
       <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/reconnaissance-footprinting-tools-guide/</guid>
+      <guid>https://bhaskar.blog/en/post/reconnaissance-footprinting-tools-guide/</guid>
       <description></description>
       <enclosure url="/images/posts/recon-tools.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>Social Engineering Attacks - Creating a Fake SMS Message</title>
-      <link>http://localhost:1313/en/post/social-engineering-fake-sms-attacks/</link>
+      <link>https://bhaskar.blog/en/post/social-engineering-fake-sms-attacks/</link>
       <pubDate>Fri, 09 Sep 2022 10:18:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/social-engineering-fake-sms-attacks/</guid>
+      <guid>https://bhaskar.blog/en/post/social-engineering-fake-sms-attacks/</guid>
       <description></description>
       <enclosure url="/images/posts/social-engineering-sms.jpg" length="0" type="image/jpeg" />
     </item>

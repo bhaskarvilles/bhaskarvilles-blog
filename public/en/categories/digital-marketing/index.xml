@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Digital Marketing on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/digital-marketing/</link>
+    <link>https://bhaskar.blog/en/categories/digital-marketing/</link>
     <description>Recent Posts in Digital Marketing on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/digital-marketing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:53:53 +0530</lastBuildDate>
+    <atom:link href="https://bhaskar.blog/en/categories/digital-marketing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Advanced SEO with AI: How Machine Learning and Natural Language Processing Are Changing the Game</title>
-      <link>http://localhost:1313/en/post/advanced-seo-with-ai-how-machine-learning-and-natural-language-processing-are-changing-the-game/</link>
+      <link>https://bhaskar.blog/en/post/advanced-seo-with-ai-how-machine-learning-and-natural-language-processing-are-changing-the-game/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/advanced-seo-with-ai-how-machine-learning-and-natural-language-processing-are-changing-the-game/</guid>
+      <guid>https://bhaskar.blog/en/post/advanced-seo-with-ai-how-machine-learning-and-natural-language-processing-are-changing-the-game/</guid>
       <description></description>
       
     </item>

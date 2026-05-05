@@ -2,192 +2,192 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/ai/</link>
+    <link>https://bhaskar.blog/en/categories/ai/</link>
     <description>Recent Posts in AI on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:53:53 +0530</lastBuildDate>
+    <atom:link href="https://bhaskar.blog/en/categories/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Agentic AI: How Autonomous Systems Are Transforming Industries in 2026</title>
-      <link>http://localhost:1313/en/post/agentic-ai-autonomous-systems-transforming-industries-2026/</link>
+      <link>https://bhaskar.blog/en/post/agentic-ai-autonomous-systems-transforming-industries-2026/</link>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/agentic-ai-autonomous-systems-transforming-industries-2026/</guid>
+      <guid>https://bhaskar.blog/en/post/agentic-ai-autonomous-systems-transforming-industries-2026/</guid>
       <description></description>
       <enclosure url="/images/posts/agentic-ai-2026.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>Edge AI and On-Device Inference in 2026: Complete Implementation Guide</title>
-      <link>http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/</link>
+      <link>https://bhaskar.blog/en/post/edge-ai-on-device-inference-2026-implementation-guide/</link>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/</guid>
+      <guid>https://bhaskar.blog/en/post/edge-ai-on-device-inference-2026-implementation-guide/</guid>
       <description></description>
       <enclosure url="/images/posts/edge-ai-2026.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>Multimodal AI in 2026: GPT-5.5, Claude Opus 4.7, and Gemini 3.1 Pro Compared</title>
-      <link>http://localhost:1313/en/post/multimodal-ai-2026-gpt5-claude-gemini-comparison/</link>
+      <link>https://bhaskar.blog/en/post/multimodal-ai-2026-gpt5-claude-gemini-comparison/</link>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/multimodal-ai-2026-gpt5-claude-gemini-comparison/</guid>
+      <guid>https://bhaskar.blog/en/post/multimodal-ai-2026-gpt5-claude-gemini-comparison/</guid>
       <description></description>
       <enclosure url="/images/posts/multimodal-ai-comparison-2026.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>Technical Deep Dive: How Claude AI Can Control Computers</title>
-      <link>http://localhost:1313/en/post/technical-deep-dive-how-claude-ai-can-control-computers/</link>
+      <link>https://bhaskar.blog/en/post/technical-deep-dive-how-claude-ai-can-control-computers/</link>
       <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/technical-deep-dive-how-claude-ai-can-control-computers/</guid>
+      <guid>https://bhaskar.blog/en/post/technical-deep-dive-how-claude-ai-can-control-computers/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The Dark Side of AI in Call Summarization: Privacy, Personalization</title>
-      <link>http://localhost:1313/en/post/the-dark-side-of-ai-in-call-summarization-privacy-personalization/</link>
+      <link>https://bhaskar.blog/en/post/the-dark-side-of-ai-in-call-summarization-privacy-personalization/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/the-dark-side-of-ai-in-call-summarization-privacy-personalization/</guid>
+      <guid>https://bhaskar.blog/en/post/the-dark-side-of-ai-in-call-summarization-privacy-personalization/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Advanced RISC Machines</title>
-      <link>http://localhost:1313/en/post/advanced-risc-machines/</link>
+      <link>https://bhaskar.blog/en/post/advanced-risc-machines/</link>
       <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/advanced-risc-machines/</guid>
+      <guid>https://bhaskar.blog/en/post/advanced-risc-machines/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Running LLaMA 3.1 Locally with Ollama: A Step-by-Step process</title>
-      <link>http://localhost:1313/en/post/running-llama-3.1-locally-with-ollama-a-step-by-step-process/</link>
+      <link>https://bhaskar.blog/en/post/running-llama-3.1-locally-with-ollama-a-step-by-step-process/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/running-llama-3.1-locally-with-ollama-a-step-by-step-process/</guid>
+      <guid>https://bhaskar.blog/en/post/running-llama-3.1-locally-with-ollama-a-step-by-step-process/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Understanding Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs)</title>
-      <link>http://localhost:1313/en/post/understanding-artificial-neural-networks-anns-and-convolutional-neural-networks-cnns/</link>
+      <link>https://bhaskar.blog/en/post/understanding-artificial-neural-networks-anns-and-convolutional-neural-networks-cnns/</link>
       <pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/understanding-artificial-neural-networks-anns-and-convolutional-neural-networks-cnns/</guid>
+      <guid>https://bhaskar.blog/en/post/understanding-artificial-neural-networks-anns-and-convolutional-neural-networks-cnns/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Zero Knowledge Protocols (ZK)</title>
-      <link>http://localhost:1313/en/post/zero-knowledge-protocols-zk/</link>
+      <link>https://bhaskar.blog/en/post/zero-knowledge-protocols-zk/</link>
       <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/zero-knowledge-protocols-zk/</guid>
+      <guid>https://bhaskar.blog/en/post/zero-knowledge-protocols-zk/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Advanced Digital Marketing: Integrating AI, GPTs, and Blockchain Technologies for and secure record of ad impressions and clicks.</title>
-      <link>http://localhost:1313/en/post/advanced-digital-marketing-integrating-ai-gpts-and-blockchain-technologies-for-and-secure-record-of-ad-impressions-and-clicks./</link>
+      <link>https://bhaskar.blog/en/post/advanced-digital-marketing-integrating-ai-gpts-and-blockchain-technologies-for-and-secure-record-of-ad-impressions-and-clicks./</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/advanced-digital-marketing-integrating-ai-gpts-and-blockchain-technologies-for-and-secure-record-of-ad-impressions-and-clicks./</guid>
+      <guid>https://bhaskar.blog/en/post/advanced-digital-marketing-integrating-ai-gpts-and-blockchain-technologies-for-and-secure-record-of-ad-impressions-and-clicks./</guid>
       <description></description>
       
     </item>
     <item>
       <title>Designing Your Own Language Model with DeepFloyd AI</title>
-      <link>http://localhost:1313/en/post/designing-your-own-language-model-with-deepfloyd-ai/</link>
+      <link>https://bhaskar.blog/en/post/designing-your-own-language-model-with-deepfloyd-ai/</link>
       <pubDate>Fri, 19 May 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/designing-your-own-language-model-with-deepfloyd-ai/</guid>
+      <guid>https://bhaskar.blog/en/post/designing-your-own-language-model-with-deepfloyd-ai/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Google Bard: A Large Language Model Chatbot</title>
-      <link>http://localhost:1313/en/post/google-bard-large-language-model-chatbot/</link>
+      <link>https://bhaskar.blog/en/post/google-bard-large-language-model-chatbot/</link>
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/google-bard-large-language-model-chatbot/</guid>
+      <guid>https://bhaskar.blog/en/post/google-bard-large-language-model-chatbot/</guid>
       <description></description>
       <enclosure url="/images/posts/google-bard.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>ChatGPT vs. Humans: Delving Deeper into Technical and Brain Intelligence Aspects</title>
-      <link>http://localhost:1313/en/post/chatgpt-vs-human-intelligence-comparison/</link>
+      <link>https://bhaskar.blog/en/post/chatgpt-vs-human-intelligence-comparison/</link>
       <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/chatgpt-vs-human-intelligence-comparison/</guid>
+      <guid>https://bhaskar.blog/en/post/chatgpt-vs-human-intelligence-comparison/</guid>
       <description></description>
       <enclosure url="/images/posts/ai-human-intelligence.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>DeepFloyd-IF: A Pixel-Based Triple-Cascaded Diffusion Model for Photorealistic Text-to-Image Generation</title>
-      <link>http://localhost:1313/en/post/deepfloyd-if-a-pixel-based-triple-cascaded-diffusion-model-for-photorealistic-text-to-image-generation/</link>
+      <link>https://bhaskar.blog/en/post/deepfloyd-if-a-pixel-based-triple-cascaded-diffusion-model-for-photorealistic-text-to-image-generation/</link>
       <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/deepfloyd-if-a-pixel-based-triple-cascaded-diffusion-model-for-photorealistic-text-to-image-generation/</guid>
+      <guid>https://bhaskar.blog/en/post/deepfloyd-if-a-pixel-based-triple-cascaded-diffusion-model-for-photorealistic-text-to-image-generation/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The Evolution of AI: Introducing GPT-3.5 With Live Browsing</title>
-      <link>http://localhost:1313/en/post/the-evolution-of-ai-introducing-gpt-3.5-with-live-browsing/</link>
+      <link>https://bhaskar.blog/en/post/the-evolution-of-ai-introducing-gpt-3.5-with-live-browsing/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/the-evolution-of-ai-introducing-gpt-3.5-with-live-browsing/</guid>
+      <guid>https://bhaskar.blog/en/post/the-evolution-of-ai-introducing-gpt-3.5-with-live-browsing/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Implantable Brain Machines: The Future of Human-Computer Interaction</title>
-      <link>http://localhost:1313/en/post/implantable-brain-machines-the-future-of-human-computer-interaction/</link>
+      <link>https://bhaskar.blog/en/post/implantable-brain-machines-the-future-of-human-computer-interaction/</link>
       <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/implantable-brain-machines-the-future-of-human-computer-interaction/</guid>
+      <guid>https://bhaskar.blog/en/post/implantable-brain-machines-the-future-of-human-computer-interaction/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The Rise of ZK-EVMs: How Ethereum&#39;s Multi-Client Philosophy Enables Continued Decentralization</title>
-      <link>http://localhost:1313/en/post/the-rise-of-zk-evms-how-ethereums-multi-client-philosophy-enables-continued-decentralization/</link>
+      <link>https://bhaskar.blog/en/post/the-rise-of-zk-evms-how-ethereums-multi-client-philosophy-enables-continued-decentralization/</link>
       <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/the-rise-of-zk-evms-how-ethereums-multi-client-philosophy-enables-continued-decentralization/</guid>
+      <guid>https://bhaskar.blog/en/post/the-rise-of-zk-evms-how-ethereums-multi-client-philosophy-enables-continued-decentralization/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Advanced SEO with AI: How Machine Learning and Natural Language Processing Are Changing the Game</title>
-      <link>http://localhost:1313/en/post/advanced-seo-with-ai-how-machine-learning-and-natural-language-processing-are-changing-the-game/</link>
+      <link>https://bhaskar.blog/en/post/advanced-seo-with-ai-how-machine-learning-and-natural-language-processing-are-changing-the-game/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/advanced-seo-with-ai-how-machine-learning-and-natural-language-processing-are-changing-the-game/</guid>
+      <guid>https://bhaskar.blog/en/post/advanced-seo-with-ai-how-machine-learning-and-natural-language-processing-are-changing-the-game/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Layer 1 for Artificial Intelligence</title>
-      <link>http://localhost:1313/en/post/layer-1-for-artificial-intelligence/</link>
+      <link>https://bhaskar.blog/en/post/layer-1-for-artificial-intelligence/</link>
       <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/layer-1-for-artificial-intelligence/</guid>
+      <guid>https://bhaskar.blog/en/post/layer-1-for-artificial-intelligence/</guid>
       <description></description>
       
     </item>
     <item>
       <title>OpenAI and ChatGPT</title>
-      <link>http://localhost:1313/en/post/openai-chatgpt-introduction-guide/</link>
+      <link>https://bhaskar.blog/en/post/openai-chatgpt-introduction-guide/</link>
       <pubDate>Wed, 21 Dec 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/openai-chatgpt-introduction-guide/</guid>
+      <guid>https://bhaskar.blog/en/post/openai-chatgpt-introduction-guide/</guid>
       <description></description>
       <enclosure url="/images/posts/chatgpt-openai.jpg" length="0" type="image/jpeg" />
     </item>

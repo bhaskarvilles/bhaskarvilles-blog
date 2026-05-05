@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hyperledger on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/hyperledger/</link>
+    <link>https://bhaskar.blog/en/categories/hyperledger/</link>
     <description>Recent Posts in Hyperledger on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/hyperledger/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:53:53 +0530</lastBuildDate>
+    <atom:link href="https://bhaskar.blog/en/categories/hyperledger/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hyperledger Cactus Project moved to Cacti</title>
-      <link>http://localhost:1313/en/post/hyperledger-cactus-project-moved-to-cacti/</link>
+      <link>https://bhaskar.blog/en/post/hyperledger-cactus-project-moved-to-cacti/</link>
       <pubDate>Sat, 05 Nov 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/hyperledger-cactus-project-moved-to-cacti/</guid>
+      <guid>https://bhaskar.blog/en/post/hyperledger-cactus-project-moved-to-cacti/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Hyperledger Fabric Deployment — How We Aced it from Testing to Production</title>
-      <link>http://localhost:1313/en/post/hyperledger-fabric-deployment-how-we-aced-it-from-testing-to-production/</link>
+      <link>https://bhaskar.blog/en/post/hyperledger-fabric-deployment-how-we-aced-it-from-testing-to-production/</link>
       <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/hyperledger-fabric-deployment-how-we-aced-it-from-testing-to-production/</guid>
+      <guid>https://bhaskar.blog/en/post/hyperledger-fabric-deployment-how-we-aced-it-from-testing-to-production/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Hitachi Shifts to Paperless, Secure Procurement Contracts with Hyperledger Fabric</title>
-      <link>http://localhost:1313/en/post/hitachi-shifts-to-paperless-secure-procurement-contracts-with-hyperledger-fabric/</link>
+      <link>https://bhaskar.blog/en/post/hitachi-shifts-to-paperless-secure-procurement-contracts-with-hyperledger-fabric/</link>
       <pubDate>Wed, 07 Sep 2022 11:30:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/hitachi-shifts-to-paperless-secure-procurement-contracts-with-hyperledger-fabric/</guid>
+      <guid>https://bhaskar.blog/en/post/hitachi-shifts-to-paperless-secure-procurement-contracts-with-hyperledger-fabric/</guid>
       <description></description>
       
     </item>

@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>seedling on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/stage/seedling/</link>
+    <link>https://bhaskar.blog/en/stage/seedling/</link>
     <description>Recent Posts in seedling on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/stage/seedling/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:53:53 +0530</lastBuildDate>
+    <atom:link href="https://bhaskar.blog/en/stage/seedling/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

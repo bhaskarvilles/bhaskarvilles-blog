@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ethereum on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/ethereum/</link>
+    <link>https://bhaskar.blog/en/categories/ethereum/</link>
     <description>Recent Posts in Ethereum on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/ethereum/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:53:53 +0530</lastBuildDate>
+    <atom:link href="https://bhaskar.blog/en/categories/ethereum/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Rise of ZK-EVMs: How Ethereum&#39;s Multi-Client Philosophy Enables Continued Decentralization</title>
-      <link>http://localhost:1313/en/post/the-rise-of-zk-evms-how-ethereums-multi-client-philosophy-enables-continued-decentralization/</link>
+      <link>https://bhaskar.blog/en/post/the-rise-of-zk-evms-how-ethereums-multi-client-philosophy-enables-continued-decentralization/</link>
       <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/the-rise-of-zk-evms-how-ethereums-multi-client-philosophy-enables-continued-decentralization/</guid>
+      <guid>https://bhaskar.blog/en/post/the-rise-of-zk-evms-how-ethereums-multi-client-philosophy-enables-continued-decentralization/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Google wants to become a key infrastructure provider for Web3</title>
-      <link>http://localhost:1313/en/post/google-wants-to-become-a-key-infrastructure-provider-for-web3/</link>
+      <link>https://bhaskar.blog/en/post/google-wants-to-become-a-key-infrastructure-provider-for-web3/</link>
       <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/google-wants-to-become-a-key-infrastructure-provider-for-web3/</guid>
+      <guid>https://bhaskar.blog/en/post/google-wants-to-become-a-key-infrastructure-provider-for-web3/</guid>
       <description></description>
       
     </item>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>EVM on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/evm/</link>
+    <link>https://bhaskar.blog/en/categories/evm/</link>
     <description>Recent Posts in EVM on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/evm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:53:53 +0530</lastBuildDate>
+    <atom:link href="https://bhaskar.blog/en/categories/evm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Rise of ZK-EVMs: How Ethereum&#39;s Multi-Client Philosophy Enables Continued Decentralization</title>
-      <link>http://localhost:1313/en/post/the-rise-of-zk-evms-how-ethereums-multi-client-philosophy-enables-continued-decentralization/</link>
+      <link>https://bhaskar.blog/en/post/the-rise-of-zk-evms-how-ethereums-multi-client-philosophy-enables-continued-decentralization/</link>
       <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/the-rise-of-zk-evms-how-ethereums-multi-client-philosophy-enables-continued-decentralization/</guid>
+      <guid>https://bhaskar.blog/en/post/the-rise-of-zk-evms-how-ethereums-multi-client-philosophy-enables-continued-decentralization/</guid>
       <description></description>
       
     </item>

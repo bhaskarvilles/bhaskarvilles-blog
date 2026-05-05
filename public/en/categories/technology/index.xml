@@ -2,255 +2,255 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Technology on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/technology/</link>
+    <link>https://bhaskar.blog/en/categories/technology/</link>
     <description>Recent Posts in Technology on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:53:53 +0530</lastBuildDate>
+    <atom:link href="https://bhaskar.blog/en/categories/technology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Agentic AI: How Autonomous Systems Are Transforming Industries in 2026</title>
-      <link>http://localhost:1313/en/post/agentic-ai-autonomous-systems-transforming-industries-2026/</link>
+      <link>https://bhaskar.blog/en/post/agentic-ai-autonomous-systems-transforming-industries-2026/</link>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/agentic-ai-autonomous-systems-transforming-industries-2026/</guid>
+      <guid>https://bhaskar.blog/en/post/agentic-ai-autonomous-systems-transforming-industries-2026/</guid>
       <description></description>
       <enclosure url="/images/posts/agentic-ai-2026.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>Edge AI and On-Device Inference in 2026: Complete Implementation Guide</title>
-      <link>http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/</link>
+      <link>https://bhaskar.blog/en/post/edge-ai-on-device-inference-2026-implementation-guide/</link>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/</guid>
+      <guid>https://bhaskar.blog/en/post/edge-ai-on-device-inference-2026-implementation-guide/</guid>
       <description></description>
       <enclosure url="/images/posts/edge-ai-2026.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>Multimodal AI in 2026: GPT-5.5, Claude Opus 4.7, and Gemini 3.1 Pro Compared</title>
-      <link>http://localhost:1313/en/post/multimodal-ai-2026-gpt5-claude-gemini-comparison/</link>
+      <link>https://bhaskar.blog/en/post/multimodal-ai-2026-gpt5-claude-gemini-comparison/</link>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/multimodal-ai-2026-gpt5-claude-gemini-comparison/</guid>
+      <guid>https://bhaskar.blog/en/post/multimodal-ai-2026-gpt5-claude-gemini-comparison/</guid>
       <description></description>
       <enclosure url="/images/posts/multimodal-ai-comparison-2026.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>WWDC 2025: Apple&#39;s Vision for the Future</title>
-      <link>http://localhost:1313/en/post/wwdc-2025-apples-vision-for-the-future/</link>
+      <link>https://bhaskar.blog/en/post/wwdc-2025-apples-vision-for-the-future/</link>
       <pubDate>Mon, 09 Jun 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/wwdc-2025-apples-vision-for-the-future/</guid>
+      <guid>https://bhaskar.blog/en/post/wwdc-2025-apples-vision-for-the-future/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Apple WWDC 2025: What to Expect on June 9</title>
-      <link>http://localhost:1313/en/post/apple-wwdc-2025-what-to-expect-on-june-9/</link>
+      <link>https://bhaskar.blog/en/post/apple-wwdc-2025-what-to-expect-on-june-9/</link>
       <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/apple-wwdc-2025-what-to-expect-on-june-9/</guid>
+      <guid>https://bhaskar.blog/en/post/apple-wwdc-2025-what-to-expect-on-june-9/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Apple&#39;s 2025 Lineup: A Glimpse into the Future of Innovation</title>
-      <link>http://localhost:1313/en/post/apples-2025-lineup-a-glimpse-into-the-future-of-innovation/</link>
+      <link>https://bhaskar.blog/en/post/apples-2025-lineup-a-glimpse-into-the-future-of-innovation/</link>
       <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/apples-2025-lineup-a-glimpse-into-the-future-of-innovation/</guid>
+      <guid>https://bhaskar.blog/en/post/apples-2025-lineup-a-glimpse-into-the-future-of-innovation/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Kerdos AI Introduces Enterprise-Grade AI API Platform</title>
-      <link>http://localhost:1313/en/post/kerdos-ai-introduces-enterprise-grade-ai-api-platform/</link>
+      <link>https://bhaskar.blog/en/post/kerdos-ai-introduces-enterprise-grade-ai-api-platform/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/kerdos-ai-introduces-enterprise-grade-ai-api-platform/</guid>
+      <guid>https://bhaskar.blog/en/post/kerdos-ai-introduces-enterprise-grade-ai-api-platform/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Kerdos AI Launches Revolutionary Image Generator Powered by Stable Diffusion XL</title>
-      <link>http://localhost:1313/en/post/kerdos-ai-launches-revolutionary-image-generator-powered-by-stable-diffusion-xl/</link>
+      <link>https://bhaskar.blog/en/post/kerdos-ai-launches-revolutionary-image-generator-powered-by-stable-diffusion-xl/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/kerdos-ai-launches-revolutionary-image-generator-powered-by-stable-diffusion-xl/</guid>
+      <guid>https://bhaskar.blog/en/post/kerdos-ai-launches-revolutionary-image-generator-powered-by-stable-diffusion-xl/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Kerdos AI Unveils Next-Generation Chat Application</title>
-      <link>http://localhost:1313/en/post/kerdos-ai-unveils-next-generation-chat-application/</link>
+      <link>https://bhaskar.blog/en/post/kerdos-ai-unveils-next-generation-chat-application/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/kerdos-ai-unveils-next-generation-chat-application/</guid>
+      <guid>https://bhaskar.blog/en/post/kerdos-ai-unveils-next-generation-chat-application/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Proposal to Extend NumPy Broadcasting for Enhanced Array Operations</title>
-      <link>http://localhost:1313/en/post/proposal-to-extend-numpy-broadcasting-for-enhanced-array-operations/</link>
+      <link>https://bhaskar.blog/en/post/proposal-to-extend-numpy-broadcasting-for-enhanced-array-operations/</link>
       <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/proposal-to-extend-numpy-broadcasting-for-enhanced-array-operations/</guid>
+      <guid>https://bhaskar.blog/en/post/proposal-to-extend-numpy-broadcasting-for-enhanced-array-operations/</guid>
       <description></description>
       
     </item>
     <item>
       <title>iOS and iPadOS 18.4: A Comprehensive Overview of the Latest Updates</title>
-      <link>http://localhost:1313/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</link>
+      <link>https://bhaskar.blog/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</link>
       <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</guid>
+      <guid>https://bhaskar.blog/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Unlocking the Power of Kerdos Vision AI for Image Generation</title>
-      <link>http://localhost:1313/en/post/unlocking-the-power-of-kerdos-vision-ai-for-image-generation/</link>
+      <link>https://bhaskar.blog/en/post/unlocking-the-power-of-kerdos-vision-ai-for-image-generation/</link>
       <pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/unlocking-the-power-of-kerdos-vision-ai-for-image-generation/</guid>
+      <guid>https://bhaskar.blog/en/post/unlocking-the-power-of-kerdos-vision-ai-for-image-generation/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Kerdos AI Launches Revolutionary Chat Application with OpenAI Integration</title>
-      <link>http://localhost:1313/en/post/kerdos-ai-launches-revolutionary-chat-application-with-openai-integration/</link>
+      <link>https://bhaskar.blog/en/post/kerdos-ai-launches-revolutionary-chat-application-with-openai-integration/</link>
       <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/kerdos-ai-launches-revolutionary-chat-application-with-openai-integration/</guid>
+      <guid>https://bhaskar.blog/en/post/kerdos-ai-launches-revolutionary-chat-application-with-openai-integration/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The Dark Side of AI: Navigating Ethical Challenges in Artificial Intelligence</title>
-      <link>http://localhost:1313/en/post/the-dark-side-of-ai-navigating-ethical-challenges-in-artificial-intelligence/</link>
+      <link>https://bhaskar.blog/en/post/the-dark-side-of-ai-navigating-ethical-challenges-in-artificial-intelligence/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/the-dark-side-of-ai-navigating-ethical-challenges-in-artificial-intelligence/</guid>
+      <guid>https://bhaskar.blog/en/post/the-dark-side-of-ai-navigating-ethical-challenges-in-artificial-intelligence/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Building the Future of OpenSearch: Community-Driven Innovation</title>
-      <link>http://localhost:1313/en/post/building-the-future-of-opensearch-community-driven-innovation/</link>
+      <link>https://bhaskar.blog/en/post/building-the-future-of-opensearch-community-driven-innovation/</link>
       <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/building-the-future-of-opensearch-community-driven-innovation/</guid>
+      <guid>https://bhaskar.blog/en/post/building-the-future-of-opensearch-community-driven-innovation/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Snapdragon 8 Elite: Revolutionizing Mobile Performance</title>
-      <link>http://localhost:1313/en/post/snapdragon-8-elite-revolutionizing-mobile-performance/</link>
+      <link>https://bhaskar.blog/en/post/snapdragon-8-elite-revolutionizing-mobile-performance/</link>
       <pubDate>Tue, 22 Oct 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/snapdragon-8-elite-revolutionizing-mobile-performance/</guid>
+      <guid>https://bhaskar.blog/en/post/snapdragon-8-elite-revolutionizing-mobile-performance/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The Power of Event-Driven Architecture (EDA): How Netflix and Uber Handle Billions of Events Daily</title>
-      <link>http://localhost:1313/en/post/the-power-of-event-driven-architecture-eda-how-netflix-and-uber-handle-billions-of-events-daily/</link>
+      <link>https://bhaskar.blog/en/post/the-power-of-event-driven-architecture-eda-how-netflix-and-uber-handle-billions-of-events-daily/</link>
       <pubDate>Mon, 23 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/the-power-of-event-driven-architecture-eda-how-netflix-and-uber-handle-billions-of-events-daily/</guid>
+      <guid>https://bhaskar.blog/en/post/the-power-of-event-driven-architecture-eda-how-netflix-and-uber-handle-billions-of-events-daily/</guid>
       <description></description>
       
     </item>
     <item>
       <title>JSMON: Revolutionizing JavaScript Security Monitoring</title>
-      <link>http://localhost:1313/en/post/jsmon-revolutionizing-javascript-security-monitoring/</link>
+      <link>https://bhaskar.blog/en/post/jsmon-revolutionizing-javascript-security-monitoring/</link>
       <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/jsmon-revolutionizing-javascript-security-monitoring/</guid>
+      <guid>https://bhaskar.blog/en/post/jsmon-revolutionizing-javascript-security-monitoring/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Why India Can&#39;t Yet Replicate the Success of Black Myth: Wukong in the AAA PC Game Market</title>
-      <link>http://localhost:1313/en/post/why-india-cant-yet-replicate-the-success-of-black-myth-wukong-in-the-aaa-pc-game-market/</link>
+      <link>https://bhaskar.blog/en/post/why-india-cant-yet-replicate-the-success-of-black-myth-wukong-in-the-aaa-pc-game-market/</link>
       <pubDate>Tue, 17 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/why-india-cant-yet-replicate-the-success-of-black-myth-wukong-in-the-aaa-pc-game-market/</guid>
+      <guid>https://bhaskar.blog/en/post/why-india-cant-yet-replicate-the-success-of-black-myth-wukong-in-the-aaa-pc-game-market/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Announcing My Candidacy for the OWASP Global Board of Directors 2024</title>
-      <link>http://localhost:1313/en/post/announcing-my-candidacy-for-the-owasp-global-board-of-directors-2024/</link>
+      <link>https://bhaskar.blog/en/post/announcing-my-candidacy-for-the-owasp-global-board-of-directors-2024/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/announcing-my-candidacy-for-the-owasp-global-board-of-directors-2024/</guid>
+      <guid>https://bhaskar.blog/en/post/announcing-my-candidacy-for-the-owasp-global-board-of-directors-2024/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The Core of OpenAI o1</title>
-      <link>http://localhost:1313/en/post/the-core-of-openai-o1/</link>
+      <link>https://bhaskar.blog/en/post/the-core-of-openai-o1/</link>
       <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/the-core-of-openai-o1/</guid>
+      <guid>https://bhaskar.blog/en/post/the-core-of-openai-o1/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Apple Airpods 4: Apple&#39;s next-generation wireless earbuds with improved audio quality, adaptive noise cancellation, and personalized spatial audio.</title>
-      <link>http://localhost:1313/en/post/apple-airpods-4-apples-next-generation-wireless-earbuds-with-improved-audio-quality-adaptive-noise-cancellation-and-personalized-spatial-audio./</link>
+      <link>https://bhaskar.blog/en/post/apple-airpods-4-apples-next-generation-wireless-earbuds-with-improved-audio-quality-adaptive-noise-cancellation-and-personalized-spatial-audio./</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/apple-airpods-4-apples-next-generation-wireless-earbuds-with-improved-audio-quality-adaptive-noise-cancellation-and-personalized-spatial-audio./</guid>
+      <guid>https://bhaskar.blog/en/post/apple-airpods-4-apples-next-generation-wireless-earbuds-with-improved-audio-quality-adaptive-noise-cancellation-and-personalized-spatial-audio./</guid>
       <description></description>
       
     </item>
     <item>
       <title>Apple Watch Ultra 2 &amp; Series 10 Watch: The rugged, high-performance smartwatch designed for extreme conditions, featuring a larger display, advanced sensors, and enhanced durability.</title>
-      <link>http://localhost:1313/en/post/apple-watch-ultra-2-series-10-watch-the-rugged-high-performance-smartwatch-designed-for-extreme-conditions-featuring-a-larger-display-advanced-sensors-and-enhanced-durability./</link>
+      <link>https://bhaskar.blog/en/post/apple-watch-ultra-2-series-10-watch-the-rugged-high-performance-smartwatch-designed-for-extreme-conditions-featuring-a-larger-display-advanced-sensors-and-enhanced-durability./</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/apple-watch-ultra-2-series-10-watch-the-rugged-high-performance-smartwatch-designed-for-extreme-conditions-featuring-a-larger-display-advanced-sensors-and-enhanced-durability./</guid>
+      <guid>https://bhaskar.blog/en/post/apple-watch-ultra-2-series-10-watch-the-rugged-high-performance-smartwatch-designed-for-extreme-conditions-featuring-a-larger-display-advanced-sensors-and-enhanced-durability./</guid>
       <description></description>
       
     </item>
     <item>
       <title>iPhone 16 Series: Apple&#39;s latest flagship smartphones, offering groundbreaking advancements in camera technology and performance with new features across four models.</title>
-      <link>http://localhost:1313/en/post/iphone-16-series-apples-latest-flagship-smartphones-offering-groundbreaking-advancements-in-camera-technology-and-performance-with-new-features-across-four-models./</link>
+      <link>https://bhaskar.blog/en/post/iphone-16-series-apples-latest-flagship-smartphones-offering-groundbreaking-advancements-in-camera-technology-and-performance-with-new-features-across-four-models./</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/iphone-16-series-apples-latest-flagship-smartphones-offering-groundbreaking-advancements-in-camera-technology-and-performance-with-new-features-across-four-models./</guid>
+      <guid>https://bhaskar.blog/en/post/iphone-16-series-apples-latest-flagship-smartphones-offering-groundbreaking-advancements-in-camera-technology-and-performance-with-new-features-across-four-models./</guid>
       <description></description>
       
     </item>
     <item>
       <title>ASUS Gaming Devices: Unleashing the Power of Superior Services</title>
-      <link>http://localhost:1313/en/post/asus-gaming-devices-unleashing-the-power-of-superior-services/</link>
+      <link>https://bhaskar.blog/en/post/asus-gaming-devices-unleashing-the-power-of-superior-services/</link>
       <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/asus-gaming-devices-unleashing-the-power-of-superior-services/</guid>
+      <guid>https://bhaskar.blog/en/post/asus-gaming-devices-unleashing-the-power-of-superior-services/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Intercepting Mobile Calls: A Deep Dive into Threats to National Security</title>
-      <link>http://localhost:1313/en/post/intercepting-mobile-calls-a-deep-dive-into-threats-to-national-security/</link>
+      <link>https://bhaskar.blog/en/post/intercepting-mobile-calls-a-deep-dive-into-threats-to-national-security/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/intercepting-mobile-calls-a-deep-dive-into-threats-to-national-security/</guid>
+      <guid>https://bhaskar.blog/en/post/intercepting-mobile-calls-a-deep-dive-into-threats-to-national-security/</guid>
       <description></description>
       
     </item>
     <item>
       <title>iOS and iPadOS 18.4: A Comprehensive Overview of the Latest Updates</title>
-      <link>http://localhost:1313/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</link>
+      <link>https://bhaskar.blog/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</link>
       <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</guid>
+      <guid>https://bhaskar.blog/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</guid>
       <description></description>
       
     </item>

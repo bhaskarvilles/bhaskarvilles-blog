@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Security on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/security/</link>
+    <link>https://bhaskar.blog/en/categories/security/</link>
     <description>Recent Posts in Security on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:53:53 +0530</lastBuildDate>
+    <atom:link href="https://bhaskar.blog/en/categories/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JSMON: Revolutionizing JavaScript Security Monitoring</title>
-      <link>http://localhost:1313/en/post/jsmon-revolutionizing-javascript-security-monitoring/</link>
+      <link>https://bhaskar.blog/en/post/jsmon-revolutionizing-javascript-security-monitoring/</link>
       <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/jsmon-revolutionizing-javascript-security-monitoring/</guid>
+      <guid>https://bhaskar.blog/en/post/jsmon-revolutionizing-javascript-security-monitoring/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Discovering JavaScript Files with JSFinder</title>
-      <link>http://localhost:1313/en/post/discovering-javascript-files-with-jsfinder/</link>
+      <link>https://bhaskar.blog/en/post/discovering-javascript-files-with-jsfinder/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/discovering-javascript-files-with-jsfinder/</guid>
+      <guid>https://bhaskar.blog/en/post/discovering-javascript-files-with-jsfinder/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Contributions to Open Source Projects</title>
-      <link>http://localhost:1313/en/post/contributions-to-open-source-projects/</link>
+      <link>https://bhaskar.blog/en/post/contributions-to-open-source-projects/</link>
       <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/contributions-to-open-source-projects/</guid>
+      <guid>https://bhaskar.blog/en/post/contributions-to-open-source-projects/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Google&#39;s new password less authentication technology</title>
-      <link>http://localhost:1313/en/post/googles-new-password-less-authentication-technology/</link>
+      <link>https://bhaskar.blog/en/post/googles-new-password-less-authentication-technology/</link>
       <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/googles-new-password-less-authentication-technology/</guid>
+      <guid>https://bhaskar.blog/en/post/googles-new-password-less-authentication-technology/</guid>
       <description></description>
       
     </item>

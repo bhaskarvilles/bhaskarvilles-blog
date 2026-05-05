@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Footprinting on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/footprinting/</link>
+    <link>https://bhaskar.blog/en/categories/footprinting/</link>
     <description>Recent Posts in Footprinting on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/footprinting/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:53:53 +0530</lastBuildDate>
+    <atom:link href="https://bhaskar.blog/en/categories/footprinting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tools for reconnaissance and footprinting</title>
-      <link>http://localhost:1313/en/post/reconnaissance-footprinting-tools-guide/</link>
+      <link>https://bhaskar.blog/en/post/reconnaissance-footprinting-tools-guide/</link>
       <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/reconnaissance-footprinting-tools-guide/</guid>
+      <guid>https://bhaskar.blog/en/post/reconnaissance-footprinting-tools-guide/</guid>
       <description></description>
       <enclosure url="/images/posts/recon-tools.jpg" length="0" type="image/jpeg" />
     </item>

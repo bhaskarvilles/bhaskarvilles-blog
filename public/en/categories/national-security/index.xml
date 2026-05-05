@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>National Security on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/national-security/</link>
+    <link>https://bhaskar.blog/en/categories/national-security/</link>
     <description>Recent Posts in National Security on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/national-security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:53:53 +0530</lastBuildDate>
+    <atom:link href="https://bhaskar.blog/en/categories/national-security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Intercepting Mobile Calls: A Deep Dive into Threats to National Security</title>
-      <link>http://localhost:1313/en/post/intercepting-mobile-calls-a-deep-dive-into-threats-to-national-security/</link>
+      <link>https://bhaskar.blog/en/post/intercepting-mobile-calls-a-deep-dive-into-threats-to-national-security/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/intercepting-mobile-calls-a-deep-dive-into-threats-to-national-security/</guid>
+      <guid>https://bhaskar.blog/en/post/intercepting-mobile-calls-a-deep-dive-into-threats-to-national-security/</guid>
       <description></description>
       
     </item>

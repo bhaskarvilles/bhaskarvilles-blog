@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OS on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/os/</link>
+    <link>https://bhaskar.blog/en/categories/os/</link>
     <description>Recent Posts in OS on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/os/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:53:53 +0530</lastBuildDate>
+    <atom:link href="https://bhaskar.blog/en/categories/os/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GNOME 43 Endless Part In Its Creation</title>
-      <link>http://localhost:1313/en/post/gnome-43-endless-part-in-its-creation/</link>
+      <link>https://bhaskar.blog/en/post/gnome-43-endless-part-in-its-creation/</link>
       <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/gnome-43-endless-part-in-its-creation/</guid>
+      <guid>https://bhaskar.blog/en/post/gnome-43-endless-part-in-its-creation/</guid>
       <description></description>
       
     </item>

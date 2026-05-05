@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LLMs on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/tags/llms/</link>
+    <link>https://bhaskar.blog/en/tags/llms/</link>
     <description>Recent Posts in LLMs on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/llms/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:53:53 +0530</lastBuildDate>
+    <atom:link href="https://bhaskar.blog/en/tags/llms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Running Local Large Language Models (LLMs) for Image Generation</title>
-      <link>http://localhost:1313/en/post/running-local-large-language-models-llms-for-image-generation/</link>
+      <link>https://bhaskar.blog/en/post/running-local-large-language-models-llms-for-image-generation/</link>
       <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/running-local-large-language-models-llms-for-image-generation/</guid>
+      <guid>https://bhaskar.blog/en/post/running-local-large-language-models-llms-for-image-generation/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The Dark Side of AI in Call Summarization: Privacy, Personalization</title>
-      <link>http://localhost:1313/en/post/the-dark-side-of-ai-in-call-summarization-privacy-personalization/</link>
+      <link>https://bhaskar.blog/en/post/the-dark-side-of-ai-in-call-summarization-privacy-personalization/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/the-dark-side-of-ai-in-call-summarization-privacy-personalization/</guid>
+      <guid>https://bhaskar.blog/en/post/the-dark-side-of-ai-in-call-summarization-privacy-personalization/</guid>
       <description></description>
       
     </item>

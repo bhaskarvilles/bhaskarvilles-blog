@@ -2,93 +2,93 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Artificial Intelligence on Bhaskar&#39;s Website</title>
-    <link>http://localhost:1313/en/categories/artificial-intelligence/</link>
+    <link>https://bhaskar.blog/en/categories/artificial-intelligence/</link>
     <description>Recent Posts in Artificial Intelligence on Bhaskar&#39;s Website</description>
     <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:53:53 +0530</lastBuildDate>
+    <atom:link href="https://bhaskar.blog/en/categories/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kerdos AI Introduces Enterprise-Grade AI API Platform</title>
-      <link>http://localhost:1313/en/post/kerdos-ai-introduces-enterprise-grade-ai-api-platform/</link>
+      <link>https://bhaskar.blog/en/post/kerdos-ai-introduces-enterprise-grade-ai-api-platform/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/kerdos-ai-introduces-enterprise-grade-ai-api-platform/</guid>
+      <guid>https://bhaskar.blog/en/post/kerdos-ai-introduces-enterprise-grade-ai-api-platform/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Kerdos AI Launches Revolutionary Image Generator Powered by Stable Diffusion XL</title>
-      <link>http://localhost:1313/en/post/kerdos-ai-launches-revolutionary-image-generator-powered-by-stable-diffusion-xl/</link>
+      <link>https://bhaskar.blog/en/post/kerdos-ai-launches-revolutionary-image-generator-powered-by-stable-diffusion-xl/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/kerdos-ai-launches-revolutionary-image-generator-powered-by-stable-diffusion-xl/</guid>
+      <guid>https://bhaskar.blog/en/post/kerdos-ai-launches-revolutionary-image-generator-powered-by-stable-diffusion-xl/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Kerdos AI Unveils Next-Generation Chat Application</title>
-      <link>http://localhost:1313/en/post/kerdos-ai-unveils-next-generation-chat-application/</link>
+      <link>https://bhaskar.blog/en/post/kerdos-ai-unveils-next-generation-chat-application/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/kerdos-ai-unveils-next-generation-chat-application/</guid>
+      <guid>https://bhaskar.blog/en/post/kerdos-ai-unveils-next-generation-chat-application/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Unlocking the Power of Kerdos Vision AI for Image Generation</title>
-      <link>http://localhost:1313/en/post/unlocking-the-power-of-kerdos-vision-ai-for-image-generation/</link>
+      <link>https://bhaskar.blog/en/post/unlocking-the-power-of-kerdos-vision-ai-for-image-generation/</link>
       <pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/unlocking-the-power-of-kerdos-vision-ai-for-image-generation/</guid>
+      <guid>https://bhaskar.blog/en/post/unlocking-the-power-of-kerdos-vision-ai-for-image-generation/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Kerdos AI Launches Revolutionary Chat Application with OpenAI Integration</title>
-      <link>http://localhost:1313/en/post/kerdos-ai-launches-revolutionary-chat-application-with-openai-integration/</link>
+      <link>https://bhaskar.blog/en/post/kerdos-ai-launches-revolutionary-chat-application-with-openai-integration/</link>
       <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/kerdos-ai-launches-revolutionary-chat-application-with-openai-integration/</guid>
+      <guid>https://bhaskar.blog/en/post/kerdos-ai-launches-revolutionary-chat-application-with-openai-integration/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Running Local Large Language Models (LLMs) for Image Generation</title>
-      <link>http://localhost:1313/en/post/running-local-large-language-models-llms-for-image-generation/</link>
+      <link>https://bhaskar.blog/en/post/running-local-large-language-models-llms-for-image-generation/</link>
       <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/running-local-large-language-models-llms-for-image-generation/</guid>
+      <guid>https://bhaskar.blog/en/post/running-local-large-language-models-llms-for-image-generation/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The Dark Side of AI: Navigating Ethical Challenges in Artificial Intelligence</title>
-      <link>http://localhost:1313/en/post/the-dark-side-of-ai-navigating-ethical-challenges-in-artificial-intelligence/</link>
+      <link>https://bhaskar.blog/en/post/the-dark-side-of-ai-navigating-ethical-challenges-in-artificial-intelligence/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/the-dark-side-of-ai-navigating-ethical-challenges-in-artificial-intelligence/</guid>
+      <guid>https://bhaskar.blog/en/post/the-dark-side-of-ai-navigating-ethical-challenges-in-artificial-intelligence/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Announcing My Candidacy for the OWASP Global Board of Directors 2024</title>
-      <link>http://localhost:1313/en/post/announcing-my-candidacy-for-the-owasp-global-board-of-directors-2024/</link>
+      <link>https://bhaskar.blog/en/post/announcing-my-candidacy-for-the-owasp-global-board-of-directors-2024/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/announcing-my-candidacy-for-the-owasp-global-board-of-directors-2024/</guid>
+      <guid>https://bhaskar.blog/en/post/announcing-my-candidacy-for-the-owasp-global-board-of-directors-2024/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The Core of OpenAI o1</title>
-      <link>http://localhost:1313/en/post/the-core-of-openai-o1/</link>
+      <link>https://bhaskar.blog/en/post/the-core-of-openai-o1/</link>
       <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>http://localhost:1313/en/post/the-core-of-openai-o1/</guid>
+      <guid>https://bhaskar.blog/en/post/the-core-of-openai-o1/</guid>
       <description></description>
       
     </item>
