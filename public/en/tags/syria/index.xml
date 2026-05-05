@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Syria on Bhaskar&#39;s Website</title>
-    <link>//localhost:1313/en/tags/syria/</link>
+    <link>http://localhost:1313/en/tags/syria/</link>
     <description>Recent Posts in Syria on Bhaskar&#39;s Website</description>
-    <generator>Hugo 0.147.3</generator>
+    <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/en/tags/syria/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/syria/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Israel&#39;s Air Strike on Damascus: Rising Tensions Amidst Iranian Influence</title>
-      <link>//localhost:1313/en/post/2024-10-03-israel-air-strike/</link>
+      <link>http://localhost:1313/en/post/israels-air-strike-on-damascus-rising-tensions-amidst-iranian-influence/</link>
       <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-10-03-israel-air-strike/</guid>
+      <guid>http://localhost:1313/en/post/israels-air-strike-on-damascus-rising-tensions-amidst-iranian-influence/</guid>
       <description></description>
       
     </item>

@@ -11,4 +11,4 @@ RSS shortcodes enable displaying dynamic content from various sources like our G
 
 Below is a feed of our latest technical updates and announcements from Kerdos Infrasoft's development blog.
 
-{{< rss url="https://kerdos.in/sitemap.xml" >}}
+{{< rss url="https://kerdos.in/blog/feed.xml" >}}

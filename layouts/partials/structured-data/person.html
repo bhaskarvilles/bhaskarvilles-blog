@@ -1,0 +1,52 @@
+{{- if .IsHome -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Allam Bhaskara Ram",
+  "alternateName": "Bhaskar",
+  "url": "{{ .Site.BaseURL }}",
+  "image": "{{ .Site.BaseURL }}/images/avatar.png",
+  "jobTitle": "Founder & Tech Lead",
+  "description": "Tech Analyst & Geopolitical Observer with expertise in AI, Machine Learning, Full Stack Development, and IoT Solutions",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Kerdos Infrasoft Pvt. Ltd.",
+    "url": "https://kerdos.in"
+  },
+  "alumniOf": {
+    "@type": "Organization",
+    "name": "Educational Institution"
+  },
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Full Stack Development",
+    "MERN Stack",
+    "Next.js",
+    "IoT Solutions",
+    "Blockchain Technology",
+    "Cybersecurity",
+    "API Development",
+    "Cloud Infrastructure"
+  ],
+  "sameAs": [
+    "https://github.com/bhaskarvilles",
+    "https://linkedin.com/in/bhaskarvilles",
+    "https://twitter.com/bhaskarvilles",
+    "https://instagram.com/bhaskarvilles",
+    "https://facebook.com/bhaskarvilles",
+    "https://medium.com/@bhaskarvilles",
+    "https://stackoverflow.com/users/bhaskarvilles"
+  ],
+  "email": "bhaskarvilles@duck.com",
+  "telephone": "+919490470485",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bangalore",
+    "addressRegion": "Karnataka",
+    "addressCountry": "IN"
+  }
+}
+</script>
+{{- end -}}

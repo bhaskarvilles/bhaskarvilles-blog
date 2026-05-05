@@ -1,0 +1,41 @@
+{{- /* Twitter Card Meta Tags */ -}}
+
+{{- $title := .Title -}}
+{{- $description := .Description | default .Summary | default .Site.Params.description -}}
+{{- $image := "" -}}
+
+{{- /* Determine the best image to use */ -}}
+{{- if .Params.image -}}
+  {{- $image = .Params.image | absURL -}}
+{{- else if .Params.cover -}}
+  {{- $image = .Params.cover | absURL -}}
+{{- else if .Site.Params.images -}}
+  {{- $image = index .Site.Params.images 0 | absURL -}}
+{{- else -}}
+  {{- $image = printf "%s/images/social-card-default.jpg" .Site.BaseURL -}}
+{{- end -}}
+
+{{- /* Twitter Card Type - use summary_large_image for better visibility */ -}}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $description | plainify | truncate 200 }}" />
+<meta name="twitter:image" content="{{ $image }}" />
+<meta name="twitter:image:alt" content="{{ $title }}" />
+
+{{- /* Twitter account information */ -}}
+{{- with .Site.Params.social.Twitter -}}
+<meta name="twitter:site" content="@{{ . }}" />
+{{- end -}}
+
+{{- with .Params.author -}}
+  {{- with $.Site.Params.social.Twitter -}}
+<meta name="twitter:creator" content="@{{ . }}" />
+  {{- end -}}
+{{- else -}}
+  {{- with .Site.Params.social.Twitter -}}
+<meta name="twitter:creator" content="@{{ . }}" />
+  {{- end -}}
+{{- end -}}
+
+{{- /* Additional Twitter metadata */ -}}
+<meta name="twitter:url" content="{{ .Permalink }}" />

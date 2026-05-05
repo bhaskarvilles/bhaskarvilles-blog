@@ -2,23 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ethical Hacking on Bhaskar&#39;s Website</title>
-    <link>//localhost:1313/en/categories/ethical-hacking/</link>
+    <link>http://localhost:1313/en/categories/ethical-hacking/</link>
     <description>Recent Posts in Ethical Hacking on Bhaskar&#39;s Website</description>
-    <generator>Hugo 0.147.3</generator>
+    <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/en/categories/ethical-hacking/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/ethical-hacking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building a Python Keylogger: A Security Researcher’s development to Understanding Keystroke Logging</title>
-      <link>//localhost:1313/en/post/2024-09-24-python-keylogger/</link>
+      <link>http://localhost:1313/en/post/building-a-python-keylogger-a-security-researchers-development-to-understanding-keystroke-logging/</link>
       <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-24-python-keylogger/</guid>
+      <guid>http://localhost:1313/en/post/building-a-python-keylogger-a-security-researchers-development-to-understanding-keystroke-logging/</guid>
       <description></description>
       
+    </item>
+    <item>
+      <title>Social Engineering Attacks - Creating a Fake SMS Message</title>
+      <link>http://localhost:1313/en/post/social-engineering-fake-sms-attacks/</link>
+      <pubDate>Fri, 09 Sep 2022 10:18:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/social-engineering-fake-sms-attacks/</guid>
+      <description></description>
+      <enclosure url="/images/posts/social-engineering-sms.jpg" length="0" type="image/jpeg" />
     </item>
   </channel>
 </rss>

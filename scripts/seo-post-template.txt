@@ -1,0 +1,253 @@
+SEO-OPTIMIZED POST FRONT MATTER TEMPLATE
+========================================
+
+Use this template when updating existing posts or creating new ones:
+
+---
+title: "Your Compelling Title with Primary Keyword"
+slug: "seo-friendly-url-slug-with-keywords"
+date: YYYY-MM-DD
+lastmod: YYYY-MM-DD
+categories: [ Category1, Category2, Category3 ]
+description: "Compelling 150-160 character meta description with primary keyword in first 120 chars that entices clicks"
+tags:
+- primary-keyword
+- secondary-keyword-1
+- secondary-keyword-2
+- long-tail-keyword
+- related-topic
+author: "Allam Bhaskara Ram"
+image: "/images/posts/featured-image-name.jpg"
+---
+
+FRONT MATTER FIELD GUIDE:
+==========================
+
+title:
+- Include primary keyword naturally
+- Keep under 60 characters
+- Make it compelling and clickable
+- Use title case
+
+slug:
+- Use hyphens, not underscores
+- Include primary keyword
+- Keep it short and descriptive
+- All lowercase
+- No special characters
+
+date:
+- Original publication date
+- Format: YYYY-MM-DD
+
+lastmod:
+- Last modification date
+- Update when making significant changes
+- Signals freshness to search engines
+
+categories:
+- 2-4 categories maximum
+- Use existing categories when possible
+- Capitalize each word
+- Broad topics
+
+description:
+- 150-160 characters (Google's display limit)
+- Include primary keyword in first 120 characters
+- Write for humans, not just search engines
+- Make it compelling - this is your ad copy
+- Include a benefit or value proposition
+- End with a period
+
+tags:
+- 5-10 tags per post
+- Mix of:
+  * Primary keyword
+  * Secondary keywords
+  * Long-tail keywords
+  * Related topics
+- Use lowercase with hyphens
+- Be specific and relevant
+
+author:
+- Full name for authority
+- Consistent across all posts
+
+image:
+- Featured image for social sharing
+- Recommended size: 1200x630px
+- Optimize file size (< 200KB)
+- Use descriptive filename
+- Store in /static/images/posts/
+
+CONTENT OPTIMIZATION CHECKLIST:
+================================
+
+□ Primary keyword in:
+  - Title
+  - First paragraph (within first 100 words)
+  - At least one H2 heading
+  - Meta description
+  - URL slug
+  - Image alt text
+
+□ Heading hierarchy:
+  - Title = H1 (automatic)
+  - Main sections = H2
+  - Subsections = H3
+  - Never skip levels
+
+□ Internal links:
+  - 3-5 contextual internal links
+  - Link to related posts
+  - Link to category/tag pages
+  - Use descriptive anchor text (not "click here")
+
+□ Images:
+  - Add descriptive alt text to ALL images
+  - Include keywords naturally in alt text
+  - Optimize file sizes
+  - Use WebP format when possible
+
+□ Content quality:
+  - Minimum 1,000 words (1,500-2,500 for pillar content)
+  - Answer user intent completely
+  - Use short paragraphs (2-3 sentences)
+  - Include bullet points and lists
+  - Add examples and actionable tips
+
+□ Readability:
+  - Use simple language
+  - Short sentences (< 20 words)
+  - Active voice
+  - Transition words
+  - Scannable format
+
+□ Call-to-action:
+  - End with clear next steps
+  - Encourage engagement
+  - Link to related content
+
+EXAMPLE OPTIMIZED POST:
+========================
+
+---
+title: "Complete Guide to MERN Stack Development in 2026"
+slug: "mern-stack-development-guide-2026"
+date: 2026-05-05
+lastmod: 2026-05-05
+categories: [ Full Stack Development, MERN Stack, Web Development ]
+description: "Master MERN stack development with this comprehensive 2026 guide. Learn MongoDB, Express, React, and Node.js with practical examples and best practices."
+tags:
+- mern-stack
+- full-stack-development
+- mongodb
+- express-js
+- react
+- nodejs
+- web-development
+- javascript
+author: "Allam Bhaskara Ram"
+image: "/images/posts/mern-stack-guide-2026.jpg"
+---
+
+## Introduction to MERN Stack Development
+
+The MERN stack (MongoDB, Express.js, React, and Node.js) has become the go-to choice for modern web development. In this comprehensive guide, we'll explore everything you need to know about MERN stack development in 2026.
+
+If you're interested in other modern frameworks, check out our guide on [Next.js 14 Development](/post/nextjs-14-guide/).
+
+## What is the MERN Stack?
+
+[Content continues with proper structure...]
+
+## Conclusion
+
+MERN stack development offers a powerful, JavaScript-based solution for building modern web applications. Start your journey today!
+
+**Related Resources:**
+- [Node.js Performance Optimization](/post/nodejs-performance/)
+- [React Best Practices 2026](/post/react-best-practices/)
+- [MongoDB Schema Design](/post/mongodb-schema-design/)
+
+KEYWORD RESEARCH TIPS:
+======================
+
+1. Use tools:
+   - Google Keyword Planner (free)
+   - Ahrefs Keywords Explorer
+   - SEMrush Keyword Magic Tool
+   - AnswerThePublic
+   - Google Search Console (existing data)
+
+2. Target keywords with:
+   - Decent search volume (100+ monthly searches)
+   - Low to medium competition
+   - High relevance to your content
+   - Commercial or informational intent
+
+3. Focus on:
+   - Long-tail keywords (3-5 words)
+   - Question-based keywords
+   - "How to" keywords
+   - Comparison keywords
+   - Location-based keywords (if relevant)
+
+4. Analyze competitors:
+   - What keywords are they ranking for?
+   - What's their content structure?
+   - What's missing in their content?
+   - How can you do better?
+
+INTERNAL LINKING STRATEGY:
+===========================
+
+Link to:
+1. Related blog posts (most important)
+2. Pillar pages for main topics
+3. Category/tag pages
+4. Homepage (occasionally)
+5. About/Contact pages (when relevant)
+
+Anchor text best practices:
+- Use descriptive text (not "click here")
+- Include keywords naturally
+- Make it contextual
+- Keep it concise (2-5 words)
+- Vary your anchor text
+
+Example good anchor text:
+✓ "Learn more about AI implementation"
+✓ "Our guide to blockchain technology"
+✓ "Full stack development best practices"
+
+Example bad anchor text:
+✗ "Click here"
+✗ "Read more"
+✗ "This article"
+
+CONTENT UPDATE SCHEDULE:
+=========================
+
+Monthly:
+- Update 4-5 old posts
+- Add new information
+- Update statistics and data
+- Add internal links to new content
+- Refresh meta descriptions
+- Update lastmod date
+
+Quarterly:
+- Comprehensive content audit
+- Remove or redirect outdated content
+- Update all images
+- Check and fix broken links
+- Analyze top-performing content
+- Create new pillar content
+
+Annually:
+- Complete site audit
+- Restructure content if needed
+- Update all author bios
+- Refresh branding/images
+- Major content overhaul for top posts

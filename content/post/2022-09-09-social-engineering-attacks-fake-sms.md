@@ -1,8 +1,21 @@
 ---
 layout: post
-title: Social Engineering Attacks - Creating a Fake SMS Message
+title: "Social Engineering Attacks - Creating a Fake SMS Message"
+slug: "social-engineering-fake-sms-attacks"
 date: 2022-09-09 10:18:00
-categories: [Social Engineering, Fake SMS]
+lastmod: 2026-05-05
+categories: [Social Engineering, Fake SMS, Cybersecurity, Ethical Hacking]
+description: "Learn social engineering techniques: How to create fake SMS messages for ethical hacking and penetration testing. Includes Fake-SMS tool tutorial and security awareness tips."
+tags:
+- social engineering
+- fake SMS
+- ethical hacking
+- penetration testing
+- cybersecurity
+- SMS spoofing
+- security testing
+author: "Allam Bhaskara Ram"
+image: "/images/posts/social-engineering-sms.jpg"
 ---
 
 **Welcome back, my aspiring cyber warriors!**

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ROG on Bhaskar&#39;s Website</title>
-    <link>//localhost:1313/en/tags/rog/</link>
+    <link>http://localhost:1313/en/tags/rog/</link>
     <description>Recent Posts in ROG on Bhaskar&#39;s Website</description>
-    <generator>Hugo 0.147.3</generator>
+    <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/en/tags/rog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/rog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ASUS Gaming Devices: Unleashing the Power of Superior Services</title>
-      <link>//localhost:1313/en/post/2024-09-03-asus-gaming-experience-unveiled/</link>
+      <link>http://localhost:1313/en/post/asus-gaming-devices-unleashing-the-power-of-superior-services/</link>
       <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-03-asus-gaming-experience-unveiled/</guid>
+      <guid>http://localhost:1313/en/post/asus-gaming-devices-unleashing-the-power-of-superior-services/</guid>
       <description></description>
       
     </item>

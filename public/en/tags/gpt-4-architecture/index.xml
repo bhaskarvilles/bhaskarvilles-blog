@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GPT-4 Architecture on Bhaskar&#39;s Website</title>
+    <link>http://localhost:1313/en/tags/gpt-4-architecture/</link>
+    <description>Recent Posts in GPT-4 Architecture on Bhaskar&#39;s Website</description>
+    <generator>Hugo 0.161.1</generator>
+    <language>en</language>
+    <managingEditor>Bhaskar</managingEditor>
+    
+      <webMaster>Bhaskar</webMaster>
+    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/gpt-4-architecture/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ChatGPT vs. Humans: Delving Deeper into Technical and Brain Intelligence Aspects</title>
+      <link>http://localhost:1313/en/post/chatgpt-vs-human-intelligence-comparison/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/chatgpt-vs-human-intelligence-comparison/</guid>
+      <description></description>
+      <enclosure url="/images/posts/ai-human-intelligence.jpg" length="0" type="image/jpeg" />
+    </item>
+  </channel>
+</rss>

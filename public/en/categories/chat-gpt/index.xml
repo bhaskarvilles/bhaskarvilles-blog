@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chat GPT on Bhaskar&#39;s Website</title>
-    <link>//localhost:1313/en/categories/chat-gpt/</link>
+    <link>http://localhost:1313/en/categories/chat-gpt/</link>
     <description>Recent Posts in Chat GPT on Bhaskar&#39;s Website</description>
-    <generator>Hugo 0.147.3</generator>
+    <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/en/categories/chat-gpt/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/chat-gpt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Evolution of AI: Introducing GPT-3.5 With Live Browsing</title>
-      <link>//localhost:1313/en/post/2023-04-26-chat-gpt-with-browsing/</link>
+      <link>http://localhost:1313/en/post/the-evolution-of-ai-introducing-gpt-3.5-with-live-browsing/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-04-26-chat-gpt-with-browsing/</guid>
+      <guid>http://localhost:1313/en/post/the-evolution-of-ai-introducing-gpt-3.5-with-live-browsing/</guid>
       <description></description>
       
     </item>

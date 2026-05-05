@@ -1,8 +1,22 @@
 ---
 layout: post
 title: "Tools for reconnaissance and footprinting"
+slug: "reconnaissance-footprinting-tools-guide"
 date: 2023-04-15
-categories: [ Hacking, Reconnaissance, Footprinting ]
+lastmod: 2026-05-05
+categories: [ Hacking, Reconnaissance, Footprinting, Cybersecurity ]
+description: "Comprehensive list of reconnaissance and footprinting tools for ethical hacking: Domain recon, network scanning, OSINT tools, email footprinting, and Google dorking techniques."
+tags:
+- reconnaissance tools
+- footprinting
+- ethical hacking
+- OSINT
+- penetration testing
+- cybersecurity tools
+- network scanning
+- Google dorking
+author: "Allam Bhaskara Ram"
+image: "/images/posts/recon-tools.jpg"
 --- 
 
 # Recon Tools

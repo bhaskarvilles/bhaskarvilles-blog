@@ -1,12 +1,21 @@
 ---
 layout: post
 title: "ChatGPT vs. Humans: Delving Deeper into Technical and Brain Intelligence Aspects"
+slug: "chatgpt-vs-human-intelligence-comparison"
 date: 2023-05-07
+lastmod: 2026-05-05
 categories: [ AI, ChatGPT, OpenAI, HumanIntellegence ]
-description: "ChatGPT vs. Humans: Delving Deeper into Technical and Brain Intelligence Aspects"
+description: "Deep dive into ChatGPT vs human intelligence: Compare technical aspects, brain intelligence, strengths, weaknesses, and future implications of AI and human collaboration in 2026."
 tags:
 - ChatGPT
 - human-intelligence
+- AI comparison
+- GPT-4 architecture
+- neural networks
+- artificial intelligence
+- machine learning
+author: "Allam Bhaskara Ram"
+image: "/images/posts/ai-human-intelligence.jpg"
 ---
 
 # Introduction:

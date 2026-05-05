@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Chatbot on Bhaskar&#39;s Website</title>
+    <link>http://localhost:1313/en/tags/ai-chatbot/</link>
+    <description>Recent Posts in AI Chatbot on Bhaskar&#39;s Website</description>
+    <generator>Hugo 0.161.1</generator>
+    <language>en</language>
+    <managingEditor>Bhaskar</managingEditor>
+    
+      <webMaster>Bhaskar</webMaster>
+    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/ai-chatbot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Bard: A Large Language Model Chatbot</title>
+      <link>http://localhost:1313/en/post/google-bard-large-language-model-chatbot/</link>
+      <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/google-bard-large-language-model-chatbot/</guid>
+      <description></description>
+      <enclosure url="/images/posts/google-bard.jpg" length="0" type="image/jpeg" />
+    </item>
+    <item>
+      <title>OpenAI and ChatGPT</title>
+      <link>http://localhost:1313/en/post/openai-chatgpt-introduction-guide/</link>
+      <pubDate>Wed, 21 Dec 2022 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/openai-chatgpt-introduction-guide/</guid>
+      <description></description>
+      <enclosure url="/images/posts/chatgpt-openai.jpg" length="0" type="image/jpeg" />
+    </item>
+  </channel>
+</rss>

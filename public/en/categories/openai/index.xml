@@ -2,68 +2,77 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OpenAI on Bhaskar&#39;s Website</title>
-    <link>//localhost:1313/en/categories/openai/</link>
+    <link>http://localhost:1313/en/categories/openai/</link>
     <description>Recent Posts in OpenAI on Bhaskar&#39;s Website</description>
-    <generator>Hugo 0.147.3</generator>
+    <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/en/categories/openai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/openai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multimodal AI in 2026: GPT-5.5, Claude Opus 4.7, and Gemini 3.1 Pro Compared</title>
+      <link>http://localhost:1313/en/post/multimodal-ai-2026-gpt5-claude-gemini-comparison/</link>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/multimodal-ai-2026-gpt5-claude-gemini-comparison/</guid>
+      <description></description>
+      <enclosure url="/images/posts/multimodal-ai-comparison-2026.jpg" length="0" type="image/jpeg" />
+    </item>
     <item>
       <title>The Core of OpenAI o1</title>
-      <link>//localhost:1313/en/post/2024-09-12-openai-o1-preview/</link>
+      <link>http://localhost:1313/en/post/the-core-of-openai-o1/</link>
       <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-12-openai-o1-preview/</guid>
+      <guid>http://localhost:1313/en/post/the-core-of-openai-o1/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Google Bard: A Large Language Model Chatbot</title>
-      <link>//localhost:1313/en/post/2023-05-16-google-bard/</link>
+      <link>http://localhost:1313/en/post/google-bard-large-language-model-chatbot/</link>
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-05-16-google-bard/</guid>
+      <guid>http://localhost:1313/en/post/google-bard-large-language-model-chatbot/</guid>
       <description></description>
-      
+      <enclosure url="/images/posts/google-bard.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>ChatGPT vs. Humans: Delving Deeper into Technical and Brain Intelligence Aspects</title>
-      <link>//localhost:1313/en/post/2023-05-07-ai-and-human-intelligence/</link>
+      <link>http://localhost:1313/en/post/chatgpt-vs-human-intelligence-comparison/</link>
       <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-05-07-ai-and-human-intelligence/</guid>
+      <guid>http://localhost:1313/en/post/chatgpt-vs-human-intelligence-comparison/</guid>
       <description></description>
-      
+      <enclosure url="/images/posts/ai-human-intelligence.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>DeepFloyd-IF: A Pixel-Based Triple-Cascaded Diffusion Model for Photorealistic Text-to-Image Generation</title>
-      <link>//localhost:1313/en/post/2023-05-04-deepfloyid-if/</link>
+      <link>http://localhost:1313/en/post/deepfloyd-if-a-pixel-based-triple-cascaded-diffusion-model-for-photorealistic-text-to-image-generation/</link>
       <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-05-04-deepfloyid-if/</guid>
+      <guid>http://localhost:1313/en/post/deepfloyd-if-a-pixel-based-triple-cascaded-diffusion-model-for-photorealistic-text-to-image-generation/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The Evolution of AI: Introducing GPT-3.5 With Live Browsing</title>
-      <link>//localhost:1313/en/post/2023-04-26-chat-gpt-with-browsing/</link>
+      <link>http://localhost:1313/en/post/the-evolution-of-ai-introducing-gpt-3.5-with-live-browsing/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-04-26-chat-gpt-with-browsing/</guid>
+      <guid>http://localhost:1313/en/post/the-evolution-of-ai-introducing-gpt-3.5-with-live-browsing/</guid>
       <description></description>
       
     </item>
     <item>
       <title>OpenAI and ChatGPT</title>
-      <link>//localhost:1313/en/post/2022-12-21-chat-gpt/</link>
+      <link>http://localhost:1313/en/post/openai-chatgpt-introduction-guide/</link>
       <pubDate>Wed, 21 Dec 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-12-21-chat-gpt/</guid>
+      <guid>http://localhost:1313/en/post/openai-chatgpt-introduction-guide/</guid>
       <description></description>
-      
+      <enclosure url="/images/posts/chatgpt-openai.jpg" length="0" type="image/jpeg" />
     </item>
   </channel>
 </rss>

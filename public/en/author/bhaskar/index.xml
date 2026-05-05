@@ -2,345 +2,363 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bhaskar on Bhaskar&#39;s Website</title>
-    <link>//localhost:1313/en/author/bhaskar/</link>
+    <link>http://localhost:1313/en/author/bhaskar/</link>
     <description>Recent Posts in Bhaskar on Bhaskar&#39;s Website</description>
-    <generator>Hugo 0.147.3</generator>
+    <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/en/author/bhaskar/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/author/bhaskar/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WWDC 2025: Apple&#39;s Vision for the Future</title>
+      <link>http://localhost:1313/en/post/wwdc-2025-apples-vision-for-the-future/</link>
+      <pubDate>Mon, 09 Jun 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/wwdc-2025-apples-vision-for-the-future/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Apple WWDC 2025: What to Expect on June 9</title>
+      <link>http://localhost:1313/en/post/apple-wwdc-2025-what-to-expect-on-june-9/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/apple-wwdc-2025-what-to-expect-on-june-9/</guid>
+      <description></description>
+      
+    </item>
     <item>
       <title>The Layered Cosmos: Toward a Unified Theory of Everything</title>
-      <link>//localhost:1313/en/post/2025-05-10-toe/</link>
+      <link>http://localhost:1313/en/post/the-layered-cosmos-toward-a-unified-theory-of-everything/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-05-10-toe/</guid>
+      <guid>http://localhost:1313/en/post/the-layered-cosmos-toward-a-unified-theory-of-everything/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Apple&#39;s 2025 Lineup: A Glimpse into the Future of Innovation</title>
-      <link>//localhost:1313/en/post/2025-04-28-apple-new-updates/</link>
+      <link>http://localhost:1313/en/post/apples-2025-lineup-a-glimpse-into-the-future-of-innovation/</link>
       <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-04-28-apple-new-updates/</guid>
+      <guid>http://localhost:1313/en/post/apples-2025-lineup-a-glimpse-into-the-future-of-innovation/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Revolutionary Advances in Gene Editing: The Zenomics Breakthrough</title>
-      <link>//localhost:1313/en/post/2025-04-15-advanced-gene-editing-zenomics/</link>
+      <link>http://localhost:1313/en/post/revolutionary-advances-in-gene-editing-the-zenomics-breakthrough/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-04-15-advanced-gene-editing-zenomics/</guid>
+      <guid>http://localhost:1313/en/post/revolutionary-advances-in-gene-editing-the-zenomics-breakthrough/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Kerdos AI Introduces Enterprise-Grade AI API Platform</title>
-      <link>//localhost:1313/en/post/2025-04-14-kerdos-ai-platform/</link>
+      <link>http://localhost:1313/en/post/kerdos-ai-introduces-enterprise-grade-ai-api-platform/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-04-14-kerdos-ai-platform/</guid>
+      <guid>http://localhost:1313/en/post/kerdos-ai-introduces-enterprise-grade-ai-api-platform/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Kerdos AI Launches Revolutionary Image Generator Powered by Stable Diffusion XL</title>
-      <link>//localhost:1313/en/post/2025-04-14-kerdos-ai-image-generator/</link>
+      <link>http://localhost:1313/en/post/kerdos-ai-launches-revolutionary-image-generator-powered-by-stable-diffusion-xl/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-04-14-kerdos-ai-image-generator/</guid>
+      <guid>http://localhost:1313/en/post/kerdos-ai-launches-revolutionary-image-generator-powered-by-stable-diffusion-xl/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Kerdos AI Unveils Next-Generation Chat Application</title>
-      <link>//localhost:1313/en/post/2025-04-14-kerdos-ai-chat-application/</link>
+      <link>http://localhost:1313/en/post/kerdos-ai-unveils-next-generation-chat-application/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-04-14-kerdos-ai-chat-application/</guid>
+      <guid>http://localhost:1313/en/post/kerdos-ai-unveils-next-generation-chat-application/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Proposal to Extend NumPy Broadcasting for Enhanced Array Operations</title>
-      <link>//localhost:1313/en/post/2025-03-29-numpy-new-updates/</link>
+      <link>http://localhost:1313/en/post/proposal-to-extend-numpy-broadcasting-for-enhanced-array-operations/</link>
       <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-03-29-numpy-new-updates/</guid>
+      <guid>http://localhost:1313/en/post/proposal-to-extend-numpy-broadcasting-for-enhanced-array-operations/</guid>
       <description></description>
       
     </item>
     <item>
       <title>iOS and iPadOS 18.4: A Comprehensive Overview of the Latest Updates</title>
-      <link>//localhost:1313/en/post/2025-03-24-ios-ipados-18-4-release/</link>
+      <link>http://localhost:1313/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</link>
       <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-03-24-ios-ipados-18-4-release/</guid>
+      <guid>http://localhost:1313/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Unlocking the Power of Kerdos Vision AI for Image Generation</title>
-      <link>//localhost:1313/en/post/2025-03-18-kerdos-vision-ai/</link>
+      <link>http://localhost:1313/en/post/unlocking-the-power-of-kerdos-vision-ai-for-image-generation/</link>
       <pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-03-18-kerdos-vision-ai/</guid>
+      <guid>http://localhost:1313/en/post/unlocking-the-power-of-kerdos-vision-ai-for-image-generation/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Kerdos AI Launches Revolutionary Chat Application with OpenAI Integration</title>
-      <link>//localhost:1313/en/post/2025-03-15-kerdos-ai-launched-chat-application/</link>
+      <link>http://localhost:1313/en/post/kerdos-ai-launches-revolutionary-chat-application-with-openai-integration/</link>
       <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-03-15-kerdos-ai-launched-chat-application/</guid>
+      <guid>http://localhost:1313/en/post/kerdos-ai-launches-revolutionary-chat-application-with-openai-integration/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Finding Your Inner Drive: A Guide to Motivation</title>
-      <link>//localhost:1313/en/post/2025-03-09-finding-your-inner-drive/</link>
+      <link>http://localhost:1313/en/post/finding-your-inner-drive-a-guide-to-motivation/</link>
       <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-03-09-finding-your-inner-drive/</guid>
+      <guid>http://localhost:1313/en/post/finding-your-inner-drive-a-guide-to-motivation/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Internet Archive hacked, data breach impacts 31 million users</title>
-      <link>//localhost:1313/en/post/2025-02-24-archive-org-30-million-users-databreach/</link>
+      <link>http://localhost:1313/en/post/internet-archive-hacked-data-breach-impacts-31-million-users/</link>
       <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-02-24-archive-org-30-million-users-databreach/</guid>
+      <guid>http://localhost:1313/en/post/internet-archive-hacked-data-breach-impacts-31-million-users/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Running Local Large Language Models (LLMs) for Image Generation</title>
-      <link>//localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/</link>
+      <link>http://localhost:1313/en/post/running-local-large-language-models-llms-for-image-generation/</link>
       <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/</guid>
+      <guid>http://localhost:1313/en/post/running-local-large-language-models-llms-for-image-generation/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The Dark Side of AI: Navigating Ethical Challenges in Artificial Intelligence</title>
-      <link>//localhost:1313/en/post/2024-12-27-the-dark-side-of-ai/</link>
+      <link>http://localhost:1313/en/post/the-dark-side-of-ai-navigating-ethical-challenges-in-artificial-intelligence/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-12-27-the-dark-side-of-ai/</guid>
+      <guid>http://localhost:1313/en/post/the-dark-side-of-ai-navigating-ethical-challenges-in-artificial-intelligence/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Building the Future of OpenSearch: Community-Driven Innovation</title>
-      <link>//localhost:1313/en/post/2024-11-01-building-future-opensearch/</link>
+      <link>http://localhost:1313/en/post/building-the-future-of-opensearch-community-driven-innovation/</link>
       <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-11-01-building-future-opensearch/</guid>
+      <guid>http://localhost:1313/en/post/building-the-future-of-opensearch-community-driven-innovation/</guid>
       <description></description>
       
     </item>
     <item>
       <title>BHASKAR: Transforming India&#39;s Startup Ecosystem</title>
-      <link>//localhost:1313/en/post/2024-10-25-bhaskar-platform/</link>
+      <link>http://localhost:1313/en/post/bhaskar-transforming-indias-startup-ecosystem/</link>
       <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-10-25-bhaskar-platform/</guid>
+      <guid>http://localhost:1313/en/post/bhaskar-transforming-indias-startup-ecosystem/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Technical Deep Dive: How Claude AI Can Control Computers</title>
-      <link>//localhost:1313/en/post/2024-10-23-claude-ai-computer-control/</link>
+      <link>http://localhost:1313/en/post/technical-deep-dive-how-claude-ai-can-control-computers/</link>
       <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-10-23-claude-ai-computer-control/</guid>
+      <guid>http://localhost:1313/en/post/technical-deep-dive-how-claude-ai-can-control-computers/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Snapdragon 8 Elite: Revolutionizing Mobile Performance</title>
-      <link>//localhost:1313/en/post/2024-10-22-snapdragon-8-elite-mobile/</link>
+      <link>http://localhost:1313/en/post/snapdragon-8-elite-revolutionizing-mobile-performance/</link>
       <pubDate>Tue, 22 Oct 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-10-22-snapdragon-8-elite-mobile/</guid>
+      <guid>http://localhost:1313/en/post/snapdragon-8-elite-revolutionizing-mobile-performance/</guid>
       <description></description>
       
     </item>
     <item>
       <title>From $20 to $52,000 in 30 Days: Exploring the 20 Pips a Day Challenge Strategy</title>
-      <link>//localhost:1313/en/post/2024-10-05-20-to-53k-trading-strategy/</link>
+      <link>http://localhost:1313/en/post/from-20-to-52000-in-30-days-exploring-the-20-pips-a-day-challenge-strategy/</link>
       <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-10-05-20-to-53k-trading-strategy/</guid>
+      <guid>http://localhost:1313/en/post/from-20-to-52000-in-30-days-exploring-the-20-pips-a-day-challenge-strategy/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Building a Python Keylogger: A Security Researcher’s development to Understanding Keystroke Logging</title>
-      <link>//localhost:1313/en/post/2024-09-24-python-keylogger/</link>
+      <link>http://localhost:1313/en/post/building-a-python-keylogger-a-security-researchers-development-to-understanding-keystroke-logging/</link>
       <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-24-python-keylogger/</guid>
+      <guid>http://localhost:1313/en/post/building-a-python-keylogger-a-security-researchers-development-to-understanding-keystroke-logging/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The Power of Event-Driven Architecture (EDA): How Netflix and Uber Handle Billions of Events Daily</title>
-      <link>//localhost:1313/en/post/2024-09-23-event-driven-architecture/</link>
+      <link>http://localhost:1313/en/post/the-power-of-event-driven-architecture-eda-how-netflix-and-uber-handle-billions-of-events-daily/</link>
       <pubDate>Mon, 23 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-23-event-driven-architecture/</guid>
+      <guid>http://localhost:1313/en/post/the-power-of-event-driven-architecture-eda-how-netflix-and-uber-handle-billions-of-events-daily/</guid>
       <description></description>
       
     </item>
     <item>
       <title>JSMON: Revolutionizing JavaScript Security Monitoring</title>
-      <link>//localhost:1313/en/post/2024-09-20-jsmon-sh/</link>
+      <link>http://localhost:1313/en/post/jsmon-revolutionizing-javascript-security-monitoring/</link>
       <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-20-jsmon-sh/</guid>
+      <guid>http://localhost:1313/en/post/jsmon-revolutionizing-javascript-security-monitoring/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Why India Can&#39;t Yet Replicate the Success of Black Myth: Wukong in the AAA PC Game Market</title>
-      <link>//localhost:1313/en/post/2024-09-17-indian-aaa-game-market/</link>
+      <link>http://localhost:1313/en/post/why-india-cant-yet-replicate-the-success-of-black-myth-wukong-in-the-aaa-pc-game-market/</link>
       <pubDate>Tue, 17 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-17-indian-aaa-game-market/</guid>
+      <guid>http://localhost:1313/en/post/why-india-cant-yet-replicate-the-success-of-black-myth-wukong-in-the-aaa-pc-game-market/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Announcing My Candidacy for the OWASP Global Board of Directors 2024</title>
-      <link>//localhost:1313/en/post/2024-09-15-owasp-candidate/</link>
+      <link>http://localhost:1313/en/post/announcing-my-candidacy-for-the-owasp-global-board-of-directors-2024/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-15-owasp-candidate/</guid>
+      <guid>http://localhost:1313/en/post/announcing-my-candidacy-for-the-owasp-global-board-of-directors-2024/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The Core of OpenAI o1</title>
-      <link>//localhost:1313/en/post/2024-09-12-openai-o1-preview/</link>
+      <link>http://localhost:1313/en/post/the-core-of-openai-o1/</link>
       <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-12-openai-o1-preview/</guid>
+      <guid>http://localhost:1313/en/post/the-core-of-openai-o1/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Apple Airpods 4: Apple&#39;s next-generation wireless earbuds with improved audio quality, adaptive noise cancellation, and personalized spatial audio.</title>
-      <link>//localhost:1313/en/post/2024-09-09-apple-airpods-4/</link>
+      <link>http://localhost:1313/en/post/apple-airpods-4-apples-next-generation-wireless-earbuds-with-improved-audio-quality-adaptive-noise-cancellation-and-personalized-spatial-audio./</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-09-apple-airpods-4/</guid>
+      <guid>http://localhost:1313/en/post/apple-airpods-4-apples-next-generation-wireless-earbuds-with-improved-audio-quality-adaptive-noise-cancellation-and-personalized-spatial-audio./</guid>
       <description></description>
       
     </item>
     <item>
       <title>Apple Watch Ultra 2 &amp; Series 10 Watch: The rugged, high-performance smartwatch designed for extreme conditions, featuring a larger display, advanced sensors, and enhanced durability.</title>
-      <link>//localhost:1313/en/post/2024-09-09-apple-watch-ultra-2/</link>
+      <link>http://localhost:1313/en/post/apple-watch-ultra-2-series-10-watch-the-rugged-high-performance-smartwatch-designed-for-extreme-conditions-featuring-a-larger-display-advanced-sensors-and-enhanced-durability./</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-09-apple-watch-ultra-2/</guid>
+      <guid>http://localhost:1313/en/post/apple-watch-ultra-2-series-10-watch-the-rugged-high-performance-smartwatch-designed-for-extreme-conditions-featuring-a-larger-display-advanced-sensors-and-enhanced-durability./</guid>
       <description></description>
       
     </item>
     <item>
       <title>iPhone 16 Series: Apple&#39;s latest flagship smartphones, offering groundbreaking advancements in camera technology and performance with new features across four models.</title>
-      <link>//localhost:1313/en/post/2024-09-09-apple-iphone16-and-16-pro/</link>
+      <link>http://localhost:1313/en/post/iphone-16-series-apples-latest-flagship-smartphones-offering-groundbreaking-advancements-in-camera-technology-and-performance-with-new-features-across-four-models./</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-09-apple-iphone16-and-16-pro/</guid>
+      <guid>http://localhost:1313/en/post/iphone-16-series-apples-latest-flagship-smartphones-offering-groundbreaking-advancements-in-camera-technology-and-performance-with-new-features-across-four-models./</guid>
       <description></description>
       
     </item>
     <item>
       <title>ASUS Gaming Devices: Unleashing the Power of Superior Services</title>
-      <link>//localhost:1313/en/post/2024-09-03-asus-gaming-experience-unveiled/</link>
+      <link>http://localhost:1313/en/post/asus-gaming-devices-unleashing-the-power-of-superior-services/</link>
       <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-03-asus-gaming-experience-unveiled/</guid>
+      <guid>http://localhost:1313/en/post/asus-gaming-devices-unleashing-the-power-of-superior-services/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Discovering JavaScript Files with JSFinder</title>
-      <link>//localhost:1313/en/post/2024-08-31-jsfinder-standard/</link>
+      <link>http://localhost:1313/en/post/discovering-javascript-files-with-jsfinder/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-08-31-jsfinder-standard/</guid>
+      <guid>http://localhost:1313/en/post/discovering-javascript-files-with-jsfinder/</guid>
       <description></description>
       
     </item>
     <item>
       <title>EU&#39;s Stance on Lifting Restrictions for Kiev&#39;s Strikes on Russian Territory: Risks, Benefits, and Future Implications</title>
-      <link>//localhost:1313/en/post/2024-08-29-eu-ristrictions-on-kiev-strikes/</link>
+      <link>http://localhost:1313/en/post/eus-stance-on-lifting-restrictions-for-kievs-strikes-on-russian-territory-risks-benefits-and-future-implications/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-08-29-eu-ristrictions-on-kiev-strikes/</guid>
+      <guid>http://localhost:1313/en/post/eus-stance-on-lifting-restrictions-for-kievs-strikes-on-russian-territory-risks-benefits-and-future-implications/</guid>
       <description></description>
       
     </item>
     <item>
       <title>The Dark Side of AI in Call Summarization: Privacy, Personalization</title>
-      <link>//localhost:1313/en/post/2024-08-29-the-dark-side-of-ai-calls-summary/</link>
+      <link>http://localhost:1313/en/post/the-dark-side-of-ai-in-call-summarization-privacy-personalization/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-08-29-the-dark-side-of-ai-calls-summary/</guid>
+      <guid>http://localhost:1313/en/post/the-dark-side-of-ai-in-call-summarization-privacy-personalization/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Advanced RISC Machines</title>
-      <link>//localhost:1313/en/post/2024-08-21-arm-processors/</link>
+      <link>http://localhost:1313/en/post/advanced-risc-machines/</link>
       <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-08-21-arm-processors/</guid>
+      <guid>http://localhost:1313/en/post/advanced-risc-machines/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Running LLaMA 3.1 Locally with Ollama: A Step-by-Step process</title>
-      <link>//localhost:1313/en/post/2024-08-20-running-llama3.1-locally-on-your-system/</link>
+      <link>http://localhost:1313/en/post/running-llama-3.1-locally-with-ollama-a-step-by-step-process/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-08-20-running-llama3.1-locally-on-your-system/</guid>
+      <guid>http://localhost:1313/en/post/running-llama-3.1-locally-with-ollama-a-step-by-step-process/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Evacuation Urged in Ukrainian-Controlled DPR Cities: A Dire Call for Safety</title>
-      <link>//localhost:1313/en/post/2024-08-18-evacuation-in-ukrain/</link>
+      <link>http://localhost:1313/en/post/evacuation-urged-in-ukrainian-controlled-dpr-cities-a-dire-call-for-safety/</link>
       <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-08-18-evacuation-in-ukrain/</guid>
+      <guid>http://localhost:1313/en/post/evacuation-urged-in-ukrainian-controlled-dpr-cities-a-dire-call-for-safety/</guid>
       <description></description>
       
     </item>
     <item>
       <title>iOS and iPadOS 18.4: A Comprehensive Overview of the Latest Updates</title>
-      <link>//localhost:1313/en/post/2024-03-18-ios-ipados-18-4-release/</link>
+      <link>http://localhost:1313/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</link>
       <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-03-18-ios-ipados-18-4-release/</guid>
+      <guid>http://localhost:1313/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Manually Computing Travel Times for Long-Distance Flights and Space Travel: Uncovering the Precise Power-Law Relationship between Travel Time and Distance</title>
-      <link>//localhost:1313/en/post/2022-04-17-gpt3/</link>
+      <link>http://localhost:1313/en/post/manually-computing-travel-times-for-long-distance-flights-and-space-travel-uncovering-the-precise-power-law-relationship-between-travel-time-and-distance/</link>
       <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-04-17-gpt3/</guid>
+      <guid>http://localhost:1313/en/post/manually-computing-travel-times-for-long-distance-flights-and-space-travel-uncovering-the-precise-power-law-relationship-between-travel-time-and-distance/</guid>
       <description></description>
       
     </item>

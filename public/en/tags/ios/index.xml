@@ -2,30 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ios on Bhaskar&#39;s Website</title>
-    <link>//localhost:1313/en/tags/ios/</link>
+    <link>http://localhost:1313/en/tags/ios/</link>
     <description>Recent Posts in Ios on Bhaskar&#39;s Website</description>
-    <generator>Hugo 0.147.3</generator>
+    <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/en/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/ios/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>iOS and iPadOS 18.4: A Comprehensive Overview of the Latest Updates</title>
-      <link>//localhost:1313/en/post/2025-03-24-ios-ipados-18-4-release/</link>
-      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+      <title>WWDC 2025: Apple&#39;s Vision for the Future</title>
+      <link>http://localhost:1313/en/post/wwdc-2025-apples-vision-for-the-future/</link>
+      <pubDate>Mon, 09 Jun 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-03-24-ios-ipados-18-4-release/</guid>
+      <guid>http://localhost:1313/en/post/wwdc-2025-apples-vision-for-the-future/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Apple WWDC 2025: What to Expect on June 9</title>
+      <link>http://localhost:1313/en/post/apple-wwdc-2025-what-to-expect-on-june-9/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/apple-wwdc-2025-what-to-expect-on-june-9/</guid>
       <description></description>
       
     </item>
     <item>
       <title>iOS and iPadOS 18.4: A Comprehensive Overview of the Latest Updates</title>
-      <link>//localhost:1313/en/post/2024-03-18-ios-ipados-18-4-release/</link>
+      <link>http://localhost:1313/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</link>
+      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>iOS and iPadOS 18.4: A Comprehensive Overview of the Latest Updates</title>
+      <link>http://localhost:1313/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</link>
       <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-03-18-ios-ipados-18-4-release/</guid>
+      <guid>http://localhost:1313/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</guid>
       <description></description>
       
     </item>

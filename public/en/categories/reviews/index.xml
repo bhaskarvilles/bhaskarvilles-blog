@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reviews on Bhaskar&#39;s Website</title>
-    <link>//localhost:1313/en/categories/reviews/</link>
+    <link>http://localhost:1313/en/categories/reviews/</link>
     <description>Recent Posts in Reviews on Bhaskar&#39;s Website</description>
-    <generator>Hugo 0.147.3</generator>
+    <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/en/categories/reviews/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/reviews/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Core of OpenAI o1</title>
-      <link>//localhost:1313/en/post/2024-09-12-openai-o1-preview/</link>
+      <link>http://localhost:1313/en/post/the-core-of-openai-o1/</link>
       <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-12-openai-o1-preview/</guid>
+      <guid>http://localhost:1313/en/post/the-core-of-openai-o1/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Apple Airpods 4: Apple&#39;s next-generation wireless earbuds with improved audio quality, adaptive noise cancellation, and personalized spatial audio.</title>
-      <link>//localhost:1313/en/post/2024-09-09-apple-airpods-4/</link>
+      <link>http://localhost:1313/en/post/apple-airpods-4-apples-next-generation-wireless-earbuds-with-improved-audio-quality-adaptive-noise-cancellation-and-personalized-spatial-audio./</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-09-apple-airpods-4/</guid>
+      <guid>http://localhost:1313/en/post/apple-airpods-4-apples-next-generation-wireless-earbuds-with-improved-audio-quality-adaptive-noise-cancellation-and-personalized-spatial-audio./</guid>
       <description></description>
       
     </item>
     <item>
       <title>Apple Watch Ultra 2 &amp; Series 10 Watch: The rugged, high-performance smartwatch designed for extreme conditions, featuring a larger display, advanced sensors, and enhanced durability.</title>
-      <link>//localhost:1313/en/post/2024-09-09-apple-watch-ultra-2/</link>
+      <link>http://localhost:1313/en/post/apple-watch-ultra-2-series-10-watch-the-rugged-high-performance-smartwatch-designed-for-extreme-conditions-featuring-a-larger-display-advanced-sensors-and-enhanced-durability./</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-09-apple-watch-ultra-2/</guid>
+      <guid>http://localhost:1313/en/post/apple-watch-ultra-2-series-10-watch-the-rugged-high-performance-smartwatch-designed-for-extreme-conditions-featuring-a-larger-display-advanced-sensors-and-enhanced-durability./</guid>
       <description></description>
       
     </item>
     <item>
       <title>iPhone 16 Series: Apple&#39;s latest flagship smartphones, offering groundbreaking advancements in camera technology and performance with new features across four models.</title>
-      <link>//localhost:1313/en/post/2024-09-09-apple-iphone16-and-16-pro/</link>
+      <link>http://localhost:1313/en/post/iphone-16-series-apples-latest-flagship-smartphones-offering-groundbreaking-advancements-in-camera-technology-and-performance-with-new-features-across-four-models./</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-09-apple-iphone16-and-16-pro/</guid>
+      <guid>http://localhost:1313/en/post/iphone-16-series-apples-latest-flagship-smartphones-offering-groundbreaking-advancements-in-camera-technology-and-performance-with-new-features-across-four-models./</guid>
       <description></description>
       
     </item>
     <item>
       <title>ASUS Gaming Devices: Unleashing the Power of Superior Services</title>
-      <link>//localhost:1313/en/post/2024-09-03-asus-gaming-experience-unveiled/</link>
+      <link>http://localhost:1313/en/post/asus-gaming-devices-unleashing-the-power-of-superior-services/</link>
       <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-03-asus-gaming-experience-unveiled/</guid>
+      <guid>http://localhost:1313/en/post/asus-gaming-devices-unleashing-the-power-of-superior-services/</guid>
       <description></description>
       
     </item>

@@ -2,714 +2,759 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Post on Bhaskar&#39;s Website</title>
-    <link>//localhost:1313/en/post/</link>
+    <link>http://localhost:1313/en/post/</link>
     <description>Recent Posts in Post on Bhaskar&#39;s Website</description>
-    <generator>Hugo 0.147.3</generator>
+    <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/en/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agentic AI: How Autonomous Systems Are Transforming Industries in 2026</title>
+      <link>http://localhost:1313/en/post/agentic-ai-autonomous-systems-transforming-industries-2026/</link>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/agentic-ai-autonomous-systems-transforming-industries-2026/</guid>
+      <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      <enclosure url="/images/posts/agentic-ai-2026.jpg" length="0" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Edge AI and On-Device Inference in 2026: Complete Implementation Guide</title>
+      <link>http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/</link>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/</guid>
+      <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      <enclosure url="/images/posts/edge-ai-2026.jpg" length="0" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Multimodal AI in 2026: GPT-5.5, Claude Opus 4.7, and Gemini 3.1 Pro Compared</title>
+      <link>http://localhost:1313/en/post/multimodal-ai-2026-gpt5-claude-gemini-comparison/</link>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/multimodal-ai-2026-gpt5-claude-gemini-comparison/</guid>
+      <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      <enclosure url="/images/posts/multimodal-ai-comparison-2026.jpg" length="0" type="image/jpeg" />
+    </item>
+    <item>
+      <title>WWDC 2025: Apple&#39;s Vision for the Future</title>
+      <link>http://localhost:1313/en/post/wwdc-2025-apples-vision-for-the-future/</link>
+      <pubDate>Mon, 09 Jun 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/wwdc-2025-apples-vision-for-the-future/</guid>
+      <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      
+    </item>
+    <item>
+      <title>Apple WWDC 2025: What to Expect on June 9</title>
+      <link>http://localhost:1313/en/post/apple-wwdc-2025-what-to-expect-on-june-9/</link>
+      <pubDate>Wed, 04 Jun 2025 00:00:00 +0000</pubDate>
+      <author>Bhaskar</author>
+      <guid>http://localhost:1313/en/post/apple-wwdc-2025-what-to-expect-on-june-9/</guid>
+      <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      
+    </item>
     <item>
       <title>The Layered Cosmos: Toward a Unified Theory of Everything</title>
-      <link>//localhost:1313/en/post/2025-05-10-toe/</link>
+      <link>http://localhost:1313/en/post/the-layered-cosmos-toward-a-unified-theory-of-everything/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-05-10-toe/</guid>
+      <guid>http://localhost:1313/en/post/the-layered-cosmos-toward-a-unified-theory-of-everything/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Apple&#39;s 2025 Lineup: A Glimpse into the Future of Innovation</title>
-      <link>//localhost:1313/en/post/2025-04-28-apple-new-updates/</link>
+      <link>http://localhost:1313/en/post/apples-2025-lineup-a-glimpse-into-the-future-of-innovation/</link>
       <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-04-28-apple-new-updates/</guid>
+      <guid>http://localhost:1313/en/post/apples-2025-lineup-a-glimpse-into-the-future-of-innovation/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Revolutionary Advances in Gene Editing: The Zenomics Breakthrough</title>
-      <link>//localhost:1313/en/post/2025-04-15-advanced-gene-editing-zenomics/</link>
+      <link>http://localhost:1313/en/post/revolutionary-advances-in-gene-editing-the-zenomics-breakthrough/</link>
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-04-15-advanced-gene-editing-zenomics/</guid>
+      <guid>http://localhost:1313/en/post/revolutionary-advances-in-gene-editing-the-zenomics-breakthrough/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Kerdos AI Introduces Enterprise-Grade AI API Platform</title>
-      <link>//localhost:1313/en/post/2025-04-14-kerdos-ai-platform/</link>
+      <link>http://localhost:1313/en/post/kerdos-ai-introduces-enterprise-grade-ai-api-platform/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-04-14-kerdos-ai-platform/</guid>
+      <guid>http://localhost:1313/en/post/kerdos-ai-introduces-enterprise-grade-ai-api-platform/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Kerdos AI Launches Revolutionary Image Generator Powered by Stable Diffusion XL</title>
-      <link>//localhost:1313/en/post/2025-04-14-kerdos-ai-image-generator/</link>
+      <link>http://localhost:1313/en/post/kerdos-ai-launches-revolutionary-image-generator-powered-by-stable-diffusion-xl/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-04-14-kerdos-ai-image-generator/</guid>
+      <guid>http://localhost:1313/en/post/kerdos-ai-launches-revolutionary-image-generator-powered-by-stable-diffusion-xl/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Kerdos AI Unveils Next-Generation Chat Application</title>
-      <link>//localhost:1313/en/post/2025-04-14-kerdos-ai-chat-application/</link>
+      <link>http://localhost:1313/en/post/kerdos-ai-unveils-next-generation-chat-application/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-04-14-kerdos-ai-chat-application/</guid>
+      <guid>http://localhost:1313/en/post/kerdos-ai-unveils-next-generation-chat-application/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Proposal to Extend NumPy Broadcasting for Enhanced Array Operations</title>
-      <link>//localhost:1313/en/post/2025-03-29-numpy-new-updates/</link>
+      <link>http://localhost:1313/en/post/proposal-to-extend-numpy-broadcasting-for-enhanced-array-operations/</link>
       <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-03-29-numpy-new-updates/</guid>
+      <guid>http://localhost:1313/en/post/proposal-to-extend-numpy-broadcasting-for-enhanced-array-operations/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>iOS and iPadOS 18.4: A Comprehensive Overview of the Latest Updates</title>
-      <link>//localhost:1313/en/post/2025-03-24-ios-ipados-18-4-release/</link>
+      <link>http://localhost:1313/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</link>
       <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-03-24-ios-ipados-18-4-release/</guid>
+      <guid>http://localhost:1313/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Unlocking the Power of Kerdos Vision AI for Image Generation</title>
-      <link>//localhost:1313/en/post/2025-03-18-kerdos-vision-ai/</link>
+      <link>http://localhost:1313/en/post/unlocking-the-power-of-kerdos-vision-ai-for-image-generation/</link>
       <pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-03-18-kerdos-vision-ai/</guid>
+      <guid>http://localhost:1313/en/post/unlocking-the-power-of-kerdos-vision-ai-for-image-generation/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Kerdos AI Launches Revolutionary Chat Application with OpenAI Integration</title>
-      <link>//localhost:1313/en/post/2025-03-15-kerdos-ai-launched-chat-application/</link>
+      <link>http://localhost:1313/en/post/kerdos-ai-launches-revolutionary-chat-application-with-openai-integration/</link>
       <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-03-15-kerdos-ai-launched-chat-application/</guid>
+      <guid>http://localhost:1313/en/post/kerdos-ai-launches-revolutionary-chat-application-with-openai-integration/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Finding Your Inner Drive: A Guide to Motivation</title>
-      <link>//localhost:1313/en/post/2025-03-09-finding-your-inner-drive/</link>
+      <link>http://localhost:1313/en/post/finding-your-inner-drive-a-guide-to-motivation/</link>
       <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-03-09-finding-your-inner-drive/</guid>
+      <guid>http://localhost:1313/en/post/finding-your-inner-drive-a-guide-to-motivation/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Internet Archive hacked, data breach impacts 31 million users</title>
-      <link>//localhost:1313/en/post/2025-02-24-archive-org-30-million-users-databreach/</link>
+      <link>http://localhost:1313/en/post/internet-archive-hacked-data-breach-impacts-31-million-users/</link>
       <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-02-24-archive-org-30-million-users-databreach/</guid>
+      <guid>http://localhost:1313/en/post/internet-archive-hacked-data-breach-impacts-31-million-users/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Running Local Large Language Models (LLMs) for Image Generation</title>
-      <link>//localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/</link>
+      <link>http://localhost:1313/en/post/running-local-large-language-models-llms-for-image-generation/</link>
       <pubDate>Sat, 08 Feb 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-02-08-running-image-generation-models-locally/</guid>
+      <guid>http://localhost:1313/en/post/running-local-large-language-models-llms-for-image-generation/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>The Dark Side of AI: Navigating Ethical Challenges in Artificial Intelligence</title>
-      <link>//localhost:1313/en/post/2024-12-27-the-dark-side-of-ai/</link>
+      <link>http://localhost:1313/en/post/the-dark-side-of-ai-navigating-ethical-challenges-in-artificial-intelligence/</link>
       <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-12-27-the-dark-side-of-ai/</guid>
+      <guid>http://localhost:1313/en/post/the-dark-side-of-ai-navigating-ethical-challenges-in-artificial-intelligence/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Building the Future of OpenSearch: Community-Driven Innovation</title>
-      <link>//localhost:1313/en/post/2024-11-01-building-future-opensearch/</link>
+      <link>http://localhost:1313/en/post/building-the-future-of-opensearch-community-driven-innovation/</link>
       <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-11-01-building-future-opensearch/</guid>
+      <guid>http://localhost:1313/en/post/building-the-future-of-opensearch-community-driven-innovation/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>BHASKAR: Transforming India&#39;s Startup Ecosystem</title>
-      <link>//localhost:1313/en/post/2024-10-25-bhaskar-platform/</link>
+      <link>http://localhost:1313/en/post/bhaskar-transforming-indias-startup-ecosystem/</link>
       <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-10-25-bhaskar-platform/</guid>
+      <guid>http://localhost:1313/en/post/bhaskar-transforming-indias-startup-ecosystem/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Technical Deep Dive: How Claude AI Can Control Computers</title>
-      <link>//localhost:1313/en/post/2024-10-23-claude-ai-computer-control/</link>
+      <link>http://localhost:1313/en/post/technical-deep-dive-how-claude-ai-can-control-computers/</link>
       <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-10-23-claude-ai-computer-control/</guid>
+      <guid>http://localhost:1313/en/post/technical-deep-dive-how-claude-ai-can-control-computers/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Snapdragon 8 Elite: Revolutionizing Mobile Performance</title>
-      <link>//localhost:1313/en/post/2024-10-22-snapdragon-8-elite-mobile/</link>
+      <link>http://localhost:1313/en/post/snapdragon-8-elite-revolutionizing-mobile-performance/</link>
       <pubDate>Tue, 22 Oct 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-10-22-snapdragon-8-elite-mobile/</guid>
+      <guid>http://localhost:1313/en/post/snapdragon-8-elite-revolutionizing-mobile-performance/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>From $20 to $52,000 in 30 Days: Exploring the 20 Pips a Day Challenge Strategy</title>
-      <link>//localhost:1313/en/post/2024-10-05-20-to-53k-trading-strategy/</link>
+      <link>http://localhost:1313/en/post/from-20-to-52000-in-30-days-exploring-the-20-pips-a-day-challenge-strategy/</link>
       <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-10-05-20-to-53k-trading-strategy/</guid>
+      <guid>http://localhost:1313/en/post/from-20-to-52000-in-30-days-exploring-the-20-pips-a-day-challenge-strategy/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>The Remarkable Journey of a Japanese Trader: From $15K to $150 Million</title>
-      <link>//localhost:1313/en/post/2024-10-04-bnf-trader/</link>
+      <link>http://localhost:1313/en/post/the-remarkable-journey-of-a-japanese-trader-from-15k-to-150-million/</link>
       <pubDate>Fri, 04 Oct 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-10-04-bnf-trader/</guid>
+      <guid>http://localhost:1313/en/post/the-remarkable-journey-of-a-japanese-trader-from-15k-to-150-million/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Israel&#39;s Air Strike on Damascus: Rising Tensions Amidst Iranian Influence</title>
-      <link>//localhost:1313/en/post/2024-10-03-israel-air-strike/</link>
+      <link>http://localhost:1313/en/post/israels-air-strike-on-damascus-rising-tensions-amidst-iranian-influence/</link>
       <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-10-03-israel-air-strike/</guid>
+      <guid>http://localhost:1313/en/post/israels-air-strike-on-damascus-rising-tensions-amidst-iranian-influence/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Building a Python Keylogger: A Security Researcher’s development to Understanding Keystroke Logging</title>
-      <link>//localhost:1313/en/post/2024-09-24-python-keylogger/</link>
+      <link>http://localhost:1313/en/post/building-a-python-keylogger-a-security-researchers-development-to-understanding-keystroke-logging/</link>
       <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-24-python-keylogger/</guid>
+      <guid>http://localhost:1313/en/post/building-a-python-keylogger-a-security-researchers-development-to-understanding-keystroke-logging/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>The Power of Event-Driven Architecture (EDA): How Netflix and Uber Handle Billions of Events Daily</title>
-      <link>//localhost:1313/en/post/2024-09-23-event-driven-architecture/</link>
+      <link>http://localhost:1313/en/post/the-power-of-event-driven-architecture-eda-how-netflix-and-uber-handle-billions-of-events-daily/</link>
       <pubDate>Mon, 23 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-23-event-driven-architecture/</guid>
+      <guid>http://localhost:1313/en/post/the-power-of-event-driven-architecture-eda-how-netflix-and-uber-handle-billions-of-events-daily/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Mastering Customer Acquisition: Strategies for Small-Scale to Medium-Scale Industries</title>
-      <link>//localhost:1313/en/post/2024-09-22-customer-acquisition/</link>
+      <link>http://localhost:1313/en/post/mastering-customer-acquisition-strategies-for-small-scale-to-medium-scale-industries/</link>
       <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-22-customer-acquisition/</guid>
+      <guid>http://localhost:1313/en/post/mastering-customer-acquisition-strategies-for-small-scale-to-medium-scale-industries/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>JSMON: Revolutionizing JavaScript Security Monitoring</title>
-      <link>//localhost:1313/en/post/2024-09-20-jsmon-sh/</link>
+      <link>http://localhost:1313/en/post/jsmon-revolutionizing-javascript-security-monitoring/</link>
       <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-20-jsmon-sh/</guid>
+      <guid>http://localhost:1313/en/post/jsmon-revolutionizing-javascript-security-monitoring/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Why India Can&#39;t Yet Replicate the Success of Black Myth: Wukong in the AAA PC Game Market</title>
-      <link>//localhost:1313/en/post/2024-09-17-indian-aaa-game-market/</link>
+      <link>http://localhost:1313/en/post/why-india-cant-yet-replicate-the-success-of-black-myth-wukong-in-the-aaa-pc-game-market/</link>
       <pubDate>Tue, 17 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-17-indian-aaa-game-market/</guid>
+      <guid>http://localhost:1313/en/post/why-india-cant-yet-replicate-the-success-of-black-myth-wukong-in-the-aaa-pc-game-market/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Announcing My Candidacy for the OWASP Global Board of Directors 2024</title>
-      <link>//localhost:1313/en/post/2024-09-15-owasp-candidate/</link>
+      <link>http://localhost:1313/en/post/announcing-my-candidacy-for-the-owasp-global-board-of-directors-2024/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-15-owasp-candidate/</guid>
+      <guid>http://localhost:1313/en/post/announcing-my-candidacy-for-the-owasp-global-board-of-directors-2024/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>The Core of OpenAI o1</title>
-      <link>//localhost:1313/en/post/2024-09-12-openai-o1-preview/</link>
+      <link>http://localhost:1313/en/post/the-core-of-openai-o1/</link>
       <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-12-openai-o1-preview/</guid>
+      <guid>http://localhost:1313/en/post/the-core-of-openai-o1/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Apple Airpods 4: Apple&#39;s next-generation wireless earbuds with improved audio quality, adaptive noise cancellation, and personalized spatial audio.</title>
-      <link>//localhost:1313/en/post/2024-09-09-apple-airpods-4/</link>
+      <link>http://localhost:1313/en/post/apple-airpods-4-apples-next-generation-wireless-earbuds-with-improved-audio-quality-adaptive-noise-cancellation-and-personalized-spatial-audio./</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-09-apple-airpods-4/</guid>
+      <guid>http://localhost:1313/en/post/apple-airpods-4-apples-next-generation-wireless-earbuds-with-improved-audio-quality-adaptive-noise-cancellation-and-personalized-spatial-audio./</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Apple Watch Ultra 2 &amp; Series 10 Watch: The rugged, high-performance smartwatch designed for extreme conditions, featuring a larger display, advanced sensors, and enhanced durability.</title>
-      <link>//localhost:1313/en/post/2024-09-09-apple-watch-ultra-2/</link>
+      <link>http://localhost:1313/en/post/apple-watch-ultra-2-series-10-watch-the-rugged-high-performance-smartwatch-designed-for-extreme-conditions-featuring-a-larger-display-advanced-sensors-and-enhanced-durability./</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-09-apple-watch-ultra-2/</guid>
+      <guid>http://localhost:1313/en/post/apple-watch-ultra-2-series-10-watch-the-rugged-high-performance-smartwatch-designed-for-extreme-conditions-featuring-a-larger-display-advanced-sensors-and-enhanced-durability./</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>iPhone 16 Series: Apple&#39;s latest flagship smartphones, offering groundbreaking advancements in camera technology and performance with new features across four models.</title>
-      <link>//localhost:1313/en/post/2024-09-09-apple-iphone16-and-16-pro/</link>
+      <link>http://localhost:1313/en/post/iphone-16-series-apples-latest-flagship-smartphones-offering-groundbreaking-advancements-in-camera-technology-and-performance-with-new-features-across-four-models./</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-09-apple-iphone16-and-16-pro/</guid>
+      <guid>http://localhost:1313/en/post/iphone-16-series-apples-latest-flagship-smartphones-offering-groundbreaking-advancements-in-camera-technology-and-performance-with-new-features-across-four-models./</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>ASUS Gaming Devices: Unleashing the Power of Superior Services</title>
-      <link>//localhost:1313/en/post/2024-09-03-asus-gaming-experience-unveiled/</link>
+      <link>http://localhost:1313/en/post/asus-gaming-devices-unleashing-the-power-of-superior-services/</link>
       <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-03-asus-gaming-experience-unveiled/</guid>
+      <guid>http://localhost:1313/en/post/asus-gaming-devices-unleashing-the-power-of-superior-services/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Discovering JavaScript Files with JSFinder</title>
-      <link>//localhost:1313/en/post/2024-08-31-jsfinder-standard/</link>
+      <link>http://localhost:1313/en/post/discovering-javascript-files-with-jsfinder/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-08-31-jsfinder-standard/</guid>
+      <guid>http://localhost:1313/en/post/discovering-javascript-files-with-jsfinder/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>EU&#39;s Stance on Lifting Restrictions for Kiev&#39;s Strikes on Russian Territory: Risks, Benefits, and Future Implications</title>
-      <link>//localhost:1313/en/post/2024-08-29-eu-ristrictions-on-kiev-strikes/</link>
+      <link>http://localhost:1313/en/post/eus-stance-on-lifting-restrictions-for-kievs-strikes-on-russian-territory-risks-benefits-and-future-implications/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-08-29-eu-ristrictions-on-kiev-strikes/</guid>
+      <guid>http://localhost:1313/en/post/eus-stance-on-lifting-restrictions-for-kievs-strikes-on-russian-territory-risks-benefits-and-future-implications/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>The Dark Side of AI in Call Summarization: Privacy, Personalization</title>
-      <link>//localhost:1313/en/post/2024-08-29-the-dark-side-of-ai-calls-summary/</link>
+      <link>http://localhost:1313/en/post/the-dark-side-of-ai-in-call-summarization-privacy-personalization/</link>
       <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-08-29-the-dark-side-of-ai-calls-summary/</guid>
+      <guid>http://localhost:1313/en/post/the-dark-side-of-ai-in-call-summarization-privacy-personalization/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Advanced RISC Machines</title>
-      <link>//localhost:1313/en/post/2024-08-21-arm-processors/</link>
+      <link>http://localhost:1313/en/post/advanced-risc-machines/</link>
       <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-08-21-arm-processors/</guid>
+      <guid>http://localhost:1313/en/post/advanced-risc-machines/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Running LLaMA 3.1 Locally with Ollama: A Step-by-Step process</title>
-      <link>//localhost:1313/en/post/2024-08-20-running-llama3.1-locally-on-your-system/</link>
+      <link>http://localhost:1313/en/post/running-llama-3.1-locally-with-ollama-a-step-by-step-process/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-08-20-running-llama3.1-locally-on-your-system/</guid>
+      <guid>http://localhost:1313/en/post/running-llama-3.1-locally-with-ollama-a-step-by-step-process/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Evacuation Urged in Ukrainian-Controlled DPR Cities: A Dire Call for Safety</title>
-      <link>//localhost:1313/en/post/2024-08-18-evacuation-in-ukrain/</link>
+      <link>http://localhost:1313/en/post/evacuation-urged-in-ukrainian-controlled-dpr-cities-a-dire-call-for-safety/</link>
       <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-08-18-evacuation-in-ukrain/</guid>
+      <guid>http://localhost:1313/en/post/evacuation-urged-in-ukrainian-controlled-dpr-cities-a-dire-call-for-safety/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Intercepting Mobile Calls: A Deep Dive into Threats to National Security</title>
-      <link>//localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/</link>
+      <link>http://localhost:1313/en/post/intercepting-mobile-calls-a-deep-dive-into-threats-to-national-security/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-08-14-intercepting-phone-technologies/</guid>
+      <guid>http://localhost:1313/en/post/intercepting-mobile-calls-a-deep-dive-into-threats-to-national-security/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Whistleblower Documents Expose SEBI Chairperson&#39;s Alleged Involvement in the Adani Money Siphoning Scandal</title>
-      <link>//localhost:1313/en/post/2024-08-11-sebi-chair-involved-in-adani-foreign-investors-scandal/</link>
+      <link>http://localhost:1313/en/post/whistleblower-documents-expose-sebi-chairpersons-alleged-involvement-in-the-adani-money-siphoning-scandal/</link>
       <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-08-11-sebi-chair-involved-in-adani-foreign-investors-scandal/</guid>
+      <guid>http://localhost:1313/en/post/whistleblower-documents-expose-sebi-chairpersons-alleged-involvement-in-the-adani-money-siphoning-scandal/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>The US &amp; Islamists: A History of Connivance in Syria</title>
-      <link>//localhost:1313/en/post/2024-08-07-syrian-civil-war-3/</link>
+      <link>http://localhost:1313/en/post/the-us-islamists-a-history-of-connivance-in-syria/</link>
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-08-07-syrian-civil-war-3/</guid>
+      <guid>http://localhost:1313/en/post/the-us-islamists-a-history-of-connivance-in-syria/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Exploring Microservices Architecture: Benefits, Challenges, and Best Practices</title>
-      <link>//localhost:1313/en/post/2024-08-04-microservices/</link>
+      <link>http://localhost:1313/en/post/exploring-microservices-architecture-benefits-challenges-and-best-practices/</link>
       <pubDate>Sun, 04 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-08-04-microservices/</guid>
+      <guid>http://localhost:1313/en/post/exploring-microservices-architecture-benefits-challenges-and-best-practices/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Understanding Artificial Neural Networks (ANNs) and Convolutional Neural Networks (CNNs)</title>
-      <link>//localhost:1313/en/post/2024-07-29-ann-cnn/</link>
+      <link>http://localhost:1313/en/post/understanding-artificial-neural-networks-anns-and-convolutional-neural-networks-cnns/</link>
       <pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-07-29-ann-cnn/</guid>
+      <guid>http://localhost:1313/en/post/understanding-artificial-neural-networks-anns-and-convolutional-neural-networks-cnns/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Resilience in Custom Linux Distributions: A Solution to Microsoft Windows Outages</title>
-      <link>//localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/</link>
+      <link>http://localhost:1313/en/post/resilience-in-custom-linux-distributions-a-solution-to-microsoft-windows-outages/</link>
       <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-07-19-windows-alternatives-for-people-of-internet/</guid>
+      <guid>http://localhost:1313/en/post/resilience-in-custom-linux-distributions-a-solution-to-microsoft-windows-outages/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Contributions to Open Source Projects</title>
-      <link>//localhost:1313/en/post/2024-07-18-my-security-contributions/</link>
+      <link>http://localhost:1313/en/post/contributions-to-open-source-projects/</link>
       <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-07-18-my-security-contributions/</guid>
+      <guid>http://localhost:1313/en/post/contributions-to-open-source-projects/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Zero Knowledge Protocols (ZK)</title>
-      <link>//localhost:1313/en/post/2024-07-15-advancements-of-ai-through-digital-innovation/</link>
+      <link>http://localhost:1313/en/post/zero-knowledge-protocols-zk/</link>
       <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-07-15-advancements-of-ai-through-digital-innovation/</guid>
+      <guid>http://localhost:1313/en/post/zero-knowledge-protocols-zk/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>iOS and iPadOS 18.4: A Comprehensive Overview of the Latest Updates</title>
-      <link>//localhost:1313/en/post/2024-03-18-ios-ipados-18-4-release/</link>
+      <link>http://localhost:1313/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</link>
       <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-03-18-ios-ipados-18-4-release/</guid>
+      <guid>http://localhost:1313/en/post/ios-and-ipados-18.4-a-comprehensive-overview-of-the-latest-updates/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Advanced Digital Marketing: Integrating AI, GPTs, and Blockchain Technologies for and secure record of ad impressions and clicks.</title>
-      <link>//localhost:1313/en/post/2023-06-07-ai-gpt-blockchain-in-digital-marketing/</link>
+      <link>http://localhost:1313/en/post/advanced-digital-marketing-integrating-ai-gpts-and-blockchain-technologies-for-and-secure-record-of-ad-impressions-and-clicks./</link>
       <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-06-07-ai-gpt-blockchain-in-digital-marketing/</guid>
+      <guid>http://localhost:1313/en/post/advanced-digital-marketing-integrating-ai-gpts-and-blockchain-technologies-for-and-secure-record-of-ad-impressions-and-clicks./</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Designing Your Own Language Model with DeepFloyd AI</title>
-      <link>//localhost:1313/en/post/2023-05-18-create-your-own-ai-language-model/</link>
+      <link>http://localhost:1313/en/post/designing-your-own-language-model-with-deepfloyd-ai/</link>
       <pubDate>Fri, 19 May 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-05-18-create-your-own-ai-language-model/</guid>
+      <guid>http://localhost:1313/en/post/designing-your-own-language-model-with-deepfloyd-ai/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Google Bard: A Large Language Model Chatbot</title>
-      <link>//localhost:1313/en/post/2023-05-16-google-bard/</link>
+      <link>http://localhost:1313/en/post/google-bard-large-language-model-chatbot/</link>
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-05-16-google-bard/</guid>
+      <guid>http://localhost:1313/en/post/google-bard-large-language-model-chatbot/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
-      
+      <enclosure url="/images/posts/google-bard.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>ChatGPT vs. Humans: Delving Deeper into Technical and Brain Intelligence Aspects</title>
-      <link>//localhost:1313/en/post/2023-05-07-ai-and-human-intelligence/</link>
+      <link>http://localhost:1313/en/post/chatgpt-vs-human-intelligence-comparison/</link>
       <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-05-07-ai-and-human-intelligence/</guid>
+      <guid>http://localhost:1313/en/post/chatgpt-vs-human-intelligence-comparison/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
-      
+      <enclosure url="/images/posts/ai-human-intelligence.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>DeepFloyd-IF: A Pixel-Based Triple-Cascaded Diffusion Model for Photorealistic Text-to-Image Generation</title>
-      <link>//localhost:1313/en/post/2023-05-04-deepfloyid-if/</link>
+      <link>http://localhost:1313/en/post/deepfloyd-if-a-pixel-based-triple-cascaded-diffusion-model-for-photorealistic-text-to-image-generation/</link>
       <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-05-04-deepfloyid-if/</guid>
+      <guid>http://localhost:1313/en/post/deepfloyd-if-a-pixel-based-triple-cascaded-diffusion-model-for-photorealistic-text-to-image-generation/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>The Evolution of AI: Introducing GPT-3.5 With Live Browsing</title>
-      <link>//localhost:1313/en/post/2023-04-26-chat-gpt-with-browsing/</link>
+      <link>http://localhost:1313/en/post/the-evolution-of-ai-introducing-gpt-3.5-with-live-browsing/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-04-26-chat-gpt-with-browsing/</guid>
+      <guid>http://localhost:1313/en/post/the-evolution-of-ai-introducing-gpt-3.5-with-live-browsing/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Implantable Brain Machines: The Future of Human-Computer Interaction</title>
-      <link>//localhost:1313/en/post/2023-04-24-ibms/</link>
+      <link>http://localhost:1313/en/post/implantable-brain-machines-the-future-of-human-computer-interaction/</link>
       <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-04-24-ibms/</guid>
+      <guid>http://localhost:1313/en/post/implantable-brain-machines-the-future-of-human-computer-interaction/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Manually Computing Travel Times for Long-Distance Flights and Space Travel: Uncovering the Precise Power-Law Relationship between Travel Time and Distance</title>
-      <link>//localhost:1313/en/post/2022-04-17-gpt3/</link>
+      <link>http://localhost:1313/en/post/manually-computing-travel-times-for-long-distance-flights-and-space-travel-uncovering-the-precise-power-law-relationship-between-travel-time-and-distance/</link>
       <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-04-17-gpt3/</guid>
+      <guid>http://localhost:1313/en/post/manually-computing-travel-times-for-long-distance-flights-and-space-travel-uncovering-the-precise-power-law-relationship-between-travel-time-and-distance/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Tools for reconnaissance and footprinting</title>
-      <link>//localhost:1313/en/post/2023-04-15-awesome-recon-tools/</link>
+      <link>http://localhost:1313/en/post/reconnaissance-footprinting-tools-guide/</link>
       <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-04-15-awesome-recon-tools/</guid>
+      <guid>http://localhost:1313/en/post/reconnaissance-footprinting-tools-guide/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
-      
+      <enclosure url="/images/posts/recon-tools.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>The Rise of ZK-EVMs: How Ethereum&#39;s Multi-Client Philosophy Enables Continued Decentralization</title>
-      <link>//localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/</link>
+      <link>http://localhost:1313/en/post/the-rise-of-zk-evms-how-ethereums-multi-client-philosophy-enables-continued-decentralization/</link>
       <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-04-10-how-ethereum-makes-decentralization-possible/</guid>
+      <guid>http://localhost:1313/en/post/the-rise-of-zk-evms-how-ethereums-multi-client-philosophy-enables-continued-decentralization/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Advanced SEO with AI: How Machine Learning and Natural Language Processing Are Changing the Game</title>
-      <link>//localhost:1313/en/post/2023-03-07-advanced-seo-with-ai/</link>
+      <link>http://localhost:1313/en/post/advanced-seo-with-ai-how-machine-learning-and-natural-language-processing-are-changing-the-game/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-03-07-advanced-seo-with-ai/</guid>
+      <guid>http://localhost:1313/en/post/advanced-seo-with-ai-how-machine-learning-and-natural-language-processing-are-changing-the-game/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Layer 1 for Artificial Intelligence</title>
-      <link>//localhost:1313/en/post/2023-03-03-layer-1-for-artificial-intelligence/</link>
+      <link>http://localhost:1313/en/post/layer-1-for-artificial-intelligence/</link>
       <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-03-03-layer-1-for-artificial-intelligence/</guid>
+      <guid>http://localhost:1313/en/post/layer-1-for-artificial-intelligence/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>The Filecoin EVM (FEVM) is the Ethereum Virtual Machine (EVM) virtualized as a runtime on top of the Filecoin Virtual Machine (FVM). Before understanding the FEVM you must be familiar with the regular EVM.</title>
-      <link>//localhost:1313/en/post/2023-01-20-fvm/</link>
+      <link>http://localhost:1313/en/post/the-filecoin-evm-fevm-is-the-ethereum-virtual-machine-evm-virtualized-as-a-runtime-on-top-of-the-filecoin-virtual-machine-fvm.-before-understanding-the-fevm-you-must-be-familiar-with-the-regular-evm./</link>
       <pubDate>Fri, 20 Jan 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-01-20-fvm/</guid>
+      <guid>http://localhost:1313/en/post/the-filecoin-evm-fevm-is-the-ethereum-virtual-machine-evm-virtualized-as-a-runtime-on-top-of-the-filecoin-virtual-machine-fvm.-before-understanding-the-fevm-you-must-be-familiar-with-the-regular-evm./</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>DAOs and the Future of Decentralization - Insights from Bhaskar Developer, ETHGlobal Fellow, and Vitalik Buterin, the founder of Ethereum</title>
-      <link>//localhost:1313/en/post/2023-01-16-daos-are-not-corporations-where-decentralization-in-autonomous-organizations-matters/</link>
+      <link>http://localhost:1313/en/post/daos-and-the-future-of-decentralization-insights-from-bhaskar-developer-ethglobal-fellow-and-vitalik-buterin-the-founder-of-ethereum/</link>
       <pubDate>Wed, 21 Dec 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-01-16-daos-are-not-corporations-where-decentralization-in-autonomous-organizations-matters/</guid>
+      <guid>http://localhost:1313/en/post/daos-and-the-future-of-decentralization-insights-from-bhaskar-developer-ethglobal-fellow-and-vitalik-buterin-the-founder-of-ethereum/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>OpenAI and ChatGPT</title>
-      <link>//localhost:1313/en/post/2022-12-21-chat-gpt/</link>
+      <link>http://localhost:1313/en/post/openai-chatgpt-introduction-guide/</link>
       <pubDate>Wed, 21 Dec 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-12-21-chat-gpt/</guid>
+      <guid>http://localhost:1313/en/post/openai-chatgpt-introduction-guide/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
-      
+      <enclosure url="/images/posts/chatgpt-openai.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>Strassen`s Algorithm</title>
-      <link>//localhost:1313/en/post/2022-12-12-strassens-algorithm/</link>
+      <link>http://localhost:1313/en/post/strassens-algorithm/</link>
       <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-12-12-strassens-algorithm/</guid>
+      <guid>http://localhost:1313/en/post/strassens-algorithm/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Princess Diana – The Twisted Truth and Ritual Sacrifice of the New World Order</title>
-      <link>//localhost:1313/en/post/2022-11-28-princess-diana-investigation-report/</link>
+      <link>http://localhost:1313/en/post/princess-diana-the-twisted-truth-and-ritual-sacrifice-of-the-new-world-order/</link>
       <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-11-28-princess-diana-investigation-report/</guid>
+      <guid>http://localhost:1313/en/post/princess-diana-the-twisted-truth-and-ritual-sacrifice-of-the-new-world-order/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Creating a Wi-Fi Scanner with Python and Scapy</title>
-      <link>//localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/</link>
+      <link>http://localhost:1313/en/post/creating-a-wi-fi-scanner-with-python-and-scapy/</link>
       <pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-11-09-creating-your-own-wifi-scanner/</guid>
+      <guid>http://localhost:1313/en/post/creating-a-wi-fi-scanner-with-python-and-scapy/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Hyperledger Cactus Project moved to Cacti</title>
-      <link>//localhost:1313/en/post/2022-11-05-tsc-approves-cactus-merging-into-cacti/</link>
+      <link>http://localhost:1313/en/post/hyperledger-cactus-project-moved-to-cacti/</link>
       <pubDate>Sat, 05 Nov 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-11-05-tsc-approves-cactus-merging-into-cacti/</guid>
+      <guid>http://localhost:1313/en/post/hyperledger-cactus-project-moved-to-cacti/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Microsoft sued for open-source piracy through GitHub Copilot</title>
-      <link>//localhost:1313/en/post/2022-11-06-microsoft-sued-for-violating-open-source-rules/</link>
+      <link>http://localhost:1313/en/post/microsoft-sued-for-open-source-piracy-through-github-copilot/</link>
       <pubDate>Sat, 05 Nov 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-11-06-microsoft-sued-for-violating-open-source-rules/</guid>
+      <guid>http://localhost:1313/en/post/microsoft-sued-for-open-source-piracy-through-github-copilot/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Google wants to become a key infrastructure provider for Web3</title>
-      <link>//localhost:1313/en/post/2022-10-30-google-launched-blockchain-nodes/</link>
+      <link>http://localhost:1313/en/post/google-wants-to-become-a-key-infrastructure-provider-for-web3/</link>
       <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-10-30-google-launched-blockchain-nodes/</guid>
+      <guid>http://localhost:1313/en/post/google-wants-to-become-a-key-infrastructure-provider-for-web3/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>GNOME 43 Endless Part In Its Creation</title>
-      <link>//localhost:1313/en/post/2022-10-14-gnome-43-endless-part-in-its-creation/</link>
+      <link>http://localhost:1313/en/post/gnome-43-endless-part-in-its-creation/</link>
       <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-10-14-gnome-43-endless-part-in-its-creation/</guid>
+      <guid>http://localhost:1313/en/post/gnome-43-endless-part-in-its-creation/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Google&#39;s new password less authentication technology</title>
-      <link>//localhost:1313/en/post/2022-10-12-google-rolling-new-passwordless-authentication/</link>
+      <link>http://localhost:1313/en/post/googles-new-password-less-authentication-technology/</link>
       <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-10-12-google-rolling-new-passwordless-authentication/</guid>
+      <guid>http://localhost:1313/en/post/googles-new-password-less-authentication-technology/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Risk of Global Recession in 2023 Rises Amid Simultaneous Rate Hikes</title>
-      <link>//localhost:1313/en/post/2022-10-15-risk-of-global-recession-in-2023-rises-amid-simultaneous-rate-hikes/</link>
+      <link>http://localhost:1313/en/post/risk-of-global-recession-in-2023-rises-amid-simultaneous-rate-hikes/</link>
       <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-10-15-risk-of-global-recession-in-2023-rises-amid-simultaneous-rate-hikes/</guid>
+      <guid>http://localhost:1313/en/post/risk-of-global-recession-in-2023-rises-amid-simultaneous-rate-hikes/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Trendlines With Breaks Script</title>
-      <link>//localhost:1313/en/post/2022-10-08-trend-lines-with-breaks/</link>
+      <link>http://localhost:1313/en/post/trendlines-with-breaks-script/</link>
       <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-10-08-trend-lines-with-breaks/</guid>
+      <guid>http://localhost:1313/en/post/trendlines-with-breaks-script/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>New WhatsApp 0-Day Bug Let Hackers Execute a Code &amp; Take Full App Control Remotely</title>
-      <link>//localhost:1313/en/post/2022-09-27-new-whatsapp-0-day-bug-can-access-whatsapp-remotely/</link>
+      <link>http://localhost:1313/en/post/new-whatsapp-0-day-bug-let-hackers-execute-a-code-take-full-app-control-remotely/</link>
       <pubDate>Tue, 27 Sep 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-09-27-new-whatsapp-0-day-bug-can-access-whatsapp-remotely/</guid>
+      <guid>http://localhost:1313/en/post/new-whatsapp-0-day-bug-let-hackers-execute-a-code-take-full-app-control-remotely/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Hyperledger Fabric Deployment — How We Aced it from Testing to Production</title>
-      <link>//localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/</link>
+      <link>http://localhost:1313/en/post/hyperledger-fabric-deployment-how-we-aced-it-from-testing-to-production/</link>
       <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-09-26-fabric-from-development-to-production/</guid>
+      <guid>http://localhost:1313/en/post/hyperledger-fabric-deployment-how-we-aced-it-from-testing-to-production/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Ethereum 2.0 Merging</title>
-      <link>//localhost:1313/en/post/2022-09-21-ethereum-2-0/</link>
+      <link>http://localhost:1313/en/post/ethereum-2.0-merging/</link>
       <pubDate>Wed, 21 Sep 2022 10:18:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-09-21-ethereum-2-0/</guid>
+      <guid>http://localhost:1313/en/post/ethereum-2.0-merging/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Social Engineering Attacks - Creating a Fake SMS Message</title>
-      <link>//localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/</link>
+      <link>http://localhost:1313/en/post/social-engineering-fake-sms-attacks/</link>
       <pubDate>Fri, 09 Sep 2022 10:18:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-09-09-social-engineering-attacks-fake-sms/</guid>
+      <guid>http://localhost:1313/en/post/social-engineering-fake-sms-attacks/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
-      
+      <enclosure url="/images/posts/social-engineering-sms.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>Hitachi Shifts to Paperless, Secure Procurement Contracts with Hyperledger Fabric</title>
-      <link>//localhost:1313/en/post/2022-09-07-hitachi/</link>
+      <link>http://localhost:1313/en/post/hitachi-shifts-to-paperless-secure-procurement-contracts-with-hyperledger-fabric/</link>
       <pubDate>Wed, 07 Sep 2022 11:30:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-09-07-hitachi/</guid>
+      <guid>http://localhost:1313/en/post/hitachi-shifts-to-paperless-secure-procurement-contracts-with-hyperledger-fabric/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>
     <item>
       <title>Digital transformation - 4 key building blocks</title>
-      <link>//localhost:1313/en/post/2021-01-10-digital-transformation/</link>
+      <link>http://localhost:1313/en/post/digital-transformation-4-key-building-blocks/</link>
       <pubDate>Tue, 06 Sep 2022 10:30:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2021-01-10-digital-transformation/</guid>
+      <guid>http://localhost:1313/en/post/digital-transformation-4-key-building-blocks/</guid>
       <description>&lt;p&gt;This section demonstrates a list view layout.&#xA;The post listing style can be modified by adjusting the sitemap changeFreq parameter to values like &amp;ldquo;always&amp;rdquo;, &amp;ldquo;hourly&amp;rdquo;, &amp;ldquo;daily&amp;rdquo;, or &amp;ldquo;weekly&amp;rdquo;.&#xA;This section has been set up with the following configuration:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;---&#xA;title: &amp;quot;Post&amp;quot;&#xA;translationKey: post&#xA;sitemap:&#xA;    changeFreq: &amp;quot;always&amp;quot;&#xA;---&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>

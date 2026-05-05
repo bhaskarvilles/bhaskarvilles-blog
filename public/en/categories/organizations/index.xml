@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Organizations on Bhaskar&#39;s Website</title>
-    <link>//localhost:1313/en/categories/organizations/</link>
+    <link>http://localhost:1313/en/categories/organizations/</link>
     <description>Recent Posts in Organizations on Bhaskar&#39;s Website</description>
-    <generator>Hugo 0.147.3</generator>
+    <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/en/categories/organizations/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/organizations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Filecoin EVM (FEVM) is the Ethereum Virtual Machine (EVM) virtualized as a runtime on top of the Filecoin Virtual Machine (FVM). Before understanding the FEVM you must be familiar with the regular EVM.</title>
-      <link>//localhost:1313/en/post/2023-01-20-fvm/</link>
+      <link>http://localhost:1313/en/post/the-filecoin-evm-fevm-is-the-ethereum-virtual-machine-evm-virtualized-as-a-runtime-on-top-of-the-filecoin-virtual-machine-fvm.-before-understanding-the-fevm-you-must-be-familiar-with-the-regular-evm./</link>
       <pubDate>Fri, 20 Jan 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-01-20-fvm/</guid>
+      <guid>http://localhost:1313/en/post/the-filecoin-evm-fevm-is-the-ethereum-virtual-machine-evm-virtualized-as-a-runtime-on-top-of-the-filecoin-virtual-machine-fvm.-before-understanding-the-fevm-you-must-be-familiar-with-the-regular-evm./</guid>
       <description></description>
       
     </item>
     <item>
       <title>DAOs and the Future of Decentralization - Insights from Bhaskar Developer, ETHGlobal Fellow, and Vitalik Buterin, the founder of Ethereum</title>
-      <link>//localhost:1313/en/post/2023-01-16-daos-are-not-corporations-where-decentralization-in-autonomous-organizations-matters/</link>
+      <link>http://localhost:1313/en/post/daos-and-the-future-of-decentralization-insights-from-bhaskar-developer-ethglobal-fellow-and-vitalik-buterin-the-founder-of-ethereum/</link>
       <pubDate>Wed, 21 Dec 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-01-16-daos-are-not-corporations-where-decentralization-in-autonomous-organizations-matters/</guid>
+      <guid>http://localhost:1313/en/post/daos-and-the-future-of-decentralization-insights-from-bhaskar-developer-ethglobal-fellow-and-vitalik-buterin-the-founder-of-ethereum/</guid>
       <description></description>
       
     </item>

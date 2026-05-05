@@ -1,0 +1,34 @@
+{{- /* VideoObject Schema for Google Rich Results */ -}}
+{{- /* Add VideoObject schema if the page has video front matter */ -}}
+
+{{- if .Params.video -}}
+{{- $thumbnail := "" -}}
+{{- if .Params.video.thumbnail -}}
+  {{- $thumbnail = .Params.video.thumbnail | absURL -}}
+{{- else if .Params.image -}}
+  {{- $thumbnail = .Params.image | absURL -}}
+{{- else -}}
+  {{- $thumbnail = printf "%s/images/social-card-default.jpg" .Site.BaseURL -}}
+{{- end -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "{{ .Params.video.name | default .Title }}",
+  "description": "{{ .Params.video.description | default .Description | default .Summary | plainify }}",
+  "thumbnailUrl": "{{ $thumbnail }}",
+  "uploadDate": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "duration": "{{ .Params.video.duration }}",
+  "contentUrl": "{{ .Params.video.url }}",
+  "embedUrl": "{{ .Params.video.embedUrl }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.BaseURL }}/images/logo.png"
+    }
+  }
+}
+</script>
+{{- end -}}

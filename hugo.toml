@@ -1,5 +1,5 @@
 ## Base URL for the site
-baseURL = ''
+baseURL = 'https://bhaskar.blog'
 ## Site title
 title = "Bhaskar's Website"
 ## Use hugo-brewm theme
@@ -41,9 +41,9 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
 
 ## Sitemap configuration
 [sitemap]
-    changefreq = "daily"
+    changefreq = "weekly"
     filename = "sitemap.xml"
-    priority = 0.8
+    priority = 0.5
 
 ## RSS configuration
 [services.rss]
@@ -56,6 +56,25 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
     tag = 'tags'
     author = 'author'
     series = 'series'
+
+## Permalinks configuration
+[permalinks]
+    post = "/:section/:slug/"
+
+## Related content configuration
+[related]
+    threshold = 80
+    includeNewer = true
+    toLower = false
+    [[related.indices]]
+        name = "categories"
+        weight = 100
+    [[related.indices]]
+        name = "tags"
+        weight = 80
+    [[related.indices]]
+        name = "date"
+        weight = 10
 
 ## Site parameters
 [params]
@@ -72,11 +91,15 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
     ## Enable coffee metric
     coffeeStat = true
     ## Default social card image
-    images = ["/logo.png", "/featured-image.jpg", "/author-avatar.png"]
+    images = ["/images/social-card-default.jpg"]
     ## Do not block AI user agent for robot.txt
     AllowAIRobots = false
     ## ZenMode - Minimize clutter for small site
     ZenMode = false
+    
+    ## SEO Verification (add your verification codes)
+    # googleSiteVerification = "your-google-verification-code"
+    # bingSiteVerification = "your-bing-verification-code"
 
     ## Author information
     [params.author]
@@ -159,7 +182,7 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
     ## Extended Metadata and Social card configuration
     [params.socialCard]
         enable = true
-        images = ["/logo.png", "/featured-image.jpg", "/author-avatar.png"]
+        images = ["/images/social-card-default.jpg"]
         twitter = true
         twitterCreator = "@bhaskarvilles"
         twitterSite = "@bhaskarvilles"
@@ -175,18 +198,18 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
 
 ## Privacy config
 [privacy]
-    [privacy.twitter]
+    [privacy.x]
         enableDNT = true
     [privacy.youtube]
         privacyEnhanced = true
 
 ## Image processing
 [imaging]
-    quality = 75
-    resampleFilter = "Box"
+    quality = 85
+    resampleFilter = "Lanczos"
     anchor = "Smart"
     [imaging.exif]
-        disableDate = true
+        disableDate = false
         disableLatLong = true
         excludeFields = ''
         includeFields = ''

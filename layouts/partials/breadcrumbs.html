@@ -1,0 +1,43 @@
+{{- if not .IsHome -}}
+{{- /* Build breadcrumb items */ -}}
+{{- $items := slice -}}
+
+{{- /* Home item */ -}}
+{{- $items = $items | append (dict "name" "Home" "url" .Site.BaseURL "current" false) -}}
+
+{{- /* Section items */ -}}
+{{- $sections := slice -}}
+{{- range .Ancestors.Reverse -}}
+  {{- if not .IsHome -}}
+    {{- $sections = $sections | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- range $sections -}}
+  {{- $items = $items | append (dict "name" .Title "url" .Permalink "current" false) -}}
+{{- end -}}
+
+{{- /* Current page */ -}}
+{{- $items = $items | append (dict "name" .Title "url" .Permalink "current" true) -}}
+
+<nav aria-label="Breadcrumb" class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList" style="padding: 1rem 0; font-size: 0.9rem;">
+  <ol style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+    {{- range $index, $item := $items -}}
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" style="display: flex; align-items: center;">
+      {{- if not $item.current -}}
+      <a itemprop="item" href="{{ $item.url }}" style="text-decoration: none;">
+        <span itemprop="name">{{ $item.name }}</span>
+      </a>
+      <meta itemprop="position" content="{{ add $index 1 }}" />
+      <span style="margin: 0 0.5rem;" aria-hidden="true">›</span>
+      {{- else -}}
+      <span itemprop="item" aria-current="page">
+        <span itemprop="name">{{ $item.name }}</span>
+      </span>
+      <meta itemprop="position" content="{{ add $index 1 }}" />
+      {{- end -}}
+    </li>
+    {{- end -}}
+  </ol>
+</nav>
+{{- end -}}

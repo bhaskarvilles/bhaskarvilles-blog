@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Internet Archive on Bhaskar&#39;s Website</title>
-    <link>//localhost:1313/en/tags/internet-archive/</link>
+    <link>http://localhost:1313/en/tags/internet-archive/</link>
     <description>Recent Posts in Internet Archive on Bhaskar&#39;s Website</description>
-    <generator>Hugo 0.147.3</generator>
+    <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/en/tags/internet-archive/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/internet-archive/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Internet Archive hacked, data breach impacts 31 million users</title>
-      <link>//localhost:1313/en/post/2025-02-24-archive-org-30-million-users-databreach/</link>
+      <link>http://localhost:1313/en/post/internet-archive-hacked-data-breach-impacts-31-million-users/</link>
       <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-02-24-archive-org-30-million-users-databreach/</guid>
+      <guid>http://localhost:1313/en/post/internet-archive-hacked-data-breach-impacts-31-million-users/</guid>
       <description></description>
       
     </item>

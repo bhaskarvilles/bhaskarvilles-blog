@@ -1,0 +1,68 @@
+{{- /* HowTo Schema for Google Rich Results */ -}}
+{{- /* Add HowTo schema if the page has howto front matter */ -}}
+
+{{- if .Params.howto -}}
+{{- $image := "" -}}
+{{- if .Params.image -}}
+  {{- $image = .Params.image | absURL -}}
+{{- else if .Params.cover -}}
+  {{- $image = .Params.cover | absURL -}}
+{{- else -}}
+  {{- $image = printf "%s/images/social-card-default.jpg" .Site.BaseURL -}}
+{{- end -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "{{ .Title }}",
+  "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}",
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ $image }}"
+  },
+  "totalTime": "{{ .Params.howto.totalTime | default "PT30M" }}",
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "{{ .Params.howto.currency | default "USD" }}",
+    "value": "{{ .Params.howto.cost | default "0" }}"
+  },
+  "tool": [
+    {{- range $index, $tool := .Params.howto.tools -}}
+    {{- if $index -}},{{- end -}}
+    {
+      "@type": "HowToTool",
+      "name": "{{ $tool }}"
+    }
+    {{- end -}}
+  ],
+  "supply": [
+    {{- range $index, $supply := .Params.howto.supplies -}}
+    {{- if $index -}},{{- end -}}
+    {
+      "@type": "HowToSupply",
+      "name": "{{ $supply }}"
+    }
+    {{- end -}}
+  ],
+  "step": [
+    {{- range $index, $step := .Params.howto.steps -}}
+    {{- if $index -}},{{- end -}}
+    {
+      "@type": "HowToStep",
+      "position": {{ add $index 1 }},
+      "name": "{{ $step.name }}",
+      "text": "{{ $step.text }}",
+      "url": "{{ $.Permalink }}#step-{{ add $index 1 }}"
+      {{- if $step.image -}}
+      ,
+      "image": {
+        "@type": "ImageObject",
+        "url": "{{ $step.image | absURL }}"
+      }
+      {{- end -}}
+    }
+    {{- end -}}
+  ]
+}
+</script>
+{{- end -}}

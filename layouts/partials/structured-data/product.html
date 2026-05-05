@@ -1,0 +1,50 @@
+{{- /* Product Schema for Google Rich Results */ -}}
+{{- /* Add Product schema if the page has product front matter */ -}}
+
+{{- if .Params.product -}}
+{{- $image := "" -}}
+{{- if .Params.product.image -}}
+  {{- $image = .Params.product.image | absURL -}}
+{{- else if .Params.image -}}
+  {{- $image = .Params.image | absURL -}}
+{{- else -}}
+  {{- $image = printf "%s/images/social-card-default.jpg" .Site.BaseURL -}}
+{{- end -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "{{ .Params.product.name | default .Title }}",
+  "description": "{{ .Params.product.description | default .Description | default .Summary | plainify }}",
+  "image": "{{ $image }}",
+  {{- if .Params.product.brand -}}
+  "brand": {
+    "@type": "Brand",
+    "name": "{{ .Params.product.brand }}"
+  },
+  {{- end -}}
+  {{- if .Params.product.sku -}}
+  "sku": "{{ .Params.product.sku }}",
+  {{- end -}}
+  {{- if .Params.product.offers -}}
+  "offers": {
+    "@type": "Offer",
+    "url": "{{ .Permalink }}",
+    "priceCurrency": "{{ .Params.product.offers.currency | default "USD" }}",
+    "price": "{{ .Params.product.offers.price }}",
+    "priceValidUntil": "{{ .Params.product.offers.priceValidUntil }}",
+    "availability": "{{ .Params.product.offers.availability | default "https://schema.org/InStock" }}",
+    "itemCondition": "{{ .Params.product.offers.condition | default "https://schema.org/NewCondition" }}"
+  },
+  {{- end -}}
+  {{- if .Params.product.aggregateRating -}}
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{ .Params.product.aggregateRating.ratingValue }}",
+    "reviewCount": "{{ .Params.product.aggregateRating.reviewCount }}"
+  },
+  {{- end -}}
+  "url": "{{ .Permalink }}"
+}
+</script>
+{{- end -}}

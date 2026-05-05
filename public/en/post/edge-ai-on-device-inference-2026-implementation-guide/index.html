@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <!-- head.html --><!-- meta.html -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edge AI and On-Device Inference in 2026: Complete Implementation Guide | Bhaskar&#39;s Website</title>
+<meta name="author" content="Allam Bhaskara Ram">
+<meta name="description" content="Master edge AI and on-device inference in 2026. Learn about hardware options, optimization techniques, deployment strategies, and real-world …" >
+<meta name="keywords" content="edge AI,on-device inference,edge computing,AI optimization,IoT,embedded AI,TensorFlow Lite,ONNX Runtime,neural network optimization,local AI deployment">
+<link rel="canonical" href="http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/">
+
+
+
+    
+    <!-- twitterCard -->
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Edge AI and On-Device Inference in 2026: Complete Implementation Guide | Bhaskar&#39;s Website" />
+    <meta name="twitter:description" content="Master edge AI and on-device inference in 2026. Learn about hardware options, optimization techniques, deployment strategies, and real-world …" />
+        <meta name="twitter:image" content="/images/posts/edge-ai-2026.jpg" />
+        <meta name="twitter:site" content="@@bhaskarvilles" />
+        <meta name="twitter:creator" content="@@bhaskarvilles" />
+    
+    <!-- openGraph -->
+    <meta property="og:title" content="Edge AI and On-Device Inference in 2026: Complete Implementation Guide | Bhaskar&#39;s Website" />
+    <meta property="og:description" content="Master edge AI and on-device inference in 2026. Learn about hardware options, optimization techniques, deployment strategies, and real-world …" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/" />
+        <meta property="og:image" content="/images/posts/edge-ai-2026.jpg" />
+    <meta property="og:site_name" content="Bhaskar&#39;s Website" /><!-- js.html -->
+
+
+    <script src="http://localhost:1313/js/hugo-brewm.min.js" defer></script><!-- css.html -->
+
+
+
+    <link rel="stylesheet" href="http://localhost:1313/css/hugo-brewm.min.css">
+
+    <!-- css/inline.html -->
+    <style>
+         
+        body {max-width: 786px; margin: auto; padding: 2rem;}
+        img {max-width: 86vw;}
+    </style>
+    
+        
+    <!-- css/verbatim.html -->
+        <link href="http://localhost:1313/css/typesetting/verbatim.min.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    
+    <nav aria-label="Bypass">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="http://localhost:1313/en/" aria-label="Bhaskar&#39;s Website" aria-description="Homepage">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="476pt" aria-label="Bhaskar&#39;s Website">
+            <text id="logotype__text" y="19.5pt" x="0">Bhaskar&#39;s Website</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top">
+            <!-- menu.html -->
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck srm" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2 srt">Search</span>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="http://localhost:1313/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="has-search-fallback" class="on-hull">
+                
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="">
+        <input type="hidden" value="localhost:1313" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q" role="searchbox"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+                <!-- menu.html -->
+    <menu class="srm">
+        <a id="print-button" class="hide" href="javascript:window.print()" role="button" aria-label="Print">
+            <span class="t srt" role="tooltip">Print</span>
+        </a>
+        <a id="navigatorShare" href="#share" role="button" aria-label="Share">
+            <span class="t srt" role="tooltip">Share</span>
+        </a>
+        <a id="copyPermalink"  href="javascript:navigator.clipboard.writeText(window.location.href)" role="button" aria-label="Copy URL">
+            <span id="copy" class="t srt" role="tooltip">Copy URL</span>
+            <span id="isCopying" style="display: none;">Copying...</span>
+            <span id="copyText" style="display: none;">Copy URL</span>
+        </a>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t srt" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb ">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="http://localhost:1313/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">Edge AI and On-Device Inference in 2026: Complete Implementation Guide
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth sf"
+        role="document" aria-labelledby="title"
+            data-pagefind-ignore="all">
+        <header aria-labelledby="title">
+            
+            <!-- title.html -->
+        <hgroup data-bionRead-safe>
+            <h1 id="title"
+                >Edge AI and On-Device Inference in 2026: Complete Implementation Guide</h1>
+            <p  class="subtitle"
+                role="doc-subtitle">Master edge AI and on-device inference in 2026. Learn about hardware options, optimization techniques, deployment strategies, and real-world applications for running AI models locally.</p>
+        </hgroup>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <h2 id="the-edge-ai-revolution-from-cloud-to-device">The Edge AI Revolution: From Cloud to Device</h2>
+<p>2026 marks a pivotal year for edge AI and on-device inference. After years of cloud-first AI architectures, the industry is witnessing a fundamental shift toward distributed intelligence at the network edge.</p>
+<p><strong>The transformation is dramatic</strong>: In 2024, running a useful computer-vision model on a Raspberry Pi meant dealing with a stuttering 4 FPS feed. In 2026, a Raspberry Pi 5 with a Hailo-8 accelerator runs YOLOv8s at <strong>30 FPS</strong>. A Jetson Orin Nano handles full INT8-quantized detection with three simultaneous camera feeds.</p>
+<h2 id="why-edge-ai-matters-in-2026">Why Edge AI Matters in 2026</h2>
+<h3 id="the-shift-from-cloud-to-edge">The Shift from Cloud to Edge</h3>
+<p><strong>Key Drivers:</strong></p>
+<ol>
+<li><strong>Latency Requirements</strong>: Real-time applications can&rsquo;t tolerate cloud round-trips</li>
+<li><strong>Privacy Concerns</strong>: Sensitive data stays on-device</li>
+<li><strong>Cost Optimization</strong>: Reduce cloud inference expenses by 70-90%</li>
+<li><strong>Reliability</strong>: Work offline without internet connectivity</li>
+<li><strong>Bandwidth Constraints</strong>: Process data locally, send only insights</li>
+</ol>
+<h3 id="market-growth">Market Growth</h3>
+<p>The edge AI market is experiencing explosive growth:</p>
+<ul>
+<li><strong>2026 Market Size</strong>: $28.5 billion</li>
+<li><strong>2030 Projection</strong>: $156 billion</li>
+<li><strong>CAGR</strong>: 40.2% (2026-2030)</li>
+</ul>
+<h2 id="edge-ai-hardware-landscape">Edge AI Hardware Landscape</h2>
+<h3 id="1-nvidia-jetson-family">1. NVIDIA Jetson Family</h3>
+<p><strong>Jetson Orin Nano</strong> (2026 flagship)</p>
+<ul>
+<li><strong>Performance</strong>: 40 TOPS AI performance</li>
+<li><strong>Power</strong>: 7-15W</li>
+<li><strong>Price</strong>: $499</li>
+<li><strong>Best For</strong>: Computer vision, robotics, autonomous systems</li>
+</ul>
+<p><strong>Capabilities:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Real-world performance</span>
+</span></span><span class="line"><span class="cl"><span class="o">-</span> <span class="n">YOLOv8m</span><span class="p">:</span> <span class="mi">45</span> <span class="n">FPS</span> <span class="o">@</span> <span class="mi">1080</span><span class="n">p</span>
+</span></span><span class="line"><span class="cl"><span class="o">-</span> <span class="n">ResNet</span><span class="o">-</span><span class="mi">50</span><span class="p">:</span> <span class="mi">180</span> <span class="n">FPS</span>
+</span></span><span class="line"><span class="cl"><span class="o">-</span> <span class="n">BERT</span><span class="o">-</span><span class="n">Base</span><span class="p">:</span> <span class="mi">25</span> <span class="n">ms</span> <span class="n">latency</span>
+</span></span><span class="line"><span class="cl"><span class="o">-</span> <span class="n">Multiple</span> <span class="n">camera</span> <span class="n">streams</span><span class="p">:</span> <span class="mi">4</span><span class="n">x</span> <span class="mi">1080</span><span class="n">p</span> <span class="o">@</span> <span class="mi">30</span> <span class="n">FPS</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Use Cases:</strong></p>
+<ul>
+<li>Autonomous robots</li>
+<li>Smart cameras</li>
+<li>Industrial inspection</li>
+<li>Retail analytics</li>
+</ul>
+<h3 id="2-raspberry-pi--ai-accelerators">2. Raspberry Pi + AI Accelerators</h3>
+<p><strong>Raspberry Pi 5 + Hailo-8</strong></p>
+<ul>
+<li><strong>Performance</strong>: 26 TOPS</li>
+<li><strong>Power</strong>: 5-8W total</li>
+<li><strong>Price</strong>: $115 ($80 Pi + $35 Hailo)</li>
+<li><strong>Best For</strong>: Cost-sensitive deployments</li>
+</ul>
+<p><strong>Performance:</strong></p>
+<ul>
+<li>YOLOv8s: 30 FPS @ 720p</li>
+<li>MobileNetV2: 120 FPS</li>
+<li>Face detection: 60 FPS</li>
+</ul>
+<h3 id="3-google-coral">3. Google Coral</h3>
+<p><strong>Coral USB Accelerator</strong></p>
+<ul>
+<li><strong>Performance</strong>: 4 TOPS</li>
+<li><strong>Power</strong>: 2W</li>
+<li><strong>Price</strong>: $59.99</li>
+<li><strong>Best For</strong>: Retrofit existing systems</li>
+</ul>
+<p><strong>Coral Dev Board Mini</strong></p>
+<ul>
+<li><strong>Performance</strong>: 4 TOPS</li>
+<li><strong>Power</strong>: 2-3W</li>
+<li><strong>Price</strong>: $99.99</li>
+<li><strong>Best For</strong>: Prototyping and small deployments</li>
+</ul>
+<h3 id="4-intel-movidius-and-neural-compute-stick">4. Intel Movidius and Neural Compute Stick</h3>
+<p><strong>Intel Neural Compute Stick 2</strong></p>
+<ul>
+<li><strong>Performance</strong>: 1 TOPS</li>
+<li><strong>Power</strong>: 1W</li>
+<li><strong>Price</strong>: $69</li>
+<li><strong>Best For</strong>: USB-based inference</li>
+</ul>
+<h3 id="5-qualcomm-ai-engine">5. Qualcomm AI Engine</h3>
+<p><strong>Snapdragon 8 Gen 3</strong></p>
+<ul>
+<li><strong>Performance</strong>: 45 TOPS</li>
+<li><strong>Power</strong>: Integrated in mobile SoCs</li>
+<li><strong>Best For</strong>: Mobile and embedded applications</li>
+</ul>
+<h2 id="model-optimization-techniques">Model Optimization Techniques</h2>
+<h3 id="1-quantization">1. Quantization</h3>
+<p>Convert models from FP32 to lower precision:</p>
+<p><strong>INT8 Quantization:</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Post-training quantization</span>
+</span></span><span class="line"><span class="cl"><span class="n">converter</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">lite</span><span class="o">.</span><span class="n">TFLiteConverter</span><span class="o">.</span><span class="n">from_saved_model</span><span class="p">(</span><span class="s1">&#39;model&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">converter</span><span class="o">.</span><span class="n">optimizations</span> <span class="o">=</span> <span class="p">[</span><span class="n">tf</span><span class="o">.</span><span class="n">lite</span><span class="o">.</span><span class="n">Optimize</span><span class="o">.</span><span class="n">DEFAULT</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">converter</span><span class="o">.</span><span class="n">target_spec</span><span class="o">.</span><span class="n">supported_types</span> <span class="o">=</span> <span class="p">[</span><span class="n">tf</span><span class="o">.</span><span class="n">int8</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">quantized_model</span> <span class="o">=</span> <span class="n">converter</span><span class="o">.</span><span class="n">convert</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Results:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Model size: 75% reduction</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Inference speed: 2-4x faster</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Accuracy loss: &lt; 1%</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>INT4 Quantization</strong> (2026 advancement):</p>
+<ul>
+<li>Model size: 87% reduction</li>
+<li>Speed: 3-5x faster</li>
+<li>Accuracy loss: 1-3%</li>
+</ul>
+<h3 id="2-pruning">2. Pruning</h3>
+<p>Remove unnecessary weights:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">tensorflow_model_optimization</span> <span class="k">as</span> <span class="nn">tfmot</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Structured pruning</span>
+</span></span><span class="line"><span class="cl"><span class="n">pruning_params</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;pruning_schedule&#39;</span><span class="p">:</span> <span class="n">tfmot</span><span class="o">.</span><span class="n">sparsity</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">PolynomialDecay</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">initial_sparsity</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">final_sparsity</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">begin_step</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">end_step</span><span class="o">=</span><span class="mi">1000</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">model</span> <span class="o">=</span> <span class="n">tfmot</span><span class="o">.</span><span class="n">sparsity</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">prune_low_magnitude</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="o">**</span><span class="n">pruning_params</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Results:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Model size: 50% reduction</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Inference speed: 1.5-2x faster</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Accuracy loss: &lt; 0.5%</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="3-knowledge-distillation">3. Knowledge Distillation</h3>
+<p>Train smaller models to mimic larger ones:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Teacher model: Large, accurate</span>
+</span></span><span class="line"><span class="cl"><span class="n">teacher</span> <span class="o">=</span> <span class="n">load_large_model</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Student model: Small, fast</span>
+</span></span><span class="line"><span class="cl"><span class="n">student</span> <span class="o">=</span> <span class="n">create_small_model</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Distillation training</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">distillation_loss</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">teacher_pred</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">student_loss</span> <span class="o">=</span> <span class="n">categorical_crossentropy</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">distillation_loss</span> <span class="o">=</span> <span class="n">kl_divergence</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">softmax</span><span class="p">(</span><span class="n">teacher_pred</span> <span class="o">/</span> <span class="n">temperature</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">softmax</span><span class="p">(</span><span class="n">y_pred</span> <span class="o">/</span> <span class="n">temperature</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">student_loss</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">distillation_loss</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Results:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Model size: 90% reduction</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Speed: 10x faster</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Accuracy: 95% of teacher performance</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="4-neural-architecture-search-nas">4. Neural Architecture Search (NAS)</h3>
+<p>Automatically find optimal architectures for edge devices:</p>
+<p><strong>EfficientNet-Lite</strong> family (optimized for edge):</p>
+<ul>
+<li>EfficientNet-Lite0: 4.7M params, 0.39 GFLOPS</li>
+<li>EfficientNet-Lite4: 13M params, 1.3 GFLOPS</li>
+</ul>
+<h2 id="deployment-frameworks">Deployment Frameworks</h2>
+<h3 id="1-tensorflow-lite">1. TensorFlow Lite</h3>
+<p><strong>Best For</strong>: Cross-platform deployment</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">tflite_runtime.interpreter</span> <span class="k">as</span> <span class="nn">tflite</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Load model</span>
+</span></span><span class="line"><span class="cl"><span class="n">interpreter</span> <span class="o">=</span> <span class="n">tflite</span><span class="o">.</span><span class="n">Interpreter</span><span class="p">(</span><span class="n">model_path</span><span class="o">=</span><span class="s2">&#34;model.tflite&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">interpreter</span><span class="o">.</span><span class="n">allocate_tensors</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Get input/output details</span>
+</span></span><span class="line"><span class="cl"><span class="n">input_details</span> <span class="o">=</span> <span class="n">interpreter</span><span class="o">.</span><span class="n">get_input_details</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">output_details</span> <span class="o">=</span> <span class="n">interpreter</span><span class="o">.</span><span class="n">get_output_details</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Run inference</span>
+</span></span><span class="line"><span class="cl"><span class="n">interpreter</span><span class="o">.</span><span class="n">set_tensor</span><span class="p">(</span><span class="n">input_details</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;index&#39;</span><span class="p">],</span> <span class="n">input_data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">interpreter</span><span class="o">.</span><span class="n">invoke</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">output</span> <span class="o">=</span> <span class="n">interpreter</span><span class="o">.</span><span class="n">get_tensor</span><span class="p">(</span><span class="n">output_details</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;index&#39;</span><span class="p">])</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Supported Hardware:</strong></p>
+<ul>
+<li>ARM Cortex-A/M</li>
+<li>x86/x64</li>
+<li>GPU (via delegates)</li>
+<li>Edge TPU (Coral)</li>
+<li>NNAPI (Android)</li>
+</ul>
+<h3 id="2-onnx-runtime">2. ONNX Runtime</h3>
+<p><strong>Best For</strong>: Model portability</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">onnxruntime</span> <span class="k">as</span> <span class="nn">ort</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create session with optimization</span>
+</span></span><span class="line"><span class="cl"><span class="n">session</span> <span class="o">=</span> <span class="n">ort</span><span class="o">.</span><span class="n">InferenceSession</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;model.onnx&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">providers</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;CUDAExecutionProvider&#39;</span><span class="p">,</span> <span class="s1">&#39;CPUExecutionProvider&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Run inference</span>
+</span></span><span class="line"><span class="cl"><span class="n">outputs</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;input&#39;</span><span class="p">:</span> <span class="n">input_data</span><span class="p">})</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Optimization Options:</strong></p>
+<ul>
+<li>Graph optimization</li>
+<li>Quantization</li>
+<li>Hardware acceleration</li>
+<li>Multi-threading</li>
+</ul>
+<h3 id="3-pytorch-mobile">3. PyTorch Mobile</h3>
+<p><strong>Best For</strong>: PyTorch ecosystem</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Export to TorchScript</span>
+</span></span><span class="line"><span class="cl"><span class="n">model</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">jit</span><span class="o">.</span><span class="n">script</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">model</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&#34;model.pt&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Mobile deployment</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Use in iOS/Android apps</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="4-nvidia-tensorrt">4. NVIDIA TensorRT</h3>
+<p><strong>Best For</strong>: NVIDIA hardware</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">tensorrt</span> <span class="k">as</span> <span class="nn">trt</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Build optimized engine</span>
+</span></span><span class="line"><span class="cl"><span class="n">builder</span> <span class="o">=</span> <span class="n">trt</span><span class="o">.</span><span class="n">Builder</span><span class="p">(</span><span class="n">logger</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">network</span> <span class="o">=</span> <span class="n">builder</span><span class="o">.</span><span class="n">create_network</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">parser</span> <span class="o">=</span> <span class="n">trt</span><span class="o">.</span><span class="n">OnnxParser</span><span class="p">(</span><span class="n">network</span><span class="p">,</span> <span class="n">logger</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Optimize for specific hardware</span>
+</span></span><span class="line"><span class="cl"><span class="n">config</span> <span class="o">=</span> <span class="n">builder</span><span class="o">.</span><span class="n">create_builder_config</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">config</span><span class="o">.</span><span class="n">set_memory_pool_limit</span><span class="p">(</span><span class="n">trt</span><span class="o">.</span><span class="n">MemoryPoolType</span><span class="o">.</span><span class="n">WORKSPACE</span><span class="p">,</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">30</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Results:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Inference speed: 5-10x faster</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Optimized for specific GPU</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="real-world-implementation-patterns">Real-World Implementation Patterns</h2>
+<h3 id="pattern-1-tiered-architecture">Pattern 1: Tiered Architecture</h3>
+<p><strong>Strategy</strong>: On-device model handles most requests, cloud handles edge cases</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">TieredInference</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">edge_model</span> <span class="o">=</span> <span class="n">load_edge_model</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">cloud_api</span> <span class="o">=</span> <span class="n">CloudAPIClient</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">confidence_threshold</span> <span class="o">=</span> <span class="mf">0.85</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_data</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Try edge model first</span>
+</span></span><span class="line"><span class="cl">        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">edge_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">input_data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">confidence</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">confidence_threshold</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">result</span>  <span class="c1"># Fast, local response</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># Fall back to cloud for difficult cases</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">cloud_api</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">input_data</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Benefits:</strong></p>
+<ul>
+<li>90% of requests handled locally</li>
+<li>10x cost reduction</li>
+<li>Sub-100ms latency for most requests</li>
+</ul>
+<h3 id="pattern-2-federated-learning">Pattern 2: Federated Learning</h3>
+<p><strong>Strategy</strong>: Train models across distributed edge devices</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Edge device training</span>
+</span></span><span class="line"><span class="cl"><span class="n">local_model</span> <span class="o">=</span> <span class="n">train_on_local_data</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">model_updates</span> <span class="o">=</span> <span class="n">compute_gradients</span><span class="p">(</span><span class="n">local_model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Send only updates, not data</span>
+</span></span><span class="line"><span class="cl"><span class="n">send_to_server</span><span class="p">(</span><span class="n">model_updates</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Server aggregates updates</span>
+</span></span><span class="line"><span class="cl"><span class="n">global_model</span> <span class="o">=</span> <span class="n">aggregate_updates</span><span class="p">(</span><span class="n">all_updates</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Distribute updated model</span>
+</span></span><span class="line"><span class="cl"><span class="n">receive_updated_model</span><span class="p">(</span><span class="n">global_model</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Benefits:</strong></p>
+<ul>
+<li>Privacy preservation</li>
+<li>Reduced bandwidth</li>
+<li>Personalized models</li>
+</ul>
+<h3 id="pattern-3-model-cascading">Pattern 3: Model Cascading</h3>
+<p><strong>Strategy</strong>: Use progressively complex models</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">CascadedDetector</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">fast_detector</span> <span class="o">=</span> <span class="n">MobileNetSSD</span><span class="p">()</span>  <span class="c1"># 100 FPS</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">accurate_detector</span> <span class="o">=</span> <span class="n">YOLOv8m</span><span class="p">()</span>   <span class="c1"># 30 FPS</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">precise_detector</span> <span class="o">=</span> <span class="n">YOLOv8x</span><span class="p">()</span>    <span class="c1"># 10 FPS</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">detect</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">image</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Stage 1: Fast screening</span>
+</span></span><span class="line"><span class="cl">        <span class="n">quick_results</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fast_detector</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">needs_more_accuracy</span><span class="p">(</span><span class="n">quick_results</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># Stage 2: Accurate detection</span>
+</span></span><span class="line"><span class="cl">            <span class="n">results</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">accurate_detector</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">needs_highest_precision</span><span class="p">(</span><span class="n">results</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">                <span class="c1"># Stage 3: Precise detection</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">precise_detector</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">results</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">quick_results</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="performance-optimization-strategies">Performance Optimization Strategies</h2>
+<h3 id="1-batching">1. Batching</h3>
+<p>Process multiple inputs together:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Single inference: 10ms per image</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Batched inference: 25ms for 8 images (3.1ms per image)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">batch_size</span> <span class="o">=</span> <span class="mi">8</span>
+</span></span><span class="line"><span class="cl"><span class="n">inputs</span> <span class="o">=</span> <span class="n">collect_inputs</span><span class="p">(</span><span class="n">batch_size</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">results</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict_batch</span><span class="p">(</span><span class="n">inputs</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="2-multi-threading">2. Multi-Threading</h3>
+<p>Parallelize preprocessing and inference:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">threading</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">queue</span> <span class="kn">import</span> <span class="n">Queue</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">preprocessing_thread</span><span class="p">(</span><span class="n">input_queue</span><span class="p">,</span> <span class="n">processed_queue</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">image</span> <span class="o">=</span> <span class="n">input_queue</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">processed</span> <span class="o">=</span> <span class="n">preprocess</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">processed_queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">processed</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">inference_thread</span><span class="p">(</span><span class="n">processed_queue</span><span class="p">,</span> <span class="n">output_queue</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">batch</span> <span class="o">=</span> <span class="n">collect_batch</span><span class="p">(</span><span class="n">processed_queue</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">results</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">batch</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">output_queue</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Results:</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - 40% throughput improvement</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Better hardware utilization</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="3-model-caching">3. Model Caching</h3>
+<p>Keep frequently used models in memory:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">ModelCache</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">max_models</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">cache</span> <span class="o">=</span> <span class="p">{}</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">max_models</span> <span class="o">=</span> <span class="n">max_models</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">get_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model_id</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">model_id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">cache</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cache</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_models</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="bp">self</span><span class="o">.</span><span class="n">evict_lru</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">cache</span><span class="p">[</span><span class="n">model_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">load_model</span><span class="p">(</span><span class="n">model_id</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">cache</span><span class="p">[</span><span class="n">model_id</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="use-cases-and-applications">Use Cases and Applications</h2>
+<h3 id="1-smart-surveillance">1. Smart Surveillance</h3>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>Real-time person detection</li>
+<li>Face recognition</li>
+<li>Anomaly detection</li>
+<li>Privacy preservation</li>
+</ul>
+<p><strong>Solution:</strong></p>
+<pre tabindex="0"><code>Hardware: Jetson Orin Nano
+Model: YOLOv8m + FaceNet
+Performance: 4 cameras @ 30 FPS
+Latency: &lt; 50ms
+</code></pre><h3 id="2-industrial-quality-control">2. Industrial Quality Control</h3>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>Defect detection</li>
+<li>High accuracy</li>
+<li>24/7 operation</li>
+<li>Harsh environments</li>
+</ul>
+<p><strong>Solution:</strong></p>
+<pre tabindex="0"><code>Hardware: Industrial PC + Intel Movidius
+Model: Custom CNN (ResNet-50 backbone)
+Performance: 100 parts/minute
+Accuracy: 99.5%
+</code></pre><h3 id="3-autonomous-robots">3. Autonomous Robots</h3>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>Object detection</li>
+<li>Path planning</li>
+<li>Real-time decision making</li>
+<li>Low power consumption</li>
+</ul>
+<p><strong>Solution:</strong></p>
+<pre tabindex="0"><code>Hardware: Jetson Orin Nano
+Models: YOLOv8 + DepthNet + SLAM
+Performance: 30 FPS perception
+Power: 10W total
+</code></pre><h3 id="4-smart-home-devices">4. Smart Home Devices</h3>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>Voice recognition</li>
+<li>Gesture control</li>
+<li>Privacy</li>
+<li>Low cost</li>
+</ul>
+<p><strong>Solution:</strong></p>
+<pre tabindex="0"><code>Hardware: Raspberry Pi 5 + Hailo-8
+Models: Whisper-Tiny + MobileNet
+Performance: &lt; 200ms response
+Cost: $115 per device
+</code></pre><h2 id="kerdos-infrasofts-edge-ai-solutions">Kerdos Infrasoft&rsquo;s Edge AI Solutions</h2>
+<p>At <a href="https://kerdos.in">Kerdos Infrasoft</a>, we specialize in edge AI and IoT solutions:</p>
+<h3 id="our-services">Our Services</h3>
+<ol>
+<li>
+<p><strong>Edge AI Consulting</strong></p>
+<ul>
+<li>Hardware selection</li>
+<li>Architecture design</li>
+<li>Performance optimization</li>
+</ul>
+</li>
+<li>
+<p><strong>Model Optimization</strong></p>
+<ul>
+<li>Quantization and pruning</li>
+<li>Custom model development</li>
+<li>Deployment optimization</li>
+</ul>
+</li>
+<li>
+<p><strong>IoT Integration</strong></p>
+<ul>
+<li>Sensor integration</li>
+<li>Data pipeline design</li>
+<li>Cloud-edge hybrid systems</li>
+</ul>
+</li>
+<li>
+<p><strong>Custom Solutions</strong></p>
+<ul>
+<li>Smart infrastructure</li>
+<li>Industrial automation</li>
+<li>EV charging systems</li>
+<li>Energy management</li>
+</ul>
+</li>
+</ol>
+<h3 id="case-study-smart-city-deployment">Case Study: Smart City Deployment</h3>
+<p><strong>Challenge</strong>: Deploy AI-powered traffic monitoring across 500 intersections</p>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Hardware: Raspberry Pi 5 + Hailo-8</li>
+<li>Model: Custom YOLOv8 variant</li>
+<li>Deployment: Edge inference with cloud aggregation</li>
+</ul>
+<p><strong>Results</strong>:</p>
+<ul>
+<li>95% cost reduction vs. cloud-only</li>
+<li>&lt; 100ms latency</li>
+<li>99.2% uptime</li>
+<li>Real-time traffic optimization</li>
+</ul>
+<h2 id="future-trends-2026-2027">Future Trends: 2026-2027</h2>
+<h3 id="1-neuromorphic-computing">1. Neuromorphic Computing</h3>
+<p>Brain-inspired chips for ultra-low power AI:</p>
+<ul>
+<li>Intel Loihi 2</li>
+<li>IBM TrueNorth</li>
+<li>BrainChip Akida</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li>1000x power efficiency</li>
+<li>Event-driven processing</li>
+<li>Real-time learning</li>
+</ul>
+<h3 id="2-in-memory-computing">2. In-Memory Computing</h3>
+<p>Process data where it&rsquo;s stored:</p>
+<ul>
+<li>Eliminates data movement</li>
+<li>100x energy efficiency</li>
+<li>Faster inference</li>
+</ul>
+<h3 id="3-photonic-ai-accelerators">3. Photonic AI Accelerators</h3>
+<p>Light-based computing:</p>
+<ul>
+<li>Speed of light processing</li>
+<li>Minimal heat generation</li>
+<li>Massive parallelism</li>
+</ul>
+<h3 id="4-quantum-enhanced-edge-ai">4. Quantum-Enhanced Edge AI</h3>
+<p>Hybrid quantum-classical systems:</p>
+<ul>
+<li>Optimization problems</li>
+<li>Pattern recognition</li>
+<li>Cryptography</li>
+</ul>
+<h2 id="best-practices-for-edge-ai-deployment">Best Practices for Edge AI Deployment</h2>
+<h3 id="1-start-with-clear-requirements">1. Start with Clear Requirements</h3>
+<p>Define:</p>
+<ul>
+<li>Latency targets</li>
+<li>Accuracy requirements</li>
+<li>Power budget</li>
+<li>Cost constraints</li>
+<li>Environmental conditions</li>
+</ul>
+<h3 id="2-benchmark-early-and-often">2. Benchmark Early and Often</h3>
+<p>Test on target hardware:</p>
+<ul>
+<li>Real-world data</li>
+<li>Worst-case scenarios</li>
+<li>Long-term stability</li>
+<li>Thermal performance</li>
+</ul>
+<h3 id="3-plan-for-updates">3. Plan for Updates</h3>
+<p>Implement OTA (Over-The-Air) updates:</p>
+<ul>
+<li>Model versioning</li>
+<li>Rollback capability</li>
+<li>A/B testing</li>
+<li>Gradual rollout</li>
+</ul>
+<h3 id="4-monitor-in-production">4. Monitor in Production</h3>
+<p>Track:</p>
+<ul>
+<li>Inference latency</li>
+<li>Accuracy drift</li>
+<li>Hardware health</li>
+<li>Error rates</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>Edge AI in 2026 has crossed a critical threshold. What was experimental in 2024 is now production-ready. The combination of powerful hardware, optimized models, and mature frameworks makes edge deployment practical for a wide range of applications.</p>
+<p>The key is choosing the right hardware for your use case, optimizing models appropriately, and implementing robust deployment patterns. With the right approach, edge AI delivers superior performance, lower costs, and better privacy than cloud-only solutions.</p>
+<p>As we move toward 2027, expect even more powerful edge devices, better optimization techniques, and new applications we haven&rsquo;t imagined yet. The future of AI is distributed, and it&rsquo;s happening at the edge.</p>
+<hr>
+<p><strong>Related Articles:</strong></p>
+<ul>
+<li><a href="http://localhost:1313/post/agentic-ai-autonomous-systems-transforming-industries-2026/">Agentic AI: Autonomous Systems</a></li>
+<li><a href="http://localhost:1313/post/multimodal-ai-2026-gpt5-claude-gemini-comparison/">Multimodal AI Comparison</a></li>
+<li><a href="http://localhost:1313/categories/technology/">IoT Solutions</a></li>
+</ul>
+<p><strong>Need Edge AI Solutions?</strong> Contact <a href="https://kerdos.in">Kerdos Infrasoft</a> for expert consulting and implementation.</p>
+
+        </section>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+            <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share srm">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="Edge AI and On-Device Inference in 2026: Complete Implementation Guide">
+        <input id="mastodonPermalink" type="hidden" name="url" value="http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/">
+        <input id="mastodonText" type="hidden" name="text" value="Edge AI and On-Device Inference in 2026: Complete Implementation Guide http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=Edge%20AI%20and%20On-Device%20Inference%20in%202026%3a%20Complete%20Implementation%20Guide&body=http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2fedge-ai-on-device-inference-2026-implementation-guide%2f" role="button" aria-label="Share on Email">
+            <i class="email sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=Edge%20AI%20and%20On-Device%20Inference%20in%202026%3a%20Complete%20Implementation%20Guide%20http%3a%2f%2flocalhost%3a1313%2fen%2fpost%2fedge-ai-on-device-inference-2026-implementation-guide%2f" role="button" aria-label="Share on Whatsapp">
+            <i class="whatsapp sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=Edge%20AI%20and%20On-Device%20Inference%20in%202026:%20Complete%20Implementation%20Guide&amp;url=http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=Edge%20AI%20and%20On-Device%20Inference%20in%202026:%20Complete%20Implementation%20Guide&amp;url=http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/&amp;t=Edge%20AI%20and%20On-Device%20Inference%20in%202026:%20Complete%20Implementation%20Guide" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/&amp;title=Edge%20AI%20and%20On-Device%20Inference%20in%202026:%20Complete%20Implementation%20Guide&amp;summary=Edge%20AI%20and%20On-Device%20Inference%20in%202026:%20Complete%20Implementation%20Guide&amp;source=http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/&amp;media=http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/&amp;description=Edge%20AI%20and%20On-Device%20Inference%20in%202026:%20Complete%20Implementation%20Guide" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/&amp;resubmit=true&amp;title=Edge%20AI%20and%20On-Device%20Inference%20in%202026:%20Complete%20Implementation%20Guide" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Edge%20AI%20and%20On-Device%20Inference%20in%202026:%20Complete%20Implementation%20Guide&amp;caption=Edge%20AI%20and%20On-Device%20Inference%20in%202026:%20Complete%20Implementation%20Guide&amp;content=http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/&amp;canonicalUrl=http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=Edge%20AI%20and%20On-Device%20Inference%20in%202026:%20Complete%20Implementation%20Guide&amp;url=http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=Edge%20AI%20and%20On-Device%20Inference%20in%202026:%20Complete%20Implementation%20Guide&amp;url=http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=http://localhost:1313/en/post/edge-ai-on-device-inference-2026-implementation-guide/;title=Edge%20AI%20and%20On-Device%20Inference%20in%202026:%20Complete%20Implementation%20Guide" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing sri" aria-hidden="true"></i>
+            <span class="t srt" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+    </div>
+    
+        
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Founder &amp; Tech Lead, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impressum</strong>
+<p>Innovating India&rsquo;s digital infrastructure: AI, IoT, and Full Stack Solutions.<br>
+Some rights reserved. For inquiries, contact: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                    </div>
+                <div id="main-footer-secondary"  class="column" style="--col: 15rem">
+                        <div
+                            aria-labelledby="footer-2">
+                            <p><strong class="section-title">Allam Bhaskara Ram <i class="icon copyleft"></i> 2025</strong><br>
+Pendiri &amp; Pemimpin Teknologi, <a href="https://kerdos.in" target="_blank">Kerdos Infrasoft Pvt. Ltd.</a><br>
+Bangalore, India</p>
+<br>
+<strong class="section-title">Impresium</strong>
+<p>Berinovasi dalam infrastruktur digital India: AI, IoT, dan Solusi Full Stack.<br>
+Beberapa hak dilindungi undang-undang. Untuk pertanyaan, hubungi: <a href="mailto:info@kerdos.in"><a href="mailto:info@kerdos.in">info@kerdos.in</a></a></p>
+
+                        </div>
+                        <div id="coffee-counter">
+                            <strong class="section-title">Coffee Stat</strong>
+                            <p>Making this website has taken at least 13 cups of coffee, if not more.</p>
+                        </div>                    
+                    <!-- menu.html -->
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background hide" role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+    </div>
+    <div id="focusMode"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details hide" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key" aria-hidden="true">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" aria-label="Accessibility"
+        data-i18n-optimizeSR="Screen Reader Optimization"
+        data-i18n-optimizeSRdesc="Optimize display and resources for screen reader users who navigate with a pointer device."
+        data-i18n-colorSettings="Color Settings"
+        data-i18n-darkMode="Dark Mode"
+        data-i18n-light="Light"
+        data-i18n-dark="Dark"
+        data-i18n-contrast="Contrast"
+        data-i18n-lessContrast="Low"
+        data-i18n-moreContrast="High"
+        data-i18n-defaultContrast="Default"
+        data-i18n-colorPalette="Color Palette"
+        data-i18n-defaultColor="Default"
+        data-i18n-deuteranopia="Deuteranopia"
+        data-i18n-protanopia="Protanopia"
+        data-i18n-tritanopia="Tritanopia"
+        data-i18n-monochrome="Monochrome"
+        data-i18n-fontSize="Font Size"
+        data-i18n-baselineStretch="Baseline Stretch"        
+        data-i18n-OpenDyslexic="Use OpenDyslexic Font"
+        data-i18n-menuControls="Accessibility Menu Controls"
+        data-i18n-save="Save"
+        data-i18n-reset="Reset"
+        data-i18n-close="Close"
+        data-i18n-bionRead="BionRead Mode"
+        data-i18n-focusMode="Focus Mode"
+        data-i18n-noLocalStorage="LocalStorage is not available in your browser. Settings won&#39;t be saved.">
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <div id="useBionRead" class="sri"></div>
+    <!-- [top] bypass block -->
+    <nav aria-label="Bypass">
+        <a id="to-top" class="srm" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <span class="t srt">To Content Top</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+        </a>
+    </nav>
+</footer>
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation" aria-hidden="true">
+        <div class="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</html>

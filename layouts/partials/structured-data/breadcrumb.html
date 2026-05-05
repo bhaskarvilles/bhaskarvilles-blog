@@ -1,0 +1,44 @@
+{{- if not .IsHome -}}
+{{- /* Build breadcrumb items */ -}}
+{{- $items := slice -}}
+{{- $position := 1 -}}
+
+{{- /* Home item */ -}}
+{{- $items = $items | append (dict "position" $position "name" "Home" "url" .Site.BaseURL) -}}
+{{- $position = add $position 1 -}}
+
+{{- /* Section items */ -}}
+{{- $sections := slice -}}
+{{- $currentPage := . -}}
+{{- range .Ancestors.Reverse -}}
+  {{- if not .IsHome -}}
+    {{- $sections = $sections | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- range $sections -}}
+  {{- $items = $items | append (dict "position" $position "name" .Title "url" .Permalink) -}}
+  {{- $position = add $position 1 -}}
+{{- end -}}
+
+{{- /* Current page */ -}}
+{{- $items = $items | append (dict "position" $position "name" .Title "url" .Permalink) -}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {{- range $index, $item := $items -}}
+    {{- if $index -}},{{- end -}}
+    {
+      "@type": "ListItem",
+      "position": {{ $item.position }},
+      "name": "{{ $item.name }}",
+      "item": "{{ $item.url }}"
+    }
+    {{- end -}}
+  ]
+}
+</script>
+{{- end -}}

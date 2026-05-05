@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ChatGPT on Bhaskar&#39;s Website</title>
-    <link>//localhost:1313/en/categories/chatgpt/</link>
+    <link>http://localhost:1313/en/categories/chatgpt/</link>
     <description>Recent Posts in ChatGPT on Bhaskar&#39;s Website</description>
-    <generator>Hugo 0.147.3</generator>
+    <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/en/categories/chatgpt/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/chatgpt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google Bard: A Large Language Model Chatbot</title>
-      <link>//localhost:1313/en/post/2023-05-16-google-bard/</link>
+      <link>http://localhost:1313/en/post/google-bard-large-language-model-chatbot/</link>
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-05-16-google-bard/</guid>
+      <guid>http://localhost:1313/en/post/google-bard-large-language-model-chatbot/</guid>
       <description></description>
-      
+      <enclosure url="/images/posts/google-bard.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>ChatGPT vs. Humans: Delving Deeper into Technical and Brain Intelligence Aspects</title>
-      <link>//localhost:1313/en/post/2023-05-07-ai-and-human-intelligence/</link>
+      <link>http://localhost:1313/en/post/chatgpt-vs-human-intelligence-comparison/</link>
       <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2023-05-07-ai-and-human-intelligence/</guid>
+      <guid>http://localhost:1313/en/post/chatgpt-vs-human-intelligence-comparison/</guid>
       <description></description>
-      
+      <enclosure url="/images/posts/ai-human-intelligence.jpg" length="0" type="image/jpeg" />
     </item>
     <item>
       <title>OpenAI and ChatGPT</title>
-      <link>//localhost:1313/en/post/2022-12-21-chat-gpt/</link>
+      <link>http://localhost:1313/en/post/openai-chatgpt-introduction-guide/</link>
       <pubDate>Wed, 21 Dec 2022 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2022-12-21-chat-gpt/</guid>
+      <guid>http://localhost:1313/en/post/openai-chatgpt-introduction-guide/</guid>
       <description></description>
-      
+      <enclosure url="/images/posts/chatgpt-openai.jpg" length="0" type="image/jpeg" />
     </item>
   </channel>
 </rss>

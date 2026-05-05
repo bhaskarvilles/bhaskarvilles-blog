@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Security on Bhaskar&#39;s Website</title>
-    <link>//localhost:1313/en/tags/security/</link>
+    <link>http://localhost:1313/en/tags/security/</link>
     <description>Recent Posts in Security on Bhaskar&#39;s Website</description>
-    <generator>Hugo 0.147.3</generator>
+    <generator>Hugo 0.161.1</generator>
     <language>en</language>
     <managingEditor>Bhaskar</managingEditor>
     
       <webMaster>Bhaskar</webMaster>
-    <lastBuildDate>Thu, 05 Jun 2025 23:29:01 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/en/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2026 00:36:45 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Internet Archive hacked, data breach impacts 31 million users</title>
-      <link>//localhost:1313/en/post/2025-02-24-archive-org-30-million-users-databreach/</link>
+      <link>http://localhost:1313/en/post/internet-archive-hacked-data-breach-impacts-31-million-users/</link>
       <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2025-02-24-archive-org-30-million-users-databreach/</guid>
+      <guid>http://localhost:1313/en/post/internet-archive-hacked-data-breach-impacts-31-million-users/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Announcing My Candidacy for the OWASP Global Board of Directors 2024</title>
-      <link>//localhost:1313/en/post/2024-09-15-owasp-candidate/</link>
+      <link>http://localhost:1313/en/post/announcing-my-candidacy-for-the-owasp-global-board-of-directors-2024/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-09-15-owasp-candidate/</guid>
+      <guid>http://localhost:1313/en/post/announcing-my-candidacy-for-the-owasp-global-board-of-directors-2024/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Discovering JavaScript Files with JSFinder</title>
-      <link>//localhost:1313/en/post/2024-08-31-jsfinder-standard/</link>
+      <link>http://localhost:1313/en/post/discovering-javascript-files-with-jsfinder/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-08-31-jsfinder-standard/</guid>
+      <guid>http://localhost:1313/en/post/discovering-javascript-files-with-jsfinder/</guid>
       <description></description>
       
     </item>
     <item>
       <title>Contributions to Open Source Projects</title>
-      <link>//localhost:1313/en/post/2024-07-18-my-security-contributions/</link>
+      <link>http://localhost:1313/en/post/contributions-to-open-source-projects/</link>
       <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
       <author>Bhaskar</author>
-      <guid>//localhost:1313/en/post/2024-07-18-my-security-contributions/</guid>
+      <guid>http://localhost:1313/en/post/contributions-to-open-source-projects/</guid>
       <description></description>
       
     </item>

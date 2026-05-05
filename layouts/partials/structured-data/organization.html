@@ -1,0 +1,45 @@
+{{- if .IsHome -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Kerdos Infrasoft Pvt. Ltd.",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "{{ .Site.BaseURL }}/images/logo.png"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Allam Bhaskara Ram",
+    "jobTitle": "Founder & Tech Lead",
+    "url": "{{ .Site.BaseURL }}",
+    "sameAs": [
+      "https://github.com/bhaskarvilles",
+      "https://linkedin.com/in/bhaskarvilles",
+      "https://twitter.com/bhaskarvilles",
+      "https://instagram.com/bhaskarvilles",
+      "https://medium.com/@bhaskarvilles"
+    ]
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bangalore",
+    "addressRegion": "Karnataka",
+    "addressCountry": "IN"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "info@kerdos.in",
+    "contactType": "Customer Service",
+    "availableLanguage": ["English", "Hindi"]
+  },
+  "description": "{{ .Site.Params.description }}",
+  "sameAs": [
+    "https://github.com/bhaskarvilles",
+    "https://linkedin.com/in/bhaskarvilles",
+    "https://twitter.com/bhaskarvilles"
+  ]
+}
+</script>
+{{- end -}}
