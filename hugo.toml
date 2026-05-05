@@ -1,5 +1,7 @@
-## Base URL for the site
+## Base URL for the site (primary domain)
 baseURL = 'https://bhaskar.blog'
+## Alternate domain (will be handled via redirects and alternate links)
+# alternateURL = 'https://bhaskarvilles.blog'
 ## Site title
 title = "Bhaskar's Website"
 ## Use hugo-brewm theme
@@ -96,6 +98,9 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
     AllowAIRobots = false
     ## ZenMode - Minimize clutter for small site
     ZenMode = false
+    
+    ## Multiple Domain Support
+    alternateDomains = ["https://bhaskarvilles.blog"]
     
     ## SEO Verification (add your verification codes)
     # googleSiteVerification = "your-google-verification-code"

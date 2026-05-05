@@ -1,0 +1,12 @@
+# Netlify/Vercel Redirects Configuration
+# Redirect bhaskarvilles.blog to bhaskar.blog (primary domain)
+
+# Redirect alternate domain to primary domain with 301 (permanent redirect)
+https://bhaskarvilles.blog/*  https://bhaskar.blog/:splat  301!
+http://bhaskarvilles.blog/*   https://bhaskar.blog/:splat  301!
+
+# Ensure www redirects to non-www for both domains
+https://www.bhaskar.blog/*         https://bhaskar.blog/:splat         301!
+https://www.bhaskarvilles.blog/*   https://bhaskar.blog/:splat         301!
+http://www.bhaskar.blog/*          https://bhaskar.blog/:splat         301!
+http://www.bhaskarvilles.blog/*    https://bhaskar.blog/:splat         301!

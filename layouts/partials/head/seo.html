@@ -15,6 +15,9 @@
 {{- /* Twitter Card Meta Tags */ -}}
 {{- partial "head/twitter-card.html" . -}}
 
+{{- /* Alternate Domain Links */ -}}
+{{- partial "head/alternate-domains.html" . -}}
+
 {{- /* Additional SEO meta tags */ -}}
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="googlebot" content="index, follow">
@@ -22,7 +25,7 @@
 <meta name="author" content="{{ with .Params.author }}{{ . }}{{ else }}Allam Bhaskara Ram{{ end }}">
 <meta name="generator" content="Hugo {{ hugo.Version }}">
 
-{{- /* Canonical URL */ -}}
+{{- /* Canonical URL - Always points to primary domain */ -}}
 <link rel="canonical" href="{{ .Permalink }}" />
 
 {{- /* Language and regional tags */ -}}

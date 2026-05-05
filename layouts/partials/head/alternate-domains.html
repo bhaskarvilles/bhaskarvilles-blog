@@ -1,0 +1,21 @@
+{{- /* Alternate Domain Links for Multi-Domain Support */ -}}
+{{- /* This helps search engines understand that multiple domains serve the same content */ -}}
+
+{{- if .Site.Params.alternateDomains -}}
+  {{- $currentPath := .RelPermalink -}}
+  {{- range .Site.Params.alternateDomains -}}
+    {{- $alternateDomain := . -}}
+    {{- $alternateURL := printf "%s%s" $alternateDomain $currentPath -}}
+<link rel="alternate" href="{{ $alternateURL }}" />
+  {{- end -}}
+{{- end -}}
+
+{{- /* Add Link HTTP header hint for alternate domains (helps with CDN/proxy setups) */ -}}
+{{- if .Site.Params.alternateDomains -}}
+  {{- $currentPath := .RelPermalink -}}
+  {{- range .Site.Params.alternateDomains -}}
+    {{- $alternateDomain := . -}}
+    {{- $alternateURL := printf "%s%s" $alternateDomain $currentPath -}}
+<meta http-equiv="Link" content='<{{ $alternateURL }}>; rel="alternate"' />
+  {{- end -}}
+{{- end -}}

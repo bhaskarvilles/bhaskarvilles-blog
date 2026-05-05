@@ -1,0 +1,39 @@
+# Netlify/Vercel Headers Configuration
+# Add Link headers for alternate domains
+
+/*
+  # Alternate domain link header
+  Link: <https://bhaskarvilles.blog>; rel="alternate"
+  
+  # Security headers
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  
+  # Cache control for static assets
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML pages - shorter cache
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# RSS and XML
+/*.xml
+  Cache-Control: public, max-age=3600
+  Content-Type: application/xml; charset=utf-8
+
+/*.rss
+  Cache-Control: public, max-age=3600
+  Content-Type: application/rss+xml; charset=utf-8
+
+# Images - long cache
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# CSS and JS - long cache with versioning
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/*
+  Cache-Control: public, max-age=31536000, immutable

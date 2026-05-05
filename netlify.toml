@@ -1,0 +1,74 @@
+# Netlify Configuration
+[build]
+  publish = "public"
+  command = "hugo --gc --minify"
+
+[build.environment]
+  HUGO_VERSION = "0.125.0"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
+
+# Redirect rules for alternate domain
+[[redirects]]
+  from = "https://bhaskarvilles.blog/*"
+  to = "https://bhaskar.blog/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://bhaskarvilles.blog/*"
+  to = "https://bhaskar.blog/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.bhaskarvilles.blog/*"
+  to = "https://bhaskar.blog/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.bhaskar.blog/*"
+  to = "https://bhaskar.blog/:splat"
+  status = 301
+  force = true
+
+# Headers for all pages
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Link = "<https://bhaskarvilles.blog>; rel=\"alternate\""
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+# Cache headers for static assets
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# RSS/XML cache
+[[headers]]
+  for = "/*.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+    Content-Type = "application/xml; charset=utf-8"
+
+[[headers]]
+  for = "/*.rss"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+    Content-Type = "application/rss+xml; charset=utf-8"

@@ -1,0 +1,500 @@
+================================================================================
+MULTI-DOMAIN SETUP GUIDE
+================================================================================
+
+Your Hugo website now supports multiple domains:
+✓ Primary Domain: https://bhaskar.blog
+✓ Alternate Domain: https://bhaskarvilles.blog
+
+Both domains will work, but the alternate domain will redirect to the primary
+domain for SEO purposes (avoiding duplicate content penalties).
+
+================================================================================
+1. HOW IT WORKS
+================================================================================
+
+A. PRIMARY DOMAIN (bhaskar.blog)
+---------------------------------
+- This is your main domain set in hugo.toml (baseURL)
+- All canonical URLs point to this domain
+- Search engines will index this domain
+- All structured data uses this domain
+
+B. ALTERNATE DOMAIN (bhaskarvilles.blog)
+-----------------------------------------
+- Configured in hugo.toml under params.alternateDomains
+- Automatically redirects to primary domain (301 redirect)
+- Preserves the full URL path during redirect
+- Example: bhaskarvilles.blog/post/ai-trends/ → bhaskar.blog/post/ai-trends/
+
+C. SEO BENEFITS
+---------------
+✓ No duplicate content issues
+✓ Link equity consolidated to primary domain
+✓ Clear canonical URLs for search engines
+✓ Proper alternate domain signals
+✓ 301 redirects preserve SEO value
+
+================================================================================
+2. CONFIGURATION FILES CREATED
+================================================================================
+
+A. HUGO CONFIGURATION
+---------------------
+File: hugo.toml
+
+Added:
+- alternateDomains = ["https://bhaskarvilles.blog"]
+
+This tells Hugo about your alternate domain.
+
+B. REDIRECT CONFIGURATIONS
+---------------------------
+Created multiple redirect files for different hosting platforms:
+
+1. static/_redirects (Netlify/Vercel)
+   - Simple redirect rules
+   - Works with Netlify and Vercel
+
+2. static/.htaccess (Apache)
+   - For Apache web servers
+   - Includes security headers
+   - Cache control rules
+
+3. static/vercel.json (Vercel)
+   - Vercel-specific configuration
+   - JSON format redirects
+   - Custom headers
+
+4. static/netlify.toml (Netlify)
+   - Netlify-specific configuration
+   - Build settings
+   - Redirect and header rules
+
+C. TEMPLATE FILES
+-----------------
+File: layouts/partials/head/alternate-domains.html
+
+- Adds <link rel="alternate"> tags
+- Helps search engines understand domain relationship
+- Included automatically in all pages
+
+================================================================================
+3. DEPLOYMENT INSTRUCTIONS
+================================================================================
+
+A. FOR NETLIFY
+--------------
+1. Add both domains to your Netlify site:
+   - Go to Site Settings → Domain Management
+   - Add "bhaskar.blog" as primary domain
+   - Add "bhaskarvilles.blog" as domain alias
+
+2. Configure DNS for both domains:
+   
+   For bhaskar.blog:
+   - Type: A
+   - Name: @
+   - Value: 75.2.60.5 (Netlify's load balancer)
+   
+   OR use CNAME:
+   - Type: CNAME
+   - Name: @
+   - Value: [your-site].netlify.app
+   
+   For bhaskarvilles.blog:
+   - Type: A
+   - Name: @
+   - Value: 75.2.60.5
+   
+   OR use CNAME:
+   - Type: CNAME
+   - Name: @
+   - Value: [your-site].netlify.app
+
+3. Enable HTTPS for both domains in Netlify
+
+4. The redirects will work automatically via _redirects file
+
+B. FOR VERCEL
+-------------
+1. Add both domains to your Vercel project:
+   - Go to Project Settings → Domains
+   - Add "bhaskar.blog" (set as primary)
+   - Add "bhaskarvilles.blog"
+
+2. Configure DNS for both domains:
+   
+   For bhaskar.blog:
+   - Type: A
+   - Name: @
+   - Value: 76.76.21.21 (Vercel)
+   
+   For bhaskarvilles.blog:
+   - Type: A
+   - Name: @
+   - Value: 76.76.21.21
+
+3. Vercel will automatically use vercel.json for redirects
+
+C. FOR CLOUDFLARE PAGES
+------------------------
+1. Add both domains in Cloudflare Pages:
+   - Go to Custom Domains
+   - Add both domains
+
+2. DNS is automatically configured if using Cloudflare DNS
+
+3. Create _redirects file (already created)
+
+D. FOR APACHE SERVER
+--------------------
+1. Configure virtual hosts for both domains:
+
+<VirtualHost *:80>
+    ServerName bhaskar.blog
+    ServerAlias bhaskarvilles.blog
+    DocumentRoot /var/www/html
+    
+    # Redirect HTTP to HTTPS
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}$1 [R=301,L]
+</VirtualHost>
+
+<VirtualHost *:443>
+    ServerName bhaskar.blog
+    ServerAlias bhaskarvilles.blog
+    DocumentRoot /var/www/html
+    
+    # SSL Configuration
+    SSLEngine on
+    SSLCertificateFile /path/to/cert.pem
+    SSLCertificateKeyFile /path/to/key.pem
+    
+    # .htaccess will handle redirects
+    AllowOverride All
+</VirtualHost>
+
+2. The .htaccess file will handle redirects automatically
+
+E. FOR NGINX SERVER
+-------------------
+1. Create nginx configuration:
+
+# Redirect bhaskarvilles.blog to bhaskar.blog
+server {
+    listen 80;
+    listen 443 ssl http2;
+    server_name bhaskarvilles.blog www.bhaskarvilles.blog;
+    
+    ssl_certificate /path/to/cert.pem;
+    ssl_certificate_key /path/to/key.pem;
+    
+    return 301 https://bhaskar.blog$request_uri;
+}
+
+# Redirect www.bhaskar.blog to bhaskar.blog
+server {
+    listen 80;
+    listen 443 ssl http2;
+    server_name www.bhaskar.blog;
+    
+    ssl_certificate /path/to/cert.pem;
+    ssl_certificate_key /path/to/key.pem;
+    
+    return 301 https://bhaskar.blog$request_uri;
+}
+
+# Main server block
+server {
+    listen 80;
+    listen 443 ssl http2;
+    server_name bhaskar.blog;
+    
+    ssl_certificate /path/to/cert.pem;
+    ssl_certificate_key /path/to/key.pem;
+    
+    root /var/www/html;
+    index index.html;
+    
+    # Force HTTPS
+    if ($scheme = http) {
+        return 301 https://$server_name$request_uri;
+    }
+    
+    # Add alternate domain header
+    add_header Link '<https://bhaskarvilles.blog>; rel="alternate"';
+    
+    # Security headers
+    add_header X-Frame-Options "SAMEORIGIN";
+    add_header X-Content-Type-Options "nosniff";
+    add_header X-XSS-Protection "1; mode=block";
+    add_header Referrer-Policy "strict-origin-when-cross-origin";
+    
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+
+2. Test configuration: sudo nginx -t
+3. Reload nginx: sudo systemctl reload nginx
+
+================================================================================
+4. DNS CONFIGURATION
+================================================================================
+
+A. DOMAIN REGISTRAR SETTINGS
+-----------------------------
+Configure DNS records at your domain registrar (GoDaddy, Namecheap, etc.)
+
+For bhaskar.blog:
+┌──────────┬──────┬─────────────────────────────┬──────┐
+│ Type     │ Name │ Value                       │ TTL  │
+├──────────┼──────┼─────────────────────────────┼──────┤
+│ A        │ @    │ [Your hosting IP]           │ 3600 │
+│ CNAME    │ www  │ bhaskar.blog                │ 3600 │
+└──────────┴──────┴─────────────────────────────┴──────┘
+
+For bhaskarvilles.blog:
+┌──────────┬──────┬─────────────────────────────┬──────┐
+│ Type     │ Name │ Value                       │ TTL  │
+├──────────┼──────┼─────────────────────────────┼──────┤
+│ A        │ @    │ [Your hosting IP]           │ 3600 │
+│ CNAME    │ www  │ bhaskarvilles.blog          │ 3600 │
+└──────────┴──────┴─────────────────────────────┴──────┘
+
+B. COMMON HOSTING IPs
+----------------------
+Netlify:     75.2.60.5
+Vercel:      76.76.21.21
+Cloudflare:  Use CNAME to your-site.pages.dev
+GitHub:      185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+
+C. VERIFICATION
+---------------
+After DNS changes, verify with:
+
+1. Check DNS propagation:
+   https://dnschecker.org/
+
+2. Test both domains:
+   curl -I https://bhaskar.blog
+   curl -I https://bhaskarvilles.blog
+
+3. Verify redirect:
+   curl -I https://bhaskarvilles.blog/post/ai-trends/
+   
+   Should show:
+   HTTP/2 301
+   Location: https://bhaskar.blog/post/ai-trends/
+
+================================================================================
+5. SSL CERTIFICATES
+================================================================================
+
+A. AUTOMATIC SSL (Recommended)
+-------------------------------
+Most hosting platforms provide free SSL:
+
+Netlify:     Automatic via Let's Encrypt
+Vercel:      Automatic via Let's Encrypt
+Cloudflare:  Automatic via Cloudflare SSL
+GitHub:      Automatic via Let's Encrypt
+
+B. MANUAL SSL (Self-Hosted)
+----------------------------
+Use Let's Encrypt with Certbot:
+
+1. Install Certbot:
+   sudo apt-get install certbot python3-certbot-apache
+   # OR for nginx:
+   sudo apt-get install certbot python3-certbot-nginx
+
+2. Get certificates for both domains:
+   sudo certbot --apache -d bhaskar.blog -d www.bhaskar.blog -d bhaskarvilles.blog -d www.bhaskarvilles.blog
+   
+   # OR for nginx:
+   sudo certbot --nginx -d bhaskar.blog -d www.bhaskar.blog -d bhaskarvilles.blog -d www.bhaskarvilles.blog
+
+3. Auto-renewal is configured automatically
+
+================================================================================
+6. TESTING YOUR SETUP
+================================================================================
+
+A. REDIRECT TESTING
+--------------------
+Test all redirect scenarios:
+
+1. Alternate domain to primary:
+   https://bhaskarvilles.blog → https://bhaskar.blog ✓
+
+2. WWW to non-WWW:
+   https://www.bhaskar.blog → https://bhaskar.blog ✓
+   https://www.bhaskarvilles.blog → https://bhaskar.blog ✓
+
+3. HTTP to HTTPS:
+   http://bhaskar.blog → https://bhaskar.blog ✓
+   http://bhaskarvilles.blog → https://bhaskar.blog ✓
+
+4. Path preservation:
+   https://bhaskarvilles.blog/post/ai-trends/ → https://bhaskar.blog/post/ai-trends/ ✓
+
+B. SEO TESTING
+--------------
+1. Check canonical URLs:
+   - View page source
+   - Look for: <link rel="canonical" href="https://bhaskar.blog/..." />
+   - Should always point to bhaskar.blog
+
+2. Check alternate links:
+   - View page source
+   - Look for: <link rel="alternate" href="https://bhaskarvilles.blog/..." />
+
+3. Test with Google Search Console:
+   - Add both domains as properties
+   - Verify ownership
+   - Check for duplicate content issues (should be none)
+
+C. STRUCTURED DATA TESTING
+---------------------------
+1. Google Rich Results Test:
+   https://search.google.com/test/rich-results
+   - Test with bhaskar.blog URLs
+   - Verify all schemas are valid
+
+2. Schema Validator:
+   https://validator.schema.org/
+   - Check structured data
+   - Ensure URLs use bhaskar.blog
+
+================================================================================
+7. GOOGLE SEARCH CONSOLE SETUP
+================================================================================
+
+A. ADD BOTH DOMAINS
+--------------------
+1. Go to Google Search Console
+2. Add bhaskar.blog as a property (primary)
+3. Add bhaskarvilles.blog as a property (secondary)
+
+B. SET PREFERRED DOMAIN
+------------------------
+Google will automatically understand the preferred domain through:
+- Canonical URLs pointing to bhaskar.blog
+- 301 redirects from bhaskarvilles.blog
+- Consistent internal linking to bhaskar.blog
+
+C. SUBMIT SITEMAPS
+------------------
+For bhaskar.blog property:
+- Submit: https://bhaskar.blog/sitemap.xml
+
+For bhaskarvilles.blog property:
+- No need to submit (redirects to primary)
+
+================================================================================
+8. MONITORING & MAINTENANCE
+================================================================================
+
+A. REGULAR CHECKS
+-----------------
+□ Weekly: Test redirects are working
+□ Monthly: Check Google Search Console for errors
+□ Monthly: Verify SSL certificates are valid
+□ Quarterly: Review analytics for both domains
+
+B. ANALYTICS SETUP
+------------------
+Configure Google Analytics to track both domains:
+
+1. In GA4, go to Admin → Data Streams
+2. Add both domains to the same property
+3. Use cross-domain tracking if needed
+
+C. TROUBLESHOOTING
+------------------
+Issue: Redirects not working
+Solution: 
+- Check DNS propagation
+- Clear browser cache
+- Verify hosting configuration
+- Check redirect file syntax
+
+Issue: SSL certificate errors
+Solution:
+- Renew certificates
+- Check certificate includes both domains
+- Verify DNS points to correct server
+
+Issue: Duplicate content in search results
+Solution:
+- Verify canonical URLs are correct
+- Check 301 redirects are working
+- Wait for Google to re-crawl (can take weeks)
+- Use URL removal tool in Search Console
+
+================================================================================
+9. ADDING MORE ALTERNATE DOMAINS
+================================================================================
+
+To add additional alternate domains in the future:
+
+1. Update hugo.toml:
+   alternateDomains = [
+     "https://bhaskarvilles.blog",
+     "https://another-domain.com"
+   ]
+
+2. Add redirect rules to your hosting configuration
+
+3. Configure DNS for the new domain
+
+4. Add SSL certificate for the new domain
+
+5. Test redirects and canonical URLs
+
+================================================================================
+10. BEST PRACTICES
+================================================================================
+
+✓ Always use HTTPS for both domains
+✓ Keep primary domain consistent (bhaskar.blog)
+✓ Use 301 (permanent) redirects, not 302 (temporary)
+✓ Preserve URL paths during redirects
+✓ Monitor both domains in Search Console
+✓ Use canonical URLs consistently
+✓ Test redirects after any configuration changes
+✓ Keep SSL certificates up to date
+✓ Document any custom redirect rules
+
+================================================================================
+SUMMARY
+================================================================================
+
+Your multi-domain setup is complete:
+
+Primary Domain:    https://bhaskar.blog
+Alternate Domain:  https://bhaskarvilles.blog
+
+Configuration:
+✓ Hugo configured with alternate domain
+✓ Redirect files created for all hosting platforms
+✓ SEO-friendly canonical URLs
+✓ Alternate domain link tags
+✓ Security headers configured
+✓ Cache control optimized
+
+Next Steps:
+1. Choose your hosting platform (Netlify/Vercel/Apache/Nginx)
+2. Configure DNS for both domains
+3. Deploy your site
+4. Test redirects
+5. Add domains to Google Search Console
+6. Monitor for any issues
+
+Both domains will work seamlessly, with the alternate domain automatically
+redirecting to your primary domain while preserving SEO value!
+
+================================================================================
