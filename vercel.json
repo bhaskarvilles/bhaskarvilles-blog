@@ -1,9 +1,11 @@
 {
+  "build": {
+    "env": {
+      "HUGO_VERSION": "0.125.0"
+    }
+  },
   "buildCommand": "hugo --gc --minify --baseURL https://bhaskarvilles.blog/",
   "outputDirectory": "public",
-  "framework": "hugo",
-  "installCommand": "yum install -y wget && wget https://github.com/gohugoio/hugo/releases/download/v0.125.0/hugo_extended_0.125.0_Linux-64bit.tar.gz && tar -xzf hugo_extended_0.125.0_Linux-64bit.tar.gz && mv hugo /usr/local/bin/",
-  "devCommand": "hugo server --buildDrafts --buildFuture",
   "headers": [
     {
       "source": "/(.*)",
