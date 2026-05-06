@@ -69,22 +69,35 @@
   ],
   "redirects": [
     {
-      "source": "https://bhaskar.blog/:path*",
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "bhaskar.blog"
+        }
+      ],
       "destination": "https://bhaskarvilles.blog/:path*",
       "permanent": true
     },
     {
-      "source": "http://bhaskar.blog/:path*",
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bhaskar.blog"
+        }
+      ],
       "destination": "https://bhaskarvilles.blog/:path*",
       "permanent": true
     },
     {
-      "source": "https://www.bhaskar.blog/:path*",
-      "destination": "https://bhaskarvilles.blog/:path*",
-      "permanent": true
-    },
-    {
-      "source": "https://www.bhaskarvilles.blog/:path*",
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.bhaskarvilles.blog"
+        }
+      ],
       "destination": "https://bhaskarvilles.blog/:path*",
       "permanent": true
     }
