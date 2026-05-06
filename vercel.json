@@ -91,17 +91,6 @@
       ],
       "destination": "https://bhaskarvilles.blog/:path*",
       "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.bhaskarvilles.blog"
-        }
-      ],
-      "destination": "https://bhaskarvilles.blog/:path*",
-      "permanent": true
     }
   ]
 }
